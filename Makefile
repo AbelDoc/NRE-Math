@@ -27,5 +27,9 @@ clean :
 	@echo "Clear of obj/"
 	@rm -r obj
 	@mkdir obj
+	@mkdir obj/Header/
+	@mkdir obj/Math/
+	@mkdir obj/Math/Vector/
+	@mkdir obj/Math/Vector/2D/
 	@echo "obj-Tree creation done."
 	@echo "Clean done."
