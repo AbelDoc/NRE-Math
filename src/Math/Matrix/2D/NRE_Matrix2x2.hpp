@@ -189,7 +189,7 @@
 
                     //## Assignment Operator ##//
                         /**
-                         * Copyu m into this
+                         * Copy m into this
                          * @param m the object to copy into this
                          * @return  the reference of himself
                          */
@@ -243,43 +243,43 @@
                         /**
                          * Compute the matrix resulting in the addition of this and m
                          * @param m the matrix to add with this
-                         * @return the newly computed matrix
+                         * @return  the newly computed matrix
                          */
                         Matrix2x2 operator +(Matrix2x2 const& m) const;
                         /**
                          * Compute the matrix resulting in the subtraction of this and m
                          * @param m the matrix to subtract with this
-                         * @return the newly computed matrix
+                         * @return  the newly computed matrix
                          */
                         Matrix2x2 operator -(Matrix2x2 const& m) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this by k
                          * @param k the multiplication factor
-                         * @return the newly computed matrix
+                         * @return  the newly computed matrix
                          */
                         Matrix2x2 operator *(T k) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this and m
                          * @param m the matrix to multiply with this
-                         * @return the newly computed matrix
+                         * @return  the newly computed matrix
                          */
                         Matrix2x2 operator *(Matrix2x2 const& m) const;
                         /**
                          * Compute the vector resulting in the transformation of u by this
                          * @param u the vector to transform
-                         * @return the newly computed vector
+                         * @return  the newly computed vector
                          */
                         Vector2D<T> operator *(Vector2D<T> const& u) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor
-                         * @return the newly computed matrix
+                         * @return  the newly computed matrix
                          */
                         Matrix2x2 operator /(T k) const;
                         /**
                          * Compute the matrix resulting in the division of this and m
                          * @param m the matrix to divide with this
-                         * @return the newly computed matrix
+                         * @return  the newly computed matrix
                          */
                         Matrix2x2 operator /(Matrix2x2 const& m) const;
 
@@ -287,13 +287,13 @@
                         /**
                          * Equality test between this and m
                          * @param m the matrix to test with this
-                         * @return the test's result
+                         * @return  the test's result
                          */
                         bool operator ==(Matrix2x2 const& m) const;
                         /**
                          * Difference test between this and m
                          * @param m the matrix to test with this
-                         * @return the test's result
+                         * @return  the test's result
                          */
                         bool operator !=(Matrix2x2 const& m) const;
 

@@ -31,6 +31,11 @@
 
             template <class T>
             template <class K>
+            inline Matrix3x3<T>::Matrix3x3(Matrix2x2<K> const& m) : data{Vector3D<T>(m.getL1(), 0.0f), Vector3D<T>(m.getL2(), 0.0f), Vector3D<T>(0.0f, 0.0f, 1.0f)} {
+            }
+
+            template <class T>
+            template <class K>
             inline Matrix3x3<T>::Matrix3x3(Matrix3x3<K> const& m) : data{static_cast <Vector3D<T>> (m.getL1()), static_cast <Vector3D<T>> (m.getL2()), static_cast <Vector3D<T>> (m.getL3())} {
             }
 

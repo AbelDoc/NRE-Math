@@ -17,3 +17,4 @@
 
     #include "../Math/Matrix/2D/NRE_Matrix2x2.hpp"
     #include "../Math/Matrix/3D/NRE_Matrix3x3.hpp"
+    #include "../Math/Matrix/4D/NRE_Matrix4x4.hpp"
