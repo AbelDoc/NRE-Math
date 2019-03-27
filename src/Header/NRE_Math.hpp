@@ -14,3 +14,5 @@
     #include "../Math/Vector/2D/NRE_Vector2D.hpp"
     #include "../Math/Vector/3D/NRE_Vector3D.hpp"
     #include "../Math/Vector/4D/NRE_Vector4D.hpp"
+
+    #include "../Math/Matrix/2D/NRE_Matrix2x2.hpp"

@@ -15,17 +15,17 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Vector4D<float> vec;
-        Vector4D<float> vec2(1, 2, 3, 4);
+        Matrix2x2<float> mat;
+        Matrix2x2<float> mat2(1, 2, 3, 4);
 
-        std::cout << vec << std::endl;
-        std::cout << vec2 << std::endl;
+        std::cout << mat << std::endl;
+        std::cout << mat2 << std::endl;
 
-        vec = vec2;
-        Vector4D<float> vec3(vec2);
+        mat = mat2;
+        Matrix2x2<float> mat3(mat2);
 
-        std::cout << vec << std::endl;
-        std::cout << vec3 << std::endl;
+        std::cout << mat << std::endl;
+        std::cout << mat3 << std::endl;
 
         return 0;
     }
