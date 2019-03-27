@@ -1,20 +1,20 @@
 
     /**
-     * @file NRE_Vector2D.hpp
-     * @brief Declaration of Math's API's Object : Vector2D
+     * @file NRE_Vector3D.hpp
+     * @brief Declaration of Math's API's Object : Vector3D
      * @author Louis ABEL
      * @date 27/03/2019
      * @copyright GNU GPL v3
      */
 
-    #pragma once
+     #pragma once
 
-    #include <string>
-    #include <iostream>
+     #include <string>
+     #include <iostream>
 
-    #include "../../NRE_Math.hpp"
+     #include "../../NRE_Math.hpp"
 
-    /**
+     /**
      * @namespace NRE
      * @brief The NearlyRealEngine's global namespace
      */
@@ -25,50 +25,53 @@
          */
         namespace Math {
 
-            template<class> class Vector3D;
+            template<class> class Vector2D;
+            template<class> class Vector4D;
 
             /**
-             * @class Vector2D
-             * @brief A cartesian 2D vector
+             * @class Vector3D
+             * @brief A cartesian 3D vector
              * @warning Use this vector with POD type only
              */
             template <class T>
-            class Vector2D {
-                private :   // Fields
+            class Vector3D {
+                private :   //Fields
                     T x;    /**< x coordinate */
                     T y;    /**< y coordinate */
+                    T z;    /**< z coordinate */
 
                 public :    // Methods
                     //## Constructor ##//
                         /**
                          * Construct the null vector
                          */
-                        Vector2D() = default;
+                        Vector3D() = default;
                         /**
                          * Construct a vector with passed values
                          * @param nX new x value
                          * @param nY new y value
+                         * @param nZ new z value
                          */
-                        Vector2D(T nX, T nY);
+                        Vector3D(T nX, T nY, T nZ);
                         /**
-                         * Construct a vector with unique values
-                         * @param value the new x and y values
+                         * Construct a vector with an unique value for all coordinates
+                         * @param value new x, y and z values
                          */
-                        Vector2D(T value);
+                        Vector3D(T value);
 
                     //## Copy-Constructor ##//
                         /**
                          * Copy u into this
                          * @param u the object to copy
                          */
-                        Vector2D(Vector2D const& u) = default;
+                        Vector3D(Vector3D const& u) = default;
 
                     //## Move-Constructor ##//
                         /**
                          * Move u into this
                          * @param u the object to move
                          */
-                        Vector2D(Vector2D && u) = default;
+                        Vector3D(Vector3D && u) = default;
 
                     //## Convertor ##//
                         /**
@@ -76,19 +79,30 @@
                          * @param u the K-type vector to convert
                          */
                         template <class K>
-                        Vector2D(Vector2D<K> const& u);
+                        Vector3D(Vector3D<K> const& u);
                         /**
-                         * Convert a K-type 3D vector into a T-type 2D vector
-                         * @param u the K-type 3D vector to convert
+                         * Convert a K-type 4D vector into a T-type 3D vector
+                         * @param u the K-type 4D vector to convert
                          */
                         template <class K>
-                        Vector2D(Vector3D<K> const& u);
+                        Vector3D(Vector4D<K> const& u);
+                        /**
+                         * Convert a 2D vector into a 3D vector with a default z value
+                         * @param u the 2D vector to convert
+                         */
+                        Vector3D(Vector2D<T> const& u);
+                        /**
+                         * Convert a 2D vector into a 3D point with a passed z value
+                         * @param u  the 2D vector to convert
+                         * @param nZ the new z value
+                         */
+                        Vector3D(Vector2D<T> const& u, T nZ);
 
                     //## Deconstructor ##//
                         /**
-                         * Vector2D Deconstructor
+                         * Vector3D Deconstructor
                          */
-                        ~Vector2D() = default;
+                        ~Vector3D() = default;
 
                     //## Getter ##//
                         /**
@@ -96,17 +110,25 @@
                          */
                         T getX() const;
                         /**
-                         * @return the x value
+                         * @return the y value
                          */
                         T getY() const;
                         /**
+                         * @return the z value
+                         */
+                        T getZ() const;
+                        /**
                          * @return the x value
                          */
-                        T getW() const;
+                        T getR() const;
                         /**
                          * @return the y value
                          */
-                        T getH() const;
+                        T getG() const;
+                        /**
+                         * @return the z value
+                         */
+                        T getB() const;
 
                     //## Setter ##//
                         /**
@@ -120,27 +142,45 @@
                          */
                         void setY(T nY);
                         /**
-                         * X setter
-                         * @param w the new value for x
+                         * Z setter
+                         * @param nZ the new value for z
                          */
-                        void setW(T w);
+                        void setZ(T nZ);
+                        /**
+                         * X setter
+                         * @param r the new value for x
+                         */
+                        void setR(T r);
                         /**
                          * Y setter
-                         * @param h the new value for y
+                         * @param g the new value for y
                          */
-                        void setH(T h);
+                        void setG(T g);
                         /**
-                         * Set the values for both x and y
+                         * Z setter
+                         * @param b the new value for z
+                         */
+                        void setB(T b);
+                        /**
+                         * Set the values for x, y and z
                          * @param nX the new value for x
                          * @param nY the new value for y
+                         * @param nZ the new value for z
                          */
-                        void setCoord(T nX, T nY);
+                        void setCoord(T nX, T nY, T nZ);
                         /**
-                         * Set the values for both x and y
-                         * @param w the new value for x
-                         * @param h the new value for y
+                         * Set the values for x, y and z with a base 2D vector
+                         * @param u the base 2D vector for x and y values
+                         * @param nZ the new value for z
                          */
-                        void setSize(T w, T h);
+                        void setCoord(Vector2D<T> const& u, T nZ);
+                        /**
+                         * Set the values for x, y and z
+                         * @param r the new value for x
+                         * @param g the new value for y
+                         * @param b the new value for z
+                         */
+                        void setRGB(T r, T g, T b);
 
                     //## Methods ##//
                         /**
@@ -174,7 +214,7 @@
                          * @param   index the object's index
                          * @return        the object's reference
                          */
-                        T const& operator [](std::size_t index) const;
+                         T const& operator [](std::size_t index) const;
 
                     //## Assignment Operator ##//
                         /**
@@ -182,13 +222,13 @@
                          * @param u the object to copy into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator =(Vector2D const& u) = default;
+                        Vector3D& operator =(Vector3D const& u) = default;
                         /**
                          * Move u into this
                          * @param u the object to move into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator =(Vector2D && u) = default;
+                        Vector3D& operator =(Vector3D && u) = default;
 
                     //## Shortcut Operator ##//
                         /**
@@ -196,43 +236,49 @@
                          * @param u the vector to add into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator +=(Vector2D const& u);
+                        Vector3D& operator +=(Vector3D const& u);
                         /**
                          * Subtract a vector into this
                          * @param u the vector to subtract into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator -=(Vector2D const& u);
+                        Vector3D& operator -=(Vector3D const& u);
                         /**
                          * Multiply this by a factor k
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
-                        Vector2D& operator *=(T k);
+                        Vector3D& operator *=(T k);
                         /**
                          * Multiply this by a vector u, component by component
                          * @param u the multiplication vector
                          * @return  the reference of himself
                          */
-                        Vector2D& operator *=(Vector2D const& u);
+                        Vector3D& operator *=(Vector3D const& u);
                         /**
                          * Divide this by a factor k
                          * @param k the division factor
                          * @return  the reference of himself
                          */
-                        Vector2D& operator /=(T k);
+                        Vector3D& operator /=(T k);
                         /**
                          * Divide this by a vector u, component by component
                          * @param u the division vector
                          * @return  the reference of himself
                          */
-                        Vector2D& operator /=(Vector2D const& u);
+                        Vector3D& operator /=(Vector3D const& u);
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |=(Vector2D const& u) const;
+                        float operator |=(Vector3D const& u) const;
+                        /**
+                         * Replace this by the cross product between this and u
+                         * @param u the vector
+                         * @return  the reference of himself
+                         */
+                        Vector3D& operator ^=(Vector3D const& u);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -240,48 +286,54 @@
                          * @param u the vector to add
                          * @return  the computed vector
                          */
-                        Vector2D operator +(Vector2D const& u) const;
+                        Vector3D operator +(Vector3D const& u) const;
                         /**
                          * Compute the vector resulting in the subtraction of u into this
                          * @param u the vector to subtract
                          * @return  the computed vector
                          */
-                        Vector2D operator -(Vector2D const& u) const;
+                        Vector3D operator -(Vector3D const& u) const;
                         /**
                          * Compute the opposite version of this
                          * @return the opposite vector
                          */
-                        Vector2D operator -() const;
+                        Vector3D operator -() const;
                         /**
                          * Compute the vector resulting in the multiplication of this by k
                          * @param k the multiplication factor
                          * @return  the computed vector
                          */
-                        Vector2D operator *(T k) const;
+                        Vector3D operator *(T k) const;
                         /**
                          * Compute the vector resulting in the multiplication of this by u
                          * @param u the multiplication vector
                          * @return  the computed vector
                          */
-                        Vector2D operator *(Vector2D const& u) const;
+                        Vector3D operator *(Vector3D const& u) const;
                         /**
                          * Compute the vector resulting in the division of this by k
                          * @param k the division factor
                          * @return  the computed vector
                          */
-                        Vector2D operator /(T k) const;
+                        Vector3D operator /(T k) const;
                         /**
                          * Compute the vector resulting in the division of this by u
                          * @param u the division vector
                          * @return  the computed vector
                          */
-                        Vector2D operator /(Vector2D const& u) const;
+                        Vector3D operator /(Vector3D const& u) const;
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |(Vector2D const& u) const;
+                        float operator |(Vector3D const& u) const;
+                        /**
+                         * Compute the vector resulting in the cross product of this and u
+                         * @param u the vector
+                         * @return  the computed vector
+                         */
+                        Vector3D operator ^(Vector3D const& u) const;
 
                     //## Comparison Operator ##//
                         /**
@@ -290,42 +342,42 @@
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator ==(Vector2D<K> const& u) const;
+                        bool operator ==(Vector3D<K> const& u) const;
                         /**
                          * Difference test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator !=(Vector2D<K> const& u) const;
+                        bool operator !=(Vector3D<K> const& u) const;
                         /**
                          * Inferior test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator <(Vector2D<K> const& u) const;
+                        bool operator <(Vector3D<K> const& u) const;
                         /**
                          * Superior test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator >(Vector2D<K> const& u) const;
+                        bool operator >(Vector3D<K> const& u) const;
                         /**
                          * Inferior or Equal test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator <=(Vector2D<K> const& u) const;
+                        bool operator <=(Vector3D<K> const& u) const;
                         /**
                          * Superior or Equal test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator >=(Vector2D<K> const& u) const;
+                        bool operator >=(Vector3D<K> const& u) const;
 
                     //## Stream Operator ##//
                         /**
@@ -342,8 +394,8 @@
              * @return the    modified stream
              */
             template <class T>
-            std::ostream& operator <<(std::ostream& stream, Vector2D<T> const& o);
+            std::ostream& operator <<(std::ostream& stream, Vector3D<T> const& o);
         }
     }
 
-    #include "NRE_Vector2D.tpp"
+    #include "NRE_Vector3D.tpp"

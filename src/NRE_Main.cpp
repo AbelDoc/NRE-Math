@@ -15,14 +15,14 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Vector2D<float> vec;
-        Vector2D<float> vec2(1, 2);
+        Vector3D<float> vec;
+        Vector3D<float> vec2(1, 2, 3);
 
         std::cout << vec << std::endl;
         std::cout << vec2 << std::endl;
 
         vec = vec2;
-        Vector2D<float> vec3(vec2);
+        Vector3D<float> vec3(vec2);
 
         std::cout << vec << std::endl;
         std::cout << vec3 << std::endl;

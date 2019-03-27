@@ -24,6 +24,11 @@
             }
 
             template <class T>
+            template <class K>
+            inline Vector2D<T>::Vector2D(Vector3D<K> const& u) : x(static_cast <T> (u.getX())), y(static_cast <T> (u.getY())) {
+            }
+
+            template <class T>
             inline T Vector2D<T>::getX() const {
                 return x;
             }
