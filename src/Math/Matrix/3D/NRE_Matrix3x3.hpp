@@ -1,7 +1,7 @@
 
     /**
-     * @file NRE_Matrix2x2.hpp
-     * @brief Declaration of Math's API's Object : Matrix2x2
+     * @file NRE_Matrix3x3.hpp
+     * @brief Declaration of Math's API's Object : Matrix3x3
      * @author Louis ABEL
      * @date 27/03/2019
      * @copyright GNU GPL v3
@@ -25,59 +25,65 @@
          */
         namespace Math {
 
-            template<class> class Vector2D;
-            template<class> class Matrix3x3;
+            template<class> class Vector3D;
+            template<class> class Matrix4x4;
 
             /**
-             * @class Matrix2x2
-             * @brief 2x2 generic matrix
-             * @warning Use this matrix with POD type only
+             * @class Matrix3x3
+             * @brief 3x3 generic matrix
              */
             template <class T>
-            class Matrix2x2 {
+            class Matrix3x3 {
                 private:    //Fields
-                    Vector2D<T> data[2];   /**< Matrix's lines, row major order */
+                    Vector3D<T> data[3];   /**< Matrix's lines, row major order */
 
                 public:    // Methods
                     //## Constructor ##//
                         /**
                          * Construct the identity matrix
                          */
-                        Matrix2x2();
+                        Matrix3x3();
                         /**
                          * Construct a matrix with passed values
                          * @param a first matrix component
                          * @param b second matrix component
                          * @param c third matrix component
                          * @param d fourth matrix component
+                         * @param e fifth matrix component
+                         * @param f sixth matrix component
+                         * @param g seventh matrix component
+                         * @param h eighth matrix component
+                         * @param i ninth matrix component
                          */
-                        Matrix2x2(T a, T b,
-                                  T c, T d);
+                        Matrix3x3(T a, T b, T c,
+                                  T d, T e, T f,
+                                  T g, T h, T i);
                         /**
-                         * Construct a matrix with a unique value for all components
+                         * Construct a matrix with a unique value for all component
                          * @param value new value for all component
                          */
-                        Matrix2x2(T value);
+                        Matrix3x3(T value);
                         /**
-                         * Construct a matrix with lines passed in parameters
+                         * Construct a matrix with their lines passed in parameters with vector
                          * @param l1 the new value for the first line
                          * @param l2 the new value for the second line
+                         * @param l3 the new value for the third line
                          */
-                        Matrix2x2(Vector2D<T> const& l1, Vector2D<T> const& l2);
+                        Matrix3x3(Vector3D<T> const& l1, Vector3D<T> const& l2, Vector3D<T> const& l3);
 
                     //## Copy-Constructor ##//
                         /**
                          * Copy m into this
-                         * @param m the object to copy
+                         * @param m the 3x3 matrix to copy the content
                          */
-                        Matrix2x2(Matrix2x2 const& m) = default;
+                        Matrix3x3(Matrix3x3 const& m) = default;
 
                     //## Move-Constructor ##//
                         /**
-                         * Move m into this
-                         * @param m the object to move
+                         * Move m into this, leaving m empty
+                         * @param m the 3x3 matrix to move
                          */
-                        Matrix2x2(Matrix2x2 && m) = default;
+                        Matrix3x3(Matrix3x3 && m) = default;
 
                     //## Convertor ##//
                         /**
@@ -85,37 +91,50 @@
                          * @param m the K-type matrix to convert
                          */
                         template <class K>
-                        Matrix2x2(Matrix2x2<K> const& m);
+                        Matrix3x3(Matrix3x3<K> const& m);
                         /**
-                         * Convert a K-type 3x3 matrix into a T-type 2x2 matrix
-                         * @param m the K-type 3x3 matrix to convert
+                         * Convert a K-type 4x4 matrix into a T-type 3x3 matrix
+                         * @param m the K-type 4x4 matrix to convert
                          */
                         template <class K>
-                        Matrix2x2(Matrix3x3<K> const& m);
+                        Matrix3x3(Matrix4x4<K> const& m);
+                        /**
+                         * Convert a quaternion into a 3x3 matrix
+                         * @param q the quaternion to convert
+                         */
+                        //Matrix3x3(Quaternion const& q);
 
                     //## Deconstructor ##//
                         /**
-                         * Matrix2x2 Deconstructor
+                         * Matrix3x3 Deconstructor
                          */
-                        ~Matrix2x2() = default;
+                        ~Matrix3x3() = default;
 
                     //## Getter ##//
                         /**
                          * @return the first line
                          */
-                        Vector2D<T> const& getL1() const;
+                        Vector3D<T> const& getL1() const;
                         /**
                          * @return the second line
                          */
-                        Vector2D<T> const& getL2() const;
+                        Vector3D<T> const& getL2() const;
+                        /**
+                         * @return the third line
+                         */
+                        Vector3D<T> const& getL3() const;
                         /**
                          * @return the first column
                          */
-                        Vector2D<T> getC1() const;
+                        Vector3D<T> getC1() const;
                         /**
                          * @return the second column
                          */
-                        Vector2D<T> getC2() const;
+                        Vector3D<T> getC2() const;
+                        /**
+                         * @return the third column
+                         */
+                        Vector3D<T> getC3() const;
                         /**
                          * @return the matrix's determinant
                          */
@@ -126,22 +145,32 @@
                          * First line setter
                          * @param l1 the new first line vector
                          */
-                        void setL1(Vector2D<T> const& l1);
+                        void setL1(Vector3D<T> const& l1);
                         /**
                          * Second line setter
                          * @param l2 the new second line vector
                          */
-                        void setL2(Vector2D<T> const& l2);
+                        void setL2(Vector3D<T> const& l2);
+                        /**
+                         * Third line setter
+                         * @param l3 the new third line vector
+                         */
+                        void setL3(Vector3D<T> const& l3);
                         /**
                          * First column setter
                          * @param c1 the new first column vector
                          */
-                        void setC1(Vector2D<T> const& c1);
+                        void setC1(Vector3D<T> const& c1);
                         /**
                          * Second column setter
                          * @param c2 the new second column vector
                          */
-                        void setC2(Vector2D<T> const& c2);
+                        void setC2(Vector3D<T> const& c2);
+                        /**
+                         * Third column setter
+                         * @param c3 the new third column vector
+                         */
+                        void setC3(Vector3D<T> const& c3);
                         /**
                          * Set the matrix to the identity matrix
                          */
@@ -160,12 +189,12 @@
                          * Perform a translation transformation on this
                          * @param u the translation vector
                          */
-                        void translate(T u);
+                        void translate(Vector2D<T> const& u);
                         /**
                          * Perform a scale transformation on this
                          * @param u the scaling vector
                          */
-                        void scale(T u);
+                        void scale(Vector2D<T> const& u);
                         /**
                          * @return a pointer to the vector's data
                          */
@@ -178,14 +207,14 @@
                          * @param   index the line's index
                          * @return        the line's reference
                          */
-                        Vector2D<T>& operator [](std::size_t index);
+                        Vector3D<T>& operator [](std::size_t index);
                         /**
                          * Return a const reference on a matrix's line
                          * @warning No range check performed
                          * @param   index the line's index
                          * @return        the line's reference
                          */
-                        Vector2D<T> const& operator [](std::size_t index) const;
+                        Vector3D<T> const& operator [](std::size_t index) const;
 
                     //## Assignment Operator ##//
                         /**
@@ -193,13 +222,13 @@
                          * @param m the object to copy into this
                          * @return  the reference of himself
                          */
-                        Matrix2x2& operator =(Matrix2x2 const& m) = default;
+                        Matrix3x3& operator =(Matrix3x3 const& m) = default;
                         /**
                          * Move m into this
                          * @param m the object to move into this
                          * @return  the reference of himself
                          */
-                        Matrix2x2& operator =(Matrix2x2 && m) = default;
+                        Matrix3x3& operator =(Matrix3x3 && m) = default;
 
                     //## Shortcut Operator ##//
                         /**
@@ -207,37 +236,37 @@
                          * @param m the matrix to add into this
                          * @return  the reference on himself
                          */
-                        Matrix2x2& operator +=(Matrix2x2 const& m);
+                        Matrix3x3& operator +=(Matrix3x3 const& m);
                         /**
                          * Subtract m into this
                          * @param m the matrix to subtract into this
                          * @return  the reference on himself
                          */
-                        Matrix2x2& operator -=(Matrix2x2 const& m);
+                        Matrix3x3& operator -=(Matrix3x3 const& m);
                         /**
                          * Multiply this by k
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
-                        Matrix2x2& operator *=(T k);
+                        Matrix3x3& operator *=(T k);
                         /**
                          * Multiply this with m
                          * @param m the matrix to multiply with this
                          * @return  the reference of himself
                          */
-                        Matrix2x2& operator *=(Matrix2x2 const& m);
+                        Matrix3x3& operator *=(Matrix3x3 const& m);
                         /**
                          * Divide this by k
                          * @param k the division factor
                          * @return  the reference of himself
                          */
-                        Matrix2x2& operator /=(T k);
+                        Matrix3x3& operator /=(T k);
                         /**
                          * Divide this with m
                          * @param m the matrix to divide with this
                          * @return  the reference of himself
                          */
-                        Matrix2x2& operator /=(Matrix2x2 const& m);
+                        Matrix3x3& operator /=(Matrix3x3 const& m);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -245,43 +274,43 @@
                          * @param m the matrix to add with this
                          * @return the newly computed matrix
                          */
-                        Matrix2x2 operator +(Matrix2x2 const& m) const;
+                        Matrix3x3 operator +(Matrix3x3 const& m) const;
                         /**
                          * Compute the matrix resulting in the subtraction of this and m
                          * @param m the matrix to subtract with this
                          * @return the newly computed matrix
                          */
-                        Matrix2x2 operator -(Matrix2x2 const& m) const;
+                        Matrix3x3 operator -(Matrix3x3 const& m) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this by k
                          * @param k the multiplication factor
                          * @return the newly computed matrix
                          */
-                        Matrix2x2 operator *(T k) const;
+                        Matrix3x3 operator *(T k) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this and m
                          * @param m the matrix to multiply with this
                          * @return the newly computed matrix
                          */
-                        Matrix2x2 operator *(Matrix2x2 const& m) const;
+                        Matrix3x3 operator *(Matrix3x3 const& m) const;
                         /**
                          * Compute the vector resulting in the transformation of u by this
                          * @param u the vector to transform
                          * @return the newly computed vector
                          */
-                        Vector2D<T> operator *(Vector2D<T> const& u) const;
+                        Vector3D<T> operator *(Vector3D<T> const& u) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor
                          * @return the newly computed matrix
                          */
-                        Matrix2x2 operator /(T k) const;
+                        Matrix3x3 operator /(T k) const;
                         /**
                          * Compute the matrix resulting in the division of this and m
                          * @param m the matrix to divide with this
                          * @return the newly computed matrix
                          */
-                        Matrix2x2 operator /(Matrix2x2 const& m) const;
+                        Matrix3x3 operator /(Matrix3x3 const& m) const;
 
                     //## Comparison Operator ##//
                         /**
@@ -289,13 +318,13 @@
                          * @param m the matrix to test with this
                          * @return the test's result
                          */
-                        bool operator ==(Matrix2x2 const& m) const;
+                        bool operator ==(Matrix3x3 const& m) const;
                         /**
                          * Difference test between this and m
                          * @param m the matrix to test with this
                          * @return the test's result
                          */
-                        bool operator !=(Matrix2x2 const& m) const;
+                        bool operator !=(Matrix3x3 const& m) const;
 
                     //## Stream Operator ##//
                         /**
@@ -312,8 +341,8 @@
              * @return the    modified stream
              */
             template <class T>
-            std::ostream& operator <<(std::ostream& stream, Matrix2x2<T> const& o);
+            std::ostream& operator <<(std::ostream& stream, Matrix3x3<T> const& o);
         }
     }
 
-    #include "NRE_Matrix2x2.tpp"
+    #include "NRE_Matrix3x3.tpp"

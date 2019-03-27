@@ -32,6 +32,7 @@ clean :
 	@mkdir obj/Math/Matrix/
 	@mkdir obj/Math/Vector/
 	@mkdir obj/Math/Matrix/2D/
+	@mkdir obj/Math/Matrix/3D/
 	@mkdir obj/Math/Vector/2D/
 	@mkdir obj/Math/Vector/3D/
 	@mkdir obj/Math/Vector/4D/

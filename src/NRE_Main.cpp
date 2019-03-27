@@ -15,14 +15,14 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Matrix2x2<float> mat;
-        Matrix2x2<float> mat2(1, 2, 3, 4);
+        Matrix3x3<float> mat;
+        Matrix3x3<float> mat2(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
         std::cout << mat << std::endl;
         std::cout << mat2 << std::endl;
 
         mat = mat2;
-        Matrix2x2<float> mat3(mat2);
+        Matrix3x3<float> mat3(mat2);
 
         std::cout << mat << std::endl;
         std::cout << mat3 << std::endl;

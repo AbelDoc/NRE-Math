@@ -17,7 +17,7 @@
 
            template <class T>
            inline Matrix2x2<T>::Matrix2x2(T a, T b,
-                                   T c, T d) : data{{a, b}, {c, d}} {
+                                          T c, T d) : data{{a, b}, {c, d}} {
            }
 
            template <class T>
@@ -26,6 +26,11 @@
 
            template <class T>
            inline Matrix2x2<T>::Matrix2x2(Vector2D<T> const& l1, Vector2D<T> const& l2) : data{l1, l2} {
+           }
+
+           template <class T>
+           template <class K>
+           inline Matrix2x2<T>::Matrix2x2(Matrix3x3<K> const& m) : data{Vector2D<T>(m.getL1()), Vector2D<T>(m.getL2())} {
            }
 
            template <class T>
@@ -87,7 +92,7 @@
            }
 
            template <class T>
-           inline void Matrix2x2<T>::transpose() {
+           void Matrix2x2<T>::transpose() {
                Matrix2x2<T> tmp;
                tmp[0][0] = data[0][0];
                tmp[0][1] = data[1][0];
@@ -97,7 +102,7 @@
            }
 
            template <class T>
-           inline void Matrix2x2<T>::inverse() {
+           void Matrix2x2<T>::inverse() {
                Matrix2x2<T> tmp;
                float det = getDeterminant();
                if (std::abs(det) > F_EPSILON) {
