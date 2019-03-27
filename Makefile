@@ -32,5 +32,6 @@ clean :
 	@mkdir obj/Math/Vector/
 	@mkdir obj/Math/Vector/2D/
 	@mkdir obj/Math/Vector/3D/
+	@mkdir obj/Math/Vector/4D/
 	@echo "obj-Tree creation done."
 	@echo "Clean done."
