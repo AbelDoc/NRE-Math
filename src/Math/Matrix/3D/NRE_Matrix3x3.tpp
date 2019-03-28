@@ -219,6 +219,28 @@
             }
 
             template <class T>
+            inline void Matrix3x3<T>::shearX(T u) {
+                Matrix3x3<T> tmp;
+                tmp[0][1] = u;
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix3x3<T>::shearY(T u) {
+                Matrix3x3<T> tmp;
+                tmp[1][0] = u;
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix3x3<T>::shear(Vector2D<T> const& u) {
+                Matrix3x3<T> tmp;
+                tmp[0][1] = u.getX();
+                tmp[1][0] = u.getY();
+                *this *= tmp;
+            }
+
+            template <class T>
             inline void Matrix3x3<T>::rotate(Angle const& angle) {
                 Matrix3x3<T> tmp;
                 T c = static_cast <T> (cos(angle));

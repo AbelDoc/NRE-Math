@@ -217,6 +217,21 @@
                          */
                         void squeezeY(Vector2D<T> const& u);
                         /**
+                         * Add a shear on the X axis
+                         * @param u the shear factor
+                         */
+                        void shearX(T u);
+                        /**
+                         * Add a shear on the Y axis
+                         * @param u the shear factor
+                         */
+                        void shearY(T u);
+                        /**
+                         * Add a shear on both axis
+                         * @param u the shear vector
+                         */
+                        void shear(Vector2D<T> const& u);
+                        /**
                          * Add a rotation
                          * @param angle the rotation's angle
                          */

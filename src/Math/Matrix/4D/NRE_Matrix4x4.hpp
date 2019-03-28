@@ -208,15 +208,30 @@
                          */
                         void inverse();
                         /**
-                         * Perform a translation transformation on this
+                         * Add a translation
                          * @param u the translation vector
                          */
                         void translate(Vector3D<T> const& u);
                         /**
-                         * Perform a scale transformation on this
+                         * Add a scale
                          * @param u the scaling vector
                          */
                         void scale(Vector3D<T> const& u);
+                        /**
+                         * Add a stretch on the X axis
+                         * @param u the stretch factor
+                         */
+                        void stretchX(T u);
+                        /**
+                         * Add a stretch on the Y axis
+                         * @param u the stretch factor
+                         */
+                        void stretchY(T u);
+                        /**
+                         * Add a stretch on the Z axis
+                         * @param u the stretch factor
+                         */
+                        void stretchZ(T u);
                         /**
                          * Perform a rotation transformation on this
                          * @param angle the rotation angle

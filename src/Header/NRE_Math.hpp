@@ -10,6 +10,7 @@
     #pragma once
 
     #include "../Math/NRE_Math.hpp"
+    #include "../Math/NRE_Unit.hpp"
 
     #include "../Math/Vector/2D/NRE_Vector2D.hpp"
     #include "../Math/Vector/3D/NRE_Vector3D.hpp"
