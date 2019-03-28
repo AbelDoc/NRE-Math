@@ -13,6 +13,7 @@
     #include <iostream>
 
     #include "../../NRE_Math.hpp"
+    #include "../../NRE_Unit.hpp"
 
      /**
      * @namespace NRE
@@ -26,7 +27,6 @@
         namespace Math {
 
             template<class> class Vector3D;
-            template<class> class Matrix2x2;
             template<class> class Matrix4x4;
 
             /**
@@ -87,12 +87,6 @@
                         Matrix3x3(Matrix3x3 && m) = default;
 
                     //## Convertor ##//
-                        /**
-                         * Convert a K-type 2x2 matrix into a T-type 3x3 matrix
-                         * @param m the K-type 2x2 matrix to convert
-                         */
-                        template <class K>
-                        Matrix3x3(Matrix2x2<K> const& m);
                         /**
                          * Convert a K-type matrix into a T-type matrix
                          * @param m the K-type matrix to convert
@@ -193,15 +187,40 @@
                          */
                         void inverse();
                         /**
-                         * Perform a translation transformation on this
+                         * Add a translation
                          * @param u the translation vector
                          */
                         void translate(Vector2D<T> const& u);
                         /**
-                         * Perform a scale transformation on this
+                         * Add a scale
                          * @param u the scaling vector
                          */
                         void scale(Vector2D<T> const& u);
+                        /**
+                         * Add a stretch on the X axis
+                         * @param u the stretch factor
+                         */
+                        void stretchX(T u);
+                        /**
+                         * Add a stretch on the Y axis
+                         * @param u the stretch factor
+                         */
+                        void stretchY(T u);
+                        /**
+                         * Add a squeeze on the X axis
+                         * @param u the squeeze vector
+                         */
+                        void squeezeX(Vector2D<T> const& u);
+                        /**
+                         * Add a squeeze on the Y axis
+                         * @param u the squeeze vector
+                         */
+                        void squeezeY(Vector2D<T> const& u);
+                        /**
+                         * Add a rotation
+                         * @param angle the rotation's angle
+                         */
+                        void rotate(Angle const& angle);
                         /**
                          * @return a pointer to the vector's data
                          */

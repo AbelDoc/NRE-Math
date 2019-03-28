@@ -31,11 +31,6 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>::Matrix3x3(Matrix2x2<K> const& m) : data{Vector3D<T>(m.getL1(), 0.0f), Vector3D<T>(m.getL2(), 0.0f), Vector3D<T>(0.0f, 0.0f, 1.0f)} {
-            }
-
-            template <class T>
-            template <class K>
             inline Matrix3x3<T>::Matrix3x3(Matrix3x3<K> const& m) : data{static_cast <Vector3D<T>> (m.getL1()), static_cast <Vector3D<T>> (m.getL2()), static_cast <Vector3D<T>> (m.getL3())} {
             }
 
@@ -179,13 +174,60 @@
 
             template <class T>
             inline void Matrix3x3<T>::translate(Vector2D<T> const& u) {
-                setC3(getC1() * u.getX() + getC2() * u.getY() + getC3());
+                Matrix3x3<T> tmp;
+                tmp[0][2] = u.getX();
+                tmp[1][2] = u.getY();
+                *this *= tmp;
             }
 
             template <class T>
             inline void Matrix3x3<T>::scale(Vector2D<T> const& u) {
-                setC1(getC1() * u.getX());
-                setC2(getC2() * u.getY());
+                Matrix3x3<T> tmp;
+                tmp[0][0] = u.getX();
+                tmp[1][1] = u.getY();
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix3x3<T>::stretchX(T u) {
+                Matrix3x3<T> tmp;
+                tmp[0][0] = u;
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix3x3<T>::stretchY(T u) {
+                Matrix3x3<T> tmp;
+                tmp[1][1] = u;
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix3x3<T>::squeezeX(Vector2D<T> const& u) {
+                Matrix3x3<T> tmp;
+                tmp[0][0] = 1.0f / u.getX();
+                tmp[1][1] = u.getY();
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix3x3<T>::squeezeY(Vector2D<T> const& u) {
+                Matrix3x3<T> tmp;
+                tmp[0][0] = u.getX();
+                tmp[1][1] = 1.0f / u.getY();
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix3x3<T>::rotate(Angle const& angle) {
+                Matrix3x3<T> tmp;
+                T c = static_cast <T> (cos(angle));
+                T s = static_cast <T> (sin(angle));
+                tmp[0][0] = c;
+                tmp[0][1] = -s;
+                tmp[1][0] = s;
+                tmp[1][1] = c;
+                *this *= tmp;
             }
 
             template <class T>

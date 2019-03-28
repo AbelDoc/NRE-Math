@@ -1,7 +1,7 @@
 
     /**
      * @file Math/NRE_Math.hpp
-     * @brief Declaration of Engine's Math's function
+     * @brief Implementation of Math's API's function
      * @author Louis ABEL
      * @date 08/09/2018
      * @copyright GNU GPL v3
