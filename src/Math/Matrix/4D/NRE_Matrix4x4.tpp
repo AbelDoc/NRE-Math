@@ -223,64 +223,127 @@
 
             template <class T>
             inline void Matrix4x4<T>::translate(Vector3D<T> const& u) {
-                setC4(getC1() * u.getX() + getC2() * u.getY() + getC3() * u.getZ() + getC4());
+                Matrix4x4<T> tmp;
+                tmp[0][3] = u.getX();
+                tmp[1][3] = u.getY();
+                tmp[2][3] = u.getZ();
+                *this *= tmp;
             }
 
             template <class T>
             inline void Matrix4x4<T>::scale(Vector3D<T> const& u) {
-                setC1(getC1() * u.getX());
-                setC2(getC2() * u.getY());
-                setC3(getC3() * u.getZ());
+                Matrix4x4<T> tmp;
+                tmp[0][0] = u.getX();
+                tmp[1][1] = u.getY();
+                tmp[2][2] = u.getZ();
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix4x4<T>::stretchX(T u) {
+                Matrix4x4<T> tmp;
+                tmp[0][0] = u;
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix4x4<T>::stretchY(T u) {
+                Matrix4x4<T> tmp;
+                tmp[1][1] = u;
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix4x4<T>::stretchZ(T u) {
+                Matrix4x4<T> tmp;
+                tmp[2][2] = u;
+                *this *= tmp;
             }
 
             template <class T>
             void Matrix4x4<T>::rotate(T angle, Vector3D<T> const& axis) {
-                float c = std::cos(toRad(angle));
-                float s = std::sin(toRad(angle));
+                Matrix3x3<T> tmp;
+                T c = static_cast <T> (cos(angle));
+                T s = static_cast <T> (sin(angle));
+                Vector3D<T> vec(axis * (static_cast <T> (1.0) - c));
 
-                Vector3D<T> vec(axis);
-                vec.normalize();
-                Vector3D<T> temp(vec * (1.0f - c));
-                Matrix4x4<T> tmp(Vector4D<T>(c + temp.getX() * vec.getX(),                      temp.getY() * vec.getX() - s * vec.getZ(),     temp.getZ() * vec.getX() + s * vec.getY(), 0),
-                                 Vector4D<T>(    temp.getX() * vec.getY() + s * vec.getZ(), c + temp.getY() * vec.getY(),                      temp.getZ() * vec.getY() - s * vec.getX(), 0),
-                                 Vector4D<T>(    temp.getX() * vec.getZ() - s * vec.getY(),     temp.getY() * vec.getZ() + s * vec.getX(), c + temp.getZ() * vec.getZ(),                  0),
-                                 Vector4D<T>(0, 0, 0, 1));
+                tmp[0][0] = axis.getX() * vec.getX() + c;
+                tmp[0][1] = axis.getY() * vec.getX() + s;
+                tmp[0][2] = axis.getZ() * vec.getX() + s;
+                tmp[1][0] = axis.getX() * vec.getY() + c;
+                tmp[1][1] = axis.getY() * vec.getY() + c;
+                tmp[1][2] = axis.getZ() * vec.getY() + c;
+                tmp[2][0] = axis.getX() * vec.getZ() + c;
+                tmp[2][1] = axis.getY() * vec.getZ() + c;
+                tmp[2][2] = axis.getZ() * vec.getZ() + c;
 
                 *this *= tmp;
             }
 
             template <class T>
-            inline void Matrix4x4<T>::projection(T fov, T ratio, Vector2D<T> const& z) {
-                T f = std::tan(fov / 2.0f);
-                setL1(Vector4D<T>(1.0f / (ratio * f), 0, 0, 0));
-                setL2(Vector4D<T>(0, 1.0f / f, 0, 0));
-                setL3(Vector4D<T>(0, 0, (z.getY() + z.getX()) / (z.getX() - z.getY()), (2 * z.getY() * z.getX()) / (z.getX() - z.getY())));
-                setL4(Vector4D<T>(0, 0, -1, 0));
+            inline void Matrix4x4<T>::projection(Angle fov, T ratio, Vector2D<T> const& z) {
+                Matrix4x4<T> tmp;
+                T f = static_cast <T> (1.0) / tan(fov);
+                tmp[0][0] = f / ratio;
+                tmp[1][1] = f;
+                tmp[2][2] = (z.getY() + z.getX()) / (z.getX() - z.getY());
+                tmp[2][3] = (static_cast <T> (2.0) * z.getY() * z.getX()) / (z.getX() - z.getY());
+                tmp[3][2] = -1;
+
+                *this *= tmp;
             }
 
             template <class T>
             inline void Matrix4x4<T>::ortho(Vector2D<T> const& h, Vector2D<T> const& v, Vector2D<T> const& z) {
-                setL1(Vector4D<T>(2.0f / (h.getY() - h.getX()), 0, 0, -((h.getY() + h.getX()) / (h.getY() - h.getX()))));
-                setL2(Vector4D<T>(0, 2.0f / (v.getY() - v.getX()), 0, -((v.getY() + v.getX()) / (v.getY() - v.getX()))));
-                setL3(Vector4D<T>(0, 0, -2.0f / (z.getY() - z.getX()), -((z.getY() + z.getX()) / (z.getY() - z.getX()))));
-                setL4(Vector4D<T>(0, 0, 0, 1));
+                Matrix4x4<T> tmp;
+                T tX = -((h.getY() + h.getX()) / (h.getY() - h.getX()));
+                T tY = -((v.getY() + v.getX()) / (v.getY() - v.getX()));
+                T tZ = -((z.getY() + z.getX()) / (z.getY() - z.getX()));
+
+                tmp[0][0] = static_cast <T>  (2.0) / (h.getY() - h.getX());
+                tmp[1][1] = static_cast <T>  (2.0) / (v.getY() - v.getX());
+                tmp[2][2] = static_cast <T> (-2.0) / (z.getY() - z.getX());
+                tmp[0][3] = tX;
+                tmp[1][3] = tY;
+                tmp[2][3] = tZ;
+
+                *this *= tmp;
+            }
+
+            template <class T>
+            inline void Matrix4x4<T>::ortho2D(Vector2D<T> const& h, Vector2D<T> const& v) {
+                ortho(h, v, Vector2D<T>(-1, 1));
             }
 
             template <class T>
             void Matrix4x4<T>::lookAt(Vector3D<T> const& eye, Vector3D<T> const& center, Vector3D<T> const& up) {
+                Matrix4x4<T> tmp;
                 Vector3D<T> f(center.getX() - eye.getX(),
                               center.getY() - eye.getY(),
                               center.getZ() - eye.getZ());
                 f.normalize();
+                Vector3D<T> tmpUP(up);
+                tmpUP.normalize();
                 Vector3D<T> s = f ^ up;
-                Vector3D<T> u = s ^ f;
-                s.normalize();
-                u.normalize();
 
-                setL1(Vector4D<T>(s, -(s | eye)));
-                setL2(Vector4D<T>(u, -(u | eye)));
-                setL3(Vector4D<T>(-f, (f | eye)));
-                setL4(Vector4D<T>(0, 0, 0, 1));
+                Vector3D<T> tmpS(s);
+                tmpS.normalize();
+                Vector3D<T> u = s ^ f;
+
+                tmp[0][0] = s.getX();
+                tmp[0][1] = s.getY();
+                tmp[0][2] = s.getZ();
+
+                tmp[1][0] = u.getX();
+                tmp[1][1] = u.getY();
+                tmp[1][2] = u.getZ();
+
+                tmp[2][0] = -f.getX();
+                tmp[2][1] = -f.getY();
+                tmp[2][2] = -f.getZ();
+
+                *this *= tmp;
+                translate(-eye);
             }
 
             template <class T>

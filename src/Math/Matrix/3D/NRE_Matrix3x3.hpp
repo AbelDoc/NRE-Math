@@ -227,11 +227,6 @@
                          */
                         void shearY(T u);
                         /**
-                         * Add a shear on both axis
-                         * @param u the shear vector
-                         */
-                        void shear(Vector2D<T> const& u);
-                        /**
                          * Add a rotation
                          * @param angle the rotation's angle
                          */

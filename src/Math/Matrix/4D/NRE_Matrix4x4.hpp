@@ -233,18 +233,18 @@
                          */
                         void stretchZ(T u);
                         /**
-                         * Perform a rotation transformation on this
-                         * @param angle the rotation angle
-                         * @param axis the axis vector to apply the rotation on
+                         * Add a rotation
+                         * @param angle the rotation's angle
+                         * @param axis  the rotation's axis
                          */
-                        void rotate(T angle, Vector3D<T> const& axis);
+                        void rotate(Angle angle, Vector3D<T> const& axis);
                         /**
                          * Perform a perspective projection on this
                          * @param fov   the projection's fov
                          * @param ratio the projection's ratio
                          * @param z     the projection's plane distance
                          */
-                        void projection(T fov, T ratio, Vector2D<T> const& z);
+                        void projection(Angle fov, T ratio, Vector2D<T> const& z);
                         /**
                          * Perform an orthogonal projection on this
                          * @param h  the horizontal clipping plane
@@ -252,6 +252,12 @@
                          * @param z  the projection's plane distance
                          */
                         void ortho(Vector2D<T> const& h, Vector2D<T> const& v, Vector2D<T> const& z);
+                        /**
+                         * Perform a 2D orthogonal projection on this
+                         * @param h  the horizontal clipping plane
+                         * @param v  the vertical clipping plane
+                         */
+                        void ortho2D(Vector2D<T> const& h, Vector2D<T> const& v);
                         /**
                          * Perform a viewing transformation on this
                          * @param eye    the camera's eye
