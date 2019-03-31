@@ -244,7 +244,7 @@
                          * @param ratio the projection's ratio
                          * @param z     the projection's plane distance
                          */
-                        void projection(Angle fov, T ratio, Vector2D<T> const& z);
+                        void perspective(Angle fov, T ratio, Vector2D<T> const& z);
                         /**
                          * Perform an orthogonal projection on this
                          * @param h  the horizontal clipping plane

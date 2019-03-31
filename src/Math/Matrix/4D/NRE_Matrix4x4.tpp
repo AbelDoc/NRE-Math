@@ -261,7 +261,7 @@
             }
 
             template <class T>
-            void Matrix4x4<T>::rotate(T angle, Vector3D<T> const& axis) {
+            void Matrix4x4<T>::rotate(Angle angle, Vector3D<T> const& axis) {
                 Matrix3x3<T> tmp;
                 T c = static_cast <T> (cos(angle));
                 T s = static_cast <T> (sin(angle));
@@ -281,9 +281,9 @@
             }
 
             template <class T>
-            inline void Matrix4x4<T>::projection(Angle fov, T ratio, Vector2D<T> const& z) {
+            inline void Matrix4x4<T>::perspective(Angle fov, T ratio, Vector2D<T> const& z) {
                 Matrix4x4<T> tmp;
-                T f = static_cast <T> (1.0) / tan(fov);
+                T f = static_cast <T> (1.0 / tan(fov / 2.0));
                 tmp[0][0] = f / ratio;
                 tmp[1][1] = f;
                 tmp[2][2] = (z.getY() + z.getX()) / (z.getX() - z.getY());
