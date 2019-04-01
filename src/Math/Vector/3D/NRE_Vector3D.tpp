@@ -118,18 +118,18 @@
             }
 
             template <class T>
-            inline float Vector3D<T>::norm() const {
+            inline double Vector3D<T>::norm() const {
                 return std::sqrt(normSquared());
             }
 
             template <class T>
-            inline float Vector3D<T>::normSquared() const {
-                return static_cast <float> (x * x + y * y + z * z);
+            inline double Vector3D<T>::normSquared() const {
+                return static_cast <double> (x * x + y * y + z * z);
             }
 
             template <class T>
             inline void Vector3D<T>::normalize() {
-                *this /= norm();
+                *this /= static_cast <T> (norm());
             }
 
             template <class T>
@@ -196,7 +196,7 @@
             }
 
             template <class T>
-            inline float Vector3D<T>::operator |=(Vector3D const& u) const {
+            inline double Vector3D<T>::operator |=(Vector3D const& u) const {
                 return x * u.x + y * u.y + z * u.z;
             }
 
@@ -244,7 +244,7 @@
             }
 
             template <class T>
-            inline float Vector3D<T>::operator |(Vector3D const& u) const {
+            inline double Vector3D<T>::operator |(Vector3D const& u) const {
                 return *this |= u;
             }
 
@@ -261,7 +261,7 @@
 
             template <>
             template <class K>
-            inline bool Vector3D<float>::operator ==(Vector3D<K> const& u) const {
+            inline bool Vector3D<double>::operator ==(Vector3D<K> const& u) const {
                 return almostEqual(x, u.x) && almostEqual(y, u.y) && almostEqual(z, u.z);
             }
 

@@ -27,6 +27,7 @@
 
             template<class> class Vector4D;
             template<class> class Matrix3x3;
+            template<class> class Quaternion;
 
             /**
              * @class Matrix4x4
@@ -107,6 +108,12 @@
                          */
                         template <class K>
                         Matrix4x4(Matrix4x4<K> const& m);
+                        /**
+                         * Convert a K-type quaternion into a T-type matrix
+                         * @param q the K-type quaternion to convert
+                         */
+                        template <class K>
+                        Matrix4x4(Quaternion<K> const& q);
 
                     //## Deconstructor ##//
                         /**

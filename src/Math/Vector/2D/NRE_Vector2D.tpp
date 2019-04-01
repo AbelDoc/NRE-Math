@@ -81,18 +81,18 @@
             }
 
             template <class T>
-            inline float Vector2D<T>::norm() const {
+            inline double Vector2D<T>::norm() const {
                 return std::sqrt(normSquared());
             }
 
             template <class T>
-            inline float Vector2D<T>::normSquared() const {
-                return static_cast <float> (x * x + y * y);
+            inline double Vector2D<T>::normSquared() const {
+                return static_cast <double> (x * x + y * y);
             }
 
             template <class T>
             inline void Vector2D<T>::normalize() {
-                *this /= norm();
+                *this /= static_cast <T> (norm());
             }
 
             template <class T>
@@ -153,7 +153,7 @@
             }
 
             template <class T>
-            inline float Vector2D<T>::operator |=(Vector2D const& u) const {
+            inline double Vector2D<T>::operator |=(Vector2D const& u) const {
                 return x * u.x + y * u.y;
             }
 
@@ -193,7 +193,7 @@
             }
 
             template <class T>
-            inline float Vector2D<T>::operator |(Vector2D const& u) const {
+            inline double Vector2D<T>::operator |(Vector2D const& u) const {
                 return *this |= u;
             }
 
@@ -205,7 +205,7 @@
 
             template <>
             template <class K>
-            inline bool Vector2D<float>::operator ==(Vector2D<K> const& u) const {
+            inline bool Vector2D<double>::operator ==(Vector2D<K> const& u) const {
                 return almostEqual(x, u.x) && almostEqual(y, u.y);
             }
 

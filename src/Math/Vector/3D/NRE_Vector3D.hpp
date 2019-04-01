@@ -186,11 +186,11 @@
                         /**
                          * @return the vector's norm
                          */
-                        float norm() const;
+                        double norm() const;
                         /**
                          * @return the squared vector's norm
                          */
-                        float normSquared() const;
+                        double normSquared() const;
                         /**
                          * Normalize the vector
                          */
@@ -272,7 +272,7 @@
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |=(Vector3D const& u) const;
+                        double operator |=(Vector3D const& u) const;
                         /**
                          * Replace this by the cross product between this and u
                          * @param u the vector
@@ -327,7 +327,7 @@
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |(Vector3D const& u) const;
+                        double operator |(Vector3D const& u) const;
                         /**
                          * Compute the vector resulting in the cross product of this and u
                          * @param u the vector

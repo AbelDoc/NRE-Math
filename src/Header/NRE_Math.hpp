@@ -18,3 +18,5 @@
 
     #include "../Math/Matrix/3D/NRE_Matrix3x3.hpp"
     #include "../Math/Matrix/4D/NRE_Matrix4x4.hpp"
+
+    #include "../Math/Quaternion/NRE_Quaternion.hpp"

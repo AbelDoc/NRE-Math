@@ -153,6 +153,17 @@
             };
 
             /**
+             * Output stream operator for the object
+             * @param  stream the stream to add the object's string representation
+             * @param  o      the object to add in the stream
+             * @return the    modified stream
+             */
+            template <class M, class L, class T, class A>
+            std::ostream& operator <<(std::ostream& stream, Unit<M, L, T, A> const& o) {
+                return stream << std::to_string(o.getValue());
+            }
+
+            /**
              * Compute the unit resulting in the division of u1 by u2
              * @param  u1 the first unit
              * @param  u2 the second unit

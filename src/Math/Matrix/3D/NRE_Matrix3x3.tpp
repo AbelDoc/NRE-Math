@@ -39,26 +39,6 @@
             inline Matrix3x3<T>::Matrix3x3(Matrix4x4<K> const& m) : data{Vector3D<T>(m.getL1()), Vector3D<T>(m.getL2()), Vector3D<T>(m.getL3())} {
             }
 
-            /*template <class T>
-            Matrix3x3<T>::Matrix3x3(Quaternion const& q) {
-                T xSq = q.getX() * q.getX();
-                T ySq = q.getY() * q.getY();
-                T zSq = q.getZ() * q.getZ();
-                T angleSq = q.getAngle() * q.getAngle();
-                T twoX = static_cast <T> (2) * q.getX();
-                T twoY = static_cast <T> (2) * q.getY();
-                T twoAngle = static_cast <T> (2) * q.getAngle();
-                T xY = twoX * q.getY();
-                T xZ = twoX * q.getZ();
-                T yZ = twoY * q.getZ();
-                T angleX = twoAngle * q.getX();
-                T angleY = twoAngle * q.getY();
-                T angleZ = twoAngle * q.getZ();
-                setL1(Vector3D<T>(angleSq + xSq - ySq - zSq, xY - angleZ, xZ + angleY));
-                setL2(Vector3D<T>(xY + angleZ, angleSq - xSq + ySq - zSq, yZ - angleX));
-                setL3(Vector3D<T>(xZ - angleY, yZ + angleX, angleSq - xSq - ySq + zSq));
-            }*/
-
             template <class T>
             inline Vector3D<T> const& Matrix3x3<T>::getL1() const {
                 return data[0];
@@ -377,7 +357,7 @@
             }
 
             template <class T>
-            inline std::ostream& operator <<(std::ostream& stream, Matrix3x3<T> const& o) {
+            std::ostream& operator <<(std::ostream& stream, Matrix3x3<T> const& o) {
                 return stream << o.toString();
             }
         }

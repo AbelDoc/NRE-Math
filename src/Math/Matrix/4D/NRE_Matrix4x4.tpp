@@ -46,6 +46,37 @@
             }
 
             template <class T>
+            template <class K>
+            inline Matrix4x4<T>::Matrix4x4(Quaternion<K> const& q) {
+                T xx = static_cast <T> (q.getX() * q.getX());
+                T yy = static_cast <T> (q.getY() * q.getY());
+                T zz = static_cast <T> (q.getZ() * q.getZ());
+                T xz = static_cast <T> (q.getX() * q.getZ());
+                T xy = static_cast <T> (q.getX() * q.getY());
+                T yz = static_cast <T> (q.getY() * q.getZ());
+                T wx = static_cast <T> (q.getW() * q.getX());
+                T wy = static_cast <T> (q.getW() * q.getY());
+                T wz = static_cast <T> (q.getW() * q.getZ());
+
+                data[0][0] = 1 - 2 * (yy + zz);
+                data[0][1] = 2 * (xy - wz);
+                data[0][2] = 2 * (xz + wy);
+                data[0][3] = 0;
+                data[1][0] = 2 * (xy + wz);
+                data[1][1] = 1 - 2 * (xx + zz);
+                data[1][2] = 2 * (yz - wx);
+                data[1][3] = 0;
+                data[2][0] = 2 * (xz - wy);
+                data[2][1] = 2 * (yz + wx);
+                data[2][2] = 1 - 2 * (xx + yy);
+                data[2][3] = 0;
+                data[3][0] = 0;
+                data[3][1] = 0;
+                data[3][2] = 0;
+                data[3][3] = 1;
+            }
+
+            template <class T>
             inline Vector4D<T> const& Matrix4x4<T>::getL1() const {
                 return data[0];
             }
@@ -268,13 +299,13 @@
                 Vector3D<T> vec(axis * (static_cast <T> (1.0) - c));
 
                 tmp[0][0] = axis.getX() * vec.getX() + c;
-                tmp[0][1] = axis.getY() * vec.getX() + s;
-                tmp[0][2] = axis.getZ() * vec.getX() + s;
-                tmp[1][0] = axis.getX() * vec.getY() + c;
+                tmp[0][1] = axis.getY() * vec.getX() - axis.getZ() * s;
+                tmp[0][2] = axis.getZ() * vec.getX() + axis.getY() * s;
+                tmp[1][0] = axis.getX() * vec.getY() + axis.getZ() * s;
                 tmp[1][1] = axis.getY() * vec.getY() + c;
-                tmp[1][2] = axis.getZ() * vec.getY() + c;
-                tmp[2][0] = axis.getX() * vec.getZ() + c;
-                tmp[2][1] = axis.getY() * vec.getZ() + c;
+                tmp[1][2] = axis.getZ() * vec.getY() - axis.getX() * s;
+                tmp[2][0] = axis.getX() * vec.getZ() - axis.getY() * s;
+                tmp[2][1] = axis.getY() * vec.getZ() + axis.getX() * s;
                 tmp[2][2] = axis.getZ() * vec.getZ() + c;
 
                 *this *= tmp;
@@ -361,7 +392,7 @@
             }
 
             template <class T>
-            inline std::string Matrix4x4<T>::toString() const {
+            std::string Matrix4x4<T>::toString() const {
                 std::string res("[");
                 res += std::to_string(getL1()[0]);
                 res += " ";
@@ -497,7 +528,7 @@
             }
 
             template <class T>
-            inline std::ostream& operator <<(std::ostream& stream, Matrix4x4<T> const& o) {
+            std::ostream& operator <<(std::ostream& stream, Matrix4x4<T> const& o) {
                 return stream << o.toString();
             }
         }
