@@ -97,12 +97,12 @@
             }
 
             template <class T>
-            inline double Quaternion<T>::norm() const {
+            inline float Quaternion<T>::norm() const {
                 return quat.norm();
             }
 
             template <class T>
-            inline double Quaternion<T>::normSquared() const {
+            inline float Quaternion<T>::normSquared() const {
                 return quat.normSquared();
             }
 

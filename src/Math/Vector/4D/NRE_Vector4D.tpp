@@ -144,13 +144,13 @@
             }
 
             template <class T>
-            inline double Vector4D<T>::norm() const {
+            inline float Vector4D<T>::norm() const {
                 return std::sqrt(normSquared());
             }
 
             template <class T>
-            inline double Vector4D<T>::normSquared() const {
-                return static_cast <double> (x * x + y * y + z * z + w * w);
+            inline float Vector4D<T>::normSquared() const {
+                return static_cast <float> (x * x + y * y + z * z + w * w);
             }
 
             template <class T>
@@ -228,7 +228,7 @@
             }
 
             template <class T>
-            inline double Vector4D<T>::operator |=(Vector4D const& u) const {
+            inline float Vector4D<T>::operator |=(Vector4D const& u) const {
                 return x * u.x + y * u.y + z * u.z + w * u.w;
             }
 
@@ -268,7 +268,7 @@
             }
 
             template <class T>
-            inline double Vector4D<T>::operator |(Vector4D const& u) const {
+            inline float Vector4D<T>::operator |(Vector4D const& u) const {
                 return *this |= u;
             }
 
@@ -280,13 +280,13 @@
 
             template <>
             template <class K>
-            inline bool Vector4D<double>::operator ==(Vector4D<K> const& u) const {
+            inline bool Vector4D<float>::operator ==(Vector4D<K> const& u) const {
                 return almostEqual(x, u.x) && almostEqual(y, u.y) && almostEqual(z, u.z) && almostEqual(w, u.w);
             }
 
             template <>
             template <class K>
-            inline bool Vector4D<double>::operator ==(Vector4D<K> const& u) const {
+            inline bool Vector4D<float>::operator ==(Vector4D<K> const& u) const {
                 return almostEqual(x, u.x) && almostEqual(y, u.y) && almostEqual(z, u.z) && almostEqual(w, u.w);
             }
 

@@ -146,11 +146,11 @@
                         /**
                          * @return the vector's norm
                          */
-                        double norm() const;
+                        float norm() const;
                         /**
                          * @return the squared vector's norm
                          */
-                        double normSquared() const;
+                        float normSquared() const;
                         /**
                          * Normalize the vector
                          */
@@ -232,7 +232,7 @@
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        double operator |=(Vector2D const& u) const;
+                        float operator |=(Vector2D const& u) const;
 
                     //## Arithmetic Operator ##//
                         /**
@@ -281,7 +281,7 @@
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        double operator |(Vector2D const& u) const;
+                        float operator |(Vector2D const& u) const;
 
                     //## Comparison Operator ##//
                         /**

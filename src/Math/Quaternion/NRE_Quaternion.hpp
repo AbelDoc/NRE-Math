@@ -154,11 +154,11 @@
                         /**
                          * @return the quaternion's norm
                          */
-                        double norm() const;
+                        float norm() const;
                         /**
                          * @return the squared quaternion's norm
                          */
-                        double normSquared() const;
+                        float normSquared() const;
                         /**
                          * Normalize the quaternion
                          */
