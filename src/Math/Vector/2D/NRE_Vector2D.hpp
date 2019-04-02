@@ -335,6 +335,9 @@
                         std::string toString() const;
             };
 
+            template <class T>
+            using Point2D = Vector2D<T>;
+
             /**
              * Output stream operator for the object
              * @param  stream the stream to add the object's string representation
