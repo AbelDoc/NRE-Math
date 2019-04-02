@@ -15,14 +15,12 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Vector4D<float> vec1(1, 2, 3, 4);
-        Vector4D<float> vec2(1, 2, 3, 4);
+        Plane<float> plane({0, 1, 0}, {0, 0, 0});
+        Plane<float> pPlane({100, 0, 100}, {110, 0, 0}, {0, 0, 110});
 
-        Vector4D<float> vec3 = vec1 + vec2;
-        vec1 += vec3;
-        vec2 += vec3;
-        vec3 += vec2 += vec1;
-        vec3.normalize();
+        std::cout << plane << std::endl;
+        std::cout << pPlane << std::endl;
+        std::cout << (pPlane == plane) << std::endl;
 
-        return static_cast <int> (vec3.getX());
+        return 0;
     }

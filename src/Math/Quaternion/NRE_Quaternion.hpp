@@ -74,15 +74,15 @@
 
                     //## Copy-Constructor ##//
                         /**
-                         * Copy u into this
-                         * @param u the object to copy
+                         * Copy q into this
+                         * @param q the object to copy
                          */
                         Quaternion(Quaternion const& q) = default;
 
                     //## Move-Constructor ##//
                         /**
-                         * Move u into this
-                         * @param u the object to move
+                         * Move q into this
+                         * @param q the object to move
                          */
                         Quaternion(Quaternion && q) = default;
 
@@ -170,8 +170,8 @@
 
                     //## Assignment Operator ##//
                         /**
-                         * Copy u into this
-                         * @param u the object to copy into this
+                         * Copy q into this
+                         * @param q the object to copy into this
                          * @return  the reference of himself
                          */
                         Quaternion& operator =(Quaternion const& q) = default;
