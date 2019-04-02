@@ -4,7 +4,7 @@
      * @brief Implementation of Engine's Math's Object : Vector4D
      * @author Louis ABEL
      * @date 09/09/2018
-     * @copyright GNU GPL v3
+     * @copyright CC-BY-NC-SA
      */
 
     namespace NRE {

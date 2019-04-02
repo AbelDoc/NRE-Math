@@ -4,7 +4,7 @@
      * @brief Implementation of Math's API's function
      * @author Louis ABEL
      * @date 08/09/2018
-     * @copyright GNU GPL v3
+     * @copyright CC-BY-NC-SA
      */
 
     #pragma once

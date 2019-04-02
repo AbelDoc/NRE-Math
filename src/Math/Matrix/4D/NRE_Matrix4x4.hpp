@@ -4,7 +4,7 @@
      * @brief Declaration of Math's API's Object : Matrix3x3
      * @author Louis ABEL
      * @date 27/03/2019
-     * @copyright GNU GPL v3
+     * @copyright CC-BY-NC-SA
      */
 
     #pragma once

@@ -4,7 +4,7 @@
      * @brief Test of Math's API
      * @author Louis ABEL
      * @date 27/03/2019
-     * @copyright GNU GPL v3
+     * @copyright CC-BY-NC-SA
      */
 
     #include <string>
@@ -21,6 +21,7 @@
         std::cout << plane << std::endl;
         std::cout << pPlane << std::endl;
         std::cout << (pPlane == plane) << std::endl;
+        std::cout << plane.distance({0, -100, 0}) << std::endl;
 
         return 0;
     }

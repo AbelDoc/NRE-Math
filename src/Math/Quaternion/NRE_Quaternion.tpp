@@ -4,7 +4,7 @@
      * @brief Implementation of Math's API's Object : Quaternion
      * @author Louis ABEL
      * @date 31/03/2019
-     * @copyright GNU GPL v3
+     * @copyright CC-BY-NC-SA
      */
 
     namespace NRE {

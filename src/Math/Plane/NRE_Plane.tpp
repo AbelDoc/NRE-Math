@@ -4,7 +4,7 @@
      * @brief Implmentation of Math's API's Object : Plane
      * @author Louis ABEL
      * @date 02/04/2019
-     * @copyright GNU GPL v3
+     * @copyright CC-BY-NC-SA
      */
 
     namespace NRE {
@@ -52,7 +52,7 @@
 
             template <class T>
             inline float Plane<T>::distance(Point3D<T> const& p) const {
-                return (normal | point) + ((-normal) | p);
+                return (normal | p) + ((-normal) | point);
             }
 
             template <class T>
@@ -79,11 +79,11 @@
 
             template <class T>
             void Plane<T>::computeNormalFrom3Point(Point3D<T> const& p1, Point3D<T> const& p2, Point3D<T> const& p3) {
-                Vector3D<T> v, u;
-                v = p1 - p2;
-                u = p1 - p3;
+                Vector3D<T> u, v;
+                u = p2 - p1;
+                v = p3 - p1;
                 setPoint(p1);
-                setNormal(v ^ u);
+                setNormal(u ^ v);
                 normal.normalize();
             }
 
