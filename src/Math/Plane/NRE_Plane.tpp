@@ -11,6 +11,10 @@
         namespace Math {
 
             template <class T>
+            inline Plane<T>::Plane() : point(0, 0, 0, 1) {
+            }
+
+            template <class T>
             inline Plane<T>::Plane(Vector4D<T> const& n, Point4D<T> const& p) : normal(n), point(p) {
             }
 

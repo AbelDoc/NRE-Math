@@ -337,6 +337,11 @@
             }
 
             template <class T>
+            inline Segment3D<T> Matrix3x3<T>::operator *(Segment3D<T> const& s) const {
+                return Segment3D<T>(*this * s.getStart(), *this * s.getEnd());
+            }
+
+            template <class T>
             inline Matrix3x3<T> Matrix3x3<T>::operator /(T k) const {
                 return Matrix3x3<T>(*this) /= k;
             }

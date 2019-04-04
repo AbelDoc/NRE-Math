@@ -37,7 +37,7 @@
                         /**
                          * Construct a plane with the origin and null vector
                          */
-                        Plane() = default;
+                        Plane();
                         /**
                          * Construct a plane with a particular point and a normal
                          * @param n the new plane's normal

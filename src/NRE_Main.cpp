@@ -15,18 +15,26 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Plane<float> plane({0, 1, 0}, {0, 0, 0});
-        Plane<float> pPlane({100, 0, 100}, {110, 0, 0}, {0, 0, 110});
+        Segment3D<float> seg(0, 0, 10, 0);
 
-        Matrix4x4<float> mat;
-        mat.translate({0, 0, 100});
+        std::cout << seg << std::endl;
+        std::cout << seg.getVector() << std::endl;
 
-        plane = mat * plane;
+        Matrix3x3<float> mat;
+        mat.translate({10, 0});
 
-        std::cout << plane << std::endl;
-        std::cout << pPlane << std::endl;
-        std::cout << (pPlane == plane) << std::endl;
-        std::cout << plane.distance({0, -100, 0}) << std::endl;
+        seg = mat * seg;
+
+        std::cout << seg << std::endl;
+        std::cout << seg.getVector() << std::endl;
+
+        mat.setIdentity();
+        mat.rotate(90_deg);
+
+        seg = mat * seg;
+
+        std::cout << seg << std::endl;
+        std::cout << seg.getVector() << std::endl;
 
         return 0;
     }

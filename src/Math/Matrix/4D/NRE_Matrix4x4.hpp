@@ -26,6 +26,7 @@
         namespace Math {
 
             template<class> class Vector4D;
+            template<class> class Segment4D;
             template<class> class Plane;
             template<class> class Matrix3x3;
             template<class> class Quaternion;
@@ -383,6 +384,12 @@
                          * @return  the newly computed vector
                          */
                         Plane<T> operator *(Plane<T> const& p) const;
+                        /**
+                         * Compute the segment resulting in the transformation of s by this
+                         * @param s the segment to transform
+                         * @return  the newly computed vector
+                         */
+                        Segment4D<T> operator *(Segment4D<T> const& s) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor

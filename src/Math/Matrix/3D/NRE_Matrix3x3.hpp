@@ -27,6 +27,7 @@
         namespace Math {
 
             template<class> class Vector3D;
+            template<class> class Segment3D;
             template<class> class Matrix4x4;
 
             /**
@@ -335,6 +336,12 @@
                          * @return  the newly computed vector
                          */
                         Vector3D<T> operator *(Vector3D<T> const& u) const;
+                        /**
+                         * Compute the segment resulting in the transformation of s by this
+                         * @param s the segment to transform
+                         * @return  the newly computed vector
+                         */
+                        Segment3D<T> operator *(Segment3D<T> const& s) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor

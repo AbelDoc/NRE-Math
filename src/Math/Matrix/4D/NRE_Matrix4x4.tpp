@@ -513,6 +513,11 @@
             }
 
             template <class T>
+            inline Segment4D<T> Matrix4x4<T>::operator *(Segment4D<T> const& s) const {
+                return Segment4D<T>(*this * s.getStart(), *this * s.getEnd());
+            }
+
+            template <class T>
             inline Matrix4x4<T> Matrix4x4<T>::operator /(T k) const {
                 return Matrix4x4<T>(*this) /= k;
             }
