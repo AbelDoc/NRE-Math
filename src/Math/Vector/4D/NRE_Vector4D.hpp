@@ -28,8 +28,8 @@
             template<class> class Vector3D;
 
             /**
-             * @class Vector3D
-             * @brief A cartesian 3D vector
+             * @class Vector4D
+             * @brief A cartesian 4D vector, 3D homogeneous
              * @warning Use this vector with POD type only
              */
             template <class T>
