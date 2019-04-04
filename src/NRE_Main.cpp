@@ -18,6 +18,11 @@
         Plane<float> plane({0, 1, 0}, {0, 0, 0});
         Plane<float> pPlane({100, 0, 100}, {110, 0, 0}, {0, 0, 110});
 
+        Matrix4x4<float> mat;
+        mat.translate({0, 0, 100});
+
+        plane = mat * plane;
+
         std::cout << plane << std::endl;
         std::cout << pPlane << std::endl;
         std::cout << (pPlane == plane) << std::endl;

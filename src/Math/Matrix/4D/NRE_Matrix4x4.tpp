@@ -508,6 +508,11 @@
             }
 
             template <class T>
+            inline Plane<T> Matrix4x4<T>::operator *(Plane<T> const& p) const {
+                return Plane<T>(*this * p.getNormal(), *this * p.getPoint());
+            }
+
+            template <class T>
             inline Matrix4x4<T> Matrix4x4<T>::operator /(T k) const {
                 return Matrix4x4<T>(*this) /= k;
             }

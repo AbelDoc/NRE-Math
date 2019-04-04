@@ -16,9 +16,9 @@
     #include "../Math/Vector/3D/NRE_Vector3D.hpp"
     #include "../Math/Vector/4D/NRE_Vector4D.hpp"
 
+    #include "../Math/Plane/NRE_Plane.hpp"
+
     #include "../Math/Matrix/3D/NRE_Matrix3x3.hpp"
     #include "../Math/Matrix/4D/NRE_Matrix4x4.hpp"
 
     #include "../Math/Quaternion/NRE_Quaternion.hpp"
-
-    #include "../Math/Plane/NRE_Plane.hpp"

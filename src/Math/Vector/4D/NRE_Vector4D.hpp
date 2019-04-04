@@ -294,6 +294,12 @@
                          * @return  the scalar product
                          */
                         float operator |=(Vector4D const& u) const;
+                        /**
+                         * Replace this by the cross product between this and u
+                         * @param u the vector
+                         * @return  the reference of himself
+                         */
+                        Vector4D& operator ^=(Vector4D const& u);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -343,6 +349,12 @@
                          * @return  the scalar product
                          */
                         float operator |(Vector4D const& u) const;
+                        /**
+                         * Compute the vector resulting in the cross product of this and u
+                         * @param u the vector
+                         * @return  the computed vector
+                         */
+                        Vector4D operator ^(Vector4D const& u) const;
 
                     //## Comparison Operator ##//
                         /**

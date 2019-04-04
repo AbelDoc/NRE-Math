@@ -233,6 +233,15 @@
             }
 
             template <class T>
+            inline Vector4D<T>& Vector4D<T>::operator ^=(Vector4D const& u) {
+                setCoord(y * u.z - z * u.y,
+                         z * u.x - x * u.z,
+                         x * u.y - y * u.x,
+                         0.0);
+                return *this;
+            }
+
+            template <class T>
             inline Vector4D<T> Vector4D<T>::operator +(Vector4D const& u) const {
                 return Vector4D<T>(*this) += u;
             }
@@ -265,6 +274,11 @@
             template <class T>
             inline Vector4D<T> Vector4D<T>::operator /(Vector4D const& u) const {
                 return Vector4D<T>(*this) /= u;
+            }
+
+            template <class T>
+            inline Vector4D<T> Vector4D<T>::operator ^(Vector4D const& u) const {
+                return Vector4D<T>(*this) ^= u;
             }
 
             template <class T>

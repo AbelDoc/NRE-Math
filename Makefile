@@ -1,7 +1,7 @@
 export CXX = g++.exe
 export LD = g++.exe
 
-export CFLAGS = -pedantic -Wno-virtual-move-assign -Wall -Wextra -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -std=c++17
+export CFLAGS = -pedantic -Wno-virtual-move-assign -Winline -Wall -Wextra -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -std=c++17
 export LDFLAGS = 
 
 export INC = -I"C:\lib\MinGW64_7.3\include" 
@@ -30,6 +30,7 @@ clean :
 	@mkdir obj/Header/
 	@mkdir obj/Math/
 	@mkdir obj/Math/Matrix/
+	@mkdir obj/Math/Plane/
 	@mkdir obj/Math/Quaternion/
 	@mkdir obj/Math/Vector/
 	@mkdir obj/Math/Matrix/3D/

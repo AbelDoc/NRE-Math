@@ -9,7 +9,7 @@
 
      #pragma once
 
-     #include "../Vector/3D/NRE_Vector3D.hpp"
+     #include "../Vector/4D/NRE_Vector4D.hpp"
 
     /**
      * @namespace NRE
@@ -24,13 +24,13 @@
 
             /**
              * @class Plane
-             * @brief A simple 3D plane with a point and a vector
+             * @brief A simple 4D homogeneous plane with a point and a vector
              */
             template <class T>
             class Plane {
                 private :   //Fields
-                    Vector3D<T> normal; /**< The plane's normal */
-                    Point3D<T> point;   /**< The plane's point */
+                    Vector4D<T> normal; /**< The plane's normal */
+                    Point4D<T> point;   /**< The plane's point */
 
                 public :   // Methods
                     //## Constructor ##//
@@ -43,7 +43,20 @@
                          * @param n the new plane's normal
                          * @param p the new plane's point
                          */
+                        Plane(Vector4D<T> const& n, Point4D<T> const& p);
+                        /**
+                         * Construct a plane with a particular point and a normal
+                         * @param n the new plane's normal
+                         * @param p the new plane's point
+                         */
                         Plane(Vector3D<T> const& n, Point3D<T> const& p);
+                        /**
+                         * Construct a plane with 3 points
+                         * @param p1 the first point
+                         * @param p2 the second point
+                         * @param p3 the third point
+                         */
+                        Plane(Point4D<T> const& p1, Point4D<T> const& p2, Point4D<T> const& p3);
                         /**
                          * Construct a plane with 3 points
                          * @param p1 the first point
@@ -85,19 +98,29 @@
                          * Normal getter
                          * @return the plane's normal
                          */
-                        Vector3D<T> const& getNormal() const;
+                        Vector4D<T> const& getNormal() const;
                         /**
                          * Point getter
                          * @return the plane's point
                          */
-                        Point3D<T> const& getPoint() const;
+                        Point4D<T> const& getPoint() const;
 
                     //## Setter ##//
                         /**
                          * Normal setter
                          * @param n the new value for normal
                          */
+                        void setNormal(Vector4D<T> const& n);
+                        /**
+                         * Normal setter
+                         * @param n the new value for normal
+                         */
                         void setNormal(Vector3D<T> const& n);
+                        /**
+                         * Point setter
+                         * @param p the new value for point
+                         */
+                        void setPoint(Point4D<T> const& p);
                         /**
                          * Point setter
                          * @param p the new value for point
@@ -108,9 +131,21 @@
                          * @param n the new value for normal
                          * @param p the new value for point
                          */
+                        void setNormalAndPoint(Vector4D<T> const& n, Point4D<T> const& p);
+                        /**
+                         * Set the values for both normal and point
+                         * @param n the new value for normal
+                         * @param p the new value for point
+                         */
                         void setNormalAndPoint(Vector3D<T> const& n, Point3D<T> const& p);
 
                     //## Methods ##//
+                        /**
+                         * Compute the distance between a point and a plane
+                         * @param  p the point to compute the distance with this
+                         * @return the computed distance
+                         */
+                        float distance(Point4D<T> const& p) const;
                         /**
                          * Compute the distance between a point and a plane
                          * @param  p the point to compute the distance with this
@@ -162,7 +197,7 @@
                      * @param p2 the second point
                      * @param p3 the third point
                      */
-                    void computeNormalFrom3Point(Point3D<T> const& p1, Point3D<T> const& p2, Point3D<T> const& p3);
+                    void computeNormalFrom3Point(Point4D<T> const& p1, Point4D<T> const& p2, Point4D<T> const& p3);
             };
 
             /**
