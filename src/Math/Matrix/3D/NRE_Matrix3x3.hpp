@@ -103,11 +103,6 @@
                          */
                         template <class K>
                         Matrix3x3(Matrix4x4<K> const& m);
-                        /**
-                         * Convert a quaternion into a 3x3 matrix
-                         * @param q the quaternion to convert
-                         */
-                        //Matrix3x3(Quaternion const& q);
 
                     //## Deconstructor ##//
                         /**
@@ -350,7 +345,7 @@
                          * @param c the bezier curve to transform
                          * @return  the newly computed vector
                          */
-                        BezierCurve3D operator *(BezierCurve3D const& s) const;
+                        BezierCurve3D operator *(BezierCurve3D const& c) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor

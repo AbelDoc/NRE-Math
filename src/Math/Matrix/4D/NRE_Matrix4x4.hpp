@@ -400,7 +400,7 @@
                          * @param c the bezier curve to transform
                          * @return  the newly computed vector
                          */
-                        BezierCurve4D operator *(BezierCurve4D const& s) const;
+                        BezierCurve4D operator *(BezierCurve4D const& c) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor

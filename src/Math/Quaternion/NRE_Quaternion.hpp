@@ -13,6 +13,7 @@
      #include <iostream>
 
      #include "../NRE_Math.hpp"
+     #include "../NRE_Unit.hpp"
 
      /**
      * @namespace NRE
@@ -176,8 +177,8 @@
                          */
                         Quaternion& operator =(Quaternion const& q) = default;
                         /**
-                         * Move u into this
-                         * @param u the object to move into this
+                         * Move q into this
+                         * @param q the object to move into this
                          * @return  the reference of himself
                          */
                         Quaternion& operator =(Quaternion && q) = default;
