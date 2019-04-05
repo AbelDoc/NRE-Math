@@ -15,16 +15,14 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Frustum frustum(70_deg, 1600.0f / 900.0f, {0.1f, 100.0f});
-        frustum.computePlane({0, 0, 0}, {0, 0, 1}, {1, 0, 0}, {0, 1, 0});
+        BezierCurve3D bez1{{0, 0, 1} , {0, 10, 1}, {10, 0, 1}};
+        Matrix3x3<float> mat;
+        mat.rotate(90_deg);
 
-        std::cout << frustum << std::endl;
+        std::cout << bez1 << std::endl;
+        bez1 = mat * bez1;
 
-        Frustum frustum2(70_deg, 1600.0f / 900.0f, {0.1f, 100.0f});
-
-        std::cout << frustum2 << std::endl;
-        frustum2 = frustum;
-        std::cout << frustum2 << std::endl;
+        std::cout << bez1 << std::endl;
 
         return 0;
     }

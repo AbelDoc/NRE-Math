@@ -11,7 +11,7 @@ export LIBDIR = -L"C:\lib\MinGW64_7.3\lib"
 OBJDIR = obj/
 BIN = bin/
 SRC = src
-OBJ = $(OBJDIR)NRE_Main.o $(OBJDIR)Math/Frustum/NRE_Frustum.o 
+OBJ = $(OBJDIR)NRE_Main.o $(OBJDIR)Math/Curve/Bezier/3D/NRE_BezierCurve3D.o $(OBJDIR)Math/Curve/Bezier/4D/NRE_BezierCurve4D.o $(OBJDIR)Math/Frustum/NRE_Frustum.o 
 OUT = NRE-Math
 
 all : childs out
@@ -29,12 +29,16 @@ clean :
 	@mkdir obj
 	@mkdir obj/Header/
 	@mkdir obj/Math/
+	@mkdir obj/Math/Curve/
 	@mkdir obj/Math/Frustum/
 	@mkdir obj/Math/Matrix/
 	@mkdir obj/Math/Plane/
 	@mkdir obj/Math/Quaternion/
 	@mkdir obj/Math/Segment/
 	@mkdir obj/Math/Vector/
+	@mkdir obj/Math/Curve/Bezier/
+	@mkdir obj/Math/Curve/Bezier/3D/
+	@mkdir obj/Math/Curve/Bezier/4D/
 	@mkdir obj/Math/Matrix/3D/
 	@mkdir obj/Math/Matrix/4D/
 	@mkdir obj/Math/Segment/3D/

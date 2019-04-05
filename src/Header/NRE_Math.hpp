@@ -20,6 +20,9 @@
 
     #include "../Math/Segment/3D/NRE_Segment3D.hpp"
     #include "../Math/Segment/4D/NRE_Segment4D.hpp"
+    
+    #include "../Math/Curve/Bezier/3D/NRE_BezierCurve3D.hpp"
+    #include "../Math/Curve/Bezier/4D/NRE_BezierCurve4D.hpp"
 
     #include "../Math/Matrix/3D/NRE_Matrix3x3.hpp"
     #include "../Math/Matrix/4D/NRE_Matrix4x4.hpp"

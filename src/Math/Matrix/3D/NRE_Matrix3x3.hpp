@@ -15,6 +15,8 @@
     #include "../../NRE_Math.hpp"
     #include "../../NRE_Unit.hpp"
 
+    #include "../../Curve/Bezier/3D/NRE_BezierCurve3D.hpp"
+
      /**
      * @namespace NRE
      * @brief The NearlyRealEngine's global namespace
@@ -26,6 +28,7 @@
          */
         namespace Math {
 
+            template<class> class Vector2D;
             template<class> class Vector3D;
             template<class> class Segment3D;
             template<class> class Matrix4x4;
@@ -342,6 +345,12 @@
                          * @return  the newly computed vector
                          */
                         Segment3D<T> operator *(Segment3D<T> const& s) const;
+                        /**
+                         * Compute the bezier curve resulting in the transformation of c by this
+                         * @param c the bezier curve to transform
+                         * @return  the newly computed vector
+                         */
+                        BezierCurve3D operator *(BezierCurve3D const& s) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor

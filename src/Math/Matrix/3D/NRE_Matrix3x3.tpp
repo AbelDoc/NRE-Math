@@ -342,6 +342,15 @@
             }
 
             template <class T>
+            BezierCurve3D Matrix3x3<T>::operator *(BezierCurve3D const& s) const {
+                BezierCurve3D tmp(s);
+                for (std::size_t i = 0; i < tmp.getSize(); i++) {
+                    tmp[i] = *this * tmp[i];
+                }
+                return tmp;
+            }
+
+            template <class T>
             inline Matrix3x3<T> Matrix3x3<T>::operator /(T k) const {
                 return Matrix3x3<T>(*this) /= k;
             }

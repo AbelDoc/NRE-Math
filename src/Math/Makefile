@@ -1,6 +1,7 @@
 OBJ = 
 OBJDIR = ../../obj/Math/
 
+CURVE = Curve
 FRUSTUM = Frustum
 MATRIX = Matrix
 PLANE = Plane
@@ -11,6 +12,7 @@ VECTOR = Vector
 all : childs $(OBJ)
 
 childs:
+	@(cd $(CURVE) && $(MAKE))
 	@(cd $(FRUSTUM) && $(MAKE))
 	@(cd $(MATRIX) && $(MAKE))
 	@(cd $(PLANE) && $(MAKE))

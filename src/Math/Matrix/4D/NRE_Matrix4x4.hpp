@@ -13,6 +13,9 @@
     #include <iostream>
 
     #include "../../NRE_Math.hpp"
+    #include "../../NRE_Unit.hpp"
+
+    #include "../../Curve/Bezier/4D/NRE_BezierCurve4D.hpp"
 
      /**
      * @namespace NRE
@@ -25,6 +28,8 @@
          */
         namespace Math {
 
+            template<class> class Vector2D;
+            template<class> class Vector3D;
             template<class> class Vector4D;
             template<class> class Segment4D;
             template<class> class Plane;
@@ -390,6 +395,12 @@
                          * @return  the newly computed vector
                          */
                         Segment4D<T> operator *(Segment4D<T> const& s) const;
+                        /**
+                         * Compute the bezier curve resulting in the transformation of c by this
+                         * @param c the bezier curve to transform
+                         * @return  the newly computed vector
+                         */
+                        BezierCurve4D operator *(BezierCurve4D const& s) const;
                         /**
                          * Compute the matrix resulting in the division of this by k
                          * @param k the division factor

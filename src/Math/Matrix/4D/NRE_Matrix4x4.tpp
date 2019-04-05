@@ -518,6 +518,15 @@
             }
 
             template <class T>
+            BezierCurve4D Matrix4x4<T>::operator *(BezierCurve4D const& s) const {
+                BezierCurve4D tmp(s);
+                for (std::size_t i = 0; i < tmp.getSize(); i++) {
+                    tmp[i] = *this * tmp[i];
+                }
+                return tmp;
+            }
+
+            template <class T>
             inline Matrix4x4<T> Matrix4x4<T>::operator /(T k) const {
                 return Matrix4x4<T>(*this) /= k;
             }
