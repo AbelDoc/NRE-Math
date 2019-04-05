@@ -15,19 +15,19 @@ It regroup simple mathematical class and a generic implementation for internatio
     Allow simple use to create transformation matrix.  
     All bases operations are supported : +, -, \*, /, ==, !=  
     Possible transformations :  
-        * Translation
-        * Rotation
-        * Sheer
-        * Scale
-        * Squeeze
-        * Perspective
-        * Orthogonal  
+        * Translation  
+        * Rotation  
+        * Sheer  
+        * Scale  
+        * Squeeze  
+        * Perspective  
+        * Orthogonal    
     Transformations can be apply by multiplying the matrix with a supported object :  
-        * Vector
-        * Point
-        * Plane
-        * Segment
-        * BezierCurve  
+        * Vector  
+        * Point  
+        * Plane  
+        * Segment  
+        * BezierCurve    
 
 - Segment 3D, 4D :  
     Represent 2D & 3D homogeneous Segments
