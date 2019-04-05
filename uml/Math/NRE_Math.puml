@@ -30,9 +30,7 @@
             private T z
             private T w
         }
-        class Quaternion {
-            private float angle
-        }
+        class Quaternion
         class Plane < T >
         class Frustum {
             private Angle fov
