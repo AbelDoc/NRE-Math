@@ -97,7 +97,7 @@
                          * Compute the opposite unit
                          * @return the new unit with opposite value
                          */
-                        constexpr Unit operator-() {
+                        constexpr Unit operator-() const {
                             return Unit(-value);
                         }
 
@@ -107,7 +107,7 @@
                          * @param u the unit to test with u
                          * @return the test's value
                          */
-                        constexpr bool operator==(Unit const& u) {
+                        constexpr bool operator==(Unit const& u) const {
                             return Math::almostEqual(value, u.value);
                         }
                         /**
@@ -115,7 +115,7 @@
                          * @param u the unit to test with u
                          * @return the test's value
                          */
-                        constexpr bool operator!=(Unit const& u) {
+                        constexpr bool operator!=(Unit const& u) const {
                             return !(*this == u);
                         }
                         /**
@@ -123,7 +123,7 @@
                          * @param u the unit to test with u
                          * @return the test's value
                          */
-                        constexpr bool operator<=(Unit const& u) {
+                        constexpr bool operator<=(Unit const& u) const {
                             return value <= u.value;
                         }
                         /**
@@ -131,7 +131,7 @@
                          * @param u the unit to test with u
                          * @return the test's value
                          */
-                        constexpr bool operator>=(Unit const& u) {
+                        constexpr bool operator>=(Unit const& u) const {
                             return value >= u.value;
                         }
                         /**
@@ -139,7 +139,7 @@
                          * @param u the unit to test with u
                          * @return the test's value
                          */
-                        constexpr bool operator<(Unit const& u) {
+                        constexpr bool operator<(Unit const& u) const {
                             return value < u.value;
                         }
                         /**
@@ -147,8 +147,15 @@
                          * @param u the unit to test with u
                          * @return the test's value
                          */
-                        constexpr bool operator>(Unit const& u) {
+                        constexpr bool operator>(Unit const& u) const {
                             return value > u.value;
+                        }
+                        /**
+                         * Convert the unit into a string
+                         * @return the converted unit
+                         */
+                        constexpr std::string toString() const {
+                            return std::to_string(value);
                         }
             };
 
@@ -160,7 +167,7 @@
              */
             template <class M, class L, class T, class A>
             std::ostream& operator <<(std::ostream& stream, Unit<M, L, T, A> const& o) {
-                return stream << std::to_string(o.getValue());
+                return stream << o.toString();
             }
 
             /**
@@ -218,6 +225,17 @@
             template <class M, class L, class T, class A>
             constexpr Unit<M, L, T, A> operator*(long double x, Unit<M, L, T, A> const& u) {
                 return Unit<M, L, T, A>(x * u.getValue());
+            }
+
+            /**
+             * Compute the unit resulting in the multiplication of u by x
+             * @param  u the unit
+             * @param  x the value to multiply with u
+             * @return   the computed unit
+             */
+            template <class M, class L, class T, class A>
+            constexpr Unit<M, L, T, A> operator*(Unit<M, L, T, A> const& u, long double x) {
+                return Unit<M, L, T, A>(u.getValue() * x);
             }
 
             /**< Used to create a new standard unit */

@@ -1,6 +1,7 @@
 OBJ = 
 OBJDIR = ../../obj/Math/
 
+FRUSTUM = Frustum
 MATRIX = Matrix
 PLANE = Plane
 QUATERNION = Quaternion
@@ -10,6 +11,7 @@ VECTOR = Vector
 all : childs $(OBJ)
 
 childs:
+	@(cd $(FRUSTUM) && $(MAKE))
 	@(cd $(MATRIX) && $(MAKE))
 	@(cd $(PLANE) && $(MAKE))
 	@(cd $(QUATERNION) && $(MAKE))

@@ -9,6 +9,7 @@
 
      #pragma once
 
+     #include "../Vector/3D/NRE_Vector3D.hpp"
      #include "../Vector/4D/NRE_Vector4D.hpp"
 
     /**
@@ -21,6 +22,21 @@
          * @brief Math's API
          */
         namespace Math {
+
+            /**
+             * @enum Face
+             * Regroup constant for box's faces managing
+             */
+            enum Face {
+                TOP,        /**< The top face */
+                BOTTOM,     /**< The bottom face */
+                LEFT,       /**< The left face */
+                RIGHT,      /**< The right face */
+                NEAR,       /**< The near face */
+                FAR,        /**< The far face */
+
+                FACE_NUM    /**< The number of face in a box */
+            };
 
             /**
              * @class Plane

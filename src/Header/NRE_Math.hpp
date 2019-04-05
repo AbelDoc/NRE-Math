@@ -25,3 +25,5 @@
     #include "../Math/Matrix/4D/NRE_Matrix4x4.hpp"
 
     #include "../Math/Quaternion/NRE_Quaternion.hpp"
+
+    #include "../Math/Frustum/NRE_Frustum.hpp"

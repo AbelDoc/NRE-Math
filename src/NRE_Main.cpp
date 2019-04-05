@@ -15,26 +15,16 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Segment3D<float> seg(0, 0, 10, 0);
+        Frustum frustum(70_deg, 1600.0f / 900.0f, {0.1f, 100.0f});
+        frustum.computePlane({0, 0, 0}, {0, 0, 1}, {1, 0, 0}, {0, 1, 0});
 
-        std::cout << seg << std::endl;
-        std::cout << seg.getVector() << std::endl;
+        std::cout << frustum << std::endl;
 
-        Matrix3x3<float> mat;
-        mat.translate({10, 0});
+        Frustum frustum2(70_deg, 1600.0f / 900.0f, {0.1f, 100.0f});
 
-        seg = mat * seg;
-
-        std::cout << seg << std::endl;
-        std::cout << seg.getVector() << std::endl;
-
-        mat.setIdentity();
-        mat.rotate(90_deg);
-
-        seg = mat * seg;
-
-        std::cout << seg << std::endl;
-        std::cout << seg.getVector() << std::endl;
+        std::cout << frustum2 << std::endl;
+        frustum2 = frustum;
+        std::cout << frustum2 << std::endl;
 
         return 0;
     }

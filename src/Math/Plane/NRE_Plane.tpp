@@ -11,7 +11,7 @@
         namespace Math {
 
             template <class T>
-            inline Plane<T>::Plane() : point(0, 0, 0, 1) {
+            inline Plane<T>::Plane() : normal(0, 0, 0, 0), point(0, 0, 0, 1) {
             }
 
             template <class T>
