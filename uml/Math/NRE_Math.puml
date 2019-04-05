@@ -1,0 +1,75 @@
+@startuml
+    package NRE::Math {
+        class Point2D < T > {
+            private T x
+            private T y
+        }
+        class Point3D < T > {
+            private T x
+            private T y
+            private T z
+        }
+        class Point4D < T > {
+            private T x
+            private T y
+            private T z
+            private T w
+        }
+        class Vector2D < T > {
+            private T x
+            private T y
+        }
+        class Vector3D < T > {
+            private T x
+            private T y
+            private T z
+        }
+        class Vector4D < T > {
+            private T x
+            private T y
+            private T z
+            private T w
+        }
+        class Quaternion {
+            private float angle
+        }
+        class Plane < T >
+        class Frustum {
+            private float fov
+            private float ratio
+        }
+        class BezierCurve3D
+        class BezierCurve4D
+        class Segment3D < T >
+        class Segment4D < T >
+        class Matrix2x2 < T >
+        class Matrix3x3 < T >
+        class Matrix4x4 < T >
+        Matrix2x2 -right- "2" Vector2D : data
+        Matrix3x3 -right- "3" Vector3D : data
+        Matrix4x4 -right- "4" Vector4D : data
+        Vector4D -down[hidden]- Vector3D
+        Vector3D -down[hidden]- Frustum
+        Point4D -down[hidden]- Point3D
+        Point3D -down[hidden]- Point2D
+        Matrix4x4 -down[hidden]- Matrix3x3
+        Matrix3x3 -down[hidden]- Matrix2x2
+        Point2D <.right. Vector2D : typedef
+        Point3D <.right. Vector3D : typedef
+        Point4D <.right. Vector4D : typedef
+        Segment3D -left- "2" Point3D
+        Segment4D -left- "2" Point4D
+        BezierCurve3D -up- "*" Point3D
+        BezierCurve4D -down- "*" Point4D
+        BezierCurve3D -up[hidden]- Segment3D
+        BezierCurve4D -down[hidden]- Segment4D
+        Segment3D -up[hidden]- Segment4D
+        Quaternion -down- "1" Vector4D : quat
+        Plane -up- Vector3D : normal
+        Plane -up- Point3D : point
+        Frustum -right- "6" Plane
+        Frustum -down- "1" Vector2D : near
+        Frustum -down- "1" Vector2D : far
+        Frustum -down- "1" Vector2D : dist
+    }
+@enduml
