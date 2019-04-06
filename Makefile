@@ -27,24 +27,5 @@ clean :
 	@echo "Clear of obj/"
 	@rm -r obj
 	@mkdir obj
-	@mkdir obj/Header/
-	@mkdir obj/Math/
-	@mkdir obj/Math/Curve/
-	@mkdir obj/Math/Frustum/
-	@mkdir obj/Math/Matrix/
-	@mkdir obj/Math/Plane/
-	@mkdir obj/Math/Quaternion/
-	@mkdir obj/Math/Segment/
-	@mkdir obj/Math/Vector/
-	@mkdir obj/Math/Curve/Bezier/
-	@mkdir obj/Math/Curve/Bezier/3D/
-	@mkdir obj/Math/Curve/Bezier/4D/
-	@mkdir obj/Math/Matrix/3D/
-	@mkdir obj/Math/Matrix/4D/
-	@mkdir obj/Math/Segment/3D/
-	@mkdir obj/Math/Segment/4D/
-	@mkdir obj/Math/Vector/2D/
-	@mkdir obj/Math/Vector/3D/
-	@mkdir obj/Math/Vector/4D/
 	@echo "obj-Tree creation done."
 	@echo "Clean done."
