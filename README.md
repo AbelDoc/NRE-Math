@@ -1,8 +1,10 @@
 # NRE-Math
-NRE-Math is the mathematical module used in NearlyRealEngine
+NRE-Math is the mathematical module used in NearlyRealEngine  
 It regroup simple mathematical class and a generic implementation for international unit system.
 
 ## Features
+- Header-only
+
 - Vector 2D, 3D, 4D :  
     Vector regroup all methods to describe a cartesian 2D, 3D, 4D vector. 3D & 4D Vector represent 2D & 3D homogeneous Vector.  
     All bases operations are supported : +, -, \*, /, dot product (|), cross product (^), ==, !=, >, <, >=, <=  
