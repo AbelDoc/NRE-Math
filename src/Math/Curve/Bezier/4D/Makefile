@@ -1,7 +1,7 @@
-OBJ = $(OBJDIR)NRE_BezierCurve4D.o 
+OBJ = 
 OBJDIR = ../../../../../obj/Math/Curve/Bezier/4D/
 
 all : $(OBJ)
 
-$(OBJDIR)%.o :  %.cpp %.hpp
+$(OBJDIR)%.o :  %.hpp
 	@$(CXX) -o $@ -c $< $(CFLAGS) $(INC)
