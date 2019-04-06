@@ -3,7 +3,7 @@
      * @file Math/NRE_Math.hpp
      * @brief Implementation of Math's API's function
      * @author Louis ABEL
-     * @date 08/09/2018
+     * @date 03/04/2019
      * @copyright CC-BY-NC-SA
      */
 
