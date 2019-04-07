@@ -7,6 +7,8 @@
      * @copyright CC-BY-NC-SA
      */
 
+    #include "NRE_Frustum.hpp"
+
     namespace NRE {
         namespace Math {
 

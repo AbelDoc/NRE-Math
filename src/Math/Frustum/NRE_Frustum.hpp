@@ -136,5 +136,3 @@
             std::ostream& operator <<(std::ostream& stream, Frustum const& o);
         }
     }
-
-    #include "NRE_Frustum.tpp"

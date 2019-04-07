@@ -7,6 +7,8 @@
      * @copyright CC-BY-NC-SA
      */
 
+    #include "NRE_BezierCurve3D.hpp"
+
     namespace NRE {
         namespace Math {
 

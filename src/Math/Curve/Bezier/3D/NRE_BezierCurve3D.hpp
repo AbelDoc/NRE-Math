@@ -138,5 +138,3 @@
             std::ostream& operator <<(std::ostream& stream, BezierCurve3D const& o);
         }
     }
-
-    #include "NRE_BezierCurve3D.tpp"
