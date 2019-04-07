@@ -138,3 +138,5 @@
             std::ostream& operator <<(std::ostream& stream, BezierCurve4D const& o);
         }
     }
+
+    #include "NRE_BezierCurve4D.tpp"

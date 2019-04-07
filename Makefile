@@ -11,7 +11,7 @@ export LIBDIR = -L"C:\lib\MinGW64_7.3\lib"
 OBJDIR = obj/
 BIN = bin/
 SRC = src
-OBJ = $(OBJDIR)NRE_Main.o $(OBJDIR)Math/Curve/Bezier/3D/NRE_BezierCurve3D.o $(OBJDIR)Math/Curve/Bezier/4D/NRE_BezierCurve4D.o $(OBJDIR)Math/Frustum/NRE_Frustum.o 
+OBJ = $(OBJDIR)NRE_Main.o 
 OUT = NRE-Math
 
 all : childs out
@@ -27,11 +27,5 @@ clean :
 	@echo "Clear of obj/"
 	@rm -r obj
 	@mkdir obj
-	@mkdir obj/Math/
-	@mkdir obj/Math/Curve/
-	@mkdir obj/Math/Frustum/
-	@mkdir obj/Math/Curve/Bezier/
-	@mkdir obj/Math/Curve/Bezier/3D/
-	@mkdir obj/Math/Curve/Bezier/4D/
 	@echo "obj-Tree creation done."
 	@echo "Clean done."
