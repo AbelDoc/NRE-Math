@@ -1,7 +1,7 @@
 export CXX = g++.exe
 export LD = g++.exe
 
-export CFLAGS = -pedantic -Wno-virtual-move-assign -Winline -Wall -Wextra -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -std=c++17
+export CFLAGS = -pedantic -Wno-virtual-move-assign -Wall -Wextra -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -O3 -std=c++17
 export LDFLAGS = 
 
 export INC = -I"C:\lib\MinGW64_7.3\include" -I"C:\Users\abell\Documents\GitHub\NRE-Utility\src" 
