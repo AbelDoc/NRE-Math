@@ -9,6 +9,8 @@
 
     #include "NRE_Frustum.hpp"
 
+    using namespace NRE::Utility;
+
     namespace NRE {
         namespace Math {
 
@@ -57,30 +59,31 @@
                 computePlane(eye, forward, left, up);
             }
 
-            std::string Frustum::toString() const {
-                std::string res( "Top = ");
-                res += planes[TOP].toString();
-                res += "]\nBottom = ";
-                res += planes[BOTTOM].toString();
-                res += "]\nRight = ";
-                res += planes[RIGHT].toString();
-                res += "]\nLeft = ";
-                res += planes[LEFT].toString();
-                res += "]\nNear = ";
-                res += planes[NEAR].toString();
-                res += "]\nFar = ";
-                res += planes[FAR].toString();
-                res += "]\n[";
-                res += near.toString();
-                res += ",";
-                res += far.toString();
-                res += ",";
-                res += dist.toString();
-                res += ",";
-                res += fov.toString();
-                res += ",";
-                res += std::to_string(ratio);
-                res += "]";
+            String Frustum::toString() const {
+                String res( "Top = ");
+                res.reserve(150);
+                res << planes[TOP];
+                res << "]\nBottom = ";
+                res << planes[BOTTOM];
+                res << "]\nRight = ";
+                res << planes[RIGHT];
+                res << "]\nLeft = ";
+                res << planes[LEFT];
+                res << "]\nNear = ";
+                res << planes[NEAR];
+                res << "]\nFar = ";
+                res << planes[FAR];
+                res << "]\n[";
+                res << near;
+                res << ',';
+                res << far;
+                res << ',';
+                res << dist;
+                res << ',';
+                res << fov;
+                res << ',';
+                res << ratio;
+                res << ']';
                 return res;
             }
 

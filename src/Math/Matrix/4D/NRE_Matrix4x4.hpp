@@ -9,7 +9,7 @@
 
     #pragma once
 
-    #include <string>
+    #include <Utility/String/NRE_String.hpp>
     #include <iostream>
 
     #include "../../NRE_Math.hpp"
@@ -433,7 +433,7 @@
                          * Convert the 4x4 matrix into a string
                          * @return the converted 4x4 matrix
                          */
-                        std::string toString() const;
+                        Utility::String toString() const;
             };
 
             /**

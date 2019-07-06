@@ -204,7 +204,7 @@
                          * Convert the plane into a string
                          * @return the converted plane
                          */
-                        std::string toString() const;
+                        Utility::String toString() const;
 
                 private:   // Methods
                     /**

@@ -9,8 +9,7 @@
 
      #pragma once
 
-     #include <vector>
-
+     #include <Utility/Vector/NRE_Vector.hpp>
      #include "../../../Vector/3D/NRE_Vector3D.hpp"
 
 
@@ -31,7 +30,7 @@
              */
             class BezierCurve3D {
                 private:    //Fields
-                    std::vector<Point3D<float>> controls;   /**< The curve's control points */
+                    Utility::Vector<Point3D<float>> controls;   /**< The curve's control points */
 
                 public:    // Methods
                     //## Constructor ##//
@@ -43,12 +42,12 @@
                          * Construct the curve from a set of control points
                          * @param points the set of control points
                          */
-                        BezierCurve3D(std::initializer_list<Point3D<float>> && points);
+                        BezierCurve3D(std::initializer_list<Point3D<float>> points);
                         /**
                          * Construct the curve from a set of control points
                          * @param c the set of control points
                          */
-                        BezierCurve3D(std::vector<Point3D<float>> && c);
+                        BezierCurve3D(Utility::Vector<Point3D<float>> && c);
 
                     //## Copy-Constructor ##//
                         /**
@@ -84,7 +83,7 @@
                          * @return the number of control points
                          */
                         inline std::size_t getSize() const {
-                            return controls.size();
+                            return controls.getSize();
                         }
 
                     //## Access Operator ##//
@@ -126,7 +125,7 @@
                          * Convert the curve into a string
                          * @return the converted curve
                          */
-                        std::string toString() const;
+                        Utility::String toString() const;
             };
 
             /**

@@ -9,22 +9,25 @@
 
     #include "NRE_BezierCurve4D.hpp"
 
+    using namespace NRE::Utility;
+
     namespace NRE {
         namespace Math {
 
-            BezierCurve4D::BezierCurve4D(std::initializer_list<Point4D<float>> && points) : controls(std::move(points)) {
+            BezierCurve4D::BezierCurve4D(std::initializer_list<Point4D<float>> points) : controls(points) {
             }
 
-            BezierCurve4D::BezierCurve4D(std::vector<Point4D<float>> && c) : controls(std::move(c)) {
+            BezierCurve4D::BezierCurve4D(Vector<Point4D<float>> && c) : controls(std::move(c)) {
             }
 
-            std::string BezierCurve4D::toString() const {
-                std::string res("Curve : \n");
+            String BezierCurve4D::toString() const {
+                String res("Curve : \n");
+                res.reserve(20 * getSize());
                 for (std::size_t i = 0; i < getSize(); i++) {
-                    res += std::to_string(i);
-                    res += " : ";
-                    res += controls[i].toString();
-                    res += "\n";
+                    res << i;
+                    res << " : ";
+                    res << controls[i];
+                    res << '\n';
                 }
                 return res;
             }

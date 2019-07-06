@@ -54,10 +54,12 @@
             }
 
             template <class T>
-            std::string Segment3D<T>::toString() const {
-                std::string res(start.toString());
-                res += " - ";
-                res += end.toString();
+            Utility::String Segment3D<T>::toString() const {
+                Utility::String res;
+                res.reserve(20);
+                res << start;
+                res << " - ";
+                res << end;
                 return res;
             }
 

@@ -9,7 +9,7 @@
 
     #pragma once
 
-    #include <string>
+    #include <Utility/String/NRE_String.hpp>
     #include <iostream>
 
     #include "../../NRE_Math.hpp"
@@ -378,7 +378,7 @@
                          * Convert the matrix into a string
                          * @return the converted matrix
                          */
-                        std::string toString() const;
+                        Utility::String toString() const;
             };
 
             /**

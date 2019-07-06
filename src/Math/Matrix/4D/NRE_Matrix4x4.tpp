@@ -392,40 +392,41 @@
             }
 
             template <class T>
-            std::string Matrix4x4<T>::toString() const {
-                std::string res("[");
-                res += std::to_string(getL1()[0]);
-                res += " ";
-                res += std::to_string(getL1()[1]);
-                res += " ";
-                res += std::to_string(getL1()[2]);
-                res += " ";
-                res += std::to_string(getL1()[3]);
-                res += "]\n[";
-                res += std::to_string(getL2()[0]);
-                res += " ";
-                res += std::to_string(getL2()[1]);
-                res += " ";
-                res += std::to_string(getL2()[2]);
-                res += " ";
-                res += std::to_string(getL2()[3]);
-                res += "]\n[";
-                res += std::to_string(getL3()[0]);
-                res += " ";
-                res += std::to_string(getL3()[1]);
-                res += " ";
-                res += std::to_string(getL3()[2]);
-                res += " ";
-                res += std::to_string(getL3()[3]);
-                res += "]\n[";
-                res += std::to_string(getL4()[0]);
-                res += " ";
-                res += std::to_string(getL4()[1]);
-                res += " ";
-                res += std::to_string(getL4()[2]);
-                res += " ";
-                res += std::to_string(getL4()[3]);
-                res += "]";
+            Utility::String Matrix4x4<T>::toString() const {
+                Utility::String res("[");
+                res.reserve(180);
+                res << getL1()[0];
+                res << ' ';
+                res << getL1()[1];
+                res << ' ';
+                res << getL1()[2];
+                res << ' ';
+                res << getL1()[3];
+                res << "]\n[";
+                res << getL2()[0];
+                res << ' ';
+                res << getL2()[1];
+                res << ' ';
+                res << getL2()[2];
+                res << ' ';
+                res << getL2()[3];
+                res << "]\n[";
+                res << getL3()[0];
+                res << ' ';
+                res << getL3()[1];
+                res << ' ';
+                res << getL3()[2];
+                res << ' ';
+                res << getL3()[3];
+                res << "]\n[";
+                res << getL4()[0];
+                res << ' ';
+                res << getL4()[1];
+                res << ' ';
+                res << getL4()[2];
+                res << ' ';
+                res << getL4()[3];
+                res << ']';
                 return res;
             }
 

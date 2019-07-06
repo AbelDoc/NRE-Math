@@ -335,16 +335,18 @@
             }
 
             template <class T>
-            inline std::string Vector4D<T>::toString() const {
-                std::string res("(");
-                res += std::to_string(x);
-                res += ", ";
-                res += std::to_string(y);
-                res += ", ";
-                res += std::to_string(z);
-                res += ", ";
-                res += std::to_string(w);
-                res += ")";
+            inline Utility::String Vector4D<T>::toString() const {
+                Utility::String res;
+                res.reserve(15);
+                res << '(';
+                res << x;
+                res << ", ";
+                res << y;
+                res << ", ";
+                res << z;
+                res << ", ";
+                res << w;
+                res << ')';
                 return res;
             }
 

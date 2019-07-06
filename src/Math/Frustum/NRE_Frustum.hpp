@@ -9,8 +9,8 @@
 
     #pragma once
 
-    #include <array>
 
+    #include <Utility/Array/NRE_Array.hpp>
     #include "../NRE_Unit.hpp"
     #include "../Plane/NRE_Plane.hpp"
     #include "../Vector/2D/NRE_Vector2D.hpp"
@@ -34,12 +34,12 @@
              */
             class Frustum {
                 private:    //Fields
-                    std::array<Plane<float>, 6> planes; /**< The frustum's planes */
-                    Vector2D<float> near;               /**< The near plane's width and height */
-                    Vector2D<float> far;                /**< The far plane's width and height */
-                    Vector2D<float> dist;               /**< The near and far clipping distance */
-                    float ratio;                        /**< The frustum's ratio */
-                    Angle fov;                          /**< The frustum's field of view */
+                    Utility::Array<Plane<float>, 6> planes; /**< The frustum's planes */
+                    Vector2D<float> near;                   /**< The near plane's width and height */
+                    Vector2D<float> far;                    /**< The far plane's width and height */
+                    Vector2D<float> dist;                   /**< The near and far clipping distance */
+                    float ratio;                            /**< The frustum's ratio */
+                    Angle fov;                              /**< The frustum's field of view */
 
                 public:    // Methods
                     //## Constructor ##//
@@ -118,7 +118,7 @@
                          * Convert the frustum into a string
                          * @return the converted frustum
                          */
-                        std::string toString() const;
+                        Utility::String toString() const;
 
                 private:
                     /**

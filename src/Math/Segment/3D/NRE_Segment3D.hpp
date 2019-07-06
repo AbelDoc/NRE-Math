@@ -131,7 +131,7 @@
                          * Convert the segment into a string
                          * @return the converted segment
                          */
-                        std::string toString() const;
+                        Utility::String toString() const;
             };
 
             /**

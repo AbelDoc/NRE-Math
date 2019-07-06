@@ -240,26 +240,27 @@
             }
 
             template <class T>
-            inline std::string Matrix3x3<T>::toString() const {
-                std::string res("[");
-                res += std::to_string(getL1()[0]);
-                res += " ";
-                res += std::to_string(getL1()[1]);
-                res += " ";
-                res += std::to_string(getL1()[2]);
-                res += "]\n[";
-                res += std::to_string(getL2()[0]);
-                res += " ";
-                res += std::to_string(getL2()[1]);
-                res += " ";
-                res += std::to_string(getL2()[2]);
-                res += "]\n[";
-                res += std::to_string(getL3()[0]);
-                res += " ";
-                res += std::to_string(getL3()[1]);
-                res += " ";
-                res += std::to_string(getL3()[2]);
-                res += "]";
+            inline Utility::String Matrix3x3<T>::toString() const {
+                Utility::String res("[");
+                res.reserve(100);
+                res << getL1()[0];
+                res << ' ';
+                res << getL1()[1];
+                res << ' ';
+                res << getL1()[2];
+                res << "]\n[";
+                res << getL2()[0];
+                res << ' ';
+                res << getL2()[1];
+                res << ' ';
+                res << getL2()[2];
+                res << "]\n[";
+                res << getL3()[0];
+                res << ' ';
+                res << getL3()[1];
+                res << ' ';
+                res << getL3()[2];
+                res << "]";
                 return res;
             }
 

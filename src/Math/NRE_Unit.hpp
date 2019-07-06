@@ -10,7 +10,7 @@
      #pragma once
 
      #include <iostream>
-     #include <string>
+     #include <Utility/String/NRE_String.hpp>
      #include <ratio>
 
      #include "NRE_Math.hpp"
@@ -101,6 +101,24 @@
                             return Unit(-value);
                         }
 
+                    //## Arithmetic Operator ##//
+                        /**
+                         * Compute the unit resulting in the addition of a unit to this
+                         * @param u the unit to add
+                         * @return  the resulting unit
+                         */
+                        constexpr Unit operator+(Unit const& u) const {
+                            return Unit(*this) += u;
+                        }
+                        /**
+                         * Compute the unit resulting in the subtraction of a unit to this
+                         * @param u the unit to add
+                         * @return  the resulting unit
+                         */
+                        constexpr Unit operator-(Unit const& u) const {
+                            return Unit(*this) -= u;
+                        }
+
                     //## Comparison Operator ##//
                         /**
                          * Equality test between this and u
@@ -154,8 +172,10 @@
                          * Convert the unit into a string
                          * @return the converted unit
                          */
-                        constexpr std::string toString() const {
-                            return std::to_string(value);
+                        constexpr Utility::String toString() const {
+                            Utility::String res;
+                            res << value;
+                            return res;
                         }
             };
 

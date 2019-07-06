@@ -101,12 +101,14 @@
             }
 
             template <class T>
-            std::string Plane<T>::toString() const {
-                std::string res("[");
-                res += point.toString();
-                res += ",";
-                res += normal.toString();
-                res += "]";
+            Utility::String Plane<T>::toString() const {
+                Utility::String res;
+                res.reserve(20);
+                res << '[';
+                res << point;
+                res << ',';
+                res << normal;
+                res << ']';
                 return res;
             }
 

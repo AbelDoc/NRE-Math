@@ -9,22 +9,25 @@
 
     #include "NRE_BezierCurve3D.hpp"
 
+    using namespace NRE::Utility;
+
     namespace NRE {
         namespace Math {
 
-            BezierCurve3D::BezierCurve3D(std::initializer_list<Point3D<float>> && points) : controls(std::move(points)) {
+            BezierCurve3D::BezierCurve3D(std::initializer_list<Point3D<float>> points) : controls(points) {
             }
 
-            BezierCurve3D::BezierCurve3D(std::vector<Point3D<float>> && c) : controls(std::move(c)) {
+            BezierCurve3D::BezierCurve3D(Vector<Point3D<float>> && c) : controls(std::move(c)) {
             }
 
-            std::string BezierCurve3D::toString() const {
-                std::string res("Curve : \n");
+            String BezierCurve3D::toString() const {
+                String res("Curve : \n");
+                res.reserve(15 * getSize());
                 for (std::size_t i = 0; i < getSize(); i++) {
-                    res += std::to_string(i);
-                    res += " : ";
-                    res += controls[i].toString();
-                    res += "\n";
+                    res << i;
+                    res << " : ";
+                    res << controls[i];
+                    res << '\n';
                 }
                 return res;
             }

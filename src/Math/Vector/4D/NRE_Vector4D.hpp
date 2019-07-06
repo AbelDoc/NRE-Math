@@ -9,7 +9,7 @@
 
      #pragma once
 
-     #include <string>
+     #include <Utility/String/NRE_String.hpp>
      #include <iostream>
 
      #include "../../NRE_Math.hpp"
@@ -405,7 +405,7 @@
                          * Convert the vector into a string
                          * @return the converted vector
                          */
-                        std::string toString() const;
+                        Utility::String toString() const;
             };
 
             template <class T>

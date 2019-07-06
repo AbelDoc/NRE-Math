@@ -246,12 +246,14 @@
             }
 
             template <class T>
-            inline std::string Vector2D<T>::toString() const {
-                std::string res("(");
-                res += std::to_string(x);
-                res += ", ";
-                res += std::to_string(y);
-                res += ")";
+            inline Utility::String Vector2D<T>::toString() const {
+                Utility::String res;
+                res.reserve(10);
+                res << '(';
+                res << x;
+                res << ", ";
+                res << y;
+                res << ')';
                 return res;
             }
 

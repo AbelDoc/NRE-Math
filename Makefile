@@ -4,14 +4,14 @@ export LD = g++.exe
 export CFLAGS = -pedantic -Wno-virtual-move-assign -Winline -Wall -Wextra -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -std=c++17
 export LDFLAGS = 
 
-export INC = -I"C:\lib\MinGW64_7.3\include" 
+export INC = -I"C:\lib\MinGW64_7.3\include" -I"C:\Users\abell\Documents\GitHub\NRE-Utility\src" 
 export LIB = "C:\lib\MinGW64_7.3\x86_64-w64-mingw32\lib\libmingw32.a" 
 export LIBDIR = -L"C:\lib\MinGW64_7.3\lib" 
 
 OBJDIR = obj/
 BIN = bin/
 SRC = src
-OBJ = $(OBJDIR)NRE_Main.o $(OBJDIR)Math/Curve/Bezier/3D/NRE_BezierCurve3D.o $(OBJDIR)Math/Curve/Bezier/4D/NRE_BezierCurve4D.o $(OBJDIR)Math/Frustum/NRE_Frustum.o 
+OBJ = $(OBJDIR)Math/Curve/Bezier/3D/NRE_BezierCurve3D.o $(OBJDIR)Math/Curve/Bezier/4D/NRE_BezierCurve4D.o $(OBJDIR)Math/Frustum/NRE_Frustum.o 
 OUT = NRE-Math
 
 all : childs out

@@ -132,7 +132,7 @@
             }
 
             template <class T>
-            inline std::string Quaternion<T>::toString() const {
+            inline Utility::String Quaternion<T>::toString() const {
                 return quat.toString();
             }
 
