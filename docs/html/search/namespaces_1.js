@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nre',['NRE',['../namespace_n_r_e.html',1,'']]]
+  ['nre',['NRE',['../namespace_n_r_e.php',1,'']]]
 ];
