@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['nre_2dmath',['NRE-Math',['../index.php',1,'']]],
   ['near',['NEAR',['../_n_r_e___plane_8hpp.php#a3b4330699dcee93a68dccfffe876ebdbaa83f161aece2d3293d030b7af8037d15',1,'NRE::Math']]],
   ['newton',['newton',['../_n_r_e___unit_8hpp.php#a77468077d86c3a77414bcb1af0047604',1,'NRE::Math']]],
   ['norm',['norm',['../class_n_r_e_1_1_math_1_1_quaternion.php#a533b835d9116d56319c30113c6e57d3d',1,'NRE::Math::Quaternion::norm()'],['../class_n_r_e_1_1_math_1_1_vector2_d.php#a16aaa8e33f3058cbb71ed14573b7e43c',1,'NRE::Math::Vector2D::norm()'],['../class_n_r_e_1_1_math_1_1_vector3_d.php#a76554f59e19abe05b8f3eb6ef416ea45',1,'NRE::Math::Vector3D::norm()'],['../class_n_r_e_1_1_math_1_1_vector4_d.php#a16d5ed1bb23ec581b5b2a215b893eea9',1,'NRE::Math::Vector4D::norm()']]],

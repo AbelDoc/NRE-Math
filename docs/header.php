@@ -34,23 +34,17 @@
         <script type="text/javascript" src="$relpath^doxy-boot.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <header class="page-header">
-                    <a href="../../../index.php">
-                        <img src="../../img/Logo.png" class="logo img-responsive"/>
-                    </a>
-                </header>
-                <?php addNavigationBarInl(false); ?>
-                <div class="navbar-header">
-                    <a class="navbar-brand">$projectname $projectnumber</a>
-                </div>
-            </div>
-        </nav>
-        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-            <div class="content" id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 panel " style="padding-bottom: 15px;">
-                            <div style="margin-bottom: 15px;">
+        <div class="container-fluid">
+            <header class="page-header">
+                <a href="../../../index.php">
+                    <img src="../../img/Logo.png" class="logo img-responsive"/>
+                </a>
+            </header>
+            <?php addNavigationBarInl(false); ?>
+            <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                <div class="content" id="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 panel " style="padding-bottom: 15px;">
+                                <div style="margin-bottom: 15px;">
 <!-- end header part -->
