@@ -348,19 +348,17 @@
 
             template <class T>
             void Matrix4x4<T>::lookAt(Vector3D<T> const& eye, Vector3D<T> const& center, Vector3D<T> const& up) {
-                Vector3D<T> f(center.getX() - eye.getX(),
-                              center.getY() - eye.getY(),
-                              center.getZ() - eye.getZ());
-                f.normalize();
-                Vector3D<T> s = f ^ up;
-                Vector3D<T> u = s ^ f;
-                s.normalize();
-                u.normalize();
+                Vector3D<T> z(eye.getX() - center.getX(),
+                              eye.getY() - center.getY(),
+                              eye.getZ() - center.getZ());
+                z.normalize();
+                Vector3D<T> x = up ^ z;
+                x.normalize();
+                Vector3D<T> y = z ^ x;
 
-                Vector3D<T> vEye(eye);
-                setL1(Vector4D<T>(s, -(s | vEye)));
-                setL2(Vector4D<T>(u, -(u | vEye)));
-                setL3(Vector4D<T>(-f, (f | vEye)));
+                setL1(Vector4D<T>(x, -(x | center)));
+                setL2(Vector4D<T>(y, -(y | center)));
+                setL3(Vector4D<T>(z, -(z | center)));
                 setL4(Vector4D<T>(0, 0, 0, 1));
             }
 
