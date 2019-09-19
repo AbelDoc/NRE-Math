@@ -75,6 +75,13 @@
                          */
                         ~Frustum() = default;
 
+                    //## Setter ##//
+                        /**
+                         * Set the frustum field of view
+                         * @param fieldOfView the new fov
+                         */
+                        void setFov(Angle fieldOfView);
+
                     //## Methods ##//
                         /**
                          * Compute the frustum's planes according to the given vectors
@@ -136,3 +143,5 @@
             std::ostream& operator <<(std::ostream& stream, Frustum const& o);
         }
     }
+
+    #include "NRE_Frustum.tpp"

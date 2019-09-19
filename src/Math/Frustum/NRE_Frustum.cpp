@@ -14,10 +14,6 @@
     namespace NRE {
         namespace Math {
 
-            Frustum::Frustum(Angle fieldOfView, float r, Vector2D<float> const& d) : dist(d), ratio(r), fov(fieldOfView) {
-                computeNearAndFar();
-            }
-
             void Frustum::computePlane(Point3D<float> const& eye, Vector3D<float> const& forward, Vector3D<float> const& left, Vector3D<float> const& up) {
                 Point3D<float> fc, nc;
                 Vector3D<float> a, normal;
@@ -49,16 +45,6 @@
                 planes[RIGHT].setNormalAndPoint(normal, nc + left * near.getX());
             }
 
-            void Frustum::computeProjectionMatrix(Matrix4x4<float>& m) {
-                m.perspective(fov, ratio, dist);
-            }
-
-            void Frustum::resize(Vector2D<std::size_t> const& size, Point3D<float> const& eye, Vector3D<float> const& forward, Vector3D<float> const& left, Vector3D<float> const& up) {
-                ratio = static_cast <float> (size.getW()) / static_cast <float> (size.getH());
-                computeNearAndFar();
-                computePlane(eye, forward, left, up);
-            }
-
             String Frustum::toString() const {
                 String res( "Top = ");
                 res.reserve(150);
@@ -85,19 +71,6 @@
                 res << ratio;
                 res << ']';
                 return res;
-            }
-
-            void Frustum::computeNearAndFar() {
-                float tang = static_cast <float> (tan(fov * 0.5));
-
-                near.setY(tang * dist.getX());
-                near.setX(near.getY() * ratio);
-                far.setY(tang * dist.getY());
-                far.setX(far.getY() * ratio);
-            }
-
-            std::ostream& operator <<(std::ostream& stream, Frustum const& o) {
-                return stream << o.toString();
             }
 
         }

@@ -5,13 +5,13 @@ export CFLAGS = -pedantic -Wno-virtual-move-assign -Wall -Wextra -Wfloat-equal -
 export LDFLAGS = 
 
 export INC = -I"C:\lib\MinGW64_7.3\include" -I"C:\Users\abell\Documents\GitHub\NRE-Utility\src" 
-export LIB = "C:\lib\MinGW64_7.3\x86_64-w64-mingw32\lib\libmingw32.a" 
+export LIB = "-lmingw32" 
 export LIBDIR = -L"C:\lib\MinGW64_7.3\lib" 
 
 OBJDIR = obj/
 BIN = bin/
 SRC = src
-OBJ = $(OBJDIR)Math/Curve/Bezier/3D/NRE_BezierCurve3D.o $(OBJDIR)Math/Curve/Bezier/4D/NRE_BezierCurve4D.o $(OBJDIR)Math/Frustum/NRE_Frustum.o 
+OBJ = $(OBJDIR)NRE_Main.o $(OBJDIR)Math/Curve/Bezier/3D/NRE_BezierCurve3D.o $(OBJDIR)Math/Curve/Bezier/4D/NRE_BezierCurve4D.o $(OBJDIR)Math/Frustum/NRE_Frustum.o 
 OUT = NRE-Math
 
 all : childs out
