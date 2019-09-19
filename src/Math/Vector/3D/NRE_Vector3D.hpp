@@ -401,4 +401,44 @@
         }
     }
 
+    /**
+    * @namespace std
+    * @brief The stl standard namespace
+    */
+    namespace std {
+        /**
+         * @class hash
+         * @brief Manage hashing for specialized version
+         */
+        template <>
+        class hash<NRE::Math::Vector3D<float>> {
+            public:
+                /**
+                 * Compute a hash for a 3D float vector
+                 * @param p the vector to hash
+                 * @return the computed hash
+                 */
+                size_t operator()(NRE::Math::Vector3D<float> const& p) const {
+                    static constexpr size_t keep     = 21;
+                    static constexpr size_t hashSize = sizeof(size_t) * 8;
+
+                    float x = p.getX();
+                    float y = p.getY();
+                    float z = p.getZ();
+
+                    size_t iX, iY, iZ;
+                    memcpy(&iX, &x, sizeof(x));
+                    iX <<= hashSize - keep;
+                    iX &= 0xFFFFF80000000000;
+                    memcpy(&iY, &y, sizeof(y));
+                    iY <<= hashSize - (keep * 2);
+                    iY &= 0x000007FFFFC00000;
+                    memcpy(&iZ, &z, sizeof(z));
+                    iZ <<= hashSize - (keep * 3);
+                    iZ &= 0x00000000003FFFFE;
+                    return iX + iY + iZ;
+                }
+        };
+    }
+
     #include "NRE_Vector3D.tpp"
