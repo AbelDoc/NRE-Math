@@ -20,6 +20,7 @@
             }
 
             inline void Frustum::computeProjectionMatrix(Matrix4x4<float>& m) {
+                m.setIdentity();
                 m.perspective(fov, ratio, dist);
             }
 
