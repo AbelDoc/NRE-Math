@@ -209,12 +209,6 @@
                 return almostEqual(x, u.x) && almostEqual(y, u.y);
             }
 
-            template <>
-            template <class K>
-            inline bool Vector2D<float>::operator ==(Vector2D<K> const& u) const {
-                return almostEqual(x, u.x) && almostEqual(y, u.y);
-            }
-
             template <class T>
             template <class K>
             inline bool Vector2D<T>::operator !=(Vector2D<K> const& u) const {

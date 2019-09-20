@@ -105,8 +105,8 @@
 
             template <class T>
             inline void Vector3D<T>::setCoord(Vector2D<T> const& u, T nZ) {
-                x = u.x;
-                y = u.y;
+                x = u.getX();
+                y = u.getY();
                 z = nZ;
             }
 
@@ -257,12 +257,6 @@
             template <class K>
             inline bool Vector3D<T>::operator ==(Vector3D<K> const& u) const {
                 return x == u.x && y == u.y && z == u.z;
-            }
-
-            template <>
-            template <class K>
-            inline bool Vector3D<float>::operator ==(Vector3D<K> const& u) const {
-                return almostEqual(x, u.x) && almostEqual(y, u.y) && almostEqual(z, u.z);
             }
 
             template <>

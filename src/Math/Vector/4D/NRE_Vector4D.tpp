@@ -121,9 +121,9 @@
 
             template <class T>
             inline void Vector4D<T>::setCoord(Vector3D<T> const& u, T nW) {
-                x = u.x;
-                y = u.y;
-                z = u.z;
+                x = u.getX();
+                y = u.getY();
+                z = u.getZ();
                 w = nW;
             }
 
@@ -137,9 +137,9 @@
 
             template <class T>
             inline void Vector4D<T>::setRGBA(Vector3D<T> const& u, T a) {
-                x = u.x;
-                y = u.y;
-                z = u.z;
+                x = u.getX();
+                y = u.getY();
+                z = u.getZ();
                 w = a;
             }
 
@@ -297,13 +297,7 @@
             inline bool Vector4D<float>::operator ==(Vector4D<K> const& u) const {
                 return almostEqual(x, u.x) && almostEqual(y, u.y) && almostEqual(z, u.z) && almostEqual(w, u.w);
             }
-
-            template <>
-            template <class K>
-            inline bool Vector4D<float>::operator ==(Vector4D<K> const& u) const {
-                return almostEqual(x, u.x) && almostEqual(y, u.y) && almostEqual(z, u.z) && almostEqual(w, u.w);
-            }
-
+            
             template <class T>
             template <class K>
             inline bool Vector4D<T>::operator !=(Vector4D<K> const& u) const {

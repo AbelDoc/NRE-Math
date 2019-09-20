@@ -22,8 +22,8 @@
          */
         namespace Math {
 
-            static const float  F_EPSILON = 0.00001f;   /**< Single precision epsilon for equality test */
-            static const double D_EPSILON = 0.00001;    /**< Double precision epsilon for equality test */
+            static const float  F_EPSILON = 0.000000001f;   /**< Single precision epsilon for equality test */
+            static const double D_EPSILON = 0.000000001;    /**< Double precision epsilon for equality test */
 
             /**
              * Perform an almost equal test on 2 floating value
