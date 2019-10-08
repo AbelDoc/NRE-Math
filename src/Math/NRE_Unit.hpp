@@ -12,7 +12,7 @@
      #include <iostream>
      #include <ratio>
 
-     #include "Utility/String/NRE_String.hpp"
+     #include <Utility/String/NRE_String.hpp>
 
      #include "NRE_Math.hpp"
 

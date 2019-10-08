@@ -51,7 +51,8 @@
                          * @param z  the z coordinate
                          * @param w  the rotation's angle
                          */
-                        Quaternion(T x, T y, T z, T w);
+                        template <class K, class L, class N, class M>
+                        Quaternion(K x, L y, N z, M w);
                         /**
                          * Construct a quaternion from angle-axis construction
                          * @param x  the x coordinate
@@ -59,19 +60,22 @@
                          * @param z  the z coordinate
                          * @param w  the rotation's angle
                          */
-                        Quaternion(T x, T y, T z, Angle w);
+                        template <class K, class L, class N>
+                        Quaternion(K x, L y, N z, Angle w);
                         /**
                          * Construct a quaternion with direct assignment
                          * @param ax  the rotation's axis
                          * @param an  the rotation's angle
                          */
-                        Quaternion(Vector3D<T> const& ax, T an);
+                        template <class K, class L>
+                        Quaternion(Vector3D<K> const& ax, L an);
                         /**
                          * Construct a quaternion from angle-axis construction
                          * @param ax  the rotation's axis
                          * @param an  the rotation's angle
                          */
-                        Quaternion(Vector3D<T> const& ax, Angle an);
+                        template <class K>
+                        Quaternion(Vector3D<K> const& ax, Angle an);
 
                     //## Copy-Constructor ##//
                         /**
@@ -86,6 +90,14 @@
                          * @param q the object to move
                          */
                         Quaternion(Quaternion && q) = default;
+
+                    //## Convertor ##//
+                        /**
+                         * Convert a K-type quaternion into a T-type quaternion
+                         * @param q the K-type quaternion to convert
+                         */
+                        template <class K>
+                        Quaternion(Quaternion<K> const& q);
 
                     //## Deconstructor ##//
                         /**
@@ -124,28 +136,33 @@
                          * X setter
                          * @param x the new value for x
                          */
-                        void setX(T x);
+                        template <class K>
+                        void setX(K x);
                         /**
                          * Y setter
                          * @param y the new value for y
                          */
-                        void setY(T y);
+                        template <class K>
+                        void setY(K y);
                         /**
                          * Z setter
                          * @param z the new value for z
                          */
-                        void setZ(T z);
+                        template <class K>
+                        void setZ(K z);
                         /**
                          * W setter
                          * @param w the new value for w
                          */
-                        void setW(T w);
+                        template <class K>
+                        void setW(K w);
                         /**
                          * Angle axis setter
                          * @param axis the new rotation's axis
                          * @param w    the new rotation's angle
                          */
-                        void setAngleAxis(Vector3D<T> const& axis, Angle w);
+                        template <class K>
+                        void setAngleAxis(Vector3D<K> const& axis, Angle w);
                         /**
                          * Set the quaternion to the identity quaternion
                          */
@@ -182,6 +199,20 @@
                          * @return  the reference of himself
                          */
                         Quaternion& operator =(Quaternion && q) = default;
+                        /**
+                         * Copy q into this
+                         * @param q the object to copy into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Quaternion& operator =(Quaternion<K> const& q);
+                        /**
+                         * Move q into this
+                         * @param q the object to move into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Quaternion& operator =(Quaternion<K> && q);
 
                     //## Shortcut Operator ##//
                         /**
@@ -189,7 +220,8 @@
                          * @param q the second quaternion
                          * @return  the reference of himself
                          */
-                        Quaternion& operator*=(Quaternion const& q);
+                        template <class K>
+                        Quaternion& operator*=(Quaternion<K> const& q);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -197,7 +229,8 @@
                          * @param q the second quaternion
                          * @return  the computed quaternion
                          */
-                        Quaternion operator*(Quaternion const& q) const;
+                        template <class K>
+                        Quaternion<std::common_type_t<T, K>> operator*(Quaternion<K> const& q) const;
 
                     //## Stream Operator ##//
                         /**

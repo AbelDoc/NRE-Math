@@ -25,13 +25,13 @@
 
             static const long double EPSILON = 0.000001;    /**< Double precision epsilon for equality test */
 
-            template <class T, class K>
-            inline typename std::enable_if_t< std::is_floating_point<std::common_type_t<T, K>>::value, bool> equal(T a, K b) {
+            template <class T, class K, typename std::enable_if_t< std::is_floating_point<std::common_type_t<T, K>>::value, int> = 0>
+            inline bool equal(T a, K b) {
                 return std::abs(static_cast <std::common_type_t<T, K>> (a) - static_cast <std::common_type_t<T, K>> (b)) < EPSILON;
             }
 
-            template <class T, class K>
-            inline typename std::enable_if_t<!std::is_floating_point<std::common_type_t<T, K>>::value, bool> equal(T a, K b) {
+            template <class T, class K, typename std::enable_if_t<!std::is_floating_point<std::common_type_t<T, K>>::value, int> = 0>
+            inline bool equal(T a, K b) {
                 return static_cast <std::common_type_t<T, K>> (a) == static_cast <std::common_type_t<T, K>> (b);
             }
 

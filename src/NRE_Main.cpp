@@ -7,9 +7,6 @@
      * @copyright CC-BY-NC-SA
      */
 
-    #include <string>
-    #include <iostream>
-
     #include "Header/NRE_Math.hpp"
 
     using namespace NRE::Math;
@@ -21,7 +18,6 @@
         }
 
         int i = 1;
-
         std::cout << equal(i, f) << std::endl;
 
         return 0;

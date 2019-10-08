@@ -16,19 +16,28 @@
             }
 
             template <class T>
-            inline Quaternion<T>::Quaternion(T x, T y, T z, T w) : quat(x, y, z, w) {
+            template <class K, class L, class N, class M>
+            inline Quaternion<T>::Quaternion(K x, L y, N z, M w) : quat(x, y, z, w) {
             }
 
             template <class T>
-            inline Quaternion<T>::Quaternion(T x, T y, T z, Angle w) : Quaternion({x, y, z}, w) {
+            template <class K, class L, class N>
+            inline Quaternion<T>::Quaternion(K x, L y, N z, Angle w) : Quaternion({x, y, z}, w) {
             }
 
             template <class T>
-            inline Quaternion<T>::Quaternion(Vector3D<T> const& ax, T an) : quat(ax, an) {
+            template <class K, class L>
+            inline Quaternion<T>::Quaternion(Vector3D<K> const& ax, L an) : quat(ax, an) {
             }
 
             template <class T>
-            inline Quaternion<T>::Quaternion(Vector3D<T> const& ax, Angle an) {
+            template <class K>
+            inline Quaternion<T>::Quaternion(Quaternion<K> const& q) : quat(q.quat) {
+            }
+
+            template <class T>
+            template <class K>
+            inline Quaternion<T>::Quaternion(Vector3D<K> const& ax, Angle an) {
                 setAngleAxis(ax, an);
             }
 
@@ -63,27 +72,32 @@
             }
 
             template <class T>
-            inline void Quaternion<T>::setX(T x) {
+            template <class K>
+            inline void Quaternion<T>::setX(K x) {
                 quat.setX(x);
             }
 
             template <class T>
-            inline void Quaternion<T>::setY(T y) {
+            template <class K>
+            inline void Quaternion<T>::setY(K y) {
                 quat.setY(y);
             }
 
             template <class T>
-            inline void Quaternion<T>::setZ(T z) {
+            template <class K>
+            inline void Quaternion<T>::setZ(K z) {
                 quat.setZ(z);
             }
 
             template <class T>
-            inline void Quaternion<T>::setW(T w) {
+            template <class K>
+            inline void Quaternion<T>::setW(K w) {
                 quat.setW(w);
             }
 
             template <class T>
-            inline void Quaternion<T>::setAngleAxis(Vector3D<T> const& axis, Angle w) {
+            template <class K>
+            inline void Quaternion<T>::setAngleAxis(Vector3D<K> const& axis, Angle w) {
                 T s = static_cast <T> (sin(w / 2.0));
                 setX(s * axis.getX());
                 setY(s * axis.getY());
@@ -117,18 +131,34 @@
             }
 
             template <class T>
-            inline Quaternion<T>& Quaternion<T>::operator*=(Quaternion const& q) {
-                Quaternion<T> tmp(getW() * q.getX() + getX() * q.getW() - getY() * q.getZ() + getZ() * q.getY(),
-                                  getW() * q.getY() + getX() * q.getZ() + getY() * q.getW() - getZ() * q.getX(),
-                                  getW() * q.getZ() - getX() * q.getY() + getY() * q.getX() + getZ() * q.getW(),
-                                  getW() * q.getW() - getX() * q.getX() - getY() * q.getY() - getZ() * q.getZ());
+            template <class K>
+            inline Quaternion<T>& Quaternion<T>::operator=(Quaternion<K> const& q) {
+                quat = q.quat;
+                return *this;
+            }
+
+            template <class T>
+            template <class K>
+            inline Quaternion<T>& Quaternion<T>::operator=(Quaternion<K> && q) {
+                quat = q.quat;
+                return *this;
+            }
+
+            template <class T>
+            template <class K>
+            inline Quaternion<T>& Quaternion<T>::operator*=(Quaternion<K> const& q) {
+                Quaternion<T> tmp(getW() * static_cast <T> (q.getX()) + getX() * static_cast <T> (q.getW()) - getY() * static_cast <T> (q.getZ()) + getZ() * static_cast <T> (q.getY()),
+                                  getW() * static_cast <T> (q.getY()) + getX() * static_cast <T> (q.getZ()) + getY() * static_cast <T> (q.getW()) - getZ() * static_cast <T> (q.getX()),
+                                  getW() * static_cast <T> (q.getZ()) - getX() * static_cast <T> (q.getY()) + getY() * static_cast <T> (q.getX()) + getZ() * static_cast <T> (q.getW()),
+                                  getW() * static_cast <T> (q.getW()) - getX() * static_cast <T> (q.getX()) - getY() * static_cast <T> (q.getY()) - getZ() * static_cast <T> (q.getZ()));
                 *this = std::move(tmp);
                 return *this;
             }
 
             template <class T>
-            inline Quaternion<T> Quaternion<T>::operator*(Quaternion const& q) const {
-                return Quaternion<T>(*this) *= q;
+            template <class K>
+            inline Quaternion<std::common_type_t<T, K>> Quaternion<T>::operator*(Quaternion<K> const& q) const {
+                return Quaternion<std::common_type_t<T, K>>(*this) *= q;
             }
 
             template <class T>

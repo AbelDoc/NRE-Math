@@ -1,7 +1,7 @@
 
     /**
      * @file NRE_Segment4D.hpp
-     * @brief Implmentation of Math's API's Object : Segment4D
+     * @brief Implementation of Math's API's Object : Segment4D
      * @author Louis ABEL
      * @date 04/04/2019
      * @copyright CC-BY-NC-SA
@@ -15,15 +15,18 @@
             }
 
             template <class T>
-            Segment4D<T>::Segment4D(Point4D<T> const& s, Point4D<T> const& e) : start(s), end(e) {
+            template <class K, class L>
+            Segment4D<T>::Segment4D(Point4D<K> const& s, Point4D<L> const& e) : start(s), end(e) {
             }
 
             template <class T>
-            Segment4D<T>::Segment4D(Point3D<T> const& s, Point3D<T> const& e) : start(Point4D<T>(s, 1)), end(Point4D<T>(e, 1)) {
+            template <class K, class L>
+            Segment4D<T>::Segment4D(Point3D<K> const& s, Point3D<L> const& e) : start(Point4D<T>(s, 1)), end(Point4D<T>(e, 1)) {
             }
 
             template <class T>
-            Segment4D<T>::Segment4D(T sX, T sY, T sZ, T eX, T eY, T eZ) : start(sX, sY, sZ, 1), end(eX, eY, eZ, 1) {
+            template <class K, class L, class N, class M, class O, class P>
+            Segment4D<T>::Segment4D(K sX, L sY, N sZ, M eX, O eY, P eZ) : start(sX, sY, sZ, 1), end(eX, eY, eZ, 1) {
             }
 
             template <class T>

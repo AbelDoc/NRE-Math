@@ -1,7 +1,7 @@
 
     /**
      * @file NRE_Segment3D.hpp
-     * @brief Implmentation of Math's API's Object : Segment3D
+     * @brief Implementation of Math's API's Object : Segment3D
      * @author Louis ABEL
      * @date 04/04/2019
      * @copyright CC-BY-NC-SA

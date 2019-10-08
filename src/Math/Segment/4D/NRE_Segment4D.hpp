@@ -43,13 +43,15 @@
                          * @param s the segment's start
                          * @param e the segment's end
                          */
-                        Segment4D(Point4D<T> const& s, Point4D<T> const& e);
+                        template <class K, class L>
+                        Segment4D(Point4D<K> const& s, Point4D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param s the segment's start
                          * @param e the segment's end
                          */
-                        Segment4D(Point3D<T> const& s, Point3D<T> const& e);
+                        template <class K, class L>
+                        Segment4D(Point3D<K> const& s, Point3D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param sX the segment's start x
@@ -59,7 +61,8 @@
                          * @param eY the segment's end y
                          * @param eZ the segment's end z
                          */
-                        Segment4D(T sX, T sY, T sZ, T eX, T eY, T eZ);
+                        template <class K, class L, class N, class M, class O, class P>
+                        Segment4D(K sX, L sY, N sZ, M eX, O eY, P eZ);
 
                     //## Copy-Constructor ##//
                         /**
@@ -83,17 +86,14 @@
 
                     //## Getter ##//
                         /**
-                         * Start getter
                          * @return the start point
                          */
                         Point4D<T> const& getStart() const;
                         /**
-                         * End getter
                          * @return the end point
                          */
                         Point4D<T> const& getEnd() const;
                         /**
-                         * Segment vector getter
                          * @return the segment's vector
                          */
                         Vector4D<T> getVector() const;
