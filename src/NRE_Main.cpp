@@ -15,36 +15,14 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Vector2D<float>     v1(1);
-        Vector2D<float>     v2(2);
-        Vector2D<int>       v3(3);
-        Vector2D<short int> v4(4);
-        Vector2D<long long int>  v5(5);
+        float f = 0;
+        for (int i = 0; i < 100; i++) {
+            f += 0.01f;
+        }
 
-        v1 += v2;
-        v1 += v3;
+        int i = 1;
 
-        v5 = v3 + v4;
-        std::cout << v5 << std::endl;
-        v4 = v3 + v5;
-        std::cout << v4 << std::endl;
-
-        std::cout << sizeof(short int) << std::endl;
-        std::cout << sizeof(int) << std::endl;
-        std::cout << sizeof(long long int) << std::endl;
-
-        std::cout << sizeof(float) << std::endl;
-        std::cout << sizeof(double) << std::endl;
-        std::cout << sizeof(long double) << std::endl;
-
-        auto v6 = v4 + Vector2D<long double>(1);
-        std::cout << sizeof(v6) << std::endl;
-
-        Vector2D<float> tmp = Vector2D<float>(1) + Vector2D<double>(2);
-        std::cout << tmp << std::endl;
-
-        auto d = v3 | v4;
-        std::cout << d << std::endl;
+        std::cout << equal(i, f) << std::endl;
 
         return 0;
     }

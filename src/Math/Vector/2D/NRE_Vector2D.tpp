@@ -95,12 +95,12 @@
 
             template <class T>
             inline long double Vector2D<T>::norm() const {
-                return std::sqrt(normSquared());
+                return std::sqrt(static_cast <long double> (normSquared()));
             }
 
             template <class T>
-            inline long double Vector2D<T>::normSquared() const {
-                return static_cast <long double> (x * x + y * y);
+            inline T Vector2D<T>::normSquared() const {
+                return x * x + y * y;
             }
 
             template <class T>
@@ -255,25 +255,25 @@
             template <class T>
             template <class K>
             inline bool Vector2D<T>::operator <(Vector2D<K> const& u) const {
-                return normSquared() < u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) < static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>
             template <class K>
             inline bool Vector2D<T>::operator >(Vector2D<K> const& u) const {
-                return normSquared() > u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) > static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>
             template <class K>
             inline bool Vector2D<T>::operator <=(Vector2D<K> const& u) const {
-                return normSquared() <= u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) <= static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>
             template <class K>
             inline bool Vector2D<T>::operator >=(Vector2D<K> const& u) const {
-                return normSquared() >= u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) >= static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>

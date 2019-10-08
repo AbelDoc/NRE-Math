@@ -10,8 +10,6 @@
      #pragma once
 
      #include <Utility/String/NRE_String.hpp>
-     #include <iostream>
-
      #include "../../NRE_Math.hpp"
 
      /**
@@ -203,7 +201,7 @@
                         /**
                          * @return the squared vector's norm
                          */
-                        long double normSquared() const;
+                        T normSquared() const;
                         /**
                          * Normalize the vector
                          */

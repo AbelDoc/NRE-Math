@@ -24,7 +24,7 @@
 
             static const float F_EPSILON = 0.000000001f;    /**< Double precision epsilon for equality test */
             static const double D_EPSILON = 0.000000001;    /**< Double precision epsilon for equality test */
-            static const long double EPSILON = 0.000000001;    /**< Double precision epsilon for equality test */
+            static const long double EPSILON = 0.000001;    /**< Double precision epsilon for equality test */
 
             template <class T, class K>
             inline typename std::enable_if_t< std::is_floating_point_v<std::common_type_t<T, K>>, bool> equal(T a, K b) {

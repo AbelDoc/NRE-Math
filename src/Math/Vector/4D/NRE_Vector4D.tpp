@@ -11,24 +11,38 @@
         namespace Math {
 
             template <class T>
-            inline Vector4D<T>::Vector4D(T nX, T nY, T nZ, T nW) : x(nX), y(nY), z(nZ), w(nW) {
-            }
-
-            template <class T>
-            inline Vector4D<T>::Vector4D(T value) : x(value), y(value), z(value), w(value) {
+            template <class K, class L, class N, class M>
+            inline Vector4D<T>::Vector4D(K nX, L nY, N nZ, M nW) : x(static_cast <T> (nX)), y(static_cast <T> (nY)), z(static_cast <T> (nZ)), w(static_cast <T> (nW)) {
             }
 
             template <class T>
             template <class K>
-            inline Vector4D<T>::Vector4D(Vector4D<K> const& u) : x(static_cast <T> (u.getX())), y(static_cast <T> (u.getY())), z(static_cast <T> (u.getZ())), w(static_cast <T> (u.getW())) {
+            inline Vector4D<T>::Vector4D(K value) : Vector4D(value, value, value, value) {
             }
 
             template <class T>
-            inline Vector4D<T>::Vector4D(Vector3D<T> const& u) : x(u.getX()), y(u.getY()), z(u.getZ()), w(0) {
+            template <class K>
+            inline Vector4D<T>::Vector4D(Vector4D<K> const& u) : Vector4D(u.getX(), u.getY(), u.getZ(), u.getW()) {
             }
 
             template <class T>
-            inline Vector4D<T>::Vector4D(Vector3D<T> const& u, T nW) : x(u.getX()), y(u.getY()), z(u.getZ()), w(nW) {
+            template <class K>
+            inline Vector4D<T>::Vector4D(Vector2D<K> const& u) : Vector4D(u.getX(), u.getY(), 0, 0) {
+            }
+
+            template <class T>
+            template <class K, class L, class N>
+            inline Vector4D<T>::Vector4D(Vector2D<K> const& u, L nZ, N nW) : Vector4D(u.getX(), u.getY(), nZ, nW) {
+            }
+
+            template <class T>
+            template <class K>
+            inline Vector4D<T>::Vector4D(Vector3D<K> const& u) : Vector4D(u.getX(), u.getY(), u.getZ(), 0) {
+            }
+
+            template <class T>
+            template <class K, class L>
+            inline Vector4D<T>::Vector4D(Vector3D<K> const& u, L nW) : Vector4D(u.getX(), u.getY(), u.getZ(), nW) {
             }
 
             template <class T>
@@ -72,85 +86,106 @@
             }
 
             template <class T>
-            inline void Vector4D<T>::setX(T nX) {
-                x = nX;
+            template <class K>
+            inline void Vector4D<T>::setX(K nX) {
+                x = static_cast <T> (nX);
             }
 
             template <class T>
-            inline void Vector4D<T>::setY(T nY) {
-                y = nY;
+            template <class K>
+            inline void Vector4D<T>::setY(K nY) {
+                y = static_cast <T> (nY);
             }
 
             template <class T>
-            inline void Vector4D<T>::setZ(T nZ) {
-                z = nZ;
+            template <class K>
+            inline void Vector4D<T>::setZ(K nZ) {
+                z = static_cast <T> (nZ);
             }
 
             template <class T>
-            inline void Vector4D<T>::setW(T nW) {
-                w = nW;
+            template <class K>
+            inline void Vector4D<T>::setW(K nW) {
+                w = static_cast <T> (nW);
             }
 
             template <class T>
-            inline void Vector4D<T>::setR(T r) {
-                x = r;
+            template <class K>
+            inline void Vector4D<T>::setR(K r) {
+                setX(r);
             }
 
             template <class T>
-            inline void Vector4D<T>::setG(T g) {
-                y = g;
+            template <class K>
+            inline void Vector4D<T>::setG(K g) {
+                setY(g);
             }
 
             template <class T>
-            inline void Vector4D<T>::setB(T b) {
-                z = b;
+            template <class K>
+            inline void Vector4D<T>::setB(K b) {
+                setZ(b);
             }
 
             template <class T>
-            inline void Vector4D<T>::setA(T a) {
-                w = a;
+            template <class K>
+            inline void Vector4D<T>::setA(K a) {
+                setW(a);
             }
 
             template <class T>
-            inline void Vector4D<T>::setCoord(T nX, T nY, T nZ, T nW) {
-                x = nX;
-                y = nY;
-                z = nZ;
-                w = nW;
+            template <class K, class L, class N, class M>
+            inline void Vector4D<T>::setCoord(K nX, L nY, N nZ, M nW) {
+                setX(nX);
+                setY(nY);
+                setZ(nZ);
+                setW(nW);
             }
 
             template <class T>
-            inline void Vector4D<T>::setCoord(Vector3D<T> const& u, T nW) {
-                x = u.getX();
-                y = u.getY();
-                z = u.getZ();
-                w = nW;
+            template <class K, class L, class N>
+            inline void Vector4D<T>::setCoord(Vector2D<K> const& u, L nZ, N nW) {
+                setX(u.getX());
+                setY(u.getY());
+                setZ(nZ);
+                setW(nW);
             }
 
             template <class T>
-            inline void Vector4D<T>::setRGBA(T r, T g, T b, T a) {
-                x = r;
-                y = g;
-                z = b;
-                w = a;
+            template <class K, class L>
+            inline void Vector4D<T>::setCoord(Vector3D<K> const& u, L nW) {
+                setX(u.getX());
+                setY(u.getY());
+                setZ(u.getZ());
+                setW(nW);
             }
 
             template <class T>
-            inline void Vector4D<T>::setRGBA(Vector3D<T> const& u, T a) {
-                x = u.getX();
-                y = u.getY();
-                z = u.getZ();
-                w = a;
+            template <class K, class L, class N, class M>
+            inline void Vector4D<T>::setRGBA(K r, L g, N b, M a) {
+                setX(r);
+                setY(g);
+                setZ(b);
+                setW(a);
             }
 
             template <class T>
-            inline float Vector4D<T>::norm() const {
-                return std::sqrt(normSquared());
+            template <class K, class L>
+            inline void Vector4D<T>::setRGBA(Vector3D<K> const& u, L a) {
+                setX(u.getX());
+                setY(u.getY());
+                setZ(u.getZ());
+                setW(a);
             }
 
             template <class T>
-            inline float Vector4D<T>::normSquared() const {
-                return static_cast <float> (x * x + y * y + z * z + w * w);
+            inline long double Vector4D<T>::norm() const {
+                return std::sqrt(static_cast <long double> (normSquared()));
+            }
+
+            template <class T>
+            inline T Vector4D<T>::normSquared() const {
+                return x * x + y * y + z * z + w * w;
             }
 
             template <class T>
@@ -174,81 +209,111 @@
             }
 
             template <class T>
-            inline Vector4D<T>& Vector4D<T>::operator +=(Vector4D const& u) {
-                x += u.x;
-                y += u.y;
-                z += u.z;
-                w += u.w;
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator=(Vector4D<K> const& u) {
+                setX(u.getX());
+                setY(u.getY());
+                setZ(u.getZ());
+                setW(u.getW());
                 return *this;
             }
 
             template <class T>
-            inline Vector4D<T>& Vector4D<T>::operator -=(Vector4D const& u) {
-                x -= u.x;
-                y -= u.y;
-                z -= u.z;
-                w -= u.w;
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator=(Vector4D<K> && u) {
+                setX(u.getX());
+                setY(u.getY());
+                setZ(u.getZ());
+                setW(u.getW());
                 return *this;
             }
 
             template <class T>
-            inline Vector4D<T>& Vector4D<T>::operator *=(T k) {
-                x *= k;
-                y *= k;
-                z *= k;
-                w *= k;
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator +=(Vector4D<K> const& u) {
+                x += static_cast <T> (u.getX());
+                y += static_cast <T> (u.getY());
+                z += static_cast <T> (u.getZ());
+                w += static_cast <T> (u.getW());
                 return *this;
             }
 
             template <class T>
-            inline Vector4D<T>& Vector4D<T>::operator *=(Vector4D const& u) {
-                x *= u.x;
-                y *= u.y;
-                z *= u.z;
-                w *= u.w;
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator -=(Vector4D<K> const& u) {
+                x -= static_cast <T> (u.getX());
+                y -= static_cast <T> (u.getY());
+                z -= static_cast <T> (u.getZ());
+                w -= static_cast <T> (u.getW());
                 return *this;
             }
 
             template <class T>
-            inline Vector4D<T>& Vector4D<T>::operator /=(T k) {
-                x /= k;
-                y /= k;
-                z /= k;
-                w /= k;
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator *=(K k) {
+                x *= static_cast <T> (k);
+                y *= static_cast <T> (k);
+                z *= static_cast <T> (k);
+                w *= static_cast <T> (k);
                 return *this;
             }
 
             template <class T>
-            inline Vector4D<T>& Vector4D<T>::operator /=(Vector4D const& u) {
-                x /= u.x;
-                y /= u.y;
-                z /= u.z;
-                w /= u.w;
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator *=(Vector4D<K> const& u) {
+                x *= static_cast <T> (u.getX());
+                y *= static_cast <T> (u.getY());
+                z *= static_cast <T> (u.getZ());
+                w *= static_cast <T> (u.getW());
                 return *this;
             }
 
             template <class T>
-            inline float Vector4D<T>::operator |=(Vector4D const& u) const {
-                return x * u.x + y * u.y + z * u.z + w * u.w;
-            }
-
-            template <class T>
-            inline Vector4D<T>& Vector4D<T>::operator ^=(Vector4D const& u) {
-                setCoord(y * u.z - z * u.y,
-                         z * u.x - x * u.z,
-                         x * u.y - y * u.x,
-                         0.0);
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator /=(K k) {
+                x /= static_cast <T> (k);
+                y /= static_cast <T> (k);
+                z /= static_cast <T> (k);
+                w /= static_cast <T> (k);
                 return *this;
             }
 
             template <class T>
-            inline Vector4D<T> Vector4D<T>::operator +(Vector4D const& u) const {
-                return Vector4D<T>(*this) += u;
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator /=(Vector4D<K> const& u) {
+                x /= static_cast <T> (u.getX());
+                y /= static_cast <T> (u.getY());
+                z /= static_cast <T> (u.getZ());
+                w /= static_cast <T> (u.getW());
+                return *this;
             }
 
             template <class T>
-            inline Vector4D<T> Vector4D<T>::operator -(Vector4D const& u) const {
-                return Vector4D<T>(*this) -= u;
+            template <class K>
+            inline std::common_type_t<T, K> Vector4D<T>::operator |=(Vector4D<K> const& u) const {
+                return static_cast <std::common_type_t<T, K>> (x * u.getX() + y * u.getY() + z * u.getZ() + w * u.getW());
+            }
+
+            template <class T>
+            template <class K>
+            inline Vector4D<T>& Vector4D<T>::operator ^=(Vector4D<K> const& u) {
+                setCoord(y * static_cast <T> (u.getZ()) - z * static_cast <T> (u.getY()),
+                         z * static_cast <T> (u.getX()) - x * static_cast <T> (u.getZ()),
+                         x * static_cast <T> (u.getY()) - y * static_cast <T> (u.getX()),
+                         0);
+                return *this;
+            }
+
+            template <class T>
+            template <class K>
+            inline Vector4D<std::common_type_t<T, K>> Vector4D<T>::operator +(Vector4D<K> const& u) const {
+                return Vector4D<std::common_type_t<T, K>>(*this) += u;
+            }
+
+            template <class T>
+            template <class K>
+            inline Vector4D<std::common_type_t<T, K>> Vector4D<T>::operator -(Vector4D<K> const& u) const {
+                return Vector4D<std::common_type_t<T, K>>(*this) -= u;
             }
 
             template <class T>
@@ -257,47 +322,47 @@
             }
 
             template <class T>
-            inline Vector4D<T> Vector4D<T>::operator *(T k) const {
-                return Vector4D<T>(*this) *= k;
+            template <class K>
+            inline Vector4D<std::common_type_t<T, K>> Vector4D<T>::operator *(K k) const {
+                return Vector4D<std::common_type_t<T, K>>(*this) *= k;
             }
 
             template <class T>
-            inline Vector4D<T> Vector4D<T>::operator *(Vector4D const& u) const {
-                return Vector4D<T>(*this) *= u;
+            template <class K>
+            inline Vector4D<std::common_type_t<T, K>> Vector4D<T>::operator *(Vector4D<K> const& u) const {
+                return Vector4D<std::common_type_t<T, K>>(*this) *= u;
             }
 
             template <class T>
-            inline Vector4D<T> Vector4D<T>::operator /(T k) const {
-                return Vector4D<T>(*this) /= k;
+            template <class K>
+            inline Vector4D<std::common_type_t<T, K>> Vector4D<T>::operator /(K k) const {
+                return Vector4D<std::common_type_t<T, K>>(*this) /= k;
             }
 
             template <class T>
-            inline Vector4D<T> Vector4D<T>::operator /(Vector4D const& u) const {
-                return Vector4D<T>(*this) /= u;
+            template <class K>
+            inline Vector4D<std::common_type_t<T, K>> Vector4D<T>::operator /(Vector4D<K> const& u) const {
+                return Vector4D<std::common_type_t<T, K>>(*this) /= u;
             }
 
             template <class T>
-            inline Vector4D<T> Vector4D<T>::operator ^(Vector4D const& u) const {
-                return Vector4D<T>(*this) ^= u;
+            template <class K>
+            inline Vector4D<std::common_type_t<T, K>> Vector4D<T>::operator ^(Vector4D<K> const& u) const {
+                return Vector4D<std::common_type_t<T, K>>(*this) ^= u;
             }
 
             template <class T>
-            inline float Vector4D<T>::operator |(Vector4D const& u) const {
+            template <class K>
+            inline std::common_type_t<T, K> Vector4D<T>::operator |(Vector4D<K> const& u) const {
                 return *this |= u;
             }
 
             template <class T>
             template <class K>
             inline bool Vector4D<T>::operator ==(Vector4D<K> const& u) const {
-                return x == u.x && y == u.y && z == u.z && w == u.w;
+                return equal(x, u.getX()) && equal(y, u.getY()) && equal(z, u.getZ()) && equal(w, u.getW());
             }
 
-            template <>
-            template <class K>
-            inline bool Vector4D<float>::operator ==(Vector4D<K> const& u) const {
-                return almostEqual(x, u.x) && almostEqual(y, u.y) && almostEqual(z, u.z) && almostEqual(w, u.w);
-            }
-            
             template <class T>
             template <class K>
             inline bool Vector4D<T>::operator !=(Vector4D<K> const& u) const {
@@ -307,25 +372,25 @@
             template <class T>
             template <class K>
             inline bool Vector4D<T>::operator <(Vector4D<K> const& u) const {
-                return normSquared() < u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) < static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>
             template <class K>
             inline bool Vector4D<T>::operator >(Vector4D<K> const& u) const {
-                return normSquared() > u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) > static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>
             template <class K>
             inline bool Vector4D<T>::operator <=(Vector4D<K> const& u) const {
-                return normSquared() <= u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) <= static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>
             template <class K>
             inline bool Vector4D<T>::operator >=(Vector4D<K> const& u) const {
-                return normSquared() >= u.normSquared();
+                return static_cast <std::common_type_t<T, K>> (normSquared()) >= static_cast <std::common_type_t<T, K>> (u.normSquared());
             }
 
             template <class T>

@@ -10,8 +10,6 @@
      #pragma once
 
      #include <Utility/String/NRE_String.hpp>
-     #include <iostream>
-
      #include "../../NRE_Math.hpp"
 
      /**
@@ -25,6 +23,7 @@
          */
         namespace Math {
 
+            template<class> class Vector2D;
             template<class> class Vector3D;
 
             /**
@@ -53,12 +52,14 @@
                          * @param nZ new z value
                          * @param nW new w value
                          */
-                        Vector4D(T nX, T nY, T nZ, T nW);
+                        template <class K, class L, class N, class M>
+                        Vector4D(K nX, L nY, N nZ, M nW);
                         /**
                          * Construct a vector with an unique value for all coordinates
                          * @param value new x, y, z and w values
                          */
-                        Vector4D(T value);
+                        template <class K>
+                        Vector4D(K value);
 
                     //## Copy-Constructor ##//
                         /**
@@ -82,16 +83,32 @@
                         template <class K>
                         Vector4D(Vector4D<K> const& u);
                         /**
-                         * Convert a base 4D vector into a 4D vector with a default w value
+                         * Convert a base 2D vector into a 4D vector with a default z and w value
+                         * @param u the 2D vector to convert
+                         */
+                        template <class K>
+                        Vector4D(Vector2D<K> const& u);
+                        /**
+                         * Convert a base 2D vector into a 4D vector with a passed z and w value
+                         * @param u the 2D vector to convert
+                         * @param nz the new z value
+                         * @param nW the new w value
+                         */
+                        template <class K, class L, class N>
+                        Vector4D(Vector2D<K> const& u, L nZ, N nW);
+                        /**
+                         * Convert a base 3D vector into a 4D vector with a default w value
                          * @param u the 4D vector to convert
                          */
-                        Vector4D(Vector3D<T> const& u);
+                        template <class K>
+                        Vector4D(Vector3D<K> const& u);
                         /**
-                         * Convert a base 4D vector into a 4D point with a passed w value
+                         * Convert a base 3D vector into a 4D point with a passed w value
                          * @param u the 4D vector to convert
                          * @param nW the new w value
                          */
-                        Vector4D(Vector3D<T> const& u, T nW);
+                        template <class K, class L>
+                        Vector4D(Vector3D<K> const& u, L nW);
 
                     //## Deconstructor ##//
                         /**
@@ -138,42 +155,50 @@
                          * X setter
                          * @param nX the new value for x
                          */
-                        void setX(T nX);
+                        template <class K>
+                        void setX(K nX);
                         /**
                          * Y setter
                          * @param nY the new value for y
                          */
-                        void setY(T nY);
+                        template <class K>
+                        void setY(K nY);
                         /**
                          * Z setter
                          * @param nZ the new value for z
                          */
-                        void setZ(T nZ);
+                        template <class K>
+                        void setZ(K nZ);
                         /**
                          * W setter
                          * @param nW the new value for w
                          */
-                        void setW(T nW);
+                        template <class K>
+                        void setW(K nW);
                         /**
                          * X setter
                          * @param r the new value for x
                          */
-                        void setR(T r);
+                        template <class K>
+                        void setR(K r);
                         /**
                          * Y setter
                          * @param g the new value for y
                          */
-                        void setG(T g);
+                        template <class K>
+                        void setG(K g);
                         /**
                          * Z setter
                          * @param b the new value for z
                          */
-                        void setB(T b);
+                        template <class K>
+                        void setB(K b);
                         /**
                          * W setter
                          * @param a the new value for w
                          */
-                        void setA(T a);
+                        template <class K>
+                        void setA(K a);
                         /**
                          * Set the values for x, y, z and w
                          * @param nX the new value for x
@@ -181,13 +206,23 @@
                          * @param nZ the new value for z
                          * @param nW the new value for w
                          */
-                        void setCoord(T nX, T nY, T nZ, T nW);
+                        template <class K, class L, class N, class M>
+                        void setCoord(K nX, L nY, N nZ, M nW);
+                        /**
+                         * Set the values for x, y, z and w with a base 2D vector
+                         * @param u the base 2D vector for x and y values
+                         * @param nZ the new value for z
+                         * @param nW the new value for w
+                         */
+                        template <class K, class L, class N>
+                        void setCoord(Vector2D<K> const& u, L nZ, N nW);
                         /**
                          * Set the values for x, y, z and w with a base 3D vector
                          * @param u the base 3D vector for x, y and z values
                          * @param nW the new value for w
                          */
-                        void setCoord(Vector3D<T> const& u, T nW);
+                        template <class K, class L>
+                        void setCoord(Vector3D<K> const& u, L nW);
                         /**
                          * Set the values for x, y, z and w
                          * @param r the new value for x
@@ -195,23 +230,25 @@
                          * @param b the new value for z
                          * @param a the new value for w
                          */
-                        void setRGBA(T r, T g, T b, T a);
+                        template <class K, class L, class N, class M>
+                        void setRGBA(K r, L g, N b, M a);
                         /**
                          * Set the values for x, y, z and w with a base 3D vector
                          * @param u the base 3D vector for x, y and z values
                          * @param a the new value for w
                          */
-                        void setRGBA(Vector3D<T> const& u, T a);
+                        template <class K, class L>
+                        void setRGBA(Vector3D<K> const& u, L a);
 
                     //## Methods ##//
                         /**
                          * @return the vector's norm
                          */
-                        float norm() const;
+                        long double norm() const;
                         /**
                          * @return the squared vector's norm
                          */
-                        float normSquared() const;
+                        T normSquared() const;
                         /**
                          * Normalize the vector
                          */
@@ -250,6 +287,20 @@
                          * @return  the reference of himself
                          */
                         Vector4D& operator =(Vector4D && u) = default;
+                        /**
+                         * Copy u into this
+                         * @param u the object to copy into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector4D& operator =(Vector4D<K> const& u);
+                        /**
+                         * Move u into this
+                         * @param u the object to move into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector4D& operator =(Vector4D<K> && u);
 
                     //## Shortcut Operator ##//
                         /**
@@ -257,49 +308,57 @@
                          * @param u the vector to add into this
                          * @return  the reference of himself
                          */
-                        Vector4D& operator +=(Vector4D const& u);
+                        template <class K>
+                        Vector4D& operator +=(Vector4D<K> const& u);
                         /**
                          * Subtract a vector into this
                          * @param u the vector to subtract into this
                          * @return  the reference of himself
                          */
-                        Vector4D& operator -=(Vector4D const& u);
+                        template <class K>
+                        Vector4D& operator -=(Vector4D<K> const& u);
                         /**
                          * Multiply this by a factor k
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
-                        Vector4D& operator *=(T k);
+                        template <class K>
+                        Vector4D& operator *=(K k);
                         /**
                          * Multiply this by a vector u, component by component
                          * @param u the multiplication vector
                          * @return  the reference of himself
                          */
-                        Vector4D& operator *=(Vector4D const& u);
+                        template <class K>
+                        Vector4D& operator *=(Vector4D<K> const& u);
                         /**
                          * Divide this by a factor k
                          * @param k the division factor
                          * @return  the reference of himself
                          */
-                        Vector4D& operator /=(T k);
+                        template <class K>
+                        Vector4D& operator /=(K k);
                         /**
                          * Divide this by a vector u, component by component
                          * @param u the division vector
                          * @return  the reference of himself
                          */
-                        Vector4D& operator /=(Vector4D const& u);
+                        template <class K>
+                        Vector4D& operator /=(Vector4D<K> const& u);
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |=(Vector4D const& u) const;
+                        template <class K>
+                        std::common_type_t<T, K> operator |=(Vector4D<K> const& u) const;
                         /**
                          * Replace this by the cross product between this and u
                          * @param u the vector
                          * @return  the reference of himself
                          */
-                        Vector4D& operator ^=(Vector4D const& u);
+                        template <class K>
+                        Vector4D& operator ^=(Vector4D<K> const& u);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -307,13 +366,15 @@
                          * @param u the vector to add
                          * @return  the computed vector
                          */
-                        Vector4D operator +(Vector4D const& u) const;
+                        template <class K>
+                        Vector4D<std::common_type_t<T, K>> operator +(Vector4D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the subtraction of u into this
                          * @param u the vector to subtract
                          * @return  the computed vector
                          */
-                        Vector4D operator -(Vector4D const& u) const;
+                        template <class K>
+                        Vector4D<std::common_type_t<T, K>> operator -(Vector4D<K> const& u) const;
                         /**
                          * Compute the opposite version of this
                          * @return the opposite vector
@@ -324,37 +385,43 @@
                          * @param k the multiplication factor
                          * @return  the computed vector
                          */
-                        Vector4D operator *(T k) const;
+                        template <class K>
+                        Vector4D<std::common_type_t<T, K>> operator *(K k) const;
                         /**
                          * Compute the vector resulting in the multiplication of this by u
                          * @param u the multiplication vector
                          * @return  the computed vector
                          */
-                        Vector4D operator *(Vector4D const& u) const;
+                        template <class K>
+                        Vector4D<std::common_type_t<T, K>> operator *(Vector4D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the division of this by k
                          * @param k the division factor
                          * @return  the computed vector
                          */
-                        Vector4D operator /(T k) const;
+                        template <class K>
+                        Vector4D<std::common_type_t<T, K>> operator /(K k) const;
                         /**
                          * Compute the vector resulting in the division of this by u
                          * @param u the division vector
                          * @return  the computed vector
                          */
-                        Vector4D operator /(Vector4D const& u) const;
+                        template <class K>
+                        Vector4D<std::common_type_t<T, K>> operator /(Vector4D<K> const& u) const;
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |(Vector4D const& u) const;
+                        template <class K>
+                        std::common_type_t<T, K> operator |(Vector4D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the cross product of this and u
                          * @param u the vector
                          * @return  the computed vector
                          */
-                        Vector4D operator ^(Vector4D const& u) const;
+                        template <class K>
+                        Vector4D<std::common_type_t<T, K>> operator ^(Vector4D<K> const& u) const;
 
                     //## Comparison Operator ##//
                         /**
