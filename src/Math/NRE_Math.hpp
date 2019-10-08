@@ -22,27 +22,23 @@
          */
         namespace Math {
 
-            static const float  F_EPSILON = 0.000000001f;   /**< Single precision epsilon for equality test */
+            static const float F_EPSILON = 0.000000001f;    /**< Double precision epsilon for equality test */
             static const double D_EPSILON = 0.000000001;    /**< Double precision epsilon for equality test */
+            static const long double EPSILON = 0.000000001;    /**< Double precision epsilon for equality test */
 
-            /**
-             * Perform an almost equal test on 2 floating value
-             * @param  a the first value
-             * @param  b the second value
-             * @return   the test result
-             */
-            inline bool almostEqual(float a, float b) {
-                return std::abs(a - b) < F_EPSILON;
+            template <class T, class K>
+            inline typename std::enable_if_t< std::is_floating_point_v<std::common_type_t<T, K>>, bool> equal(T a, K b) {
+                return std::abs(static_cast <std::common_type_t<T, K>> (a) - static_cast <std::common_type_t<T, K>> (b)) < EPSILON;
             }
 
-            /**
-             * Perform an almost equal test on 2 double value
-             * @param  a the first value
-             * @param  b the second value
-             * @return   the test result
-             */
-            inline bool almostEqual(double a, double b) {
-                return std::abs(a - b) < D_EPSILON;
+            template <class T, class K>
+            inline typename std::enable_if_t<!std::is_floating_point_v<std::common_type_t<T, K>>, bool> equal(T a, K b) {
+                return static_cast <std::common_type_t<T, K>> (a) == static_cast <std::common_type_t<T, K>> (b);
+            }
+
+            template <class T, class K>
+            inline bool almostEqual(T a, K b) {
+                return equal(a, b);
             }
         }
     }

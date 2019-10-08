@@ -15,44 +15,38 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Vector4D<float> u({0, 1, 0, 0});
-        Vector4D<float> v({1, 0, 0, 0});
+        Vector3D<float>     v1(1);
+        Vector3D<float>     v2(2);
+        Vector3D<int>       v3(3);
+        Vector3D<short int> v4(4);
+        Vector3D<long long int>  v5(5);
 
-        std::cout << u << std::endl;
-        std::cout << v << std::endl;
+        v1 += v2;
+        v1 += v3;
 
-        Vector4D<float> w(u ^ v);       // Cross product
+        v3 ^= v1;
 
-        std::cout << w << std::endl;
-        std::cout << (u | v) << std::endl;  // Dot product
+        v5 = v3 + v4;
+        std::cout << v5 << std::endl;
+        v4 = v3 + v5;
+        std::cout << v4 << std::endl;
 
-        Segment4D<float> seg({0, 0, 0, 1}, {0, 100, 0, 1});
+        std::cout << sizeof(short int) << std::endl;
+        std::cout << sizeof(int) << std::endl;
+        std::cout << sizeof(long long int) << std::endl;
 
-        std::cout << seg << std::endl;
+        std::cout << sizeof(float) << std::endl;
+        std::cout << sizeof(double) << std::endl;
+        std::cout << sizeof(long double) << std::endl;
 
-        Matrix4x4<float> mat;
-        mat.rotate(90_deg, {1, 0, 0});  // Equivalent of mat.rotate(1_rad, {1, 0, 0});
+        auto v6 = v4 + Vector3D<long double>(1);
+        std::cout << sizeof(v6) << std::endl;
 
-        u = mat * u;
-        v = mat * v;
-        w = mat * w;
+        Vector3D<float> tmp = Vector3D<float>(1) + Vector3D<double>(2);
+        std::cout << tmp << std::endl;
 
-        std::cout << u << std::endl;
-        std::cout << v << std::endl;
-        std::cout << w << std::endl;
-
-        seg = mat * seg;
-
-        std::cout << seg << std::endl;
-
-        Quaternion<float> quat({1, 0, 0}, 90_deg);      // Equivalent to previous matrix,
-                                                        // if 4th parameter is not an Angle it only set parameters
-
-        std::cout << quat << std::endl;
-
-        Matrix4x4<float> quatToMat(quat);
-
-        std::cout << quatToMat << std::endl;
+        auto d = v3 | v4;
+        std::cout << d << std::endl;
 
         return 0;
     }
