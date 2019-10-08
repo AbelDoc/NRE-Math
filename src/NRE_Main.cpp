@@ -15,16 +15,14 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        Vector3D<float>     v1(1);
-        Vector3D<float>     v2(2);
-        Vector3D<int>       v3(3);
-        Vector3D<short int> v4(4);
-        Vector3D<long long int>  v5(5);
+        Vector2D<float>     v1(1);
+        Vector2D<float>     v2(2);
+        Vector2D<int>       v3(3);
+        Vector2D<short int> v4(4);
+        Vector2D<long long int>  v5(5);
 
         v1 += v2;
         v1 += v3;
-
-        v3 ^= v1;
 
         v5 = v3 + v4;
         std::cout << v5 << std::endl;
@@ -39,10 +37,10 @@
         std::cout << sizeof(double) << std::endl;
         std::cout << sizeof(long double) << std::endl;
 
-        auto v6 = v4 + Vector3D<long double>(1);
+        auto v6 = v4 + Vector2D<long double>(1);
         std::cout << sizeof(v6) << std::endl;
 
-        Vector3D<float> tmp = Vector3D<float>(1) + Vector3D<double>(2);
+        Vector2D<float> tmp = Vector2D<float>(1) + Vector2D<double>(2);
         std::cout << tmp << std::endl;
 
         auto d = v3 | v4;

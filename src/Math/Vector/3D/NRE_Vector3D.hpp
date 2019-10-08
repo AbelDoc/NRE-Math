@@ -83,17 +83,17 @@
                         template <class K>
                         Vector3D(Vector3D<K> const& u);
                         /**
-                         * Convert a K-type 4D vector into a T-type 3D vector
-                         * @param u the K-type 4D vector to convert
-                         */
-                        template <class K>
-                        Vector3D(Vector4D<K> const& u);
-                        /**
                          * Convert a 2D vector into a 3D vector with a default z value
                          * @param u the 2D vector to convert
                          */
                         template <class K>
                         Vector3D(Vector2D<K> const& u);
+                        /**
+                         * Convert a K-type 4D vector into a T-type 3D vector
+                         * @param u the K-type 4D vector to convert
+                         */
+                        template <class K>
+                        Vector3D(Vector4D<K> const& u);
                         /**
                          * Convert a 2D vector into a 3D point with a passed z value
                          * @param u  the 2D vector to convert
@@ -136,31 +136,37 @@
 
                     //## Setter ##//
                         /**
+                         * X setter
                          * @param nX the new value for x
                          */
                         template <class K>
                         void setX(K nX);
                         /**
+                         * Y setter
                          * @param nY the new value for y
                          */
                         template <class K>
                         void setY(K nY);
                         /**
+                         * Z setter
                          * @param nZ the new value for z
                          */
                         template <class K>
                         void setZ(K nZ);
                         /**
+                         * X setter
                          * @param r the new value for x
                          */
                         template <class K>
                         void setR(K r);
                         /**
+                         * Y setter
                          * @param g the new value for y
                          */
                         template <class K>
                         void setG(K g);
                         /**
+                         * Z setter
                          * @param b the new value for z
                          */
                         template <class K>

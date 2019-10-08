@@ -17,27 +17,27 @@
 
             template <class T>
             template <class K>
-            inline Vector3D<T>::Vector3D(K value) : x(static_cast <T> (value)), y(static_cast <T> (value)), z(static_cast <T> (value)) {
+            inline Vector3D<T>::Vector3D(K value) : Vector3D(value, value, value) {
             }
 
             template <class T>
             template <class K>
-            inline Vector3D<T>::Vector3D(Vector3D<K> const& u) : x(static_cast <T> (u.getX())), y(static_cast <T> (u.getY())), z(static_cast <T> (u.getZ())) {
+            inline Vector3D<T>::Vector3D(Vector3D<K> const& u) : Vector3D(u.getX(), u.getY(), u.getZ()) {
             }
 
             template <class T>
             template <class K>
-            inline Vector3D<T>::Vector3D(Vector4D<K> const& u) : x(static_cast <T> (u.getX())), y(static_cast <T> (u.getY())), z(static_cast <T> (u.getZ())) {
+            inline Vector3D<T>::Vector3D(Vector4D<K> const& u) : Vector3D(u.getX(), u.getY(), u.getZ()) {
             }
 
             template <class T>
             template <class K>
-            inline Vector3D<T>::Vector3D(Vector2D<K> const& u) : x(static_cast <T> (u.getX())), y(static_cast <T> (u.getY())), z(0) {
+            inline Vector3D<T>::Vector3D(Vector2D<K> const& u) : Vector3D(u.getX(), u.getY(), 0) {
             }
 
             template <class T>
             template <class K, class L>
-            inline Vector3D<T>::Vector3D(Vector2D<K> const& u, L nZ) : x(static_cast <T> (u.getX())), y(static_cast <T> (u.getY())), z(static_cast <T> (nZ)) {
+            inline Vector3D<T>::Vector3D(Vector2D<K> const& u, L nZ) : Vector3D(u.getX(), u.getY(), nZ) {
             }
 
             template <class T>
@@ -91,19 +91,19 @@
             template <class T>
             template <class K>
             inline void Vector3D<T>::setR(K r) {
-                x = static_cast <T> (r);
+                setX(r);
             }
 
             template <class T>
             template <class K>
             inline void Vector3D<T>::setG(K g) {
-                y = static_cast <T> (g);
+                setY(g);
             }
 
             template <class T>
             template <class K>
             inline void Vector3D<T>::setB(K b) {
-                z = static_cast <T> (b);
+                setZ(b);
             }
 
             template <class T>
@@ -142,7 +142,7 @@
 
             template <class T>
             inline void Vector3D<T>::normalize() {
-                *this /= static_cast <T> (norm());
+                *this /= norm();
             }
 
             template <class T>

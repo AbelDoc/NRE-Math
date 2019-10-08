@@ -26,6 +26,7 @@
         namespace Math {
 
             template<class> class Vector3D;
+            template<class> class Vector4D;
 
             /**
              * @class Vector2D
@@ -49,12 +50,14 @@
                          * @param nX new x value
                          * @param nY new y value
                          */
-                        Vector2D(T nX, T nY);
+                        template <class K, class L>
+                        Vector2D(K nX, L nY);
                         /**
                          * Construct a vector with unique values
                          * @param value the new x and y values
                          */
-                        Vector2D(T value);
+                        template <class K>
+                        Vector2D(K value);
 
                     //## Copy-Constructor ##//
                         /**
@@ -83,6 +86,12 @@
                          */
                         template <class K>
                         Vector2D(Vector3D<K> const& u);
+                        /**
+                         * Convert a K-type 4D vector into a T-type 2D vector
+                         * @param u the K-type 4D vector to convert
+                         */
+                        template <class K>
+                        Vector2D(Vector4D<K> const& u);
 
                     //## Deconstructor ##//
                         /**
@@ -113,44 +122,50 @@
                          * X setter
                          * @param nX the new value for x
                          */
-                        void setX(T nX);
+                        template <class K>
+                        void setX(K nX);
                         /**
                          * Y setter
                          * @param nY the new value for y
                          */
-                        void setY(T nY);
+                        template <class K>
+                        void setY(K nY);
                         /**
                          * X setter
                          * @param w the new value for x
                          */
-                        void setW(T w);
+                        template <class K>
+                        void setW(K w);
                         /**
                          * Y setter
                          * @param h the new value for y
                          */
-                        void setH(T h);
+                        template <class K>
+                        void setH(K h);
                         /**
                          * Set the values for both x and y
                          * @param nX the new value for x
                          * @param nY the new value for y
                          */
-                        void setCoord(T nX, T nY);
+                        template <class K, class L>
+                        void setCoord(K nX, L nY);
                         /**
                          * Set the values for both x and y
                          * @param w the new value for x
                          * @param h the new value for y
                          */
-                        void setSize(T w, T h);
+                        template <class K, class L>
+                        void setSize(K w, L h);
 
                     //## Methods ##//
                         /**
                          * @return the vector's norm
                          */
-                        float norm() const;
+                        long double norm() const;
                         /**
                          * @return the squared vector's norm
                          */
-                        float normSquared() const;
+                        long double normSquared() const;
                         /**
                          * Normalize the vector
                          */
@@ -189,6 +204,20 @@
                          * @return  the reference of himself
                          */
                         Vector2D& operator =(Vector2D && u) = default;
+                        /**
+                         * Copy u into this
+                         * @param u the object to copy into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector2D& operator =(Vector2D<K> const& u);
+                        /**
+                         * Move u into this
+                         * @param u the object to move into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector2D& operator =(Vector2D<K> && u);
 
                     //## Shortcut Operator ##//
                         /**
@@ -196,43 +225,50 @@
                          * @param u the vector to add into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator +=(Vector2D const& u);
+                        template <class K>
+                        Vector2D& operator +=(Vector2D<K> const& u);
                         /**
                          * Subtract a vector into this
                          * @param u the vector to subtract into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator -=(Vector2D const& u);
+                        template <class K>
+                        Vector2D& operator -=(Vector2D<K> const& u);
                         /**
                          * Multiply this by a factor k
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
-                        Vector2D& operator *=(T k);
+                        template <class K>
+                        Vector2D& operator *=(K k);
                         /**
                          * Multiply this by a vector u, component by component
                          * @param u the multiplication vector
                          * @return  the reference of himself
                          */
-                        Vector2D& operator *=(Vector2D const& u);
+                        template <class K>
+                        Vector2D& operator *=(Vector2D<K> const& u);
                         /**
                          * Divide this by a factor k
                          * @param k the division factor
                          * @return  the reference of himself
                          */
-                        Vector2D& operator /=(T k);
+                        template <class K>
+                        Vector2D& operator /=(K k);
                         /**
                          * Divide this by a vector u, component by component
                          * @param u the division vector
                          * @return  the reference of himself
                          */
-                        Vector2D& operator /=(Vector2D const& u);
+                        template <class K>
+                        Vector2D& operator /=(Vector2D<K> const& u);
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |=(Vector2D const& u) const;
+                        template <class K>
+                        std::common_type_t<T, K> operator |=(Vector2D<K> const& u) const;
 
                     //## Arithmetic Operator ##//
                         /**
@@ -240,13 +276,15 @@
                          * @param u the vector to add
                          * @return  the computed vector
                          */
-                        Vector2D operator +(Vector2D const& u) const;
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator +(Vector2D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the subtraction of u into this
                          * @param u the vector to subtract
                          * @return  the computed vector
                          */
-                        Vector2D operator -(Vector2D const& u) const;
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator -(Vector2D<K> const& u) const;
                         /**
                          * Compute the opposite version of this
                          * @return the opposite vector
@@ -257,31 +295,36 @@
                          * @param k the multiplication factor
                          * @return  the computed vector
                          */
-                        Vector2D operator *(T k) const;
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator *(K k) const;
                         /**
                          * Compute the vector resulting in the multiplication of this by u
                          * @param u the multiplication vector
                          * @return  the computed vector
                          */
-                        Vector2D operator *(Vector2D const& u) const;
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator *(Vector2D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the division of this by k
                          * @param k the division factor
                          * @return  the computed vector
                          */
-                        Vector2D operator /(T k) const;
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator /(K k) const;
                         /**
                          * Compute the vector resulting in the division of this by u
                          * @param u the division vector
                          * @return  the computed vector
                          */
-                        Vector2D operator /(Vector2D const& u) const;
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator /(Vector2D<K> const& u) const;
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        float operator |(Vector2D const& u) const;
+                        template <class K>
+                        std::common_type_t<T, K> operator |(Vector2D<K> const& u) const;
 
                     //## Comparison Operator ##//
                         /**
