@@ -9,8 +9,11 @@
 
      #pragma once
 
-     #include <Utility/String/NRE_String.hpp>
-     #include "../../NRE_Math.hpp"
+    #include <type_traits>
+    #include <ostream>
+
+    #include <Utility/String/NRE_String.hpp>
+    #include "../../NRE_Math.hpp"
 
      /**
      * @namespace NRE

@@ -214,7 +214,7 @@
             void Matrix4x4<T>::inverse() {
                 Matrix4x4<T> tmp;
                 float det = getDeterminant();
-                if (std::abs(det) > F_EPSILON) {
+                if (std::abs(det) > EPSILON) {
                     tmp[0][0] = (1.0f / det) * ((data[1][1] * data[2][2] * data[3][3]) + (data[1][2] * data[2][3] * data[3][1]) + (data[1][3] * data[2][1] * data[3][2])
                                             - (data[1][1] * data[2][3] * data[3][2]) - (data[1][2] * data[2][1] * data[3][3]) - (data[1][3] * data[2][2] * data[3][1]));
                     tmp[0][1] = (1.0f / det) * ((data[0][1] * data[2][3] * data[3][2]) + (data[0][2] * data[2][1] * data[3][3]) + (data[0][3] * data[2][2] * data[3][1])

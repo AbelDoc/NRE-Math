@@ -10,8 +10,9 @@
      #pragma once
 
      #include <iostream>
-     #include <Utility/String/NRE_String.hpp>
      #include <ratio>
+
+     #include "Utility/String/NRE_String.hpp"
 
      #include "NRE_Math.hpp"
 
@@ -172,7 +173,7 @@
                          * Convert the unit into a string
                          * @return the converted unit
                          */
-                        constexpr Utility::String toString() const {
+                        Utility::String toString() const {
                             Utility::String res;
                             res << value;
                             return res;

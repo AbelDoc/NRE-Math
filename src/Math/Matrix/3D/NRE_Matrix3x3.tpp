@@ -137,7 +137,7 @@
             void Matrix3x3<T>::inverse() {
                 Matrix3x3<T> tmp;
                 float det = getDeterminant();
-                if (std::abs(det) > F_EPSILON) {
+                if (std::abs(det) > EPSILON) {
                     tmp[0][0] = (1.0f / det) * (data[1][1] * data[2][2] - data[1][2] * data[2][1]);
                     tmp[0][1] = (1.0f / det) * (data[0][2] * data[2][1] - data[0][1] * data[2][2]);
                     tmp[0][2] = (1.0f / det) * (data[0][1] * data[1][2] - data[0][2] * data[1][1]);

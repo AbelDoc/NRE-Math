@@ -43,13 +43,15 @@
                          * @param s the segment's start
                          * @param e the segment's end
                          */
-                        Segment3D(Point3D<T> const& s, Point3D<T> const& e);
+                        template <class K, class L>
+                        Segment3D(Point3D<K> const& s, Point3D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param s the segment's start
                          * @param e the segment's end
                          */
-                        Segment3D(Point2D<T> const& s, Point2D<T> const& e);
+                        template <class K, class L>
+                        Segment3D(Point2D<K> const& s, Point2D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param sX the segment's start x
@@ -57,7 +59,8 @@
                          * @param eX the segment's end x
                          * @param eY the segment's end y
                          */
-                        Segment3D(T sX, T sY, T eX, T eY);
+                        template <class K, class L, class N, class M>
+                        Segment3D(K sX, L sY, N eX, M eY);
 
                     //## Copy-Constructor ##//
                         /**
@@ -81,17 +84,14 @@
 
                     //## Getter ##//
                         /**
-                         * Start getter
                          * @return the start point
                          */
                         Point3D<T> const& getStart() const;
                         /**
-                         * End getter
                          * @return the end point
                          */
                         Point3D<T> const& getEnd() const;
                         /**
-                         * Segment vector getter
                          * @return the segment's vector
                          */
                         Vector3D<T> getVector() const;

@@ -15,15 +15,18 @@
             }
 
             template <class T>
-            Segment3D<T>::Segment3D(Point3D<T> const& s, Point3D<T> const& e) : start(s), end(e) {
+            template <class K, class L>
+            Segment3D<T>::Segment3D(Point3D<K> const& s, Point3D<L> const& e) : start(s), end(e) {
             }
 
             template <class T>
-            Segment3D<T>::Segment3D(Point2D<T> const& s, Point2D<T> const& e) : start(Point3D<T>(s, 1)), end(Point3D<T>(e, 1)) {
+            template <class K, class L>
+            Segment3D<T>::Segment3D(Point2D<K> const& s, Point2D<L> const& e) : start(Point3D<T>(s, 1)), end(Point3D<T>(e, 1)) {
             }
 
             template <class T>
-            Segment3D<T>::Segment3D(T sX, T sY, T eX, T eY) : start(sX, sY, 1), end(eX, eY, 1) {
+            template <class K, class L, class N, class M>
+            Segment3D<T>::Segment3D(K sX, L sY, N eX, M eY) : start(sX, sY, 1), end(eX, eY, 1) {
             }
 
             template <class T>
@@ -56,7 +59,7 @@
             template <class T>
             Utility::String Segment3D<T>::toString() const {
                 Utility::String res;
-                res.reserve(20);
+                res.reserve(30);
                 res << start;
                 res << " - ";
                 res << end;

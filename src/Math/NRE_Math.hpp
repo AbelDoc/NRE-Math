@@ -10,6 +10,7 @@
     #pragma once
 
     #include <cmath>
+    #include <type_traits>
 
     /**
      * @namespace NRE
@@ -22,17 +23,15 @@
          */
         namespace Math {
 
-            static const float F_EPSILON = 0.000000001f;    /**< Double precision epsilon for equality test */
-            static const double D_EPSILON = 0.000000001;    /**< Double precision epsilon for equality test */
             static const long double EPSILON = 0.000001;    /**< Double precision epsilon for equality test */
 
             template <class T, class K>
-            inline typename std::enable_if_t< std::is_floating_point_v<std::common_type_t<T, K>>, bool> equal(T a, K b) {
+            inline typename std::enable_if_t< std::is_floating_point<std::common_type_t<T, K>>::value, bool> equal(T a, K b) {
                 return std::abs(static_cast <std::common_type_t<T, K>> (a) - static_cast <std::common_type_t<T, K>> (b)) < EPSILON;
             }
 
             template <class T, class K>
-            inline typename std::enable_if_t<!std::is_floating_point_v<std::common_type_t<T, K>>, bool> equal(T a, K b) {
+            inline typename std::enable_if_t<!std::is_floating_point<std::common_type_t<T, K>>::value, bool> equal(T a, K b) {
                 return static_cast <std::common_type_t<T, K>> (a) == static_cast <std::common_type_t<T, K>> (b);
             }
 
