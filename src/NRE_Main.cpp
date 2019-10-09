@@ -19,6 +19,9 @@
 
         int i = 1;
         std::cout << equal(i, f) << std::endl;
+        
+        std::cout << std::is_pod_v<Matrix3x3<float>> << std::endl;
+        std::cout << std::is_pod_v<Vector3D<float>[3]> << std::endl;
 
         return 0;
     }

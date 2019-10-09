@@ -45,9 +45,9 @@
                 public:    // Methods
                     //## Constructor ##//
                         /**
-                         * Construct the identity matrix
+                         * Default constructor
                          */
-                        Matrix3x3();
+                        Matrix3x3() = default;
                         /**
                          * Construct a matrix with passed values
                          * @param a first matrix component
@@ -60,21 +60,26 @@
                          * @param h eighth matrix component
                          * @param i ninth matrix component
                          */
-                        Matrix3x3(T a, T b, T c,
-                                  T d, T e, T f,
-                                  T g, T h, T i);
+                        template <class A, class B, class C,
+                                  class D, class E, class F,
+                                  class G, class H, class I>
+                        Matrix3x3(A a, B b, C c,
+                                  D d, E e, F f,
+                                  G g, H h, I i);
                         /**
                          * Construct a matrix with a unique value for all component
                          * @param value new value for all component
                          */
-                        Matrix3x3(T value);
+                        template <class K>
+                        Matrix3x3(K value);
                         /**
                          * Construct a matrix with their lines passed in parameters with vector
                          * @param l1 the new value for the first line
                          * @param l2 the new value for the second line
                          * @param l3 the new value for the third line
                          */
-                        Matrix3x3(Vector3D<T> const& l1, Vector3D<T> const& l2, Vector3D<T> const& l3);
+                        template <class K, class L, class N>
+                        Matrix3x3(Vector3D<K> const& l1, Vector3D<L> const& l2, Vector3D<N> const& l3);
 
                     //## Copy-Constructor ##//
                         /**
@@ -138,39 +143,45 @@
                         /**
                          * @return the matrix's determinant
                          */
-                        float getDeterminant() const;
+                        long double getDeterminant() const;
 
                     //## Setter ##//
                         /**
                          * First line setter
                          * @param l1 the new first line vector
                          */
-                        void setL1(Vector3D<T> const& l1);
+                        template <class K>
+                        void setL1(Vector3D<K> const& l1);
                         /**
                          * Second line setter
                          * @param l2 the new second line vector
                          */
-                        void setL2(Vector3D<T> const& l2);
+                        template <class K>
+                        void setL2(Vector3D<K> const& l2);
                         /**
                          * Third line setter
                          * @param l3 the new third line vector
                          */
-                        void setL3(Vector3D<T> const& l3);
+                        template <class K>
+                        void setL3(Vector3D<K> const& l3);
                         /**
                          * First column setter
                          * @param c1 the new first column vector
                          */
-                        void setC1(Vector3D<T> const& c1);
+                        template <class K>
+                        void setC1(Vector3D<K> const& c1);
                         /**
                          * Second column setter
                          * @param c2 the new second column vector
                          */
-                        void setC2(Vector3D<T> const& c2);
+                        template <class K>
+                        void setC2(Vector3D<K> const& c2);
                         /**
                          * Third column setter
                          * @param c3 the new third column vector
                          */
-                        void setC3(Vector3D<T> const& c3);
+                        template <class K>
+                        void setC3(Vector3D<K> const& c3);
                         /**
                          * Set the matrix to the identity matrix
                          */
@@ -189,47 +200,55 @@
                          * Add a translation
                          * @param u the translation vector
                          */
-                        void translate(Vector2D<T> const& u);
+                        template <class K>
+                        void translate(Vector2D<K> const& u);
                         /**
                          * Add a scale
                          * @param u the scaling vector
                          */
-                        void scale(Vector2D<T> const& u);
+                        template <class K>
+                        void scale(Vector2D<K> const& u);
                         /**
                          * Add a stretch on the X axis
                          * @param u the stretch factor
                          */
-                        void stretchX(T u);
+                        template <class K>
+                        void stretchX(K u);
                         /**
                          * Add a stretch on the Y axis
                          * @param u the stretch factor
                          */
-                        void stretchY(T u);
+                        template <class K>
+                        void stretchY(K u);
                         /**
                          * Add a squeeze on the X axis
                          * @param u the squeeze vector
                          */
-                        void squeezeX(Vector2D<T> const& u);
+                        template <class K>
+                        void squeezeX(Vector2D<K> const& u);
                         /**
                          * Add a squeeze on the Y axis
                          * @param u the squeeze vector
                          */
-                        void squeezeY(Vector2D<T> const& u);
+                        template <class K>
+                        void squeezeY(Vector2D<K> const& u);
                         /**
                          * Add a shear on the X axis
                          * @param u the shear factor
                          */
-                        void shearX(T u);
+                        template <class K>
+                        void shearX(K u);
                         /**
                          * Add a shear on the Y axis
                          * @param u the shear factor
                          */
-                        void shearY(T u);
+                        template <class K>
+                        void shearY(K u);
                         /**
                          * Add a rotation
                          * @param angle the rotation's angle
                          */
-                        void rotate(Angle const& angle);
+                        void rotate(Angle angle);
                         /**
                          * @return a pointer to the vector's data
                          */
@@ -264,6 +283,20 @@
                          * @return  the reference of himself
                          */
                         Matrix3x3& operator =(Matrix3x3 && m) = default;
+                        /**
+                         * Copy m into this
+                         * @param m the object to copy into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Matrix3x3& operator =(Matrix3x3<K> const& m);
+                        /**
+                         * Move m into this
+                         * @param m the object to move into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Matrix3x3& operator =(Matrix3x3<K> && m);
 
                     //## Shortcut Operator ##//
                         /**
@@ -271,37 +304,43 @@
                          * @param m the matrix to add into this
                          * @return  the reference on himself
                          */
-                        Matrix3x3& operator +=(Matrix3x3 const& m);
+                        template <class K>
+                        Matrix3x3& operator +=(Matrix3x3<K> const& m);
                         /**
                          * Subtract m into this
                          * @param m the matrix to subtract into this
                          * @return  the reference on himself
                          */
-                        Matrix3x3& operator -=(Matrix3x3 const& m);
+                        template <class K>
+                        Matrix3x3& operator -=(Matrix3x3<K> const& m);
                         /**
                          * Multiply this by k
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
-                        Matrix3x3& operator *=(T k);
+                        template <class K>
+                        Matrix3x3& operator *=(K k);
                         /**
                          * Multiply this with m
                          * @param m the matrix to multiply with this
                          * @return  the reference of himself
                          */
-                        Matrix3x3& operator *=(Matrix3x3 const& m);
+                        template <class K>
+                        Matrix3x3& operator *=(Matrix3x3<K> const& m);
                         /**
                          * Divide this by k
                          * @param k the division factor
                          * @return  the reference of himself
                          */
-                        Matrix3x3& operator /=(T k);
+                        template <class K>
+                        Matrix3x3& operator /=(K k);
                         /**
                          * Divide this with m
                          * @param m the matrix to divide with this
                          * @return  the reference of himself
                          */
-                        Matrix3x3& operator /=(Matrix3x3 const& m);
+                        template <class K>
+                        Matrix3x3& operator /=(Matrix3x3<K> const& m);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -309,37 +348,43 @@
                          * @param m the matrix to add with this
                          * @return  the newly computed matrix
                          */
-                        Matrix3x3 operator +(Matrix3x3 const& m) const;
+                        template <class K>
+                        Matrix3x3<std::common_type_t<T, K>> operator +(Matrix3x3<K> const& m) const;
                         /**
                          * Compute the matrix resulting in the subtraction of this and m
                          * @param m the matrix to subtract with this
                          * @return  the newly computed matrix
                          */
-                        Matrix3x3 operator -(Matrix3x3 const& m) const;
+                        template <class K>
+                        Matrix3x3<std::common_type_t<T, K>> operator -(Matrix3x3<K> const& m) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this by k
                          * @param k the multiplication factor
                          * @return  the newly computed matrix
                          */
-                        Matrix3x3 operator *(T k) const;
+                        template <class K>
+                        Matrix3x3<std::common_type_t<T, K>> operator *(K k) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this and m
                          * @param m the matrix to multiply with this
                          * @return  the newly computed matrix
                          */
-                        Matrix3x3 operator *(Matrix3x3 const& m) const;
+                        template <class K>
+                        Matrix3x3<std::common_type_t<T, K>> operator *(Matrix3x3<K> const& m) const;
                         /**
                          * Compute the vector resulting in the transformation of u by this
                          * @param u the vector to transform
                          * @return  the newly computed vector
                          */
-                        Vector3D<T> operator *(Vector3D<T> const& u) const;
+                        template <class K>
+                        Vector3D<K> operator *(Vector3D<K> const& u) const;
                         /**
                          * Compute the segment resulting in the transformation of s by this
                          * @param s the segment to transform
                          * @return  the newly computed vector
                          */
-                        Segment3D<T> operator *(Segment3D<T> const& s) const;
+                        template <class K>
+                        Segment3D<K> operator *(Segment3D<K> const& s) const;
                         /**
                          * Compute the bezier curve resulting in the transformation of c by this
                          * @param c the bezier curve to transform
@@ -351,13 +396,15 @@
                          * @param k the division factor
                          * @return  the newly computed matrix
                          */
-                        Matrix3x3 operator /(T k) const;
+                        template <class K>
+                        Matrix3x3<std::common_type_t<T, K>> operator /(K k) const;
                         /**
                          * Compute the matrix resulting in the division of this and m
                          * @param m the matrix to divide with this
                          * @return  the newly computed matrix
                          */
-                        Matrix3x3 operator /(Matrix3x3 const& m) const;
+                        template <class K>
+                        Matrix3x3<std::common_type_t<T, K>> operator /(Matrix3x3<K> const& m) const;
 
                     //## Comparison Operator ##//
                         /**
