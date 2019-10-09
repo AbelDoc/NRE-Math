@@ -109,6 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Implementation of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's function.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div>
 <p><a href="_math_2_n_r_e___math_8hpp_source.php">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -123,10 +124,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acebb0d65a587273460fd7fae2d9b4cd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#acebb0d65a587273460fd7fae2d9b4cd8">NRE::Math::almostEqual</a> (float a, float b)</td></tr>
-<tr class="separator:acebb0d65a587273460fd7fae2d9b4cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f3fca709d043f477c3a0fec11212b4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#a3f3fca709d043f477c3a0fec11212b4b">NRE::Math::almostEqual</a> (double a, double b)</td></tr>
-<tr class="separator:a3f3fca709d043f477c3a0fec11212b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac193d527da8444b790ea96914062e79b"><td class="memTemplParams" colspan="2">template&lt;class T , class K , typename std::enable_if_t&lt; std::is_floating_point&lt; std::common_type_t&lt; T, K &gt;&gt;::value, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:ac193d527da8444b790ea96914062e79b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#ac193d527da8444b790ea96914062e79b">NRE::Math::equal</a> (T a, K b)</td></tr>
+<tr class="separator:ac193d527da8444b790ea96914062e79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c76e5aa3d62a8c1327722d0850e6dda"><td class="memTemplParams" colspan="2">template&lt;class T , class K &gt; </td></tr>
+<tr class="memitem:a2c76e5aa3d62a8c1327722d0850e6dda"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#a2c76e5aa3d62a8c1327722d0850e6dda">NRE::Math::almostEqual</a> (T a, K b)</td></tr>
+<tr class="separator:a2c76e5aa3d62a8c1327722d0850e6dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's function. </p>
@@ -134,9 +137,11 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>03/04/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_acebb0d65a587273460fd7fae2d9b4cd8"></a>
+<a class="anchor" id="file_a2c76e5aa3d62a8c1327722d0850e6dda"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class K &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -144,13 +149,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool NRE::Math::almostEqual </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -165,34 +170,36 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Perform an almost equal test on 2 floating value </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Test if 2 objects are almost equals (usefull for floating point objects) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>the first value </td></tr>
-    <tr><td class="paramname">b</td><td>the second value </td></tr>
+    <tr><td class="paramname">a</td><td>the first object </td></tr>
+    <tr><td class="paramname">b</td><td>the second object </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the test result </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>if both objets are almost equals </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="file_a3f3fca709d043f477c3a0fec11212b4b"></a>
+<a class="anchor" id="file_ac193d527da8444b790ea96914062e79b"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class K , typename std::enable_if_t&lt; std::is_floating_point&lt; std::common_type_t&lt; T, K &gt;&gt;::value, int &gt;  = 0&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool NRE::Math::almostEqual </td>
+          <td class="memname">bool NRE::Math::equal </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -207,14 +214,14 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Perform an almost equal test on 2 double value </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Test the equality of 2 objects </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>the first value </td></tr>
-    <tr><td class="paramname">b</td><td>the second value </td></tr>
+    <tr><td class="paramname">a</td><td>the first object </td></tr>
+    <tr><td class="paramname">b</td><td>the second object </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the test result </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>if both objets are equals </dd></dl>
 
 </div>
 </div>

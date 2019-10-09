@@ -115,6 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="_n_r_e___vector2_d_8hpp_source.php">../Vector/2D/NRE_Vector2D.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_n_r_e___vector3_d_8hpp_source.php">../Vector/3D/NRE_Vector3D.hpp</a>&quot;</code><br />
 <code>#include &quot;../Matrix/4D/NRE_Matrix4x4.hpp&quot;</code><br />
+<code>#include &quot;NRE_Frustum.tpp&quot;</code><br />
 </div>
 <p><a href="_n_r_e___frustum_8hpp_source.php">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -135,8 +136,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4b71acc523582238e0b3558b55a98e8f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>NRE::Math::operator&lt;&lt;</b> (std::ostream &amp;stream, Frustum const &amp;o)</td></tr>
-<tr class="separator:a4b71acc523582238e0b3558b55a98e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca38bb9b9bb76a5411daed6ebb3ff5e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___frustum_8hpp.php#a9ca38bb9b9bb76a5411daed6ebb3ff5e">NRE::Math::operator&lt;&lt;</a> (std::ostream &amp;stream, Frustum const &amp;o)</td></tr>
+<tr class="separator:a9ca38bb9b9bb76a5411daed6ebb3ff5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : Frustum. </p>
@@ -145,12 +146,12 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>05/04/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_a4b71acc523582238e0b3558b55a98e8f"></a>
+<a class="anchor" id="file_a9ca38bb9b9bb76a5411daed6ebb3ff5e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; NRE::Math::operator&lt;&lt; </td>
+          <td class="memname">std::ostream&amp; NRE::Math::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>stream</em>, </td>

@@ -94,7 +94,7 @@
                         /**
                          * Convert a base 2D vector into a 4D vector with a passed z and w value
                          * @param u the 2D vector to convert
-                         * @param nz the new z value
+                         * @param nZ the new z value
                          * @param nW the new w value
                          */
                         template <class K, class L, class N>

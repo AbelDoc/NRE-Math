@@ -135,13 +135,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a2f5417700e8b0db0e11060ee68e4399f">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>Vector2D()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ab4fbfdd37c073a6cbcd8f08b6a37bcf3">NRE::Math::Vector2D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a9063228268886f665fd01f9b232995f0">NRE::Math::Vector2D&lt; T &gt;</a>
 </li>
 <li>Vector3D()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a861a8cfb626b0d5e2d6bd5f3f31d753f">NRE::Math::Vector3D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a2fe1fc6055be48bc5a43db7941e81849">NRE::Math::Vector3D&lt; T &gt;</a>
 </li>
 <li>Vector4D()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ab9d790b8975d101ca5232eb4d29112e0">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a135e61e944ffaabc1d2713240b2c4964">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

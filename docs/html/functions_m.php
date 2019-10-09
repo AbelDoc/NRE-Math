@@ -127,10 +127,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>Matrix3x3()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a35d69b8d474462e5df5a323958e9c9a3">NRE::Math::Matrix3x3&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a3415222b5d55e3e5e3ba3f1f99557c7b">NRE::Math::Matrix3x3&lt; T &gt;</a>
 </li>
 <li>Matrix4x4()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a98322eef4fec9e33c6dd8db4df426949">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ad4d195774afefa1a19bfe95166855f1a">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

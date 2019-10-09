@@ -136,14 +136,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a6b212d1f08fc9a5935bd323b22b9c531">NRE::Math::Quaternion&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#aed3c1bad9d8330defc1e84b5cb31930c">NRE::Math::Segment3D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#aae3d3613069ee6828aa83166ad243766">NRE::Math::Segment4D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a29ffd93a73fda8541d6bd28c4bdb0da7">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#aacc9380051d21d7c9a7f2a86b4fbb600">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ad7fe6559e4da3d52f42b40d6d59e800a">NRE::Math::Vector2D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a55c5e2d792fa7364ab98dfb6f7d7ce11">NRE::Math::Vector3D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a81025403fa97f7b9e3d75be605332d5a">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>translate()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a969867e5122f4d2f3e9592ba7f862aae">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#af614ef34629385a95bc59766309ad5dc">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae1cd2fa45f97f8906598dff75d156aab">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a88a90fa205372aed9c72375800ed273c">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 <li>transpose()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a81bcd3c4f3bd75ce1fc34ef658ece0a4">NRE::Math::Matrix3x3&lt; T &gt;</a>

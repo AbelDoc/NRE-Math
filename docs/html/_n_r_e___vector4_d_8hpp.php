@@ -110,8 +110,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Declaration of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : Vector4D.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;Utility/String/NRE_String.hpp&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;Utility/String/NRE_String.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_math_2_n_r_e___math_8hpp_source.php">../../NRE_Math.hpp</a>&quot;</code><br />
 <code>#include &quot;NRE_Vector4D.tpp&quot;</code><br />
 </div>
@@ -119,6 +120,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">NRE::Math::Vector2D&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cartesian 2D vector.  <a href="class_n_r_e_1_1_math_1_1_vector2_d.php#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">NRE::Math::Vector3D&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cartesian 3D vector, 2D homogeneous.  <a href="class_n_r_e_1_1_math_1_1_vector3_d.php#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

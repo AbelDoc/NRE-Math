@@ -258,7 +258,7 @@
                          * @param u the stretch factor
                          */
                         template <class K>
-                        void stretchY(K);
+                        void stretchY(K u);
                         /**
                          * Add a stretch on the Z axis
                          * @param u the stretch factor

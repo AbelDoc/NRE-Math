@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>distance()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#acbc29f00652a75c55e616393c7683884">NRE::Math::Plane&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a137f04ed1ac264233c1497c2e1720361">NRE::Math::Plane&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['almostequal',['almostEqual',['../_math_2_n_r_e___math_8hpp.php#acebb0d65a587273460fd7fae2d9b4cd8',1,'NRE::Math::almostEqual(float a, float b)'],['../_math_2_n_r_e___math_8hpp.php#a3f3fca709d043f477c3a0fec11212b4b',1,'NRE::Math::almostEqual(double a, double b)']]]
+  ['almostequal',['almostEqual',['../_math_2_n_r_e___math_8hpp.php#a2c76e5aa3d62a8c1327722d0850e6dda',1,'NRE::Math']]]
 ];

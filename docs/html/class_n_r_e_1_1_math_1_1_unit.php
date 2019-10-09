@@ -146,8 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57861b23767a77366a10f56c28afb081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57b0e40e80ebccbe92dec4ddcc688b30"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a57b0e40e80ebccbe92dec4ddcc688b30">operator&gt;</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_unit.php">Unit</a> const &amp;u) const </td></tr>
 <tr class="separator:a57b0e40e80ebccbe92dec4ddcc688b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ffd93a73fda8541d6bd28c4bdb0da7"><td class="memItemLeft" align="right" valign="top">constexpr Utility::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a29ffd93a73fda8541d6bd28c4bdb0da7">toString</a> () const </td></tr>
-<tr class="separator:a29ffd93a73fda8541d6bd28c4bdb0da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc9380051d21d7c9a7f2a86b4fbb600"><td class="memItemLeft" align="right" valign="top">Utility::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#aacc9380051d21d7c9a7f2a86b4fbb600">toString</a> () const </td></tr>
+<tr class="separator:aacc9380051d21d7c9a7f2a86b4fbb600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class M, class L, class T, class A&gt;<br />
@@ -654,7 +654,7 @@ template&lt;class M, class L, class T, class A&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a29ffd93a73fda8541d6bd28c4bdb0da7"></a>
+<a class="anchor" id="aacc9380051d21d7c9a7f2a86b4fbb600"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -664,7 +664,7 @@ template&lt;class M, class L, class T, class A&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr Utility::String <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php">NRE::Math::Unit</a>&lt; M, L, T, A &gt;::toString </td>
+          <td class="memname">Utility::String <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php">NRE::Math::Unit</a>&lt; M, L, T, A &gt;::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

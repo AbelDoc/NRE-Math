@@ -107,9 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Test of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;<a class="el" href="_header_2_n_r_e___math_8hpp_source.php">Header/NRE_Math.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_header_2_n_r_e___math_8hpp_source.php">Header/NRE_Math.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>

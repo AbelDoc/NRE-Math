@@ -101,6 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespace_math.php" target="_self">Math</a></td><td class="desc"><a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API </td></tr>
 <tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespace_n_r_e.php" target="_self">NRE</a></td><td class="desc">The NearlyRealEngine's global namespace </td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespacestd.php" target="_self">std</a></td><td class="desc">The stl standard namespace </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->

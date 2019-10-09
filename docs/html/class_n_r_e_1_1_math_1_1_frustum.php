@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c5a65f4c47d1e1862cd9698ebd419d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e32828fa7c6145022ee29d986d75120"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a7e32828fa7c6145022ee29d986d75120">~Frustum</a> ()=default</td></tr>
 <tr class="separator:a7e32828fa7c6145022ee29d986d75120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f895c6408c8ffce5408d827dc98db81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a2f895c6408c8ffce5408d827dc98db81">setFov</a> (Angle fieldOfView)</td></tr>
+<tr class="separator:a2f895c6408c8ffce5408d827dc98db81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5e50e09cd83a78e23be42de12c4ba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a4d5e50e09cd83a78e23be42de12c4ba5">computePlane</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; const &amp;eye, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;forward, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;left, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;up)</td></tr>
 <tr class="separator:a4d5e50e09cd83a78e23be42de12c4ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f1ee8b02acd171054e284c0f6e5812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a74f1ee8b02acd171054e284c0f6e5812">computeProjectionMatrix</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">Matrix4x4</a>&lt; float &gt; &amp;m)</td></tr>
@@ -468,6 +470,28 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">forward</td><td>the forward vector </td></tr>
     <tr><td class="paramname">left</td><td>the left vector </td></tr>
     <tr><td class="paramname">up</td><td>the up vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f895c6408c8ffce5408d827dc98db81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NRE::Math::Frustum::setFov </td>
+          <td>(</td>
+          <td class="paramtype">Angle&#160;</td>
+          <td class="paramname"><em>fieldOfView</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the frustum field of view </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fieldOfView</td><td>the new fov </td></tr>
   </table>
   </dd>
 </dl>

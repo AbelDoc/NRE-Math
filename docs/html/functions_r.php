@@ -130,8 +130,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#ab85a19a9bb6c7818e1708f3db30bf7ef">NRE::Math::Frustum</a>
 </li>
 <li>rotate()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#abd067e8ba0abb3d505d45981fc7b279f">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ac6115bc7bcbc0db54ecaf70aa9082ea2">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaa8bb28aa20327c854e390d2aad23847">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ae907e351e5e2e8399f62fc112a55a5ec">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -152,8 +152,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a969b2881efba44b1aa4f70f47dca3a2a">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 <li>getDeterminant()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a59a161ee9ce9eda66a4fcca3d7511f03">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#abde46854c570527b8cb5ccf6b16e14de">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ad6b3520c5fde6e77f6025447cfcc50d4">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#abc91cba6cfeccacbec42d82ce740ff19">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 <li>getEnd()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#ae89b9f841d5ca4e8500c0e7f9016de44">NRE::Math::Segment3D&lt; T &gt;</a>
