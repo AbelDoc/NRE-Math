@@ -55,8 +55,11 @@ set(COMPILE_LIST
         src/Math/Vector/4D/NRE_Vector4D.hpp
         src/Math/Vector/4D/NRE_Vector4D.tpp
         src/Math/NRE_Math.hpp
-        src/Math/NRE_Unit.hpp
+        src/Math/NRE_Unit.hpp)
+
+set(EXEC_LIST
+        ${COMPILE_LIST}
         src/NRE_Main.cpp)
 
-add_executable(NRE_Math ${COMPILE_LIST})
+add_executable(NRE_Math ${EXEC_LIST})
 add_library(NRE-Math ${COMPILE_LIST})
