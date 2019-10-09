@@ -12,6 +12,8 @@
     #include <Utility/String/NRE_String.hpp>
     #include "../../NRE_Math.hpp"
 
+    #include <cassert>
+
     /**
      * @namespace NRE
      * @brief The NearlyRealEngine's global namespace
@@ -56,6 +58,11 @@
                          */
                         template <class K>
                         Vector2D(K value);
+                        /**
+                         * Construct a vector from an initializer list
+                         * @param list the construction list
+                         */
+                        Vector2D(std::initializer_list<T> list);
 
                     //## Copy-Constructor ##//
                         /**

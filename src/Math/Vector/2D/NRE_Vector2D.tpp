@@ -19,6 +19,11 @@
             template <class K>
             inline Vector2D<T>::Vector2D(K value) : Vector2D(value, value) {
             }
+            
+            template <class T>
+            inline Vector2D<T>::Vector2D(std::initializer_list<T> list) : Vector2D(*(list.begin()), *(list.begin() + 1)) {
+                assert(list.size() == 2);
+            }
 
             template <class T>
             template <class K>
@@ -115,11 +120,13 @@
 
             template <class T>
             inline T& Vector2D<T>::operator [](std::size_t index) {
+                assert(index < 2);
                 return *(&x + index);
             }
 
             template <class T>
             inline T const& Vector2D<T>::operator [](std::size_t index) const {
+                assert(index < 2);
                 return *(&x + index);
             }
 
@@ -190,7 +197,8 @@
             template <class T>
             template <class K>
             inline std::common_type_t<T, K> Vector2D<T>::operator |=(Vector2D<K> const& u) const {
-                return static_cast <std::common_type_t<T, K>> (x * u.getX() + y * u.getY());
+                return static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX())
+                     + static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY());
             }
 
             template <class T>
