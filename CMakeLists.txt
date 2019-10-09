@@ -35,8 +35,11 @@ add_executable(NRE_Math
         src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.hpp
         src/Math/Frustum/NRE_Frustum.cpp
         src/Math/Frustum/NRE_Frustum.hpp
+        src/Math/Frustum/NRE_Frustum.tpp
         src/Math/Matrix/3D/NRE_Matrix3x3.hpp
+        src/Math/Matrix/3D/NRE_Matrix3x3.tpp
         src/Math/Matrix/4D/NRE_Matrix4x4.hpp
+        src/Math/Matrix/4D/NRE_Matrix4x4.tpp
         src/Math/Plane/NRE_Plane.hpp
         src/Math/Plane/NRE_Plane.tpp
         src/Math/Quaternion/NRE_Quaternion.hpp
