@@ -96,25 +96,25 @@
             template <class T>
             template <class K>
             inline void Matrix3x3<T>::setC1(Vector3D<K> const& c1) {
-                data[0][0] = c1.getX();
-                data[1][0] = c1.getY();
-                data[2][0] = c1.getZ();
+                data[0][0] = static_cast <T> (c1.getX());
+                data[1][0] = static_cast <T> (c1.getY());
+                data[2][0] = static_cast <T> (c1.getZ());
             }
 
             template <class T>
             template <class K>
             inline void Matrix3x3<T>::setC2(Vector3D<K> const& c2) {
-                data[0][1] = c2.getX();
-                data[1][1] = c2.getY();
-                data[2][1] = c2.getZ();
+                data[0][1] = static_cast <T> (c2.getX());
+                data[1][1] = static_cast <T> (c2.getY());
+                data[2][1] = static_cast <T> (c2.getZ());
             }
 
             template <class T>
             template <class K>
             inline void Matrix3x3<T>::setC3(Vector3D<K> const& c3) {
-                data[0][2] = c3.getX();
-                data[1][2] = c3.getY();
-                data[2][2] = c3.getZ();
+                data[0][2] = static_cast <T> (c3.getX());
+                data[1][2] = static_cast <T> (c3.getY());
+                data[2][2] = static_cast <T> (c3.getZ());
             }
 
             template <class T>
@@ -202,7 +202,7 @@
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[0][0] = static_cast <T> (1.0 / static_cast <long double> (u.getX()));
-                tmp[1][1] = u.getY();
+                tmp[1][1] = static_cast <T> (u.getY());
                 *this *= tmp;
             }
 
@@ -211,7 +211,7 @@
             inline void Matrix3x3<T>::squeezeY(Vector2D<K> const& u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
-                tmp[0][0] = u.getX();
+                tmp[0][0] = static_cast <T> (u.getX());
                 tmp[1][1] = static_cast <T> (1.0 / static_cast <long double> (u.getY()));
                 *this *= tmp;
             }
@@ -375,7 +375,7 @@
             template <class T>
             template <class K>
             inline Vector3D<K> Matrix3x3<T>::operator *(Vector3D<K> const& u) const {
-                return Vector3D<K>(static_cast <T> (u | getL1()), static_cast <T> (u | getL2()), static_cast <T> (u | getL3()));
+                return Vector3D<K>(u | getL1(), u | getL2(), u | getL3());
             }
 
             template <class T>

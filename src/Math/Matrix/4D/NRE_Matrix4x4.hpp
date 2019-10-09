@@ -10,7 +10,7 @@
     #pragma once
 
     #include <Utility/String/NRE_String.hpp>
-    #include <iostream>
+    #include <type_traits>
 
     #include "../../NRE_Math.hpp"
     #include "../../NRE_Unit.hpp"
@@ -48,9 +48,9 @@
                 public:    // Methods
                     //## Constructor ##//
                         /**
-                         * Construct the identity matrix
+                         * Default constructor
                          */
-                        Matrix4x4();
+                        Matrix4x4() = default;
                         /**
                          * Construct a matrix with passed values
                          * @param a first matrix component
@@ -70,15 +70,20 @@
                          * @param o fifteenth matrix component
                          * @param p sixteenth matrix component
                          */
-                        Matrix4x4(T a, T b, T c, T d,
-                                  T e, T f, T g, T h,
-                                  T i, T j, T k, T l,
-                                  T m, T n, T o, T p);
+                        template <class A, class B, class C, class D,
+                                  class E, class F, class G, class H,
+                                  class I, class J, class K, class L,
+                                  class M, class N, class O, class P>
+                        Matrix4x4(A a, B b, C c, D d,
+                                  E e, F f, G g, H h,
+                                  I i, J j, K k, L l,
+                                  M m, N n, O o, P p);
                         /**
                          * Construct a matrix with a unique value for all component
                          * @param value new value for all component
                          */
-                        Matrix4x4(T value);
+                        template <class K>
+                        Matrix4x4(K value);
                         /**
                          * Construct a matrix with their lines passed in parameters with vector
                          * @param l1 the new value for the first line
@@ -86,7 +91,8 @@
                          * @param l3 the new value for the third line
                          * @param l4 the new value for the fourth line
                          */
-                        Matrix4x4(Vector4D<T> const& l1, Vector4D<T> const& l2, Vector4D<T> const& l3, Vector4D<T> const& l4);
+                        template <class K, class L, class N, class M>
+                        Matrix4x4(Vector4D<K> const& l1, Vector4D<L> const& l2, Vector4D<N> const& l3, Vector4D<M> const& l4);
 
                     //## Copy-Constructor ##//
                         /**
@@ -164,49 +170,57 @@
                         /**
                          * @return the matrix's determinant
                          */
-                        float getDeterminant() const;
+                        long double getDeterminant() const;
 
                     //## Setter ##//
                         /**
                          * First line setter
                          * @param l1 the new first line vector
                          */
-                        void setL1(Vector4D<T> const& l1);
+                        template <class K>
+                        void setL1(Vector4D<K> const& l1);
                         /**
                          * Second line setter
                          * @param l2 the new second line vector
                          */
-                        void setL2(Vector4D<T> const& l2);
+                        template <class K>
+                        void setL2(Vector4D<K> const& l2);
                         /**
                          * Third line setter
                          * @param l3 the new third line vector
                          */
-                        void setL3(Vector4D<T> const& l3);
+                        template <class K>
+                        void setL3(Vector4D<K> const& l3);
                         /**
                          * Fourth line setter
                          * @param l4 the new fourth line vector
                          */
-                        void setL4(Vector4D<T> const& l4);
+                        template <class K>
+                        void setL4(Vector4D<K> const& l4);
                         /**
                          * First column setter
                          * @param c1 the new first column vector
                          */
-                        void setC1(Vector4D<T> const& c1);
+                        template <class K>
+                        void setC1(Vector4D<K> const& c1);
                         /**
                          * Second column setter
                          * @param c2 the new second column vector
                          */
-                        void setC2(Vector4D<T> const& c2);
+                        template <class K>
+                        void setC2(Vector4D<K> const& c2);
                         /**
                          * Third column setter
                          * @param c3 the new third column vector
                          */
-                        void setC3(Vector4D<T> const& c3);
+                        template <class K>
+                        void setC3(Vector4D<K> const& c3);
                         /**
                          * Fourth column setter
                          * @param c4 the new fourth column vector
                          */
-                        void setC4(Vector4D<T> const& c4);
+                        template <class K>
+                        void setC4(Vector4D<K> const& c4);
                         /**
                          * Set the matrix to the identity matrix
                          */
@@ -225,60 +239,70 @@
                          * Add a translation
                          * @param u the translation vector
                          */
-                        void translate(Vector3D<T> const& u);
+                        template <class K>
+                        void translate(Vector3D<K> const& u);
                         /**
                          * Add a scale
                          * @param u the scaling vector
                          */
-                        void scale(Vector3D<T> const& u);
+                        template <class K>
+                        void scale(Vector3D<K> const& u);
                         /**
                          * Add a stretch on the X axis
                          * @param u the stretch factor
                          */
-                        void stretchX(T u);
+                        template <class K>
+                        void stretchX(K u);
                         /**
                          * Add a stretch on the Y axis
                          * @param u the stretch factor
                          */
-                        void stretchY(T u);
+                        template <class K>
+                        void stretchY(K);
                         /**
                          * Add a stretch on the Z axis
                          * @param u the stretch factor
                          */
-                        void stretchZ(T u);
+                        template <class K>
+                        void stretchZ(K u);
                         /**
                          * Add a rotation
                          * @param angle the rotation's angle
                          * @param axis  the rotation's axis
                          */
-                        void rotate(Angle angle, Vector3D<T> const& axis);
+                        template <class K>
+                        void rotate(Angle angle, Vector3D<K> const& axis);
                         /**
                          * Perform a perspective projection on this
                          * @param fov   the projection's fov
                          * @param ratio the projection's ratio
                          * @param z     the projection's plane distance
                          */
-                        void perspective(Angle fov, T ratio, Vector2D<T> const& z);
+                        template <class K, class L>
+                        void perspective(Angle fov, K ratio, Vector2D<L> const& z);
                         /**
                          * Perform an orthogonal projection on this
                          * @param h  the horizontal clipping plane
                          * @param v  the vertical clipping plane
                          * @param z  the projection's plane distance
                          */
-                        void ortho(Vector2D<T> const& h, Vector2D<T> const& v, Vector2D<T> const& z);
+                        template <class K, class L, class N>
+                        void ortho(Vector2D<K> const& h, Vector2D<L> const& v, Vector2D<N> const& z);
                         /**
                          * Perform a 2D orthogonal projection on this
                          * @param h  the horizontal clipping plane
                          * @param v  the vertical clipping plane
                          */
-                        void ortho2D(Vector2D<T> const& h, Vector2D<T> const& v);
+                        template <class K, class L>
+                        void ortho2D(Vector2D<K> const& h, Vector2D<L> const& v);
                         /**
                          * Perform a viewing transformation on this
                          * @param eye    the camera's eye
                          * @param center the point fixed by the camera
                          * @param up     the camera's up vector
                          */
-                        void lookAt(Vector3D<T> const& eye, Vector3D<T> const& center, Vector3D<T> const& up);
+                        template <class K, class L, class N>
+                        void lookAt(Vector3D<K> const& eye, Vector3D<L> const& center, Vector3D<N> const& up);
                         /**
                          * @return a pointer to the vector's data
                          */
@@ -313,6 +337,20 @@
                          * @return  the reference of himself
                          */
                         Matrix4x4& operator =(Matrix4x4 && m) = default;
+                        /**
+                         * Copy m into this
+                         * @param m the object to copy into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Matrix4x4& operator =(Matrix4x4<K> const& m);
+                        /**
+                         * Move m into this
+                         * @param m the object to move into this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Matrix4x4& operator =(Matrix4x4<K> && m);
 
                     //## Shortcut Operator ##//
                         /**
@@ -320,37 +358,43 @@
                          * @param m the matrix to add into this
                          * @return  the reference on himself
                          */
-                        Matrix4x4& operator +=(Matrix4x4 const& m);
+                        template <class K>
+                        Matrix4x4& operator +=(Matrix4x4<K> const& m);
                         /**
                          * Subtract m into this
                          * @param m the matrix to subtract into this
                          * @return  the reference on himself
                          */
-                        Matrix4x4& operator -=(Matrix4x4 const& m);
+                        template <class K>
+                        Matrix4x4& operator -=(Matrix4x4<K> const& m);
                         /**
                          * Multiply this by k
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
-                        Matrix4x4& operator *=(T k);
+                        template <class K>
+                        Matrix4x4& operator *=(K k);
                         /**
                          * Multiply this with m
                          * @param m the matrix to multiply with this
                          * @return  the reference of himself
                          */
-                        Matrix4x4& operator *=(Matrix4x4 const& m);
+                        template <class K>
+                        Matrix4x4& operator *=(Matrix4x4<K> const& m);
                         /**
                          * Divide this by k
                          * @param k the division factor
                          * @return  the reference of himself
                          */
-                        Matrix4x4& operator /=(T k);
+                        template <class K>
+                        Matrix4x4& operator /=(K k);
                         /**
                          * Divide this with m
                          * @param m the matrix to divide with this
                          * @return  the reference of himself
                          */
-                        Matrix4x4& operator /=(Matrix4x4 const& m);
+                        template <class K>
+                        Matrix4x4& operator /=(Matrix4x4<K> const& m);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -358,43 +402,50 @@
                          * @param m the matrix to add with this
                          * @return  the newly computed matrix
                          */
-                        Matrix4x4 operator +(Matrix4x4 const& m) const;
+                        template <class K>
+                        Matrix4x4<std::common_type_t<T, K>> operator +(Matrix4x4<K> const& m) const;
                         /**
                          * Compute the matrix resulting in the subtraction of this and m
                          * @param m the matrix to subtract with this
                          * @return  the newly computed matrix
                          */
-                        Matrix4x4 operator -(Matrix4x4 const& m) const;
+                        template <class K>
+                        Matrix4x4<std::common_type_t<T, K>> operator -(Matrix4x4<K> const& m) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this by k
                          * @param k the multiplication factor
                          * @return  the newly computed matrix
                          */
-                        Matrix4x4 operator *(T k) const;
+                        template <class K>
+                        Matrix4x4<std::common_type_t<T, K>> operator *(K k) const;
                         /**
                          * Compute the matrix resulting in the multiplication of this and m
                          * @param m the matrix to multiply with this
                          * @return  the newly computed matrix
                          */
-                        Matrix4x4 operator *(Matrix4x4 const& m) const;
+                        template <class K>
+                        Matrix4x4<std::common_type_t<T, K>> operator *(Matrix4x4<K> const& m) const;
                         /**
                          * Compute the vector resulting in the transformation of u by this
                          * @param u the vector to transform
                          * @return  the newly computed vector
                          */
-                        Vector4D<T> operator *(Vector4D<T> const& u) const;
+                        template <class K>
+                        Vector4D<K> operator *(Vector4D<K> const& u) const;
                         /**
                          * Compute the plane resulting in the transformation of p by this
                          * @param p the plane to transform
                          * @return  the newly computed vector
                          */
-                        Plane<T> operator *(Plane<T> const& p) const;
+                        template <class K>
+                        Plane<K> operator *(Plane<K> const& p) const;
                         /**
                          * Compute the segment resulting in the transformation of s by this
                          * @param s the segment to transform
                          * @return  the newly computed vector
                          */
-                        Segment4D<T> operator *(Segment4D<T> const& s) const;
+                        template <class K>
+                        Segment4D<K> operator *(Segment4D<K> const& s) const;
                         /**
                          * Compute the bezier curve resulting in the transformation of c by this
                          * @param c the bezier curve to transform
@@ -406,13 +457,15 @@
                          * @param k the division factor
                          * @return  the newly computed matrix
                          */
-                        Matrix4x4 operator /(T k) const;
+                        template <class K>
+                        Matrix4x4<std::common_type_t<T, K>> operator /(K k) const;
                         /**
                          * Compute the matrix resulting in the division of this and m
                          * @param m the matrix to divide with this
                          * @return  the newly computed matrix
                          */
-                        Matrix4x4 operator /(Matrix4x4 const& m) const;
+                        template <class K>
+                        Matrix4x4<std::common_type_t<T, K>> operator /(Matrix4x4<K> const& m) const;
 
                     //## Comparison Operator ##//
                         /**
@@ -420,13 +473,15 @@
                          * @param m the matrix to test with this
                          * @return  the test's result
                          */
-                        bool operator ==(Matrix4x4 const& m) const;
+                        template <class K>
+                        bool operator ==(Matrix4x4<K> const& m) const;
                         /**
                          * Difference test between this and m
                          * @param m the matrix to test with this
                          * @return  the test's result
                          */
-                        bool operator !=(Matrix4x4 const& m) const;
+                        template <class K>
+                        bool operator !=(Matrix4x4<K> const& m) const;
 
                     //## Stream Operator ##//
                         /**
