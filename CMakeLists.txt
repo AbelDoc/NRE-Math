@@ -27,13 +27,16 @@ include_directories(src/Math/Vector/2D)
 include_directories(src/Math/Vector/3D)
 include_directories(src/Math/Vector/4D)
 
-set(COMPILE_LIST
-        src/Header/NRE_Math.hpp
+set(SRC_LIST
         src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.cpp
-        src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.hpp
         src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.cpp
+        src/Math/Frustum/NRE_Frustum.cpp)
+
+set(COMPILE_LIST
+        ${SRC_LIST}
+        src/Header/NRE_Math.hpp
+        src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.hpp
         src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.hpp
-        src/Math/Frustum/NRE_Frustum.cpp
         src/Math/Frustum/NRE_Frustum.hpp
         src/Math/Frustum/NRE_Frustum.tpp
         src/Math/Matrix/3D/NRE_Matrix3x3.hpp
@@ -62,4 +65,4 @@ set(EXEC_LIST
         src/NRE_Main.cpp)
 
 add_executable(NRE_Math ${EXEC_LIST})
-add_library(NRE-Math ${COMPILE_LIST})
+add_library(NRE-Math ${SRC_LIST})
