@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pedantic -Wno-virtual-move-assign -Wall -Wextra -Wfatal-errors -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -O3 -std=c++17")
 
 include_directories(C:/Users/abell/Documents/GitHub/NRE-Utility/src)
+include_directories(C:/Users/abell/Documents/GitHub/NRE-Tester/src)
 include_directories(.)
 include_directories(src)
 include_directories(src/Header)
@@ -27,16 +28,13 @@ include_directories(src/Math/Vector/2D)
 include_directories(src/Math/Vector/3D)
 include_directories(src/Math/Vector/4D)
 
-set(SRC_LIST
-        src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.cpp
-        src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.cpp
-        src/Math/Frustum/NRE_Frustum.cpp)
-
 set(COMPILE_LIST
-        ${SRC_LIST}
         src/Header/NRE_Math.hpp
+        src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.cpp
         src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.hpp
+        src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.cpp
         src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.hpp
+        src/Math/Frustum/NRE_Frustum.cpp
         src/Math/Frustum/NRE_Frustum.hpp
         src/Math/Frustum/NRE_Frustum.tpp
         src/Math/Matrix/3D/NRE_Matrix3x3.hpp
@@ -64,5 +62,12 @@ set(EXEC_LIST
         ${COMPILE_LIST}
         src/NRE_Main.cpp)
 
+set(TEST_LIST
+        test/NRE_Main.cpp)
+
 add_executable(NRE_Math ${EXEC_LIST})
-add_library(NRE-Math ${SRC_LIST})
+add_executable(NRE_Math_Test ${TEST_LIST})
+
+target_link_libraries(NRE_Math_Test "C:/lib/NRE/libNRE-Tester.a")
+
+add_library(NRE-Math ${COMPILE_LIST})
