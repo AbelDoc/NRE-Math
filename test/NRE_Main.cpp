@@ -10,3 +10,4 @@
     #include <Header/NRE_Tester.cpp>
 
     #include "Math/Vector/2D/NRE_Vector2D.cpp"
+    #include "Math/Vector/3D/NRE_Vector3D.cpp"

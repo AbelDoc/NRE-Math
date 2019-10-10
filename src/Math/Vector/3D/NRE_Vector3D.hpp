@@ -58,6 +58,11 @@
                          */
                         template <class K>
                         Vector3D(K value);
+                        /**
+                         * Construct a vector from an initializer list
+                         * @param list the construction list
+                         */
+                        Vector3D(std::initializer_list<T> list);
 
                     //## Copy-Constructor ##//
                         /**
