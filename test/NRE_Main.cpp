@@ -13,3 +13,4 @@
     #include "Math/Vector/3D/NRE_Vector3D.cpp"
     #include "Math/Vector/4D/NRE_Vector4D.cpp"
     #include "Math/Segment/3D/NRE_Segment3D.cpp"
+    #include "Math/Segment/4D/NRE_Segment4D.cpp"

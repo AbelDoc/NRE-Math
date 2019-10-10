@@ -12,11 +12,6 @@
 
             template <class T>
             template <class K, class L>
-            Segment4D<T>::Segment4D(Point4D<K> const& s, Point4D<L> const& e) : start(s), end(e) {
-            }
-
-            template <class T>
-            template <class K, class L>
             Segment4D<T>::Segment4D(Point3D<K> const& s, Point3D<L> const& e) : start(Point4D<T>(s, 1)), end(Point4D<T>(e, 1)) {
             }
 
@@ -37,13 +32,17 @@
 
             template <class T>
             Vector4D<T> Segment4D<T>::getVector() const {
-                return end - start;
+                return Vector4D<T>(end.getX() / end.getW() - start.getX() / start.getW(),
+                                   end.getY() / end.getW() - start.getY() / start.getW(),
+                                   end.getZ() / end.getW() - start.getZ() / start.getW(),
+                                   0);
             }
 
             template <class T>
             template <class K>
             inline bool Segment4D<T>::operator ==(Segment4D<K> const& u) const {
-                return start == u.start && end == u.end;
+                return (start == u.getStart() && end == u.getEnd())
+                    || (start == u.getEnd()   && end == u.getStart());
             }
 
             template <class T>
