@@ -485,6 +485,14 @@
         assertTrue(this, equal(std::abs(u |= w), u.norm() * w.norm()));
     }
     
+    TEST(Vector3D, SelfVecProduct) {
+        Vector3D<int> v(1, 0, 0);
+        Vector3D<int> u(0, 0, 1);
+        
+        v ^= u;
+        assertEquals(this, v, Vector3D<int>(0, -1, 0));
+    }
+    
     TEST(Vector3D, Add) {
         Vector3D<int> u(10, 20, 30);
         Vector3D<int> v(10, 20, 30);
@@ -616,13 +624,21 @@
         assertTrue(this, equal(z.getZ(), 30.5));
     }
     
-    TEST(Vector3D, Dot) {
+    TEST(Vector3D, DotProduct) {
         Vector3D<int> v(1, 0, 0);
         Vector3D<int> u(0, 0, 1);
         assertEquals(this, v | u, 0);
         
         Vector3D<int> w(0, 0, 2);
         assertTrue(this, equal(std::abs(u | w), u.norm() * w.norm()));
+    }
+
+    TEST(Vector3D, VecProduct) {
+        Vector3D<int> v(1, 0, 0);
+        Vector3D<int> u(0, 0, 1);
+    
+        Vector3D<int> w = v ^ u;
+        assertEquals(this, w, Vector3D<int>(0, -1, 0));
     }
     
     TEST(Vector3D, Equal) {

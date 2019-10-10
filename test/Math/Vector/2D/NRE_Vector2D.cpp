@@ -505,7 +505,7 @@
         assertTrue(this, equal(z.getY(), 20.5));
     }
     
-    TEST(Vector2D, Dot) {
+    TEST(Vector2D, DotProduct) {
         Vector2D<int> v(1, 0);
         Vector2D<int> u(0, 1);
         assertEquals(this, v | u, 0);
