@@ -44,13 +44,6 @@
                          * @param e the segment's end
                          */
                         template <class K, class L>
-                        Segment3D(Point3D<K> const& s, Point3D<L> const& e);
-                        /**
-                         * Construct a segment from his two points
-                         * @param s the segment's start
-                         * @param e the segment's end
-                         */
-                        template <class K, class L>
                         Segment3D(Point2D<K> const& s, Point2D<L> const& e);
                         /**
                          * Construct a segment from his two points
@@ -143,6 +136,17 @@
             template <class T>
             std::ostream& operator <<(std::ostream& stream, Segment3D<T> const& o);
         }
+    }
+
+    /**
+    * @namespace std
+    * @brief The stl standard namespace
+    */
+    namespace std {
+        template <class T, class K>
+        struct common_type<NRE::Math::Segment3D<T>, NRE::Math::Segment3D<K>> {
+            using type = NRE::Math::Segment3D<common_type_t < T, K>>;
+        };
     }
 
     #include "NRE_Segment3D.tpp"

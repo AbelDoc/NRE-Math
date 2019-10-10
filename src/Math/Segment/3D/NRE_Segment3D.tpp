@@ -12,11 +12,6 @@
 
             template <class T>
             template <class K, class L>
-            Segment3D<T>::Segment3D(Point3D<K> const& s, Point3D<L> const& e) : start(s), end(e) {
-            }
-
-            template <class T>
-            template <class K, class L>
             Segment3D<T>::Segment3D(Point2D<K> const& s, Point2D<L> const& e) : start(Point3D<T>(s, 1)), end(Point3D<T>(e, 1)) {
             }
 
@@ -37,13 +32,16 @@
 
             template <class T>
             Vector3D<T> Segment3D<T>::getVector() const {
-                return end - start;
+                return Vector3D<T>(end.getX() / end.getZ() - start.getX() / start.getZ(),
+                                   end.getY() / end.getZ() - start.getY() / start.getZ(),
+                                   0);
             }
 
             template <class T>
             template <class K>
             inline bool Segment3D<T>::operator ==(Segment3D<K> const& u) const {
-                return start == u.start && end == u.end;
+                return (start == u.getStart() && end == u.getEnd())
+                    || (start == u.getEnd()   && end == u.getStart());
             }
 
             template <class T>

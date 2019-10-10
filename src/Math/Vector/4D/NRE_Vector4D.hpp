@@ -497,4 +497,15 @@
         }
     }
 
+    /**
+    * @namespace std
+    * @brief The stl standard namespace
+    */
+    namespace std {
+        template <class T, class K>
+        struct common_type<NRE::Math::Vector4D<T>, NRE::Math::Vector4D<K>> {
+            using type = NRE::Math::Vector4D<common_type_t < T, K>>;
+        };
+    }
+
     #include "NRE_Vector4D.tpp"

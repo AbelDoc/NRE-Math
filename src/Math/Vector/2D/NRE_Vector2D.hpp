@@ -397,4 +397,15 @@
         }
     }
 
+    /**
+    * @namespace std
+    * @brief The stl standard namespace
+    */
+    namespace std {
+        template <class T, class K>
+        struct common_type<NRE::Math::Vector2D<T>, NRE::Math::Vector2D<K>> {
+            using type = NRE::Math::Vector2D<common_type_t < T, K>>;
+        };
+    }
+
     #include "NRE_Vector2D.tpp"

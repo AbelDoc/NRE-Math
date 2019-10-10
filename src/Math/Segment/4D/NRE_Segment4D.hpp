@@ -147,4 +147,15 @@
         }
     }
 
+    /**
+    * @namespace std
+    * @brief The stl standard namespace
+    */
+    namespace std {
+        template <class T, class K>
+        struct common_type<NRE::Math::Segment4D<T>, NRE::Math::Segment4D<K>> {
+            using type = NRE::Math::Segment4D<common_type_t < T, K>>;
+        };
+    }
+
     #include "NRE_Segment4D.tpp"
