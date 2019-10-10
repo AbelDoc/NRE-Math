@@ -63,6 +63,11 @@
                          */
                         template <class K>
                         Vector4D(K value);
+                        /**
+                         * Construct a vector from an initializer list
+                         * @param list the construction list
+                         */
+                        Vector4D(std::initializer_list<T> list);
 
                     //## Copy-Constructor ##//
                         /**

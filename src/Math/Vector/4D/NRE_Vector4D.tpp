@@ -19,6 +19,11 @@
             template <class K>
             inline Vector4D<T>::Vector4D(K value) : Vector4D(value, value, value, value) {
             }
+    
+            template <class T>
+            inline Vector4D<T>::Vector4D(std::initializer_list<T> list) : Vector4D(*(list.begin()), *(list.begin() + 1), *(list.begin() + 2), *(list.begin() + 3)) {
+                assert(list.size() == 4);
+            }
 
             template <class T>
             template <class K>
@@ -231,67 +236,70 @@
             template <class T>
             template <class K>
             inline Vector4D<T>& Vector4D<T>::operator +=(Vector4D<K> const& u) {
-                x += static_cast <T> (u.getX());
-                y += static_cast <T> (u.getY());
-                z += static_cast <T> (u.getZ());
-                w += static_cast <T> (u.getW());
+                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) + static_cast <std::common_type_t<T, K>> (u.getX()));
+                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) + static_cast <std::common_type_t<T, K>> (u.getY()));
+                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) + static_cast <std::common_type_t<T, K>> (u.getZ()));
+                w = static_cast <T> (static_cast <std::common_type_t<T, K>> (w) + static_cast <std::common_type_t<T, K>> (u.getW()));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector4D<T>& Vector4D<T>::operator -=(Vector4D<K> const& u) {
-                x -= static_cast <T> (u.getX());
-                y -= static_cast <T> (u.getY());
-                z -= static_cast <T> (u.getZ());
-                w -= static_cast <T> (u.getW());
+                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) - static_cast <std::common_type_t<T, K>> (u.getX()));
+                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) - static_cast <std::common_type_t<T, K>> (u.getY()));
+                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) - static_cast <std::common_type_t<T, K>> (u.getZ()));
+                w = static_cast <T> (static_cast <std::common_type_t<T, K>> (w) - static_cast <std::common_type_t<T, K>> (u.getW()));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector4D<T>& Vector4D<T>::operator *=(K k) {
-                x *= static_cast <T> (k);
-                y *= static_cast <T> (k);
-                z *= static_cast <T> (k);
-                w *= static_cast <T> (k);
+                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (k));
+                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (k));
+                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (k));
+                w = static_cast <T> (static_cast <std::common_type_t<T, K>> (w) * static_cast <std::common_type_t<T, K>> (k));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector4D<T>& Vector4D<T>::operator *=(Vector4D<K> const& u) {
-                x *= static_cast <T> (u.getX());
-                y *= static_cast <T> (u.getY());
-                z *= static_cast <T> (u.getZ());
-                w *= static_cast <T> (u.getW());
+                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX()));
+                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY()));
+                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getZ()));
+                w = static_cast <T> (static_cast <std::common_type_t<T, K>> (w) * static_cast <std::common_type_t<T, K>> (u.getW()));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector4D<T>& Vector4D<T>::operator /=(K k) {
-                x /= static_cast <T> (k);
-                y /= static_cast <T> (k);
-                z /= static_cast <T> (k);
-                w /= static_cast <T> (k);
+                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (k));
+                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (k));
+                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) / static_cast <std::common_type_t<T, K>> (k));
+                w = static_cast <T> (static_cast <std::common_type_t<T, K>> (w) / static_cast <std::common_type_t<T, K>> (k));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector4D<T>& Vector4D<T>::operator /=(Vector4D<K> const& u) {
-                x /= static_cast <T> (u.getX());
-                y /= static_cast <T> (u.getY());
-                z /= static_cast <T> (u.getZ());
-                w /= static_cast <T> (u.getW());
+                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (u.getX()));
+                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (u.getY()));
+                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) / static_cast <std::common_type_t<T, K>> (u.getZ()));
+                w = static_cast <T> (static_cast <std::common_type_t<T, K>> (w) / static_cast <std::common_type_t<T, K>> (u.getW()));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline std::common_type_t<T, K> Vector4D<T>::operator |=(Vector4D<K> const& u) const {
-                return static_cast <std::common_type_t<T, K>> (x * u.getX() + y * u.getY() + z * u.getZ() + w * u.getW());
+                return static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX())
+                     + static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY())
+                     + static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getZ())
+                     + static_cast <std::common_type_t<T, K>> (w) * static_cast <std::common_type_t<T, K>> (u.getW());
             }
 
             template <class T>

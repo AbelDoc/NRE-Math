@@ -11,3 +11,4 @@
 
     #include "Math/Vector/2D/NRE_Vector2D.cpp"
     #include "Math/Vector/3D/NRE_Vector3D.cpp"
+    #include "Math/Vector/4D/NRE_Vector4D.cpp"
