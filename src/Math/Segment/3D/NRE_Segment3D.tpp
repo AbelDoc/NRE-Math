@@ -11,10 +11,6 @@
         namespace Math {
 
             template <class T>
-            Segment3D<T>::Segment3D() : start(0, 0, 1), end(0, 0, 1) {
-            }
-
-            template <class T>
             template <class K, class L>
             Segment3D<T>::Segment3D(Point3D<K> const& s, Point3D<L> const& e) : start(s), end(e) {
             }

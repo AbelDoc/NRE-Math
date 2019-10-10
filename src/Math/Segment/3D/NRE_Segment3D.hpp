@@ -35,9 +35,9 @@
                 public:    // Methods
                     //## Constructor ##//
                         /**
-                         * Construct a segment with both start and end equal to origin
+                         * Default constructor
                          */
-                        Segment3D();
+                        Segment3D() = default;
                         /**
                          * Construct a segment from his two points
                          * @param s the segment's start

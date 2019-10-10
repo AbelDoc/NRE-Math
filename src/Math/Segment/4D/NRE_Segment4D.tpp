@@ -11,10 +11,6 @@
         namespace Math {
 
             template <class T>
-            Segment4D<T>::Segment4D() : start(0, 0, 0, 1), end(0, 0, 0, 1) {
-            }
-
-            template <class T>
             template <class K, class L>
             Segment4D<T>::Segment4D(Point4D<K> const& s, Point4D<L> const& e) : start(s), end(e) {
             }
