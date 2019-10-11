@@ -11,18 +11,13 @@
         namespace Math {
 
             template <class T>
-            inline Quaternion<T>::Quaternion() {
-                setIdentity();
-            }
-
-            template <class T>
             template <class K, class L, class N, class M>
             inline Quaternion<T>::Quaternion(K x, L y, N z, M w) : quat(x, y, z, w) {
             }
 
             template <class T>
             template <class K, class L, class N>
-            inline Quaternion<T>::Quaternion(K x, L y, N z, Angle w) : Quaternion({x, y, z}, w) {
+            inline Quaternion<T>::Quaternion(K x, L y, N z, Angle w) : Quaternion(Vector3D<std::common_type_t<K, L, N>>(x, y, z), w) {
             }
 
             template <class T>
@@ -32,7 +27,7 @@
 
             template <class T>
             template <class K>
-            inline Quaternion<T>::Quaternion(Quaternion<K> const& q) : quat(q.quat) {
+            inline Quaternion<T>::Quaternion(Quaternion<K> const& q) : quat(q.getQuaternion()) {
             }
 
             template <class T>
@@ -98,11 +93,11 @@
             template <class T>
             template <class K>
             inline void Quaternion<T>::setAngleAxis(Vector3D<K> const& axis, Angle w) {
-                T s = static_cast <T> (sin(w / 2.0));
-                setX(s * axis.getX());
-                setY(s * axis.getY());
-                setZ(s * axis.getZ());
-                setW(static_cast <T> (cos(w / 2.0)));
+                std::common_type_t<T, K> s = static_cast <std::common_type_t<T, K>> (sin(w / 2.0));
+                setX(s * static_cast <std::common_type_t<T, K>> (axis.getX()));
+                setY(s * static_cast <std::common_type_t<T, K>> (axis.getY()));
+                setZ(s * static_cast <std::common_type_t<T, K>> (axis.getZ()));
+                setW(cos(w / 2.0));
             }
 
             template <class T>
@@ -116,7 +111,7 @@
             }
 
             template <class T>
-            inline long double Quaternion<T>::normSquared() const {
+            inline T Quaternion<T>::normSquared() const {
                 return quat.normSquared();
             }
 
@@ -133,25 +128,28 @@
             template <class T>
             template <class K>
             inline Quaternion<T>& Quaternion<T>::operator=(Quaternion<K> const& q) {
-                quat = q.quat;
+                quat = q.getQuaternion();
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Quaternion<T>& Quaternion<T>::operator=(Quaternion<K> && q) {
-                quat = q.quat;
+                quat = q.getQuaternion();
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Quaternion<T>& Quaternion<T>::operator*=(Quaternion<K> const& q) {
-                Quaternion<T> tmp(getW() * static_cast <T> (q.getX()) + getX() * static_cast <T> (q.getW()) - getY() * static_cast <T> (q.getZ()) + getZ() * static_cast <T> (q.getY()),
-                                  getW() * static_cast <T> (q.getY()) + getX() * static_cast <T> (q.getZ()) + getY() * static_cast <T> (q.getW()) - getZ() * static_cast <T> (q.getX()),
-                                  getW() * static_cast <T> (q.getZ()) - getX() * static_cast <T> (q.getY()) + getY() * static_cast <T> (q.getX()) + getZ() * static_cast <T> (q.getW()),
-                                  getW() * static_cast <T> (q.getW()) - getX() * static_cast <T> (q.getX()) - getY() * static_cast <T> (q.getY()) - getZ() * static_cast <T> (q.getZ()));
-                *this = std::move(tmp);
+                quat.setCoord(static_cast <std::common_type_t<T, K>> (getW()) * static_cast <std::common_type_t<T, K>> (q.getX()) + static_cast <std::common_type_t<T, K>> (getX()) * static_cast <std::common_type_t<T, K>> (q.getW())
+                            - static_cast <std::common_type_t<T, K>> (getY()) * static_cast <std::common_type_t<T, K>> (q.getZ()) + static_cast <std::common_type_t<T, K>> (getZ()) * static_cast <std::common_type_t<T, K>> (q.getY()),
+                              static_cast <std::common_type_t<T, K>> (getW()) * static_cast <std::common_type_t<T, K>> (q.getY()) + static_cast <std::common_type_t<T, K>> (getX()) * static_cast <std::common_type_t<T, K>> (q.getZ())
+                            + static_cast <std::common_type_t<T, K>> (getY()) * static_cast <std::common_type_t<T, K>> (q.getW()) - static_cast <std::common_type_t<T, K>> (getZ()) * static_cast <std::common_type_t<T, K>> (q.getX()),
+                              static_cast <std::common_type_t<T, K>> (getW()) * static_cast <std::common_type_t<T, K>> (q.getZ()) - static_cast <std::common_type_t<T, K>> (getX()) * static_cast <std::common_type_t<T, K>> (q.getY())
+                            + static_cast <std::common_type_t<T, K>> (getY()) * static_cast <std::common_type_t<T, K>> (q.getX()) + static_cast <std::common_type_t<T, K>> (getZ()) * static_cast <std::common_type_t<T, K>> (q.getW()),
+                              static_cast <std::common_type_t<T, K>> (getW()) * static_cast <std::common_type_t<T, K>> (q.getW()) - static_cast <std::common_type_t<T, K>> (getX()) * static_cast <std::common_type_t<T, K>> (q.getX())
+                            - static_cast <std::common_type_t<T, K>> (getY()) * static_cast <std::common_type_t<T, K>> (q.getY()) - static_cast <std::common_type_t<T, K>> (getZ()) * static_cast <std::common_type_t<T, K>> (q.getZ()));
                 return *this;
             }
 

@@ -43,13 +43,13 @@
                         /**
                          * Construct the identity quaternion
                          */
-                        Quaternion();
+                        Quaternion() = default;
                         /**
                          * Construct a quaternion with direct assignment
                          * @param x  the x coordinate
                          * @param y  the y coordinate
                          * @param z  the z coordinate
-                         * @param w  the rotation's angle
+                         * @param w  the w coordinate
                          */
                         template <class K, class L, class N, class M>
                         Quaternion(K x, L y, N z, M w);
@@ -176,7 +176,7 @@
                         /**
                          * @return the squared quaternion's norm
                          */
-                        long double normSquared() const;
+                        T normSquared() const;
                         /**
                          * Normalize the quaternion
                          */
