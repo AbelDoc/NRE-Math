@@ -543,5 +543,3 @@
         Matrix3x3<float> m2(1.5);
         assertTrue(this, m1 != m2);
     }
-    
-    

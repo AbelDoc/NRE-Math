@@ -227,38 +227,54 @@
                 Matrix4x4<T> tmp;
                 if (auto det = getDeterminant(); std::abs(det) > EPSILON) {
                     long double invDet = 1.0 / det;
-                    tmp[0][0] = invDet * ((data[1][1] * data[2][2] * data[3][3]) + (data[1][2] * data[2][3] * data[3][1]) + (data[1][3] * data[2][1] * data[3][2])
-                                        - (data[1][1] * data[2][3] * data[3][2]) - (data[1][2] * data[2][1] * data[3][3]) - (data[1][3] * data[2][2] * data[3][1]));
-                    tmp[0][1] = invDet * ((data[0][1] * data[2][3] * data[3][2]) + (data[0][2] * data[2][1] * data[3][3]) + (data[0][3] * data[2][2] * data[3][1])
-                                        - (data[0][1] * data[2][2] * data[3][3]) - (data[0][2] * data[2][3] * data[3][1]) - (data[0][3] * data[2][1] * data[3][2]));
-                    tmp[0][2] = invDet * ((data[0][1] * data[1][2] * data[3][3]) + (data[0][2] * data[1][3] * data[3][1]) + (data[0][3] * data[1][1] * data[3][2])
-                                        - (data[0][1] * data[1][3] * data[3][2]) - (data[0][2] * data[1][1] * data[3][3]) - (data[0][3] * data[1][2] * data[3][1]));
-                    tmp[0][3] = invDet * ((data[0][1] * data[1][3] * data[2][2]) + (data[0][2] * data[1][1] * data[2][3]) + (data[0][3] * data[1][2] * data[2][1])
-                                        - (data[0][1] * data[1][2] * data[2][3]) - (data[0][2] * data[1][3] * data[2][1]) - (data[0][3] * data[1][1] * data[2][2]));
-                    tmp[1][0] = invDet * ((data[1][0] * data[2][3] * data[3][2]) + (data[1][2] * data[2][0] * data[3][3]) + (data[1][3] * data[2][2] * data[3][0])
-                                        - (data[1][0] * data[2][2] * data[3][3]) - (data[1][2] * data[2][3] * data[3][0]) - (data[1][3] * data[2][0] * data[3][2]));
-                    tmp[1][1] = invDet * ((data[0][0] * data[2][2] * data[3][3]) + (data[0][2] * data[2][3] * data[3][0]) + (data[0][3] * data[2][0] * data[3][2])
-                                        - (data[0][0] * data[2][3] * data[3][2]) - (data[0][2] * data[2][0] * data[3][3]) - (data[0][3] * data[2][2] * data[3][0]));
-                    tmp[1][2] = invDet * ((data[0][0] * data[1][3] * data[3][2]) + (data[0][2] * data[1][0] * data[3][3]) + (data[0][3] * data[1][2] * data[3][0])
-                                        - (data[0][0] * data[1][2] * data[3][3]) - (data[0][2] * data[1][3] * data[3][0]) - (data[0][3] * data[1][0] * data[3][2]));
-                    tmp[1][3] = invDet * ((data[0][0] * data[1][2] * data[2][3]) + (data[0][2] * data[1][3] * data[2][0]) + (data[0][3] * data[1][0] * data[2][2])
-                                        - (data[0][0] * data[1][3] * data[2][2]) - (data[0][2] * data[1][0] * data[2][3]) - (data[0][3] * data[1][2] * data[2][0]));
-                    tmp[2][0] = invDet * ((data[1][0] * data[2][1] * data[3][3]) + (data[1][1] * data[2][3] * data[3][0]) + (data[1][3] * data[2][0] * data[3][1])
-                                        - (data[1][0] * data[2][3] * data[3][1]) - (data[1][1] * data[2][0] * data[3][3]) - (data[1][3] * data[2][1] * data[3][0]));
-                    tmp[2][1] = invDet * ((data[0][0] * data[2][3] * data[3][1]) + (data[0][1] * data[2][0] * data[3][3]) + (data[0][3] * data[2][1] * data[3][0])
-                                        - (data[0][0] * data[2][1] * data[3][3]) - (data[0][1] * data[2][3] * data[3][0]) - (data[0][3] * data[2][0] * data[3][1]));
-                    tmp[2][2] = invDet * ((data[0][0] * data[1][1] * data[3][3]) + (data[0][1] * data[1][3] * data[3][0]) + (data[0][3] * data[1][0] * data[3][1])
-                                        - (data[0][0] * data[1][3] * data[3][1]) - (data[0][1] * data[1][0] * data[3][3]) - (data[0][3] * data[1][1] * data[3][0]));
-                    tmp[2][3] = invDet * ((data[0][0] * data[1][3] * data[2][1]) + (data[0][1] * data[1][0] * data[2][3]) + (data[0][3] * data[1][1] * data[2][0])
-                                        - (data[0][0] * data[1][1] * data[2][3]) - (data[0][1] * data[1][3] * data[2][0]) - (data[0][3] * data[1][0] * data[2][1]));
-                    tmp[3][0] = invDet * ((data[1][0] * data[2][2] * data[3][1]) + (data[1][1] * data[2][0] * data[3][2]) + (data[1][2] * data[2][1] * data[3][0])
-                                        - (data[1][0] * data[2][1] * data[3][2]) - (data[1][1] * data[2][2] * data[3][0]) - (data[1][2] * data[2][0] * data[3][1]));
-                    tmp[3][1] = invDet * ((data[0][0] * data[2][1] * data[3][2]) + (data[0][1] * data[2][2] * data[3][0]) + (data[0][2] * data[2][0] * data[3][1])
-                                        - (data[0][0] * data[2][2] * data[3][1]) - (data[0][1] * data[2][0] * data[3][2]) - (data[0][2] * data[2][1] * data[3][0]));
-                    tmp[3][2] = invDet * ((data[0][0] * data[1][2] * data[3][1]) + (data[0][1] * data[1][0] * data[3][2]) + (data[0][2] * data[1][1] * data[3][0])
-                                        - (data[0][0] * data[1][1] * data[3][2]) - (data[0][1] * data[1][2] * data[3][0]) - (data[0][2] * data[1][0] * data[3][1]));
-                    tmp[3][3] = invDet * ((data[0][0] * data[1][1] * data[2][2]) + (data[0][1] * data[1][2] * data[2][0]) + (data[0][2] * data[1][0] * data[2][1])
-                                        - (data[0][0] * data[1][2] * data[2][1]) - (data[0][1] * data[1][0] * data[2][2]) - (data[0][2] * data[1][1] * data[2][0]));
+                    tmp[0][0] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[1][1] * data[2][2] * data[3][3]) + (data[1][2] * data[2][3] * data[3][1]) + (data[1][3] * data[2][1] * data[3][2])
+                          - (data[1][1] * data[2][3] * data[3][2]) - (data[1][2] * data[2][1] * data[3][3]) - (data[1][3] * data[2][2] * data[3][1])));
+                    tmp[0][1] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][1] * data[2][3] * data[3][2]) + (data[0][2] * data[2][1] * data[3][3]) + (data[0][3] * data[2][2] * data[3][1])
+                          - (data[0][1] * data[2][2] * data[3][3]) - (data[0][2] * data[2][3] * data[3][1]) - (data[0][3] * data[2][1] * data[3][2])));
+                    tmp[0][2] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][1] * data[1][2] * data[3][3]) + (data[0][2] * data[1][3] * data[3][1]) + (data[0][3] * data[1][1] * data[3][2])
+                          - (data[0][1] * data[1][3] * data[3][2]) - (data[0][2] * data[1][1] * data[3][3]) - (data[0][3] * data[1][2] * data[3][1])));
+                    tmp[0][3] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][1] * data[1][3] * data[2][2]) + (data[0][2] * data[1][1] * data[2][3]) + (data[0][3] * data[1][2] * data[2][1])
+                          - (data[0][1] * data[1][2] * data[2][3]) - (data[0][2] * data[1][3] * data[2][1]) - (data[0][3] * data[1][1] * data[2][2])));
+                    tmp[1][0] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[1][0] * data[2][3] * data[3][2]) + (data[1][2] * data[2][0] * data[3][3]) + (data[1][3] * data[2][2] * data[3][0])
+                          - (data[1][0] * data[2][2] * data[3][3]) - (data[1][2] * data[2][3] * data[3][0]) - (data[1][3] * data[2][0] * data[3][2])));
+                    tmp[1][1] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[2][2] * data[3][3]) + (data[0][2] * data[2][3] * data[3][0]) + (data[0][3] * data[2][0] * data[3][2])
+                          - (data[0][0] * data[2][3] * data[3][2]) - (data[0][2] * data[2][0] * data[3][3]) - (data[0][3] * data[2][2] * data[3][0])));
+                    tmp[1][2] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[1][3] * data[3][2]) + (data[0][2] * data[1][0] * data[3][3]) + (data[0][3] * data[1][2] * data[3][0])
+                          - (data[0][0] * data[1][2] * data[3][3]) - (data[0][2] * data[1][3] * data[3][0]) - (data[0][3] * data[1][0] * data[3][2])));
+                    tmp[1][3] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[1][2] * data[2][3]) + (data[0][2] * data[1][3] * data[2][0]) + (data[0][3] * data[1][0] * data[2][2])
+                          - (data[0][0] * data[1][3] * data[2][2]) - (data[0][2] * data[1][0] * data[2][3]) - (data[0][3] * data[1][2] * data[2][0])));
+                    tmp[2][0] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[1][0] * data[2][1] * data[3][3]) + (data[1][1] * data[2][3] * data[3][0]) + (data[1][3] * data[2][0] * data[3][1])
+                          - (data[1][0] * data[2][3] * data[3][1]) - (data[1][1] * data[2][0] * data[3][3]) - (data[1][3] * data[2][1] * data[3][0])));
+                    tmp[2][1] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[2][3] * data[3][1]) + (data[0][1] * data[2][0] * data[3][3]) + (data[0][3] * data[2][1] * data[3][0])
+                          - (data[0][0] * data[2][1] * data[3][3]) - (data[0][1] * data[2][3] * data[3][0]) - (data[0][3] * data[2][0] * data[3][1])));
+                    tmp[2][2] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[1][1] * data[3][3]) + (data[0][1] * data[1][3] * data[3][0]) + (data[0][3] * data[1][0] * data[3][1])
+                          - (data[0][0] * data[1][3] * data[3][1]) - (data[0][1] * data[1][0] * data[3][3]) - (data[0][3] * data[1][1] * data[3][0])));
+                    tmp[2][3] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[1][3] * data[2][1]) + (data[0][1] * data[1][0] * data[2][3]) + (data[0][3] * data[1][1] * data[2][0])
+                          - (data[0][0] * data[1][1] * data[2][3]) - (data[0][1] * data[1][3] * data[2][0]) - (data[0][3] * data[1][0] * data[2][1])));
+                    tmp[3][0] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[1][0] * data[2][2] * data[3][1]) + (data[1][1] * data[2][0] * data[3][2]) + (data[1][2] * data[2][1] * data[3][0])
+                          - (data[1][0] * data[2][1] * data[3][2]) - (data[1][1] * data[2][2] * data[3][0]) - (data[1][2] * data[2][0] * data[3][1])));
+                    tmp[3][1] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[2][1] * data[3][2]) + (data[0][1] * data[2][2] * data[3][0]) + (data[0][2] * data[2][0] * data[3][1])
+                          - (data[0][0] * data[2][2] * data[3][1]) - (data[0][1] * data[2][0] * data[3][2]) - (data[0][2] * data[2][1] * data[3][0])));
+                    tmp[3][2] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[1][2] * data[3][1]) + (data[0][1] * data[1][0] * data[3][2]) + (data[0][2] * data[1][1] * data[3][0])
+                          - (data[0][0] * data[1][1] * data[3][2]) - (data[0][1] * data[1][2] * data[3][0]) - (data[0][2] * data[1][0] * data[3][1])));
+                    tmp[3][3] = static_cast <T> (invDet * static_cast <long double> (
+                            (data[0][0] * data[1][1] * data[2][2]) + (data[0][1] * data[1][2] * data[2][0]) + (data[0][2] * data[1][0] * data[2][1])
+                          - (data[0][0] * data[1][2] * data[2][1]) - (data[0][1] * data[1][0] * data[2][2]) - (data[0][2] * data[1][1] * data[2][0])));
                 }
 
                 *this = std::move(tmp);
@@ -316,22 +332,29 @@
             template <class T>
             template <class K>
             void Matrix4x4<T>::rotate(Angle angle, Vector3D<K> const& axis) {
-                Matrix3x3<T> tmp;
-                T c = static_cast <T> (cos(angle));
-                T s = static_cast <T> (sin(angle));
+                double c = cos(angle);
+                double s = sin(angle);
                 
-                Vector3D<T> vec(axis);
-                vec *= static_cast <T> (1.0) - c;
+                auto vec = axis * (1.0 - c);
+                auto ax = static_cast <Vector3D<std::common_type_t<K, double>>> (axis);
 
-                tmp[0][0] = static_cast <T> (axis.getX()) * vec.getX() + c;
-                tmp[0][1] = static_cast <T> (axis.getY()) * vec.getX() - static_cast <T> (axis.getZ()) * s;
-                tmp[0][2] = static_cast <T> (axis.getZ()) * vec.getX() + static_cast <T> (axis.getY()) * s;
-                tmp[1][0] = static_cast <T> (axis.getX()) * vec.getY() + static_cast <T> (axis.getZ()) * s;
-                tmp[1][1] = static_cast <T> (axis.getY()) * vec.getY() + c;
-                tmp[1][2] = static_cast <T> (axis.getZ()) * vec.getY() - static_cast <T> (axis.getX()) * s;
-                tmp[2][0] = static_cast <T> (axis.getX()) * vec.getZ() - static_cast <T> (axis.getY()) * s;
-                tmp[2][1] = static_cast <T> (axis.getY()) * vec.getZ() + static_cast <T> (axis.getX()) * s;
-                tmp[2][2] = static_cast <T> (axis.getZ()) * vec.getZ() + c;
+                Matrix4x4<T> tmp;
+                tmp[0][0] = static_cast <T> (ax.getX() * vec.getX() + c);
+                tmp[0][1] = static_cast <T> (ax.getY() * vec.getX() - ax.getZ() * s);
+                tmp[0][2] = static_cast <T> (ax.getZ() * vec.getX() + ax.getY() * s);
+                tmp[0][3] = 0;
+                tmp[1][0] = static_cast <T> (ax.getX() * vec.getY() + ax.getZ() * s);
+                tmp[1][1] = static_cast <T> (ax.getY() * vec.getY() + c);
+                tmp[1][2] = static_cast <T> (ax.getZ() * vec.getY() - ax.getX() * s);
+                tmp[1][3] = 0;
+                tmp[2][0] = static_cast <T> (ax.getX() * vec.getZ() - ax.getY() * s);
+                tmp[2][1] = static_cast <T> (ax.getY() * vec.getZ() + ax.getX() * s);
+                tmp[2][2] = static_cast <T> (ax.getZ() * vec.getZ() + c);
+                tmp[2][3] = 0;
+                tmp[3][0] = 0;
+                tmp[3][1] = 0;
+                tmp[3][2] = 0;
+                tmp[3][3] = 1;
 
                 *this *= tmp;
             }
