@@ -40,13 +40,13 @@
 
             /**
              * @class Plane
-             * @brief A simple 4D homogeneous plane with a point and a vector
+             * @brief A cartesian plane with a point and a vector
              */
             template <class T>
             class Plane {
                 private :   //Fields
-                    Vector4D<T> normal; /**< The plane's normal */
-                    Point4D<T> point;   /**< The plane's point */
+                    Vector3D<T> normal; /**< The plane's normal */
+                    Point3D<T> point;   /**< The plane's point */
 
                 public :   // Methods
                     //## Constructor ##//
@@ -117,11 +117,11 @@
                         /**
                          * @return the plane's normal
                          */
-                        Vector4D<T> const& getNormal() const;
+                        Vector3D<T> const& getNormal() const;
                         /**
                          * @return the plane's point
                          */
-                        Point4D<T> const& getPoint() const;
+                        Point3D<T> const& getPoint() const;
 
                     //## Setter ##//
                         /**
@@ -238,7 +238,7 @@
                      * @param p3 the third point
                      */
                     template <class K, class L, class N>
-                    void computeNormalFrom3Point(Point4D<K> const& p1, Point4D<L> const& p2, Point4D<N> const& p3);
+                    void computeNormalFrom3Point(Point3D<K> const& p1, Point3D<L> const& p2, Point3D<N> const& p3);
             };
 
             /**

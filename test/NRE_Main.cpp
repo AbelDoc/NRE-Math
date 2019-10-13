@@ -15,3 +15,4 @@
     #include "Math/Segment/3D/NRE_Segment3D.cpp"
     #include "Math/Segment/4D/NRE_Segment4D.cpp"
     #include "Math/Quaternion/NRE_Quaternion.cpp"
+    #include "Math/Plane/NRE_Plane.cpp"
