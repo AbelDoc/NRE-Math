@@ -222,16 +222,16 @@
                         void stretchY(K u);
                         /**
                          * Add a squeeze on the X axis
-                         * @param u the squeeze vector
+                         * @param u the squeeze factor
                          */
                         template <class K>
-                        void squeezeX(Vector2D<K> const& u);
+                        void squeezeX(K u);
                         /**
                          * Add a squeeze on the Y axis
-                         * @param u the squeeze vector
+                         * @param u the squeeze factor
                          */
                         template <class K>
-                        void squeezeY(Vector2D<K> const& u);
+                        void squeezeY(K u);
                         /**
                          * Add a shear on the X axis
                          * @param u the shear factor
@@ -412,13 +412,15 @@
                          * @param m the matrix to test with this
                          * @return  the test's result
                          */
-                        bool operator ==(Matrix3x3 const& m) const;
+                        template <class K>
+                        bool operator ==(Matrix3x3<K> const& m) const;
                         /**
                          * Difference test between this and m
                          * @param m the matrix to test with this
                          * @return  the test's result
                          */
-                        bool operator !=(Matrix3x3 const& m) const;
+                        template <class K>
+                        bool operator !=(Matrix3x3<K> const& m) const;
 
                     //## Stream Operator ##//
                         /**

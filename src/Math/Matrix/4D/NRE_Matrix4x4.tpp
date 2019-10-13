@@ -19,7 +19,7 @@
                                            E e, F f, G g, H h,
                                            I i, J j, K k, L l,
                                            M m, N n, O o, P p)
-                                           : data{{a, b, c, d}, {e, f, g, h}, {i, j, k, l}, {m, n, o, p}} {
+                                           : data{Vector4D<std::common_type_t<A, B, C, D>>(a, b, c, d), Vector4D<std::common_type_t<E, F, G, H>>(e, f, g, h), Vector4D<std::common_type_t<I, J, K, L>>(i, j, k, l), Vector4D<std::common_type_t<M, N, O, P>>(m, n, o, p)} {
             }
 
             template <class T>

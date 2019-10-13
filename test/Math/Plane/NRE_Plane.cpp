@@ -1,9 +1,9 @@
     
     /**
-     * @file NRE_Quaternion.cpp
-     * @brief Test of Math's API's Object : Quaternion
+     * @file NRE_Plane.cpp
+     * @brief Test of Math's API's Object : Plane
      * @author Louis ABEL
-     * @date 11/10/2019
+     * @date 13/10/2019
      * @copyright CC-BY-NC-SA
      */
     

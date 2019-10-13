@@ -42,12 +42,14 @@
                          * Construct the curve from a set of control points
                          * @param points the set of control points
                          */
-                        BezierCurve4D(std::initializer_list<Point4D<float>> points);
+                        BezierCurve4D(std::initializer_list<Point4D<float>> points) : controls(points) {
+                        }
                         /**
                          * Construct the curve from a set of control points
                          * @param c the set of control points
                          */
-                        BezierCurve4D(Utility::Vector<Point4D<float>> && c);
+                        BezierCurve4D(Utility::Vector<Point4D<float>> && c) : controls(c) {
+                        }
 
                     //## Copy-Constructor ##//
                         /**

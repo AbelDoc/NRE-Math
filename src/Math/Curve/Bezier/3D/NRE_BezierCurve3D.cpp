@@ -14,12 +14,6 @@
     namespace NRE {
         namespace Math {
 
-            BezierCurve3D::BezierCurve3D(std::initializer_list<Point3D<float>> points) : controls(points) {
-            }
-
-            BezierCurve3D::BezierCurve3D(Vector<Point3D<float>> && c) : controls(std::move(c)) {
-            }
-
             String BezierCurve3D::toString() const {
                 String res("Curve : \n");
                 res.reserve(15 * getSize());

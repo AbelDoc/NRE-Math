@@ -12,6 +12,12 @@
     
     using namespace NRE::Math;
     using namespace NRE::Tester;
+
+    TEST(Segment4D, Ctr4D) {
+        Segment4D<int> seg(Point4D<int>(0, 0, 0, 1), Point4D<int>(1, 1, 1, 1));
+        assertEquals(this, seg.getStart(), Point4D<int>(0, 0, 0, 1));
+        assertEquals(this, seg.getEnd(), Point4D<int>(1, 1, 1, 1));
+    }
     
     TEST(Segment4D, Ctr3D) {
         Segment4D<int> seg(Point3D<int>(0, 0, 0), Point3D<int>(1, 1, 1));

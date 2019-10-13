@@ -9,7 +9,12 @@
 
     namespace NRE {
         namespace Math {
-
+    
+            template <class T>
+            template <class K, class L>
+            Segment4D<T>::Segment4D(Point4D<K> const& s, Point4D<L> const& e) : start(s), end(e) {
+            }
+    
             template <class T>
             template <class K, class L>
             Segment4D<T>::Segment4D(Point3D<K> const& s, Point3D<L> const& e) : start(Point4D<T>(s, 1)), end(Point4D<T>(e, 1)) {

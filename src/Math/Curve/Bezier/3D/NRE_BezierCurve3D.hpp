@@ -42,12 +42,14 @@
                          * Construct the curve from a set of control points
                          * @param points the set of control points
                          */
-                        BezierCurve3D(std::initializer_list<Point3D<float>> points);
+                        BezierCurve3D(std::initializer_list<Point3D<float>> points) : controls(points) {
+                        }
                         /**
                          * Construct the curve from a set of control points
                          * @param c the set of control points
                          */
-                        BezierCurve3D(Utility::Vector<Point3D<float>> && c);
+                        BezierCurve3D(Utility::Vector<Point3D<float>> && c) : controls(std::move(c)) {
+                        }
 
                     //## Copy-Constructor ##//
                         /**

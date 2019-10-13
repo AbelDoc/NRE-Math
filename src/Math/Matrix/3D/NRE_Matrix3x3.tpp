@@ -16,7 +16,7 @@
                       class G, class H, class I>
             inline Matrix3x3<T>::Matrix3x3(A a, B b, C c,
                                            D d, E e, F f,
-                                           G g, H h, I i) : data{{a, b, c}, {d, e, f}, {g, h, i}} {
+                                           G g, H h, I i) : data{Vector3D<std::common_type_t<A, B, C>>(a, b, c), Vector3D<std::common_type_t<D, E, F>>(d, e, f), Vector3D<std::common_type_t<G, H, I>>(g, h, i)} {
             }
 
             template <class T>
@@ -144,15 +144,15 @@
                 Matrix3x3<T> tmp;
                 if (auto det = getDeterminant(); std::abs(det) > EPSILON) {
                     long double invDet = 1.0 / det;
-                    tmp[0][0] = invDet * (data[1][1] * data[2][2] - data[1][2] * data[2][1]);
-                    tmp[0][1] = invDet * (data[0][2] * data[2][1] - data[0][1] * data[2][2]);
-                    tmp[0][2] = invDet * (data[0][1] * data[1][2] - data[0][2] * data[1][1]);
-                    tmp[1][0] = invDet * (data[1][2] * data[2][0] - data[1][0] * data[2][2]);
-                    tmp[1][1] = invDet * (data[0][0] * data[2][2] - data[0][2] * data[2][0]);
-                    tmp[1][2] = invDet * (data[0][2] * data[1][0] - data[0][0] * data[1][2]);
-                    tmp[2][0] = invDet * (data[1][0] * data[2][1] - data[1][1] * data[2][0]);
-                    tmp[2][1] = invDet * (data[0][1] * data[2][0] - data[0][0] * data[2][1]);
-                    tmp[2][2] = invDet * (data[0][0] * data[1][1] - data[0][1] * data[1][0]);
+                    tmp[0][0] = static_cast <T> (invDet * static_cast <long double> (data[1][1] * data[2][2] - data[1][2] * data[2][1]));
+                    tmp[0][1] = static_cast <T> (invDet * static_cast <long double> (data[0][2] * data[2][1] - data[0][1] * data[2][2]));
+                    tmp[0][2] = static_cast <T> (invDet * static_cast <long double> (data[0][1] * data[1][2] - data[0][2] * data[1][1]));
+                    tmp[1][0] = static_cast <T> (invDet * static_cast <long double> (data[1][2] * data[2][0] - data[1][0] * data[2][2]));
+                    tmp[1][1] = static_cast <T> (invDet * static_cast <long double> (data[0][0] * data[2][2] - data[0][2] * data[2][0]));
+                    tmp[1][2] = static_cast <T> (invDet * static_cast <long double> (data[0][2] * data[1][0] - data[0][0] * data[1][2]));
+                    tmp[2][0] = static_cast <T> (invDet * static_cast <long double> (data[1][0] * data[2][1] - data[1][1] * data[2][0]));
+                    tmp[2][1] = static_cast <T> (invDet * static_cast <long double> (data[0][1] * data[2][0] - data[0][0] * data[2][1]));
+                    tmp[2][2] = static_cast <T> (invDet * static_cast <long double> (data[0][0] * data[1][1] - data[0][1] * data[1][0]));
                 }
 
                 *this = std::move(tmp);
@@ -198,21 +198,21 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::squeezeX(Vector2D<K> const& u) {
+            inline void Matrix3x3<T>::squeezeX(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
-                tmp[0][0] = static_cast <T> (1.0 / static_cast <long double> (u.getX()));
-                tmp[1][1] = static_cast <T> (u.getY());
+                tmp[0][0] = static_cast <T> (1.0 / static_cast <long double> (u));
+                tmp[1][1] = static_cast <T> (u);
                 *this *= tmp;
             }
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::squeezeY(Vector2D<K> const& u) {
+            inline void Matrix3x3<T>::squeezeY(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
-                tmp[0][0] = static_cast <T> (u.getX());
-                tmp[1][1] = static_cast <T> (1.0 / static_cast <long double> (u.getY()));
+                tmp[0][0] = static_cast <T> (u);
+                tmp[1][1] = static_cast <T> (1.0 / static_cast <long double> (u));
                 *this *= tmp;
             }
 
@@ -241,8 +241,8 @@
                 T c = static_cast <T> (cos(angle));
                 T s = static_cast <T> (sin(angle));
                 tmp[0][0] = c;
-                tmp[0][1] = -s;
-                tmp[1][0] = s;
+                tmp[0][1] = s;
+                tmp[1][0] = -s;
                 tmp[1][1] = c;
                 *this *= tmp;
             }
@@ -343,7 +343,7 @@
             template <class T>
             template <class K>
             inline Matrix3x3<T>& Matrix3x3<T>::operator /=(Matrix3x3<K> const& m) {
-                Matrix3x3<T> tmp(m);
+                Matrix3x3<K> tmp(m);
                 tmp.inverse();
                 return *this *= tmp;
             }
@@ -406,12 +406,14 @@
             }
 
             template <class T>
-            inline bool Matrix3x3<T>::operator ==(Matrix3x3 const& m) const {
+            template <class K>
+            inline bool Matrix3x3<T>::operator ==(Matrix3x3<K> const& m) const {
                 return getL1() == m.getL1() && getL2() == m.getL2() && getL3() == m.getL3();
             }
 
             template <class T>
-            inline bool Matrix3x3<T>::operator !=(Matrix3x3 const& m) const {
+            template <class K>
+            inline bool Matrix3x3<T>::operator !=(Matrix3x3<K> const& m) const {
                 return !(*this == m);
             }
     

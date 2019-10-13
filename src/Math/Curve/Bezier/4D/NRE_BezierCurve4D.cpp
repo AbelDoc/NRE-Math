@@ -14,12 +14,6 @@
     namespace NRE {
         namespace Math {
 
-            BezierCurve4D::BezierCurve4D(std::initializer_list<Point4D<float>> points) : controls(points) {
-            }
-
-            BezierCurve4D::BezierCurve4D(Vector<Point4D<float>> && c) : controls(std::move(c)) {
-            }
-
             String BezierCurve4D::toString() const {
                 String res("Curve : \n");
                 res.reserve(20 * getSize());

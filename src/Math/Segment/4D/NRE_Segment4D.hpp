@@ -44,6 +44,13 @@
                          * @param e the segment's end
                          */
                         template <class K, class L>
+                        Segment4D(Point4D<K> const& s, Point4D<L> const& e);
+                        /**
+                         * Construct a segment from his two points
+                         * @param s the segment's start
+                         * @param e the segment's end
+                         */
+                        template <class K, class L>
                         Segment4D(Point3D<K> const& s, Point3D<L> const& e);
                         /**
                          * Construct a segment from his two points

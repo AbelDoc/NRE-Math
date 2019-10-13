@@ -9,6 +9,11 @@
 
     namespace NRE {
         namespace Math {
+    
+            template <class T>
+            template <class K, class L>
+            Segment3D<T>::Segment3D(Point3D<K> const& s, Point3D<L> const& e) : start(s), end(e) {
+            }
 
             template <class T>
             template <class K, class L>
