@@ -433,13 +433,6 @@
                         template <class K>
                         Vector4D<K> operator *(Vector4D<K> const& u) const;
                         /**
-                         * Compute the plane resulting in the transformation of p by this
-                         * @param p the plane to transform
-                         * @return  the newly computed vector
-                         */
-                        template <class K>
-                        Plane<K> operator *(Plane<K> const& p) const;
-                        /**
                          * Compute the segment resulting in the transformation of s by this
                          * @param s the segment to transform
                          * @return  the newly computed vector

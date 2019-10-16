@@ -225,6 +225,7 @@
             template <class T>
             void Matrix4x4<T>::inverse() {
                 Matrix4x4<T> tmp;
+                tmp.setIdentity();
                 if (auto det = getDeterminant(); std::abs(det) > EPSILON) {
                     long double invDet = 1.0 / det;
                     tmp[0][0] = static_cast <T> (invDet * static_cast <long double> (
@@ -487,25 +488,25 @@
                 auto c2 = m.getC2();
                 auto c3 = m.getC3();
                 auto c4 = m.getC4();
-                tmp[0][0] = getL1() | c1;
-                tmp[0][1] = getL1() | c2;
-                tmp[0][2] = getL1() | c3;
-                tmp[0][3] = getL1() | c4;
+                tmp[0][0] = static_cast <T> (getL1() | c1);
+                tmp[0][1] = static_cast <T> (getL1() | c2);
+                tmp[0][2] = static_cast <T> (getL1() | c3);
+                tmp[0][3] = static_cast <T> (getL1() | c4);
                 
-                tmp[1][0] = getL2() | c1;
-                tmp[1][1] = getL2() | c2;
-                tmp[1][2] = getL2() | c3;
-                tmp[1][3] = getL2() | c4;
+                tmp[1][0] = static_cast <T> (getL2() | c1);
+                tmp[1][1] = static_cast <T> (getL2() | c2);
+                tmp[1][2] = static_cast <T> (getL2() | c3);
+                tmp[1][3] = static_cast <T> (getL2() | c4);
                 
-                tmp[2][0] = getL3() | c1;
-                tmp[2][1] = getL3() | c2;
-                tmp[2][2] = getL3() | c3;
-                tmp[2][3] = getL3() | c4;
+                tmp[2][0] = static_cast <T> (getL3() | c1);
+                tmp[2][1] = static_cast <T> (getL3() | c2);
+                tmp[2][2] = static_cast <T> (getL3() | c3);
+                tmp[2][3] = static_cast <T> (getL3() | c4);
                 
-                tmp[3][0] = getL4() | c1;
-                tmp[3][1] = getL4() | c2;
-                tmp[3][2] = getL4() | c3;
-                tmp[3][3] = getL4() | c4;
+                tmp[3][0] = static_cast <T> (getL4() | c1);
+                tmp[3][1] = static_cast <T> (getL4() | c2);
+                tmp[3][2] = static_cast <T> (getL4() | c3);
+                tmp[3][3] = static_cast <T> (getL4() | c4);
                 *this = std::move(tmp);
                 return *this;
             }
@@ -560,14 +561,8 @@
 
             template <class T>
             template <class K>
-            inline Plane<K> Matrix4x4<T>::operator *(Plane<K> const& p) const {
-                return Plane<T>(*this * p.getNormal(), *this * p.getPoint());
-            }
-
-            template <class T>
-            template <class K>
             inline Segment4D<K> Matrix4x4<T>::operator *(Segment4D<K> const& s) const {
-                return Segment4D<T>(*this * s.getStart(), *this * s.getEnd());
+                return Segment4D<K>(*this * s.getStart(), *this * s.getEnd());
             }
 
             template <class T>
