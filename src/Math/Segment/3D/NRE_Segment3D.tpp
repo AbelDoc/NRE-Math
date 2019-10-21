@@ -65,10 +65,5 @@
                 return res;
             }
 
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Segment3D<T> const& o) {
-                return stream << o.toString();
-            }
-
         }
     }

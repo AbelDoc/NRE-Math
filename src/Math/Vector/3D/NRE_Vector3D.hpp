@@ -10,6 +10,7 @@
      #pragma once
 
      #include <Utility/String/NRE_String.hpp>
+     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
      #include "../../NRE_Math.hpp"
 
      /**
@@ -32,7 +33,7 @@
              * @warning Use this vector with POD type only
              */
             template <class T>
-            class Vector3D {
+            class Vector3D : public Utility::Stringable<Vector3D<T>> {
                 private :   //Fields
                     T x;    /**< x coordinate */
                     T y;    /**< y coordinate */
@@ -435,15 +436,6 @@
 
             template <class T>
             using Point3D = Vector3D<T>;
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Vector3D<T> const& o);
         }
     }
 

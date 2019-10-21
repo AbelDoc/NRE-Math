@@ -296,10 +296,5 @@
                 return res;
             }
 
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Vector2D<T> const& o) {
-                return stream << o.toString();
-            }
-
         }
     }

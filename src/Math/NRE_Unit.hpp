@@ -13,6 +13,7 @@
      #include <ratio>
 
      #include <Utility/String/NRE_String.hpp>
+     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
 
      #include "NRE_Math.hpp"
 
@@ -32,7 +33,7 @@
              * @brief Used to define clear physical unit
              */
             template <class M, class L, class T, class A>
-            class Unit {
+            class Unit : public Utility::Stringable<Unit<M, L, T, A>> {
                 private:    //Fields
                     double value;    /**< Internal unit value */
 

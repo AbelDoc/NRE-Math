@@ -13,6 +13,7 @@
     #include <ostream>
 
     #include <Utility/String/NRE_String.hpp>
+    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
     #include "../../NRE_Math.hpp"
 
      /**
@@ -35,7 +36,7 @@
              * @warning Use this vector with POD type only
              */
             template <class T>
-            class Vector4D  {
+            class Vector4D : public Utility::Stringable<Vector4D<T>> {
                 private :   //Fields
                     T x;    /**< x coordinate */
                     T y;    /**< y coordinate */
@@ -485,15 +486,6 @@
 
             template <class T>
             using Point4D = Vector4D<T>;
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Vector4D<T> const& o);
         }
     }
 

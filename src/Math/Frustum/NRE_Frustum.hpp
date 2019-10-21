@@ -11,6 +11,7 @@
 
 
     #include <Utility/Array/NRE_Array.hpp>
+    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
     #include "../NRE_Unit.hpp"
     #include "../Plane/NRE_Plane.hpp"
     #include "../Vector/2D/NRE_Vector2D.hpp"
@@ -32,7 +33,7 @@
              * @class Frustum
              * @brief A view frustum used with camera
              */
-            class Frustum {
+            class Frustum : public Utility::Stringable<Frustum> {
                 private:    //Fields
                     Utility::Array<Plane<float>, 6> planes; /**< The frustum's planes */
                     Vector2D<float> near;                   /**< The near plane's width and height */
@@ -133,14 +134,6 @@
                      */
                     void computeNearAndFar();
             };
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            std::ostream& operator <<(std::ostream& stream, Frustum const& o);
         }
     }
 

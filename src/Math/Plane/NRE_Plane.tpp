@@ -145,10 +145,5 @@
                 setNormal(u ^ v);
                 normal.normalize();
             }
-
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Plane<T> const& o) {
-                return stream << o.toString();
-            }
         }
     }

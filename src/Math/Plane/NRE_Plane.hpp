@@ -9,8 +9,9 @@
 
      #pragma once
 
-     #include "../Vector/3D/NRE_Vector3D.hpp"
+    #include "../Vector/3D/NRE_Vector3D.hpp"
      #include "../Vector/4D/NRE_Vector4D.hpp"
+    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
 
     /**
      * @namespace NRE
@@ -43,7 +44,7 @@
              * @brief A cartesian plane with a point and a vector
              */
             template <class T>
-            class Plane {
+            class Plane : public Utility::Stringable<Plane<T>> {
                 private :   //Fields
                     Vector3D<T> normal; /**< The plane's normal */
                     Point3D<T> point;   /**< The plane's point */
@@ -240,15 +241,6 @@
                     template <class K, class L, class N>
                     void computeNormalFrom3Point(Point3D<K> const& p1, Point3D<L> const& p2, Point3D<N> const& p3);
             };
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Plane<T> const& o);
         }
     }
 

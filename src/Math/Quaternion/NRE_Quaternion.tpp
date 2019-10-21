@@ -164,10 +164,5 @@
                 return quat.toString();
             }
 
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Quaternion<T> const& o) {
-                return stream << o.toString();
-            }
-
         }
     }

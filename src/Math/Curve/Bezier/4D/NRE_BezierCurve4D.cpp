@@ -25,10 +25,5 @@
                 }
                 return res;
             }
-
-            std::ostream& operator <<(std::ostream& stream, BezierCurve4D const& o) {
-                return stream << o.toString();
-            }
-
         }
     }

@@ -10,6 +10,7 @@
      #pragma once
 
      #include "../../Vector/3D/NRE_Vector3D.hpp"
+     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
 
      /**
       * @namespace NRE
@@ -27,7 +28,7 @@
              * @brief A 3D homogeneous segment
              */
             template <class T>
-            class Segment3D {
+            class Segment3D : public Utility::Stringable<Segment3D<T>> {
                 private:    //Fields
                     Point3D<T> start;   /**< The segment's start */
                     Point3D<T> end;     /**< The segment's end */
@@ -133,15 +134,6 @@
                          */
                         Utility::String toString() const;
             };
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Segment3D<T> const& o);
         }
     }
 

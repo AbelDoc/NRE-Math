@@ -636,10 +636,5 @@
                 res << ']';
                 return res;
             }
-
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Matrix4x4<T> const& o) {
-                return stream << o.toString();
-            }
         }
     }

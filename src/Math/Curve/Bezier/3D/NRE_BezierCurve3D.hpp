@@ -10,6 +10,7 @@
      #pragma once
 
      #include <Utility/Vector/NRE_Vector.hpp>
+     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
      #include "../../../Vector/3D/NRE_Vector3D.hpp"
 
 
@@ -28,7 +29,7 @@
              * @class BezierCurve3D
              * @brief Represent a 2D homogeneous Bezier curves with a set of control points
              */
-            class BezierCurve3D {
+            class BezierCurve3D : public Utility::Stringable<BezierCurve3D> {
                 private:    //Fields
                     Utility::Vector<Point3D<float>> controls;   /**< The curve's control points */
 
@@ -129,13 +130,5 @@
                          */
                         Utility::String toString() const;
             };
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            std::ostream& operator <<(std::ostream& stream, BezierCurve3D const& o);
         }
     }

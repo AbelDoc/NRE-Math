@@ -10,6 +10,7 @@
     #pragma once
 
     #include <Utility/String/NRE_String.hpp>
+    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
     #include <iostream>
 
     #include "../../NRE_Math.hpp"
@@ -38,7 +39,7 @@
              * @brief 3x3 generic matrix
              */
             template <class T>
-            class Matrix3x3 {
+            class Matrix3x3 : public Utility::Stringable<Matrix3x3<T>> {
                 private:    //Fields
                     Vector3D<T> data[3];   /**< Matrix's lines, row major order */
 
@@ -429,15 +430,6 @@
                          */
                         Utility::String toString() const;
             };
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Matrix3x3<T> const& o);
         }
     }
 

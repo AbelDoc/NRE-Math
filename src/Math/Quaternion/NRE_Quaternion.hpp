@@ -14,6 +14,7 @@
 
      #include "../NRE_Math.hpp"
      #include "../NRE_Unit.hpp"
+     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
 
      /**
      * @namespace NRE
@@ -34,7 +35,7 @@
              * @brief A quaternion represented by a 3D rotation axis and an angle
              */
             template <class T>
-            class Quaternion {
+            class Quaternion : public Utility::Stringable<Quaternion<T>> {
                 private :   //Fields
                     Vector4D<T> quat;   /** The internal quaternion */
 
@@ -239,15 +240,6 @@
                          */
                         Utility::String toString() const;
             };
-
-            /**
-             * Output stream operator for the object
-             * @param  stream the stream to add the object's string representation
-             * @param  o      the object to add in the stream
-             * @return the    modified stream
-             */
-            template <class T>
-            std::ostream& operator <<(std::ostream& stream, Quaternion<T> const& o);
         }
     }
 

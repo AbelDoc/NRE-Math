@@ -26,9 +26,5 @@
                 return res;
             }
 
-            std::ostream& operator <<(std::ostream& stream, BezierCurve3D const& o) {
-                return stream << o.toString();
-            }
-
         }
     }

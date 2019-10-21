@@ -39,9 +39,5 @@
                 far.setX(far.getY() * ratio);
             }
 
-            inline std::ostream& operator <<(std::ostream& stream, Frustum const& o) {
-                return stream << o.toString();
-            }
-
         }
     }
