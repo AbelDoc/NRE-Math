@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -182,12 +183,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a7da33dbf892ef7d4b5c3861426124ff9">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 <li>getNormal()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a79d1c2c300ffd46fe05b3db73d3ba5e9">NRE::Math::Plane&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#ad32174f103787ce5012844ea677e8c31">NRE::Math::Plane&lt; T &gt;</a>
 </li>
 <li>getPoint()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ad76aba00eb1f424e1776737edaab4f69">NRE::Math::BezierCurve3D</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#af8ace4b3107b7a451b393f7cd096d64a">NRE::Math::BezierCurve4D</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a03a5de5fa4540d7d5c10ade7699b6dd6">NRE::Math::Plane&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#ab4ce67f0384ee4763f6a922dc6deb647">NRE::Math::Plane&lt; T &gt;</a>
 </li>
 <li>getQuaternion()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a51183223d4b9c7955bbe03d0147b48ff">NRE::Math::Quaternion&lt; T &gt;</a>

@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -113,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a11006b9209c274c86d6cda4bd59f9404">operator=</a>(Segment4D const &amp;s)=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a26de8146a60040499dca07e4057d64f5">operator=</a>(Segment4D &amp;&amp;s)=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a57d43b2e38e9d8226e7ed12bf22922ab">operator==</a>(Segment4D&lt; K &gt; const &amp;s) const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#ab257836191f2907c9f6d03ff0e77ac71">Segment4D</a>()</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a8be047aa9307a73551d2dca7026beb8a">Segment4D</a>()=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a3bfa48825baefd1ce2c369a1853bf1ca">Segment4D</a>(Point4D&lt; K &gt; const &amp;s, Point4D&lt; L &gt; const &amp;e)</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#ad7d0ddc8282f6822ec05e83ab9d51b02">Segment4D</a>(Point3D&lt; K &gt; const &amp;s, Point3D&lt; L &gt; const &amp;e)</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a987a6a04c2051d94cac0935c849ce9b6">Segment4D</a>(K sX, L sY, N sZ, M eX, O eY, P eZ)</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">NRE::Math::Segment4D&lt; T &gt;</a></td><td class="entry"></td></tr>

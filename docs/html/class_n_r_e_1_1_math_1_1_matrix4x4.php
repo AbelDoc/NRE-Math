@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,6 +112,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_math_1_1_matrix4x4.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___matrix4x4_8hpp_source.php">NRE_Matrix4x4.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::Matrix4x4&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_matrix4x4.png" usemap="#NRE::Math::Matrix4x4_3C_20T_20_3E_map" alt=""/>
+  <map id="NRE::Math::Matrix4x4_3C_20T_20_3E_map" name="NRE::Math::Matrix4x4&lt; T &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -267,9 +276,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3aacdcfc2e7d70e5226bc5c6b256aa5"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:ad3aacdcfc2e7d70e5226bc5c6b256aa5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ad3aacdcfc2e7d70e5226bc5c6b256aa5">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt; K &gt; const &amp;u) const </td></tr>
 <tr class="separator:ad3aacdcfc2e7d70e5226bc5c6b256aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981a8149cdd50d44faa5e46f1d78af1e"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a981a8149cdd50d44faa5e46f1d78af1e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">Plane</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a981a8149cdd50d44faa5e46f1d78af1e">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">Plane</a>&lt; K &gt; const &amp;p) const </td></tr>
-<tr class="separator:a981a8149cdd50d44faa5e46f1d78af1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17872e6f783e714d3f65eb4a56aa47e3"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:a17872e6f783e714d3f65eb4a56aa47e3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">Segment4D</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a17872e6f783e714d3f65eb4a56aa47e3">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">Segment4D</a>&lt; K &gt; const &amp;s) const </td></tr>
 <tr class="separator:a17872e6f783e714d3f65eb4a56aa47e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1028,33 +1034,6 @@ template&lt;class K &gt; </div>
 <p>Compute the vector resulting in the transformation of u by this </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">u</td><td>the vector to transform </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the newly computed vector </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a981a8149cdd50d44faa5e46f1d78af1e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<div class="memtemplate">
-template&lt;class K &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">Plane</a>&lt;K&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">NRE::Math::Matrix4x4</a>&lt; T &gt;::operator* </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">Plane</a>&lt; K &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Compute the plane resulting in the transformation of p by this </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>the plane to transform </td></tr>
   </table>
   </dd>
 </dl>

@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,11 +112,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_math_1_1_quaternion.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___quaternion_8hpp_source.php">NRE_Quaternion.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::Quaternion&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_quaternion.png" usemap="#NRE::Math::Quaternion_3C_20T_20_3E_map" alt=""/>
+  <map id="NRE::Math::Quaternion_3C_20T_20_3E_map" name="NRE::Math::Quaternion&lt; T &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abcd15e9b7e239d606d0d5f1591f4d1fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#abcd15e9b7e239d606d0d5f1591f4d1fa">Quaternion</a> ()</td></tr>
-<tr class="separator:abcd15e9b7e239d606d0d5f1591f4d1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f449cc3a127a054397bf884c2c02612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a3f449cc3a127a054397bf884c2c02612">Quaternion</a> ()=default</td></tr>
+<tr class="separator:a3f449cc3a127a054397bf884c2c02612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8a7f78b4e1a771ccf206d2bb88fe55d"><td class="memTemplParams" colspan="2">template&lt;class K , class L , class N , class M &gt; </td></tr>
 <tr class="memitem:ae8a7f78b4e1a771ccf206d2bb88fe55d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ae8a7f78b4e1a771ccf206d2bb88fe55d">Quaternion</a> (K x, L y, N z, M w)</td></tr>
 <tr class="separator:ae8a7f78b4e1a771ccf206d2bb88fe55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,8 +177,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a06ead9af6d624c1572b219a5a1825ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b4dc46655e5101cf571c2a9709592a"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac2b4dc46655e5101cf571c2a9709592a">norm</a> () const </td></tr>
 <tr class="separator:ac2b4dc46655e5101cf571c2a9709592a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4be919d7372c8d632f608014f69a87a"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ad4be919d7372c8d632f608014f69a87a">normSquared</a> () const </td></tr>
-<tr class="separator:ad4be919d7372c8d632f608014f69a87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358ee2506666b99db64fdb522792cfe0"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a358ee2506666b99db64fdb522792cfe0">normSquared</a> () const </td></tr>
+<tr class="separator:a358ee2506666b99db64fdb522792cfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9361a0a54041ad7cf5d0bb706819b909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9361a0a54041ad7cf5d0bb706819b909">normalize</a> ()</td></tr>
 <tr class="separator:a9361a0a54041ad7cf5d0bb706819b909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e730e858812649b38fc1d3d68155a1"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#af7e730e858812649b38fc1d3d68155a1">value</a> () const </td></tr>
@@ -199,11 +208,14 @@ class NRE::Math::Quaternion&lt; T &gt;</h3>
 
 <p>A quaternion represented by a 3D rotation axis and an angle. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abcd15e9b7e239d606d0d5f1591f4d1fa"></a>
+<a class="anchor" id="a3f449cc3a127a054397bf884c2c02612"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
@@ -212,6 +224,11 @@ template&lt;class T&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>The internal quaternion Construct the identity quaternion </p>
 
@@ -261,7 +278,7 @@ template&lt;class K , class L , class N , class M &gt; </div>
     <tr><td class="paramname">x</td><td>the x coordinate </td></tr>
     <tr><td class="paramname">y</td><td>the y coordinate </td></tr>
     <tr><td class="paramname">z</td><td>the z coordinate </td></tr>
-    <tr><td class="paramname">w</td><td>the rotation's angle </td></tr>
+    <tr><td class="paramname">w</td><td>the w coordinate </td></tr>
   </table>
   </dd>
 </dl>
@@ -654,14 +671,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad4be919d7372c8d632f608014f69a87a"></a>
+<a class="anchor" id="a358ee2506666b99db64fdb522792cfe0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">long double <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::normSquared </td>
+          <td class="memname">T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::normSquared </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

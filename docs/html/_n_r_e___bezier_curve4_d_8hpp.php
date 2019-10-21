@@ -100,8 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">NRE_BezierCurve4D.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -110,6 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Implementation of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : BezierCurve4D.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;Utility/Vector/NRE_Vector.hpp&gt;</code><br />
+<code>#include &lt;Utility/Interfaces/Stringable/NRE_Stringable.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_n_r_e___vector4_d_8hpp_source.php">../../../Vector/4D/NRE_Vector4D.hpp</a>&quot;</code><br />
 </div>
 <p><a href="_n_r_e___bezier_curve4_d_8hpp_source.php">Go to the source code of this file.</a></p>
@@ -128,11 +128,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_math"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math.php">Math</a></td></tr>
 <tr class="memdesc:namespace_math"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a688c4bb20aec1ded888e686f7559a178"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>NRE::Math::operator&lt;&lt;</b> (std::ostream &amp;stream, BezierCurve4D const &amp;o)</td></tr>
-<tr class="separator:a688c4bb20aec1ded888e686f7559a178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : BezierCurve4D. </p>
@@ -140,42 +135,7 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>05/04/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_a688c4bb20aec1ded888e686f7559a178"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; NRE::Math::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php">BezierCurve4D</a> const &amp;&#160;</td>
-          <td class="paramname"><em>o</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Output stream operator for the object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>the stream to add the object's string representation </td></tr>
-    <tr><td class="paramname">o</td><td>the object to add in the stream </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the modified stream </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

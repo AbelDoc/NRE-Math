@@ -101,8 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">NRE_Vector2D.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -111,7 +110,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Declaration of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : Vector2D.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;Utility/String/NRE_String.hpp&gt;</code><br />
+<code>#include &lt;Utility/Interfaces/Stringable/NRE_Stringable.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_math_2_n_r_e___math_8hpp_source.php">../../NRE_Math.hpp</a>&quot;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &quot;NRE_Vector2D.tpp&quot;</code><br />
 </div>
 <p><a href="_n_r_e___vector2_d_8hpp_source.php">Go to the source code of this file.</a></p>
@@ -127,6 +128,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">NRE::Math::Vector2D&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cartesian 2D vector.  <a href="class_n_r_e_1_1_math_1_1_vector2_d.php#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector2_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector2_d_3_01_k_01_4_01_4.php">std::common_type&lt; NRE::Math::Vector2D&lt; T &gt;, NRE::Math::Vector2D&lt; K &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -136,6 +139,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_math"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math.php">Math</a></td></tr>
 <tr class="memdesc:namespace_math"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacestd"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.php">std</a></td></tr>
+<tr class="memdesc:namespacestd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stl standard namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -143,56 +149,13 @@ Typedefs</h2></td></tr>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a690b5146906034f4c061a38abee6d8c6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>NRE::Math::Point2D</b> = Vector2D&lt; T &gt;</td></tr>
 <tr class="separator:a690b5146906034f4c061a38abee6d8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a81cb39eff2a4a6771ee1a0a3dee4a39f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a81cb39eff2a4a6771ee1a0a3dee4a39f"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#a81cb39eff2a4a6771ee1a0a3dee4a39f">NRE::Math::operator&lt;&lt;</a> (std::ostream &amp;stream, Vector2D&lt; T &gt; const &amp;o)</td></tr>
-<tr class="separator:a81cb39eff2a4a6771ee1a0a3dee4a39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : Vector2D. </p>
 <dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>27/03/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_a81cb39eff2a4a6771ee1a0a3dee4a39f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; NRE::Math::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; T &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>o</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Output stream operator for the object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>the stream to add the object's string representation </td></tr>
-    <tr><td class="paramname">o</td><td>the object to add in the stream </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the modified stream </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

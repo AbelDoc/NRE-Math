@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,6 +112,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_math_1_1_matrix3x3.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___matrix3x3_8hpp_source.php">NRE_Matrix3x3.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::Matrix3x3&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_matrix3x3.png" usemap="#NRE::Math::Matrix3x3_3C_20T_20_3E_map" alt=""/>
+  <map id="NRE::Math::Matrix3x3_3C_20T_20_3E_map" name="NRE::Math::Matrix3x3&lt; T &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -187,12 +196,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9e27e13e85006301b16f754da5372ad"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:ab9e27e13e85006301b16f754da5372ad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab9e27e13e85006301b16f754da5372ad">stretchY</a> (K u)</td></tr>
 <tr class="separator:ab9e27e13e85006301b16f754da5372ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f9761e4a7afb83a16e64a826f7ae8b4"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a1f9761e4a7afb83a16e64a826f7ae8b4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a1f9761e4a7afb83a16e64a826f7ae8b4">squeezeX</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;u)</td></tr>
-<tr class="separator:a1f9761e4a7afb83a16e64a826f7ae8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52978f19a36087045b8db84ea05bb0a"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:af52978f19a36087045b8db84ea05bb0a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af52978f19a36087045b8db84ea05bb0a">squeezeY</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;u)</td></tr>
-<tr class="separator:af52978f19a36087045b8db84ea05bb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681ca632b3f17880831347c64275411f"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a681ca632b3f17880831347c64275411f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a681ca632b3f17880831347c64275411f">squeezeX</a> (K u)</td></tr>
+<tr class="separator:a681ca632b3f17880831347c64275411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c76326ce4edfd2b3b51a4ece20857df"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a9c76326ce4edfd2b3b51a4ece20857df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9c76326ce4edfd2b3b51a4ece20857df">squeezeY</a> (K u)</td></tr>
+<tr class="separator:a9c76326ce4edfd2b3b51a4ece20857df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa4a6dfb58015ac492fc03e3da2c3ea"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:a5fa4a6dfb58015ac492fc03e3da2c3ea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a5fa4a6dfb58015ac492fc03e3da2c3ea">shearX</a> (K u)</td></tr>
 <tr class="separator:a5fa4a6dfb58015ac492fc03e3da2c3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,10 +270,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7274a132011900b1a622ac375995b888"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:a7274a132011900b1a622ac375995b888"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7274a132011900b1a622ac375995b888">operator/</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
 <tr class="separator:a7274a132011900b1a622ac375995b888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6572ff63d1e9e87570a28511cbd798e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a6572ff63d1e9e87570a28511cbd798e3">operator==</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> const &amp;m) const </td></tr>
-<tr class="separator:a6572ff63d1e9e87570a28511cbd798e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc3102ce038ea248ff2564d4ee4ec03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a1cc3102ce038ea248ff2564d4ee4ec03">operator!=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> const &amp;m) const </td></tr>
-<tr class="separator:a1cc3102ce038ea248ff2564d4ee4ec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff2b1fef6121b6010ae78cd7fb076ab"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:aaff2b1fef6121b6010ae78cd7fb076ab"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaff2b1fef6121b6010ae78cd7fb076ab">operator==</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:aaff2b1fef6121b6010ae78cd7fb076ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f56eb419645842780baddc01723c270"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a5f56eb419645842780baddc01723c270"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a5f56eb419645842780baddc01723c270">operator!=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:a5f56eb419645842780baddc01723c270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25e670abcdf2bc1ce3a0c44e35f7019"><td class="memItemLeft" align="right" valign="top">Utility::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae25e670abcdf2bc1ce3a0c44e35f7019">toString</a> () const </td></tr>
 <tr class="separator:ae25e670abcdf2bc1ce3a0c44e35f7019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -743,16 +754,18 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1cc3102ce038ea248ff2564d4ee4ec03"></a>
+<a class="anchor" id="a5f56eb419645842780baddc01723c270"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1291,16 +1304,18 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6572ff63d1e9e87570a28511cbd798e3"></a>
+<a class="anchor" id="aaff2b1fef6121b6010ae78cd7fb076ab"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; T &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1644,7 +1659,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1f9761e4a7afb83a16e64a826f7ae8b4"></a>
+<a class="anchor" id="a681ca632b3f17880831347c64275411f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1655,7 +1670,7 @@ template&lt;class K &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::squeezeX </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;&#160;</td>
+          <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1663,14 +1678,14 @@ template&lt;class K &gt; </div>
 </div><div class="memdoc">
 <p>Add a squeeze on the X axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">u</td><td>the squeeze vector </td></tr>
+    <tr><td class="paramname">u</td><td>the squeeze factor </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="af52978f19a36087045b8db84ea05bb0a"></a>
+<a class="anchor" id="a9c76326ce4edfd2b3b51a4ece20857df"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1681,7 +1696,7 @@ template&lt;class K &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::squeezeY </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;&#160;</td>
+          <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1689,7 +1704,7 @@ template&lt;class K &gt; </div>
 </div><div class="memdoc">
 <p>Add a squeeze on the Y axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">u</td><td>the squeeze vector </td></tr>
+    <tr><td class="paramname">u</td><td>the squeeze factor </td></tr>
   </table>
   </dd>
 </dl>

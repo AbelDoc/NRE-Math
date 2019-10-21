@@ -100,8 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">NRE_Quaternion.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -113,6 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;<a class="el" href="_math_2_n_r_e___math_8hpp_source.php">../NRE_Math.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_n_r_e___unit_8hpp_source.php">../NRE_Unit.hpp</a>&quot;</code><br />
+<code>#include &lt;Utility/Interfaces/Stringable/NRE_Stringable.hpp&gt;</code><br />
 <code>#include &quot;NRE_Quaternion.tpp&quot;</code><br />
 </div>
 <p><a href="_n_r_e___quaternion_8hpp_source.php">Go to the source code of this file.</a></p>
@@ -137,56 +137,13 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_math"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_math.php">Math</a></td></tr>
 <tr class="memdesc:namespace_math"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aa36b3d882fc4664547f7dd498f2f1aab"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa36b3d882fc4664547f7dd498f2f1aab"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___quaternion_8hpp.php#aa36b3d882fc4664547f7dd498f2f1aab">NRE::Math::operator&lt;&lt;</a> (std::ostream &amp;stream, Quaternion&lt; T &gt; const &amp;o)</td></tr>
-<tr class="separator:aa36b3d882fc4664547f7dd498f2f1aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : Quaternion. </p>
 <dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>31/03/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_aa36b3d882fc4664547f7dd498f2f1aab"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; NRE::Math::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; T &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>o</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Output stream operator for the object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>the stream to add the object's string representation </td></tr>
-    <tr><td class="paramname">o</td><td>the object to add in the stream </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the modified stream </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

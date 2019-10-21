@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,11 +112,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_math_1_1_segment3_d.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___segment3_d_8hpp_source.php">NRE_Segment3D.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::Segment3D&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_segment3_d.png" usemap="#NRE::Math::Segment3D_3C_20T_20_3E_map" alt=""/>
+  <map id="NRE::Math::Segment3D_3C_20T_20_3E_map" name="NRE::Math::Segment3D&lt; T &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a21c47db2fafaf77574a2bf7647fd0c45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#a21c47db2fafaf77574a2bf7647fd0c45">Segment3D</a> ()</td></tr>
-<tr class="separator:a21c47db2fafaf77574a2bf7647fd0c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75848a5f8d2dd5b3073e43f7f208747"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#ad75848a5f8d2dd5b3073e43f7f208747">Segment3D</a> ()=default</td></tr>
+<tr class="separator:ad75848a5f8d2dd5b3073e43f7f208747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a790ef0a4b0b9ccee9c9bcaff894ee2f7"><td class="memTemplParams" colspan="2">template&lt;class K , class L &gt; </td></tr>
 <tr class="memitem:a790ef0a4b0b9ccee9c9bcaff894ee2f7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#a790ef0a4b0b9ccee9c9bcaff894ee2f7">Segment3D</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; K &gt; const &amp;s, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; L &gt; const &amp;e)</td></tr>
 <tr class="separator:a790ef0a4b0b9ccee9c9bcaff894ee2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,11 +165,14 @@ class NRE::Math::Segment3D&lt; T &gt;</h3>
 
 <p>A 3D homogeneous segment. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a21c47db2fafaf77574a2bf7647fd0c45"></a>
+<a class="anchor" id="ad75848a5f8d2dd5b3073e43f7f208747"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">NRE::Math::Segment3D</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a> </td>
@@ -169,8 +181,13 @@ template&lt;class T&gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Construct a segment with both start and end equal to origin </p>
+<p>Default constructor </p>
 
 </div>
 </div>

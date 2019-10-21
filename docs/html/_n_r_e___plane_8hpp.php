@@ -101,8 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">NRE_Plane.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -112,6 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_n_r_e___vector3_d_8hpp_source.php">../Vector/3D/NRE_Vector3D.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_n_r_e___vector4_d_8hpp_source.php">../Vector/4D/NRE_Vector4D.hpp</a>&quot;</code><br />
+<code>#include &lt;Utility/Interfaces/Stringable/NRE_Stringable.hpp&gt;</code><br />
 <code>#include &quot;NRE_Plane.tpp&quot;</code><br />
 </div>
 <p><a href="_n_r_e___plane_8hpp_source.php">Go to the source code of this file.</a></p>
@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple 4D homogeneous plane with a point and a vector.  <a href="class_n_r_e_1_1_math_1_1_plane.php#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cartesian plane with a point and a vector.  <a href="class_n_r_e_1_1_math_1_1_plane.php#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -145,12 +145,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a3b4330699dcee93a68dccfffe876ebdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae510563c845531645aaa378907165c66"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ae510563c845531645aaa378907165c66"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___plane_8hpp.php#ae510563c845531645aaa378907165c66">NRE::Math::operator&lt;&lt;</a> (std::ostream &amp;stream, Plane&lt; T &gt; const &amp;o)</td></tr>
-<tr class="separator:ae510563c845531645aaa378907165c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : Plane. </p>
@@ -191,43 +185,6 @@ Functions</h2></td></tr>
 <p>The number of face in a box </p>
 </td></tr>
 </table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_ae510563c845531645aaa378907165c66"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream&amp; NRE::Math::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">Plane</a>&lt; T &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>o</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Output stream operator for the object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>the stream to add the object's string representation </td></tr>
-    <tr><td class="paramname">o</td><td>the object to add in the stream </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the modified stream </dd></dl>
 
 </div>
 </div>

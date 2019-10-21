@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,6 +112,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___bezier_curve3_d_8hpp_source.php">NRE_BezierCurve3D.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::BezierCurve3D:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_bezier_curve3_d.png" usemap="#NRE::Math::BezierCurve3D_map" alt=""/>
+  <map id="NRE::Math::BezierCurve3D_map" name="NRE::Math::BezierCurve3D_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -171,6 +180,9 @@ Public Member Functions</h2></td></tr>
 <a class="anchor" id="a86e23312e33c11a5dd96fa23ef5faeeb"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">NRE::Math::BezierCurve3D::BezierCurve3D </td>
@@ -180,6 +192,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Construct the curve from a set of control points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -193,6 +210,9 @@ Public Member Functions</h2></td></tr>
 <a class="anchor" id="a862ab044f5cac6e196a5e8b492727e23"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">NRE::Math::BezierCurve3D::BezierCurve3D </td>
@@ -202,6 +222,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Construct the curve from a set of control points </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

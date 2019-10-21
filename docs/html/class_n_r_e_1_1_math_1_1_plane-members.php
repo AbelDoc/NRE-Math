@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -108,8 +109,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a137f04ed1ac264233c1497c2e1720361">distance</a>(Point4D&lt; K &gt; const &amp;p) const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a92258876f1662bb9623e04efc121e6ae">distance</a>(Point3D&lt; K &gt; const &amp;p) const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a79d1c2c300ffd46fe05b3db73d3ba5e9">getNormal</a>() const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a03a5de5fa4540d7d5c10ade7699b6dd6">getPoint</a>() const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#ad32174f103787ce5012844ea677e8c31">getNormal</a>() const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#ab4ce67f0384ee4763f6a922dc6deb647">getPoint</a>() const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a58a5d713ef0706697e553d02e762b5d9">operator!=</a>(Plane&lt; K &gt; const &amp;p) const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#aff4e35b9d557e9be76a2704d3b4a62c9">operator=</a>(Plane const &amp;p)=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a22483fc71c8ae538368fbf58d489cb86">operator=</a>(Plane &amp;&amp;p)=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane&lt; T &gt;</a></td><td class="entry"></td></tr>

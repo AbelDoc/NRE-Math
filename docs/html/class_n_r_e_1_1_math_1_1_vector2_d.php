@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,6 +112,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_math_1_1_vector2_d.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___vector2_d_8hpp_source.php">NRE_Vector2D.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::Vector2D&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_vector2_d.png" usemap="#NRE::Math::Vector2D_3C_20T_20_3E_map" alt=""/>
+  <map id="NRE::Math::Vector2D_3C_20T_20_3E_map" name="NRE::Math::Vector2D&lt; T &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -122,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5991caa1d1fc91b4871b8c4c52486b0d"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:a5991caa1d1fc91b4871b8c4c52486b0d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a5991caa1d1fc91b4871b8c4c52486b0d">Vector2D</a> (K <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a5bc7553cad91fc6d84a96c9b51352538">value</a>)</td></tr>
 <tr class="separator:a5991caa1d1fc91b4871b8c4c52486b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2992f34a96baa3f8fb3914756ed8aa16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a2992f34a96baa3f8fb3914756ed8aa16">Vector2D</a> (std::initializer_list&lt; T &gt; list)</td></tr>
+<tr class="separator:a2992f34a96baa3f8fb3914756ed8aa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bd88b851869203e61dead077fc4ed1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ab1bd88b851869203e61dead077fc4ed1">Vector2D</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a> const &amp;u)=default</td></tr>
 <tr class="separator:ab1bd88b851869203e61dead077fc4ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fb7c9b33b3425db224a59ee7ef2c0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ab6fb7c9b33b3425db224a59ee7ef2c0e">Vector2D</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a> &amp;&amp;u)=default</td></tr>
@@ -340,6 +351,30 @@ template&lt;class K &gt; </div>
 <p>Construct a vector with unique values </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>the new x and y values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2992f34a96baa3f8fb3914756ed8aa16"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">NRE::Math::Vector2D</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construct a vector from an initializer list </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>the construction list </td></tr>
   </table>
   </dd>
 </dl>

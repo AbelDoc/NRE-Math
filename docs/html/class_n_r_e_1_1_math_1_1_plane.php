@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -107,10 +108,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A simple 4D homogeneous plane with a point and a vector.  
+<p>A cartesian plane with a point and a vector.  
  <a href="class_n_r_e_1_1_math_1_1_plane.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___plane_8hpp_source.php">NRE_Plane.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::Plane&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_plane.png" usemap="#NRE::Math::Plane_3C_20T_20_3E_map" alt=""/>
+  <map id="NRE::Math::Plane_3C_20T_20_3E_map" name="NRE::Math::Plane&lt; T &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -137,10 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac203a7e69af509433373854a654355d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82e7af5642281d56674ecf427a3e5311"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a82e7af5642281d56674ecf427a3e5311">~Plane</a> ()=default</td></tr>
 <tr class="separator:a82e7af5642281d56674ecf427a3e5311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d1c2c300ffd46fe05b3db73d3ba5e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a79d1c2c300ffd46fe05b3db73d3ba5e9">getNormal</a> () const </td></tr>
-<tr class="separator:a79d1c2c300ffd46fe05b3db73d3ba5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a5de5fa4540d7d5c10ade7699b6dd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a03a5de5fa4540d7d5c10ade7699b6dd6">getPoint</a> () const </td></tr>
-<tr class="separator:a03a5de5fa4540d7d5c10ade7699b6dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32174f103787ce5012844ea677e8c31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#ad32174f103787ce5012844ea677e8c31">getNormal</a> () const </td></tr>
+<tr class="separator:ad32174f103787ce5012844ea677e8c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ce67f0384ee4763f6a922dc6deb647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#ab4ce67f0384ee4763f6a922dc6deb647">getPoint</a> () const </td></tr>
+<tr class="separator:ab4ce67f0384ee4763f6a922dc6deb647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c3fd5788e0a2b6dd2e661b378f4134"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:a14c3fd5788e0a2b6dd2e661b378f4134"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a14c3fd5788e0a2b6dd2e661b378f4134">setNormal</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt; K &gt; const &amp;n)</td></tr>
 <tr class="separator:a14c3fd5788e0a2b6dd2e661b378f4134"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,7 +197,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class NRE::Math::Plane&lt; T &gt;</h3>
 
-<p>A simple 4D homogeneous plane with a point and a vector. </p>
+<p>A cartesian plane with a point and a vector. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7bc698f25c916183bcbb605e4b60377d"></a>
 <div class="memitem">
@@ -490,7 +499,7 @@ template&lt;class T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php" title="A simple 4D homogeneous plane with a point and a vector. ">Plane</a> Deconstructor </p>
+<p><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php" title="A cartesian plane with a point and a vector. ">Plane</a> Deconstructor </p>
 
 </div>
 </div>
@@ -549,14 +558,14 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a79d1c2c300ffd46fe05b3db73d3ba5e9"></a>
+<a class="anchor" id="ad32174f103787ce5012844ea677e8c31"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane</a>&lt; T &gt;::getNormal </td>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane</a>&lt; T &gt;::getNormal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -567,14 +576,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a03a5de5fa4540d7d5c10ade7699b6dd6"></a>
+<a class="anchor" id="ab4ce67f0384ee4763f6a922dc6deb647"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane</a>&lt; T &gt;::getPoint </td>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">NRE::Math::Plane</a>&lt; T &gt;::getPoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

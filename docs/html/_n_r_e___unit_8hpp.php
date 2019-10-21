@@ -114,6 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;ratio&gt;</code><br />
 <code>#include &lt;Utility/String/NRE_String.hpp&gt;</code><br />
+<code>#include &lt;Utility/Interfaces/Stringable/NRE_Stringable.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="_math_2_n_r_e___math_8hpp_source.php">NRE_Math.hpp</a>&quot;</code><br />
 </div>
 <p><a href="_n_r_e___unit_8hpp_source.php">Go to the source code of this file.</a></p>

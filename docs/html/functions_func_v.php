@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -138,10 +139,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a9063228268886f665fd01f9b232995f0">NRE::Math::Vector2D&lt; T &gt;</a>
 </li>
 <li>Vector3D()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a2fe1fc6055be48bc5a43db7941e81849">NRE::Math::Vector3D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a336259bc9566a6a1b464be1ce7b6e6a3">NRE::Math::Vector3D&lt; T &gt;</a>
 </li>
 <li>Vector4D()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a135e61e944ffaabc1d2713240b2c4964">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a0edf3bf584632acfd44ab803616058f3">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

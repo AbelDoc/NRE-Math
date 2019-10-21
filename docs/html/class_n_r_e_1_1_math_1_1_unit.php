@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -111,6 +112,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_math_1_1_unit.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___unit_8hpp_source.php">NRE_Unit.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for NRE::Math::Unit&lt; M, L, T, A &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_r_e_1_1_math_1_1_unit.png" usemap="#NRE::Math::Unit_3C_20M_2C_20L_2C_20T_2C_20A_20_3E_map" alt=""/>
+  <map id="NRE::Math::Unit_3C_20M_2C_20L_2C_20T_2C_20A_20_3E_map" name="NRE::Math::Unit&lt; M, L, T, A &gt;_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

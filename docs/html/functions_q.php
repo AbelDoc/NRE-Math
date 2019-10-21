@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -127,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
 <li>Quaternion()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#abcd15e9b7e239d606d0d5f1591f4d1fa">NRE::Math::Quaternion&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a3f449cc3a127a054397bf884c2c02612">NRE::Math::Quaternion&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

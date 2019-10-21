@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -139,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a2f1a0181a35a1e0de33664b82b149164">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>normSquared()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ad4be919d7372c8d632f608014f69a87a">NRE::Math::Quaternion&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a358ee2506666b99db64fdb522792cfe0">NRE::Math::Quaternion&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a0838bbfc6ffbb691ad45eee173febf15">NRE::Math::Vector2D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#af142e5e7b4fa1eb5f130b17e4168e44d">NRE::Math::Vector3D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a6de36661417271efc88816bec996790f">NRE::Math::Vector4D&lt; T &gt;</a>

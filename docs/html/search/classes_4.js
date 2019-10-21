@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['plane',['Plane',['../class_n_r_e_1_1_math_1_1_plane.php',1,'NRE::Math']]]
+  ['matrix3x3',['Matrix3x3',['../class_n_r_e_1_1_math_1_1_matrix3x3.php',1,'NRE::Math']]],
+  ['matrix4x4',['Matrix4x4',['../class_n_r_e_1_1_math_1_1_matrix4x4.php',1,'NRE::Math']]]
 ];

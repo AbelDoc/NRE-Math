@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -107,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ae9834d919c43211705a9ab9fd10dea1d">BezierCurve3D</a>()=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a86e23312e33c11a5dd96fa23ef5faeeb">BezierCurve3D</a>(std::initializer_list&lt; Point3D&lt; float &gt;&gt; points)</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a862ab044f5cac6e196a5e8b492727e23">BezierCurve3D</a>(Utility::Vector&lt; Point3D&lt; float &gt;&gt; &amp;&amp;c)</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a86e23312e33c11a5dd96fa23ef5faeeb">BezierCurve3D</a>(std::initializer_list&lt; Point3D&lt; float &gt;&gt; points)</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a862ab044f5cac6e196a5e8b492727e23">BezierCurve3D</a>(Utility::Vector&lt; Point3D&lt; float &gt;&gt; &amp;&amp;c)</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ad139d982bb6c0f79dfeca7dcf06393f7">BezierCurve3D</a>(BezierCurve3D const &amp;c)=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a8383e094e83d4a3d8c75f415fc3de876">BezierCurve3D</a>(BezierCurve3D &amp;&amp;c)=default</td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ad76aba00eb1f424e1776737edaab4f69">getPoint</a>(std::size_t index) const </td><td class="entry"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">NRE::Math::BezierCurve3D</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>

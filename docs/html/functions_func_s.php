@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -134,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#a790ef0a4b0b9ccee9c9bcaff894ee2f7">NRE::Math::Segment3D&lt; T &gt;</a>
 </li>
 <li>Segment4D()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#ab257836191f2907c9f6d03ff0e77ac71">NRE::Math::Segment4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a8be047aa9307a73551d2dca7026beb8a">NRE::Math::Segment4D&lt; T &gt;</a>
 </li>
 <li>setA()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a7edc6bf8ca15f7c94f2c78b642a6d684">NRE::Math::Vector4D&lt; T &gt;</a>
@@ -250,10 +251,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a728734518d0ef3c6fbe39e8093d44287">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
 </li>
 <li>squeezeX()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a1f9761e4a7afb83a16e64a826f7ae8b4">NRE::Math::Matrix3x3&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a681ca632b3f17880831347c64275411f">NRE::Math::Matrix3x3&lt; T &gt;</a>
 </li>
 <li>squeezeY()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af52978f19a36087045b8db84ea05bb0a">NRE::Math::Matrix3x3&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9c76326ce4edfd2b3b51a4ece20857df">NRE::Math::Matrix3x3&lt; T &gt;</a>
 </li>
 <li>stretchX()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab0e2fda083093b94f9fb0d16e50d36d3">NRE::Math::Matrix3x3&lt; T &gt;</a>

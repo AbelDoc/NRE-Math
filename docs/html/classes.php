@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li class="current"><a href="classes.php"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -99,37 +100,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Class Index</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_B">B</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_Q">Q</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a>&#160;|&#160;<a class="qindex" href="#letter_V">V</a></div>
+<div class="qindex"><a class="qindex" href="#letter_B">B</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_Q">Q</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a>&#160;|&#160;<a class="qindex" href="#letter_V">V</a></div>
 <table class="classindex">
 <tr><td rowspan="2" valign="bottom"><a name="letter_B"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;B&#160;&#160;</div></td></tr></table>
-</td><td rowspan="2" valign="bottom"><a name="letter_S"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;S&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">Segment4D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_U"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;U&#160;&#160;</div></td></tr></table>
 </td></tr>
-<tr></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php">BezierCurve4D</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php">Segment4D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php">BezierCurve4D</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_unit.php">Unit</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
 <tr><td rowspan="2" valign="bottom"><a name="letter_F"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;F&#160;&#160;</div></td></tr></table>
-</td><td rowspan="2" valign="bottom"><a name="letter_U"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;U&#160;&#160;</div></td></tr></table>
-</td></tr>
-<tr></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php">Frustum</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_unit.php">Unit</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
-<tr><td rowspan="2" valign="bottom"><a name="letter_M"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;M&#160;&#160;</div></td></tr></table>
 </td><td rowspan="2" valign="bottom"><a name="letter_V"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;V&#160;&#160;</div></td></tr></table>
 </td></tr>
 <tr></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">Matrix4x4</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
-<tr><td rowspan="2" valign="bottom"><a name="letter_P"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;P&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
-<tr><td rowspan="2" valign="bottom"><a name="letter_h"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;h&#160;&#160;</div></td></tr></table>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php">Frustum</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_M"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;M&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> (NRE::Math)&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_c"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;c&#160;&#160;</div></td></tr></table>
 </td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">Plane</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">Matrix4x4</a> (NRE::Math)&#160;&#160;&#160;</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_P"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;P&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment3_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Segment3D&lt; T &gt;, NRE::Math::Segment3D&lt; K &gt; &gt;</a> (<a class="el" href="namespacestd.php">std</a>)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment4_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Segment4D&lt; T &gt;, NRE::Math::Segment4D&lt; K &gt; &gt;</a> (<a class="el" href="namespacestd.php">std</a>)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_plane.php">Plane</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector2_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector2_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Vector2D&lt; T &gt;, NRE::Math::Vector2D&lt; K &gt; &gt;</a> (<a class="el" href="namespacestd.php">std</a>)&#160;&#160;&#160;</td></tr>
 <tr><td rowspan="2" valign="bottom"><a name="letter_Q"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;Q&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="classhash.php">hash</a>&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="classstd_1_1hash_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01float_01_4_01_4.php">hash&lt; NRE::Math::Vector3D&lt; float &gt; &gt;</a> (<a class="el" href="namespacestd.php">std</a>)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> (NRE::Math)&#160;&#160;&#160;</td><td></td></tr>
+</td><td valign="top"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector3_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Vector3D&lt; T &gt;, NRE::Math::Vector3D&lt; K &gt; &gt;</a> (<a class="el" href="namespacestd.php">std</a>)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector4_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Vector4D&lt; T &gt;, NRE::Math::Vector4D&lt; K &gt; &gt;</a> (<a class="el" href="namespacestd.php">std</a>)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> (NRE::Math)&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_h"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;h&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_S"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;S&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td valign="top"><a class="el" href="classhash.php">hash</a>&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a> (NRE::Math)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="classstd_1_1hash_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01float_01_4_01_4.php">hash&lt; NRE::Math::Vector3D&lt; float &gt; &gt;</a> (<a class="el" href="namespacestd.php">std</a>)&#160;&#160;&#160;</td></tr>
 <tr><td></td><td></td></tr>
 </table>
-<div class="qindex"><a class="qindex" href="#letter_B">B</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_Q">Q</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a>&#160;|&#160;<a class="qindex" href="#letter_V">V</a></div>
+<div class="qindex"><a class="qindex" href="#letter_B">B</a>&#160;|&#160;<a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_F">F</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_Q">Q</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a>&#160;|&#160;<a class="qindex" href="#letter_V">V</a></div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

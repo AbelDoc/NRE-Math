@@ -105,6 +105,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment3_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Segment3D&lt; T &gt;, NRE::Math::Segment3D&lt; K &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment4_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Segment4D&lt; T &gt;, NRE::Math::Segment4D&lt; K &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector2_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector2_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Vector2D&lt; T &gt;, NRE::Math::Vector2D&lt; K &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector3_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Vector3D&lt; T &gt;, NRE::Math::Vector3D&lt; K &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector4_d_3_01_k_01_4_01_4.php">common_type&lt; NRE::Math::Vector4D&lt; T &gt;, NRE::Math::Vector4D&lt; K &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstd_1_1hash_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01float_01_4_01_4.php">hash&lt; NRE::Math::Vector3D&lt; float &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
