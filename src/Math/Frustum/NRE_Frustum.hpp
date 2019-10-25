@@ -75,6 +75,14 @@
                          * Frustum Deconstructor
                          */
                         ~Frustum() = default;
+    
+                    //## Getter ##//
+                        /**
+                         * Query a specific plane
+                         * @param the plane index
+                         * @return the corresponding plane
+                         */
+                        Plane<float> const& getPlane(std::size_t index) const;
 
                     //## Setter ##//
                         /**

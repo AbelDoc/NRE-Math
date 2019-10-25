@@ -13,6 +13,10 @@
             inline Frustum::Frustum(Angle fieldOfView, float r, Vector2D<float> const& d) : dist(d), ratio(r), fov(fieldOfView) {
                 computeNearAndFar();
             }
+            
+            inline Plane<float> const& Frustum::getPlane(std::size_t index) const {
+                return planes[index];
+            }
 
             inline void Frustum::setFov(Angle fieldOfView) {
                 fov = fieldOfView;
