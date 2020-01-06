@@ -192,6 +192,22 @@
             inline T Vector4D<T>::normSquared() const {
                 return x * x + y * y + z * z + w * w;
             }
+    
+            template <class T>
+            template <class K>
+            inline long double Vector4D<T>::distance(Vector4D<K> const& v) const {
+                return std::sqrt(static_cast <long double> (distanceSquared(v)));
+            }
+    
+            template <class T>
+            template <class K>
+            inline std::common_type_t<T, K> Vector4D<T>::distanceSquared(Vector4D<K> const& v) const {
+                std::common_type_t<T, K> dx = x - v.getX();
+                std::common_type_t<T, K> dy = y - v.getY();
+                std::common_type_t<T, K> dz = z - v.getZ();
+                std::common_type_t<T, K> dw = w - v.getW();
+                return dx * dx + dy * dy + dz * dz + dw * dw;
+            }
 
             template <class T>
             inline void Vector4D<T>::normalize() {

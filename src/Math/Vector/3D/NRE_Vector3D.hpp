@@ -209,6 +209,16 @@
                          */
                         T normSquared() const;
                         /**
+                         * @return the distance to another vector
+                         */
+                        template <class K>
+                        long double distance(Vector3D<K> const& v) const;
+                        /**
+                         * @return the squared distance to another vector
+                         */
+                        template <class K>
+                        std::common_type_t<T, K> distanceSquared(Vector3D<K> const& v) const;
+                        /**
                          * Normalize the vector
                          */
                         void normalize();

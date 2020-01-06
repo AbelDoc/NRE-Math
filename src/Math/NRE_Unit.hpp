@@ -529,13 +529,13 @@
              * @param x the value to convert
              * @return the corresponding value
              */
-            constexpr long double operator"" _pi(long double x) { return static_cast <double> (x) * 3.1415926535897932384626433832795; }
+            constexpr long double operator"" _pi(long double x) { return static_cast <double> (x) * PI; }
             /**
              * Litteral operator for pi
              * @param x the value to convert
              * @return the corresponding value
              */
-            constexpr long double operator"" _pi(unsigned long long int x) { return static_cast <double> (x) * 3.1415926535897932384626433832795; }
+            constexpr long double operator"" _pi(unsigned long long int x) { return static_cast <double> (x) * PI; }
 
             constexpr Angle radian(1.0);                                        /**< Standard SI unit */
             constexpr Angle degree = (2_pi / 360.0f) * radian;                  /**< Scale degree with radian */

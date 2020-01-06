@@ -97,15 +97,29 @@
                 setX(w);
                 setY(h);
             }
-
+    
             template <class T>
             inline long double Vector2D<T>::norm() const {
                 return std::sqrt(static_cast <long double> (normSquared()));
             }
-
+    
             template <class T>
             inline T Vector2D<T>::normSquared() const {
                 return x * x + y * y;
+            }
+    
+            template <class T>
+            template <class K>
+            inline long double Vector2D<T>::distance(Vector2D<K> const& v) const {
+                return std::sqrt(static_cast <long double> (distanceSquared(v)));
+            }
+    
+            template <class T>
+            template <class K>
+            inline std::common_type_t<T, K> Vector2D<T>::distanceSquared(Vector2D<K> const& v) const {
+                std::common_type_t<T, K> dx = x - v.getX();
+                std::common_type_t<T, K> dy = y - v.getY();
+                return dx * dx + dy * dy;
             }
 
             template <class T>

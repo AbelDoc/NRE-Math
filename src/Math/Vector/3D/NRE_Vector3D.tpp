@@ -144,6 +144,21 @@
             inline T Vector3D<T>::normSquared() const {
                 return x * x + y * y + z * z;
             }
+    
+            template <class T>
+            template <class K>
+            inline long double Vector3D<T>::distance(Vector3D<K> const& v) const {
+                return std::sqrt(static_cast <long double> (distanceSquared(v)));
+            }
+    
+            template <class T>
+            template <class K>
+            inline std::common_type_t<T, K> Vector3D<T>::distanceSquared(Vector3D<K> const& v) const {
+                std::common_type_t<T, K> dx = x - v.getX();
+                std::common_type_t<T, K> dy = y - v.getY();
+                std::common_type_t<T, K> dz = z - v.getZ();
+                return dx * dx + dy * dy + dz * dz;
+            }
 
             template <class T>
             inline void Vector3D<T>::normalize() {
