@@ -363,17 +363,16 @@
             template <class T>
             template <class K, class L>
             inline void Matrix4x4<T>::perspective(Angle fov, K ratio, Vector2D<L> const& z) {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
+                setIdentity();
+                T fovDeg = static_cast <T> (fov.getValue() * 180.0 / PI);
                 
-                T f = static_cast <T> (1.0 / tan(fov / 2.0));
-                tmp[0][0] = f / static_cast <T> (ratio);
-                tmp[1][1] = f;
-                tmp[2][2] = static_cast <T> ((z.getY() + z.getX()) / (z.getX() - z.getY()));
-                tmp[2][3] = static_cast <T> ((static_cast <L> (2.0) * z.getY() * z.getX()) / (z.getX() - z.getY()));
-                tmp[3][2] = -1;
-
-                *this *= tmp;
+                T f = static_cast <T> (std::tan(fovDeg / static_cast <T> (2.0)));
+                data[0][0] = static_cast <T> (1.0) / (static_cast <T> (ratio) * f);
+                data[1][1] = static_cast <T> (1.0) / f;
+                data[2][2] = static_cast <T> (-(z.getY() + z.getX()) / (z.getY() - z.getX()));
+                data[2][3] = static_cast <T> (-(static_cast <L> (2.0) * z.getY() * z.getX()) / (z.getY() - z.getX()));
+                data[3][2] = -1;
+                data[3][3] = 0;
             }
 
             template <class T>
@@ -401,17 +400,17 @@
             template <class T>
             template <class K, class L, class N>
             void Matrix4x4<T>::lookAt(Vector3D<K> const& eye, Vector3D<L> const& center, Vector3D<N> const& up) {
-                Vector3D<T> z(static_cast <T> (eye.getX()) - static_cast <T> (center.getX()),
-                              static_cast <T> (eye.getY()) - static_cast <T> (center.getY()),
-                              static_cast <T> (eye.getZ()) - static_cast <T> (center.getZ()));
+                Vector3D<T> z(static_cast <T> (center.getX()) - static_cast <T> (eye.getX()),
+                              static_cast <T> (center.getY()) - static_cast <T> (eye.getY()),
+                              static_cast <T> (center.getZ()) - static_cast <T> (eye.getZ()));
                 z.normalize();
-                Vector3D<T> x(up ^ z);
+                Vector3D<T> x(z ^ up);
                 x.normalize();
-                Vector3D<T> y(z ^ x);
-
-                setL1(Vector4D<T>(x, -(x | static_cast <Vector3D<T>> (center))));
-                setL2(Vector4D<T>(y, -(y | static_cast <Vector3D<T>> (center))));
-                setL3(Vector4D<T>(z, -(z | static_cast <Vector3D<T>> (center))));
+                Vector3D<T> y(x ^ z);
+                
+                setL1(Vector4D<T>( x, -(x | static_cast <Vector3D<T>> (eye))));
+                setL2(Vector4D<T>( y, -(y | static_cast <Vector3D<T>> (eye))));
+                setL3(Vector4D<T>(-z,  (z | static_cast <Vector3D<T>> (eye))));
                 setL4(Vector4D<T>(0, 0, 0, 1));
             }
 

@@ -538,7 +538,7 @@
             constexpr long double operator"" _pi(unsigned long long int x) { return static_cast <double> (x) * PI; }
 
             constexpr Angle radian(1.0);                                        /**< Standard SI unit */
-            constexpr Angle degree = (2_pi / 360.0f) * radian;                  /**< Scale degree with radian */
+            constexpr Angle degree = (PI / 180.0f) * radian;                      /**< Scale degree with radian */
 
             /**
              * Litteral operator for radian
