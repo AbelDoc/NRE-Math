@@ -47,7 +47,6 @@
             inline bool equal(T a, K b) {
                 return static_cast <std::common_type_t<T, K>> (a) == static_cast <std::common_type_t<T, K>> (b);
             }
-    
             /**
              * Test if 2 objects are almost equals (usefull for floating point objects)
              * @param a the first object
@@ -57,6 +56,17 @@
             template <class T, class K>
             inline bool almostEqual(T a, K b) {
                 return equal(a, b);
+            }
+            /**
+             * Perform a linear interpolation
+             * @param  a the first value to interpolate
+             * @param  b the second value to interpolate
+             * @param  f the scale factor
+             * @return   the interpolated value
+             */
+            template <class T>
+            inline T lerp(T const& a, T const& b, float const& f) {
+                return a * (1.0f - f) + b * f;
             }
         }
     }

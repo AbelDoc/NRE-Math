@@ -31,11 +31,10 @@ include_directories(src/Math/Vector/4D)
 
 set(COMPILE_LIST
         src/Header/NRE_Math.hpp
-        src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.cpp
+        src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.tpp
         src/Math/Curve/Bezier/3D/NRE_BezierCurve3D.hpp
-        src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.cpp
+        src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.tpp
         src/Math/Curve/Bezier/4D/NRE_BezierCurve4D.hpp
-        src/Math/Frustum/NRE_Frustum.cpp
         src/Math/Frustum/NRE_Frustum.hpp
         src/Math/Frustum/NRE_Frustum.tpp
         src/Math/Matrix/3D/NRE_Matrix3x3.hpp

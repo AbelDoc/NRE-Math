@@ -132,3 +132,5 @@
             };
         }
     }
+
+    #include "NRE_BezierCurve4D.tpp"

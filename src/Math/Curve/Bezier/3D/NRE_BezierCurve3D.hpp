@@ -132,3 +132,5 @@
             };
         }
     }
+
+    #include "NRE_BezierCurve3D.tpp"
