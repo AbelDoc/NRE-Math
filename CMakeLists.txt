@@ -69,5 +69,3 @@ add_executable(NRE_Math ${EXEC_LIST})
 add_executable(NRE_Math_Test ${TEST_LIST})
 
 target_link_libraries(NRE_Math_Test "C:/lib/NRE/libNRE-Tester.a")
-
-add_library(NRE-Math ${COMPILE_LIST})
