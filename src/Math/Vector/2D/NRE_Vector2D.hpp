@@ -184,8 +184,29 @@
                         std::common_type_t<T, K> distanceSquared(Vector2D<K> const& v) const;
                         /**
                          * Normalize the vector
+                         * @return the reference of himself
                          */
-                        void normalize();
+                        Vector2D<T>& normalize();
+                        /**
+                         * Limit the vector value to the given max, if to high then normalize it
+                         * @param max the maximum value
+                         */
+                        template <class K>
+                        void limit(K max);
+                        /**
+                         * Raise all components to the given power
+                         * @param p the power to which to raise this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector2D<T>& pow(K p);
+                        /**
+                         * Raise all components to the given power vector
+                         * @param p the set of power to which to raise this
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector2D<T>& pow(Vector2D<K> const& p);
                         /**
                          * @return a pointer to the vector's data
                          */
@@ -237,12 +258,26 @@
 
                     //## Shortcut Operator ##//
                         /**
+                         * Add a scalar to all components
+                         * @param k the scalar to add
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector2D& operator +=(K k);
+                        /**
                          * Add a vector into this
                          * @param u the vector to add into this
                          * @return  the reference of himself
                          */
                         template <class K>
                         Vector2D& operator +=(Vector2D<K> const& u);
+                        /**
+                         * Subtract a scalar to all components
+                         * @param k the scalar to add
+                         * @return  the reference of himself
+                         */
+                        template <class K>
+                        Vector2D& operator -=(K k);
                         /**
                          * Subtract a vector into this
                          * @param u the vector to subtract into this
@@ -288,12 +323,26 @@
 
                     //## Arithmetic Operator ##//
                         /**
+                         * Compute the vector resulting in the addition of k into this
+                         * @param k the scalar to add
+                         * @return  the computed vector
+                         */
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator +(K k) const;
+                        /**
                          * Compute the vector resulting in the addition of u into this
                          * @param u the vector to add
                          * @return  the computed vector
                          */
                         template <class K>
                         Vector2D<std::common_type_t<T, K>> operator +(Vector2D<K> const& u) const;
+                        /**
+                         * Compute the vector resulting in the subtraction of k into this
+                         * @param k the scalar to add
+                         * @return  the computed vector
+                         */
+                        template <class K>
+                        Vector2D<std::common_type_t<T, K>> operator -(K k) const;
                         /**
                          * Compute the vector resulting in the subtraction of u into this
                          * @param u the vector to subtract
@@ -393,6 +442,47 @@
                          */
                         Utility::String toString() const;
             };
+    
+            /**
+             * Compute the vector resulting in the multiplication of u by k
+             * @param u the vector
+             * @param k the multiplication factor
+             * @return  the computed vector
+             */
+            template <class T, class K>
+            Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u);
+            
+            /**
+             * Return a normalized version of the given vector
+             * @param u the vector to normalize
+             * @return  the normalized vector
+             */
+            template <class T>
+            Vector2D<T> normalize(Vector2D<T> const& u);
+            /**
+             * Return a vector with components raised to the given power
+             * @param u the vector to raise
+             * @param k the power to which to raise the vector
+             * @return  the raised vector
+             */
+            template <class T, class K>
+            Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, K k);
+            /**
+             * Return a vector with components raised to the given power
+             * @param u the vector to raise
+             * @param p the power to which to raise the vector
+             * @return  the raised vector
+             */
+            template <class T, class K>
+            Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, Vector2D<K> const& p);
+            /**
+             * Reflect the given incidence vector with the given normal
+             * @param u the vector to reflect
+             * @param n the normal
+             * @return  the reflected vector
+             */
+            template <class T, class K>
+            Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n);
 
             template <class T>
             using Point2D = Vector2D<T>;
@@ -406,7 +496,7 @@
     namespace std {
         template <class T, class K>
         struct common_type<NRE::Math::Vector2D<T>, NRE::Math::Vector2D<K>> {
-            using type = NRE::Math::Vector2D<common_type_t < T, K>>;
+            using type = NRE::Math::Vector2D<common_type_t<T, K>>;
         };
     }
 
