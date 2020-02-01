@@ -79,8 +79,8 @@
                     //## Getter ##//
                         /**
                          * Query a specific plane
-                         * @param the plane index
-                         * @return the corresponding plane
+                         * @param index the plane index
+                         * @return      the corresponding plane
                          */
                         Plane<float> const& getPlane(std::size_t index) const;
 
