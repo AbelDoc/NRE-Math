@@ -186,7 +186,7 @@
                          * Normalize the vector
                          * @return the reference of himself
                          */
-                        Vector2D<T>& normalize();
+                        Vector2D& normalize();
                         /**
                          * Limit the vector value to the given max, if to high then normalize it
                          * @param max the maximum value
@@ -199,14 +199,14 @@
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D<T>& pow(K p);
+                        Vector2D& pow(K p);
                         /**
                          * Raise all components to the given power vector
                          * @param p the set of power to which to raise this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D<T>& pow(Vector2D<K> const& p);
+                        Vector2D& pow(Vector2D<K> const& p);
                         /**
                          * @return a pointer to the vector's data
                          */
@@ -451,7 +451,6 @@
              */
             template <class T, class K>
             Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u);
-            
             /**
              * Return a normalized version of the given vector
              * @param u the vector to normalize

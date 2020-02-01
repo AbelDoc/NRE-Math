@@ -154,15 +154,40 @@
             template <class T>
             template <class K>
             inline std::common_type_t<T, K> Vector3D<T>::distanceSquared(Vector3D<K> const& v) const {
-                std::common_type_t<T, K> dx = x - v.getX();
-                std::common_type_t<T, K> dy = y - v.getY();
-                std::common_type_t<T, K> dz = z - v.getZ();
-                return dx * dx + dy * dy + dz * dz;
+                auto w(*this - v);
+                return w.normSquared();
             }
 
             template <class T>
-            inline void Vector3D<T>::normalize() {
-                *this /= norm();
+            inline Vector3D<T>& Vector3D<T>::normalize() {
+                return *this /= norm();
+            }
+    
+            template <class T>
+            template <class K>
+            inline void Vector3D<T>::limit(K max) {
+                auto n = norm();
+                if (n > max) {
+                    normalize();
+                }
+            }
+    
+            template <class T>
+            template <class K>
+            inline Vector3D<T>& Vector3D<T>::pow(K p) {
+                setX(std::pow(static_cast <std::common_type_t<T, K>> (x), static_cast <std::common_type_t<T, K>> (p)));
+                setY(std::pow(static_cast <std::common_type_t<T, K>> (y), static_cast <std::common_type_t<T, K>> (p)));
+                setZ(std::pow(static_cast <std::common_type_t<T, K>> (z), static_cast <std::common_type_t<T, K>> (p)));
+                return *this;
+            }
+    
+            template <class T>
+            template <class K>
+            inline Vector3D<T>& Vector3D<T>::pow(Vector3D<K> const& p) {
+                setX(std::pow(static_cast <std::common_type_t<T, K>> (x), static_cast <std::common_type_t<T, K>> (p.getX())));
+                setY(std::pow(static_cast <std::common_type_t<T, K>> (y), static_cast <std::common_type_t<T, K>> (p.getY())));
+                setZ(std::pow(static_cast <std::common_type_t<T, K>> (z), static_cast <std::common_type_t<T, K>> (p.getZ())));
+                return *this;
             }
 
             template <class T>
@@ -197,58 +222,76 @@
                 setZ(u.getZ());
                 return *this;
             }
+    
+            template <class T>
+            template <class K>
+            inline Vector3D<T>& Vector3D<T>::operator +=(K k) {
+                setX(static_cast <std::common_type_t<T, K>> (x) + static_cast <std::common_type_t<T, K>> (k));
+                setY(static_cast <std::common_type_t<T, K>> (y) + static_cast <std::common_type_t<T, K>> (k));
+                setZ(static_cast <std::common_type_t<T, K>> (z) + static_cast <std::common_type_t<T, K>> (k));
+                return *this;
+            }
 
             template <class T>
             template <class K>
             inline Vector3D<T>& Vector3D<T>::operator +=(Vector3D<K> const& u) {
-                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) + static_cast <std::common_type_t<T, K>> (u.getX()));
-                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) + static_cast <std::common_type_t<T, K>> (u.getY()));
-                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) + static_cast <std::common_type_t<T, K>> (u.getZ()));
+                setX(static_cast <std::common_type_t<T, K>> (x) + static_cast <std::common_type_t<T, K>> (u.getX()));
+                setY(static_cast <std::common_type_t<T, K>> (y) + static_cast <std::common_type_t<T, K>> (u.getY()));
+                setZ(static_cast <std::common_type_t<T, K>> (z) + static_cast <std::common_type_t<T, K>> (u.getZ()));
+                return *this;
+            }
+    
+            template <class T>
+            template <class K>
+            inline Vector3D<T>& Vector3D<T>::operator -=(K k) {
+                setX(static_cast <std::common_type_t<T, K>> (x) - static_cast <std::common_type_t<T, K>> (k));
+                setY(static_cast <std::common_type_t<T, K>> (y) - static_cast <std::common_type_t<T, K>> (k));
+                setZ(static_cast <std::common_type_t<T, K>> (z) - static_cast <std::common_type_t<T, K>> (k));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector3D<T>& Vector3D<T>::operator -=(Vector3D<K> const& u) {
-                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) - static_cast <std::common_type_t<T, K>> (u.getX()));
-                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) - static_cast <std::common_type_t<T, K>> (u.getY()));
-                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) - static_cast <std::common_type_t<T, K>> (u.getZ()));
+                setX(static_cast <std::common_type_t<T, K>> (x) - static_cast <std::common_type_t<T, K>> (u.getX()));
+                setY(static_cast <std::common_type_t<T, K>> (y) - static_cast <std::common_type_t<T, K>> (u.getY()));
+                setZ(static_cast <std::common_type_t<T, K>> (z) - static_cast <std::common_type_t<T, K>> (u.getZ()));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector3D<T>& Vector3D<T>::operator *=(K k) {
-                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (k));
-                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (k));
-                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (k));
+                setX(static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (k));
+                setY(static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (k));
+                setZ(static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (k));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector3D<T>& Vector3D<T>::operator *=(Vector3D<K> const& u) {
-                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX()));
-                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY()));
-                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getZ()));
+                setX(static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX()));
+                setY(static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY()));
+                setZ(static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getZ()));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector3D<T>& Vector3D<T>::operator /=(K k) {
-                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (k));
-                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (k));
-                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) / static_cast <std::common_type_t<T, K>> (k));
+                setX(static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (k));
+                setY(static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (k));
+                setZ(static_cast <std::common_type_t<T, K>> (z) / static_cast <std::common_type_t<T, K>> (k));
                 return *this;
             }
 
             template <class T>
             template <class K>
             inline Vector3D<T>& Vector3D<T>::operator /=(Vector3D<K> const& u) {
-                x = static_cast <T> (static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (u.getX()));
-                y = static_cast <T> (static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (u.getY()));
-                z = static_cast <T> (static_cast <std::common_type_t<T, K>> (z) / static_cast <std::common_type_t<T, K>> (u.getZ()));
+                setX(static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (u.getX()));
+                setY(static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (u.getY()));
+                setZ(static_cast <std::common_type_t<T, K>> (z) / static_cast <std::common_type_t<T, K>> (u.getZ()));
                 return *this;
             }
 
@@ -268,11 +311,23 @@
                          static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getY()) - static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getX()));
                 return *this;
             }
+    
+            template <class T>
+            template <class K>
+            inline Vector3D<std::common_type_t<T, K>> Vector3D<T>::operator +(K k) const {
+                return Vector3D<std::common_type_t<T, K>>(*this) += k;
+            }
 
             template <class T>
             template <class K>
             inline Vector3D<std::common_type_t<T, K>> Vector3D<T>::operator +(Vector3D<K> const& u) const {
                 return Vector3D<std::common_type_t<T, K>>(*this) += u;
+            }
+    
+            template <class T>
+            template <class K>
+            inline Vector3D<std::common_type_t<T, K>> Vector3D<T>::operator -(K k) const {
+                return Vector3D<std::common_type_t<T, K>>(*this) -= k;
             }
 
             template <class T>
@@ -370,6 +425,31 @@
                 res << z;
                 res << ')';
                 return res;
+            }
+    
+            template <class T, class K>
+            Vector3D<std::common_type_t<T, K>> operator *(K k, Vector3D<T> const& u) {
+                return u * k;
+            }
+    
+            template <class T>
+            Vector3D<T> normalize(Vector3D<T> const&u) {
+                return Vector3D<T>(u).normalize();
+            }
+        
+            template <class T, class K>
+            Vector3D<std::common_type_t<T, K>> pow(Vector3D<T> const& u, K k) {
+                return Vector3D<std::common_type_t<T, K>>(u).pow(k);
+            }
+        
+            template <class T, class K>
+            Vector3D<std::common_type_t<T, K>> pow(Vector3D<T> const& u, Vector3D<K> const& p) {
+                return Vector3D<std::common_type_t<T, K>>(u).pow(p);
+            }
+        
+            template <class T, class K>
+            Vector3D<std::common_type_t<T, K>> reflect(Vector3D<T> const& u, Vector3D<K> const& n) {
+                return Vector3D<std::common_type_t<T, K>>(u) - static_cast <std::common_type_t<T, K>> (2.0) * (n | u) * n;
             }
         }
     }
