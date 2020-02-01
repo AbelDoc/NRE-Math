@@ -356,11 +356,6 @@
                 return res;
             }
             
-            template <class T, class K>
-            Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u) {
-                return u * k;
-            }
-            
             template <class T>
             Vector2D<T> normalize(Vector2D<T> const&u) {
                 return Vector2D<T>(u).normalize();

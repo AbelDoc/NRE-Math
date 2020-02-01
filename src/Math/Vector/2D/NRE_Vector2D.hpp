@@ -449,8 +449,10 @@
              * @param k the multiplication factor
              * @return  the computed vector
              */
-            template <class T, class K>
-            Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u);
+            template <class T, class K, typename = std::enable_if_t<std::is_arithmetic<K>::value>>
+            Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u) {
+                return u * k;
+            }
             /**
              * Return a normalized version of the given vector
              * @param u the vector to normalize
@@ -480,7 +482,7 @@
              * @param n the normal
              * @return  the reflected vector
              */
-            template <class T, class K>
+            template <class T, class K, typename = std::enable_if_t<std::is_arithmetic<K>::value>>
             Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n);
 
             template <class T>

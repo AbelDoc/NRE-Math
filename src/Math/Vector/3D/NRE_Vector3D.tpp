@@ -427,11 +427,6 @@
                 return res;
             }
     
-            template <class T, class K>
-            Vector3D<std::common_type_t<T, K>> operator *(K k, Vector3D<T> const& u) {
-                return u * k;
-            }
-    
             template <class T>
             Vector3D<T> normalize(Vector3D<T> const&u) {
                 return Vector3D<T>(u).normalize();
