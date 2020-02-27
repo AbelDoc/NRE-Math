@@ -32,7 +32,6 @@
             /**
              * @class Vector2D
              * @brief A cartesian 2D vector
-             * @warning Use this vector with POD type only
              */
             template <class T>
             class Vector2D : public Utility::Stringable<Vector2D<T>> {
@@ -45,39 +44,39 @@
                         /**
                          * Construct the null vector
                          */
-                        Vector2D() = default;
+                        constexpr Vector2D() = default;
                         /**
                          * Construct a vector with passed values
                          * @param nX new x value
                          * @param nY new y value
                          */
                         template <class K, class L>
-                        Vector2D(K nX, L nY);
+                        constexpr Vector2D(K nX, L nY);
                         /**
                          * Construct a vector with unique values
                          * @param value the new x and y values
                          */
                         template <class K>
-                        Vector2D(K value);
+                        constexpr Vector2D(K value);
                         /**
                          * Construct a vector from an initializer list
                          * @param list the construction list
                          */
-                        Vector2D(std::initializer_list<T> list);
+                        constexpr Vector2D(std::initializer_list<T> list);
 
                     //## Copy-Constructor ##//
                         /**
                          * Copy u into this
                          * @param u the object to copy
                          */
-                        Vector2D(Vector2D const& u) = default;
+                        constexpr Vector2D(Vector2D const& u) = default;
 
                     //## Move-Constructor ##//
                         /**
                          * Move u into this
                          * @param u the object to move
                          */
-                        Vector2D(Vector2D && u) = default;
+                        constexpr Vector2D(Vector2D && u) = default;
 
                     //## Convertor ##//
                         /**
@@ -85,19 +84,19 @@
                          * @param u the K-type vector to convert
                          */
                         template <class K>
-                        Vector2D(Vector2D<K> const& u);
+                        constexpr Vector2D(Vector2D<K> const& u);
                         /**
                          * Convert a K-type 3D vector into a T-type 2D vector
                          * @param u the K-type 3D vector to convert
                          */
                         template <class K>
-                        Vector2D(Vector3D<K> const& u);
+                        constexpr Vector2D(Vector3D<K> const& u);
                         /**
                          * Convert a K-type 4D vector into a T-type 2D vector
                          * @param u the K-type 4D vector to convert
                          */
                         template <class K>
-                        Vector2D(Vector4D<K> const& u);
+                        constexpr Vector2D(Vector4D<K> const& u);
 
                     //## Deconstructor ##//
                         /**
@@ -109,19 +108,19 @@
                         /**
                          * @return the x value
                          */
-                        T getX() const;
+                        constexpr T getX() const;
                         /**
                          * @return the x value
                          */
-                        T getY() const;
+                        constexpr T getY() const;
                         /**
                          * @return the x value
                          */
-                        T getW() const;
+                        constexpr T getW() const;
                         /**
                          * @return the y value
                          */
-                        T getH() const;
+                        constexpr T getH() const;
 
                     //## Setter ##//
                         /**
@@ -129,39 +128,39 @@
                          * @param nX the new value for x
                          */
                         template <class K>
-                        void setX(K nX);
+                        constexpr void setX(K nX);
                         /**
                          * Y setter
                          * @param nY the new value for y
                          */
                         template <class K>
-                        void setY(K nY);
+                        constexpr void setY(K nY);
                         /**
                          * X setter
                          * @param w the new value for x
                          */
                         template <class K>
-                        void setW(K w);
+                        constexpr void setW(K w);
                         /**
                          * Y setter
                          * @param h the new value for y
                          */
                         template <class K>
-                        void setH(K h);
+                        constexpr void setH(K h);
                         /**
                          * Set the values for both x and y
                          * @param nX the new value for x
                          * @param nY the new value for y
                          */
                         template <class K, class L>
-                        void setCoord(K nX, L nY);
+                        constexpr void setCoord(K nX, L nY);
                         /**
                          * Set the values for both x and y
                          * @param w the new value for x
                          * @param h the new value for y
                          */
                         template <class K, class L>
-                        void setSize(K w, L h);
+                        constexpr void setSize(K w, L h);
 
                     //## Methods ##//
                         /**
@@ -171,7 +170,7 @@
                         /**
                          * @return the squared vector's norm
                          */
-                        T normSquared() const;
+                        constexpr T normSquared() const;
                         /**
                          * @return the distance to another vector
                          */
@@ -181,7 +180,7 @@
                          * @return the squared distance to another vector
                          */
                         template <class K>
-                        std::common_type_t<T, K> distanceSquared(Vector2D<K> const& v) const;
+                        constexpr std::common_type_t<T, K> distanceSquared(Vector2D<K> const& v) const;
                         /**
                          * Normalize the vector
                          * @return the reference of himself
@@ -210,7 +209,7 @@
                         /**
                          * @return a pointer to the vector's data
                          */
-                        const T* value() const;
+                        constexpr const T* value() const;
 
                     //## Access Operator ##//
                         /**
@@ -219,14 +218,14 @@
                          * @param   index the object's index
                          * @return        the object's reference
                          */
-                        T& operator [](std::size_t index);
+                        constexpr T& operator [](std::size_t index);
                         /**
                          * Return a const reference on a vector's object
                          * @warning No range check performed
                          * @param   index the object's index
                          * @return        the object's reference
                          */
-                        T const& operator [](std::size_t index) const;
+                        constexpr T const& operator [](std::size_t index) const;
 
                     //## Assignment Operator ##//
                         /**
@@ -234,27 +233,27 @@
                          * @param u the object to copy into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator =(Vector2D const& u) = default;
+                        constexpr Vector2D& operator =(Vector2D const& u) = default;
                         /**
                          * Move u into this
                          * @param u the object to move into this
                          * @return  the reference of himself
                          */
-                        Vector2D& operator =(Vector2D && u) = default;
+                        constexpr Vector2D& operator =(Vector2D && u) = default;
                         /**
                          * Copy u into this
                          * @param u the object to copy into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator =(Vector2D<K> const& u);
+                        constexpr Vector2D& operator =(Vector2D<K> const& u);
                         /**
                          * Move u into this
                          * @param u the object to move into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator =(Vector2D<K> && u);
+                        constexpr Vector2D& operator =(Vector2D<K> && u);
 
                     //## Shortcut Operator ##//
                         /**
@@ -263,63 +262,63 @@
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator +=(K k);
+                        constexpr Vector2D& operator +=(K k);
                         /**
                          * Add a vector into this
                          * @param u the vector to add into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator +=(Vector2D<K> const& u);
+                        constexpr Vector2D& operator +=(Vector2D<K> const& u);
                         /**
                          * Subtract a scalar to all components
                          * @param k the scalar to add
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator -=(K k);
+                        constexpr Vector2D& operator -=(K k);
                         /**
                          * Subtract a vector into this
                          * @param u the vector to subtract into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator -=(Vector2D<K> const& u);
+                        constexpr Vector2D& operator -=(Vector2D<K> const& u);
                         /**
                          * Multiply this by a factor k
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator *=(K k);
+                        constexpr Vector2D& operator *=(K k);
                         /**
                          * Multiply this by a vector u, component by component
                          * @param u the multiplication vector
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator *=(Vector2D<K> const& u);
+                        constexpr Vector2D& operator *=(Vector2D<K> const& u);
                         /**
                          * Divide this by a factor k
                          * @param k the division factor
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator /=(K k);
+                        constexpr Vector2D& operator /=(K k);
                         /**
                          * Divide this by a vector u, component by component
                          * @param u the division vector
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Vector2D& operator /=(Vector2D<K> const& u);
+                        constexpr Vector2D& operator /=(Vector2D<K> const& u);
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
                         template <class K>
-                        std::common_type_t<T, K> operator |=(Vector2D<K> const& u) const;
+                        constexpr std::common_type_t<T, K> operator |=(Vector2D<K> const& u) const;
 
                     //## Arithmetic Operator ##//
                         /**
@@ -328,68 +327,68 @@
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator +(K k) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator +(K k) const;
                         /**
                          * Compute the vector resulting in the addition of u into this
                          * @param u the vector to add
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator +(Vector2D<K> const& u) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator +(Vector2D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the subtraction of k into this
                          * @param k the scalar to add
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator -(K k) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator -(K k) const;
                         /**
                          * Compute the vector resulting in the subtraction of u into this
                          * @param u the vector to subtract
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator -(Vector2D<K> const& u) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator -(Vector2D<K> const& u) const;
                         /**
                          * Compute the opposite version of this
                          * @return the opposite vector
                          */
-                        Vector2D operator -() const;
+                        constexpr Vector2D operator -() const;
                         /**
                          * Compute the vector resulting in the multiplication of this by k
                          * @param k the multiplication factor
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator *(K k) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator *(K k) const;
                         /**
                          * Compute the vector resulting in the multiplication of this by u
                          * @param u the multiplication vector
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator *(Vector2D<K> const& u) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator *(Vector2D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the division of this by k
                          * @param k the division factor
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator /(K k) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator /(K k) const;
                         /**
                          * Compute the vector resulting in the division of this by u
                          * @param u the division vector
                          * @return  the computed vector
                          */
                         template <class K>
-                        Vector2D<std::common_type_t<T, K>> operator /(Vector2D<K> const& u) const;
+                        constexpr Vector2D<std::common_type_t<T, K>> operator /(Vector2D<K> const& u) const;
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
                         template <class K>
-                        std::common_type_t<T, K> operator |(Vector2D<K> const& u) const;
+                        constexpr std::common_type_t<T, K> operator |(Vector2D<K> const& u) const;
 
                     //## Comparison Operator ##//
                         /**
@@ -398,42 +397,42 @@
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator ==(Vector2D<K> const& u) const;
+                        constexpr bool operator ==(Vector2D<K> const& u) const;
                         /**
                          * Difference test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator !=(Vector2D<K> const& u) const;
+                        constexpr bool operator !=(Vector2D<K> const& u) const;
                         /**
                          * Inferior test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator <(Vector2D<K> const& u) const;
+                        constexpr bool operator <(Vector2D<K> const& u) const;
                         /**
                          * Superior test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator >(Vector2D<K> const& u) const;
+                        constexpr bool operator >(Vector2D<K> const& u) const;
                         /**
                          * Inferior or Equal test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator <=(Vector2D<K> const& u) const;
+                        constexpr bool operator <=(Vector2D<K> const& u) const;
                         /**
                          * Superior or Equal test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator >=(Vector2D<K> const& u) const;
+                        constexpr bool operator >=(Vector2D<K> const& u) const;
 
                     //## Stream Operator ##//
                         /**
@@ -450,7 +449,7 @@
              * @return  the computed vector
              */
             template <class T, class K, typename = std::enable_if_t<std::is_arithmetic<K>::value>>
-            Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u) {
+            constexpr Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u) {
                 return u * k;
             }
             /**
@@ -483,7 +482,9 @@
              * @return  the reflected vector
              */
             template <class T, class K, typename = std::enable_if_t<std::is_arithmetic<K>::value>>
-            Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n);
+            constexpr Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n) {
+                return Vector2D<std::common_type_t<T, K>>(u) - static_cast <std::common_type_t<T, K>> (2.0) * (n | u) * n;
+            }
 
             template <class T>
             using Point2D = Vector2D<T>;
