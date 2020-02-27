@@ -357,17 +357,17 @@
             }
             
             template <class T>
-            Vector2D<T> normalize(Vector2D<T> const&u) {
+            inline Vector2D<T> normalize(Vector2D<T> const&u) {
                 return Vector2D<T>(u).normalize();
             }
             
             template <class T, class K>
-            Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, K k) {
+            inline Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, K k) {
                 return Vector2D<std::common_type_t<T, K>>(u).pow(k);
             }
 
             template <class T, class K>
-            Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, Vector2D<K> const& p) {
+            inline Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, Vector2D<K> const& p) {
                 return Vector2D<std::common_type_t<T, K>>(u).pow(p);
             }
 
