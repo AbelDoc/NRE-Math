@@ -44,7 +44,7 @@
                         /**
                          * Construct the null vector
                          */
-                        Vector3D() = default;
+                        constexpr Vector3D() = default;
                         /**
                          * Construct a vector with passed values
                          * @param nX new x value
@@ -52,18 +52,18 @@
                          * @param nZ new z value
                          */
                         template <class K, class L, class N>
-                        Vector3D(K nX, L nY, N nZ);
+                        constexpr Vector3D(K nX, L nY, N nZ);
                         /**
                          * Construct a vector with an unique value for all coordinates
                          * @param value new x, y and z values
                          */
                         template <class K>
-                        Vector3D(K value);
+                        constexpr Vector3D(K value);
                         /**
                          * Construct a vector from an initializer list
                          * @param list the construction list
                          */
-                        Vector3D(std::initializer_list<T> list);
+                        constexpr Vector3D(std::initializer_list<T> list);
 
                     //## Copy-Constructor ##//
                         /**

@@ -591,5 +591,14 @@
             inline double tan(Angle const& u) {
                 return std::tan(u.getValue());
             }
+        
+            /**
+             * Compute the arc sin of a unit in typed manners
+             * @param  u the unit
+             * @return   the resulting tan
+             */
+            inline double asin(Angle const& u) {
+                return std::asin(u.getValue());
+            }
         }
     }

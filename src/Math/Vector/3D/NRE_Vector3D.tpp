@@ -12,16 +12,16 @@
 
             template <class T>
             template <class K, class L, class N>
-            inline Vector3D<T>::Vector3D(K nX, L nY, N nZ) : x(static_cast <T> (nX)), y(static_cast <T> (nY)), z(static_cast <T> (nZ)) {
+            constexpr Vector3D<T>::Vector3D(K nX, L nY, N nZ) : x(static_cast <T> (nX)), y(static_cast <T> (nY)), z(static_cast <T> (nZ)) {
             }
 
             template <class T>
             template <class K>
-            inline Vector3D<T>::Vector3D(K value) : Vector3D(value, value, value) {
+            constexpr Vector3D<T>::Vector3D(K value) : Vector3D(value, value, value) {
             }
     
             template <class T>
-            inline Vector3D<T>::Vector3D(std::initializer_list<T> list) : Vector3D(*(list.begin()), *(list.begin() + 1), *(list.begin() + 2)) {
+            constexpr Vector3D<T>::Vector3D(std::initializer_list<T> list) : Vector3D(*(list.begin()), *(list.begin() + 1), *(list.begin() + 2)) {
                 assert(list.size() == 3);
             }
 

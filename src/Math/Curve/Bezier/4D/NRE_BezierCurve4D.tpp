@@ -14,7 +14,7 @@
             inline Utility::String BezierCurve4D::toString() const {
                 Utility::String res("Curve : \n");
                 res.reserve(20 * getSize());
-                for (std::size_t i = 0; i < getSize(); i++) {
+                for (unsigned int i = 0; i < getSize(); i++) {
                     res << i;
                     res << " : ";
                     res << controls[i];

@@ -378,17 +378,13 @@
             template <class T>
             template <class K, class L, class N>
             inline void Matrix4x4<T>::ortho(Vector2D<K> const& h, Vector2D<L> const& v, Vector2D<N> const& z) {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
-                
-                tmp[0][0] = static_cast <T> (static_cast <K>  (2.0) / (h.getY() - h.getX()));
-                tmp[1][1] = static_cast <T> (static_cast <L>  (2.0) / (v.getY() - v.getX()));
-                tmp[2][2] = static_cast <T> (static_cast <N> (-2.0) / (z.getY() - z.getX()));
-                tmp[0][3] = static_cast <T> (-((h.getY() + h.getX()) / (h.getY() - h.getX())));
-                tmp[1][3] = static_cast <T> (-((v.getY() + v.getX()) / (v.getY() - v.getX())));
-                tmp[2][3] = static_cast <T> (-((z.getY() + z.getX()) / (z.getY() - z.getX())));
-
-                *this *= tmp;
+                setIdentity();
+                data[0][0] = static_cast <T> (static_cast <K>  (2.0) / (h.getY() - h.getX()));
+                data[1][1] = static_cast <T> (static_cast <L>  (2.0) / (v.getY() - v.getX()));
+                data[2][2] = static_cast <T> (static_cast <N> (-2.0) / (z.getY() - z.getX()));
+                data[0][3] = static_cast <T> (-((h.getY() + h.getX()) / (h.getY() - h.getX())));
+                data[1][3] = static_cast <T> (-((v.getY() + v.getX()) / (v.getY() - v.getX())));
+                data[2][3] = static_cast <T> (-((z.getY() + z.getX()) / (z.getY() - z.getX())));
             }
 
             template <class T>
