@@ -533,9 +533,7 @@
              * @return  the reflected vector
              */
             template <class T, class K>
-            constexpr Vector3D<std::common_type_t<T, K>> reflect(Vector3D<T> const& u, Vector3D<K> const& n) {
-                return Vector3D<std::common_type_t<T, K>>(u) - static_cast <std::common_type_t<T, K>> (2.0) * (n | u) * n;
-            }
+            constexpr Vector3D<std::common_type_t<T, K>> reflect(Vector3D<T> const& u, Vector3D<K> const& n);
 
             template <class T>
             using Point3D = Vector3D<T>;

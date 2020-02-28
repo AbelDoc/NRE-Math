@@ -481,10 +481,8 @@
              * @param n the normal
              * @return  the reflected vector
              */
-            template <class T, class K, typename = std::enable_if_t<std::is_arithmetic<K>::value>>
-            constexpr Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n) {
-                return Vector2D<std::common_type_t<T, K>>(u) - static_cast <std::common_type_t<T, K>> (2.0) * (n | u) * n;
-            }
+            template <class T, class K>
+            constexpr Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n);
 
             template <class T>
             using Point2D = Vector2D<T>;
