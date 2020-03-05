@@ -66,7 +66,7 @@
                     //## Copy-Constructor ##//
                         /**
                          * Copy s into this
-                         * @param s the 3D segment to copy the content
+                         * @param s the 3D segment to copy
                          */
                         constexpr Segment3D(Segment3D const& s) = default;
 
@@ -105,7 +105,7 @@
                          */
                         constexpr Segment3D& operator =(Segment3D const& s) = default;
                         /**
-                         * Move assignment of s into this, leaving s empty
+                         * Move assignment of s into this
                          * @param s the 3D segment to move into this
                          * @return      the reference of himself
                          */

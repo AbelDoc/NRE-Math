@@ -68,13 +68,13 @@
                     //## Copy-Constructor ##//
                         /**
                          * Copy s into this
-                         * @param s the 4D segment to copy the content
+                         * @param s the 4D segment to copy
                          */
                         constexpr Segment4D(Segment4D const& s) = default;
 
                     //## Move-Constructor ##//
                         /**
-                         * Move s into this, leaving s empty
+                         * Move s into this
                          * @param s the 4D segment to move
                          */
                         constexpr Segment4D(Segment4D && s) = default;
@@ -107,7 +107,7 @@
                          */
                         constexpr Segment4D& operator =(Segment4D const& s) = default;
                         /**
-                         * Move assignment of s into this, leaving s empty
+                         * Move assignment of s into this
                          * @param s the 4D segment to move into this
                          * @return      the reference of himself
                          */

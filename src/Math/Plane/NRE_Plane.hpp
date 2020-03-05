@@ -54,21 +54,21 @@
                         /**
                          * Default constructor
                          */
-                        Plane() = default;
+                        constexpr Plane() = default;
                         /**
                          * Construct a plane with a particular point and a normal
                          * @param n the new plane's normal
                          * @param p the new plane's point
                          */
                         template <class K, class L>
-                        Plane(Vector4D<K> const& n, Point4D<L> const& p);
+                        constexpr Plane(Vector4D<K> const& n, Point4D<L> const& p);
                         /**
                          * Construct a plane with a particular point and a normal
                          * @param n the new plane's normal
                          * @param p the new plane's point
                          */
                         template <class K, class L>
-                        Plane(Vector3D<K> const& n, Point3D<L> const& p);
+                        constexpr Plane(Vector3D<K> const& n, Point3D<L> const& p);
                         /**
                          * Construct a plane with 3 points
                          * @param p1 the first point
@@ -91,14 +91,14 @@
                          * Copy p into this
                          * @param p the object to copy
                          */
-                        Plane(Plane const& p) = default;
+                        constexpr Plane(Plane const& p) = default;
 
                     //## Move-Constructor ##//
                         /**
-                         * Move p into this, leaving p empty
+                         * Move p into this
                          * @param p the plane to move
                          */
-                        Plane(Plane && p) = default;
+                        constexpr Plane(Plane && p) = default;
 
                     //## Convertor ##//
                         /**
@@ -106,7 +106,7 @@
                          * @param p the K-type point to convert
                          */
                         template <class K>
-                        Plane(Plane<K> const& p);
+                        constexpr Plane(Plane<K> const& p);
 
                     //## Deconstructor ##//
                         /**
@@ -118,11 +118,11 @@
                         /**
                          * @return the plane's normal
                          */
-                        Vector3D<T> const& getNormal() const;
+                        constexpr Vector3D<T> const& getNormal() const;
                         /**
                          * @return the plane's point
                          */
-                        Point3D<T> const& getPoint() const;
+                        constexpr Point3D<T> const& getPoint() const;
 
                     //## Setter ##//
                         /**
@@ -130,39 +130,39 @@
                          * @param n the new value for normal
                          */
                         template <class K>
-                        void setNormal(Vector4D<K> const& n);
+                        constexpr void setNormal(Vector4D<K> const& n);
                         /**
                          * Normal setter
                          * @param n the new value for normal
                          */
                         template <class K>
-                        void setNormal(Vector3D<K> const& n);
+                        constexpr void setNormal(Vector3D<K> const& n);
                         /**
                          * Point setter
                          * @param p the new value for point
                          */
                         template <class K>
-                        void setPoint(Point4D<K> const& p);
+                        constexpr void setPoint(Point4D<K> const& p);
                         /**
                          * Point setter
                          * @param p the new value for point
                          */
                         template <class K>
-                        void setPoint(Point3D<K> const& p);
+                        constexpr void setPoint(Point3D<K> const& p);
                         /**
                          * Set the values for both normal and point
                          * @param n the new value for normal
                          * @param p the new value for point
                          */
                         template <class K, class L>
-                        void setNormalAndPoint(Vector4D<K> const& n, Point4D<L> const& p);
+                        constexpr void setNormalAndPoint(Vector4D<K> const& n, Point4D<L> const& p);
                         /**
                          * Set the values for both normal and point
                          * @param n the new value for normal
                          * @param p the new value for point
                          */
                         template <class K, class L>
-                        void setNormalAndPoint(Vector3D<K> const& n, Point3D<L> const& p);
+                        constexpr void setNormalAndPoint(Vector3D<K> const& n, Point3D<L> const& p);
 
                     //## Methods ##//
                         /**
@@ -171,14 +171,14 @@
                          * @return the computed distance
                          */
                         template <class K>
-                        std::common_type_t<T, K> distance(Point4D<K> const& p) const;
+                        constexpr std::common_type_t<T, K> distance(Point4D<K> const& p) const;
                         /**
                          * Compute the distance between a point and a plane
                          * @param  p the point to compute the distance with this
                          * @return the computed distance
                          */
                         template <class K>
-                        std::common_type_t<T, K> distance(Point3D<K> const& p) const;
+                        constexpr std::common_type_t<T, K> distance(Point3D<K> const& p) const;
 
                     //## Assignment Operator ##//
                         /**
@@ -186,27 +186,27 @@
                          * @param p the object to copy into this
                          * @return  the reference of himself
                          */
-                        Plane& operator =(Plane const& p) = default;
+                        constexpr Plane& operator =(Plane const& p) = default;
                         /**
                          * Move p into this
                          * @param p the object to move into this
                          * @return  the reference of himself
                          */
-                        Plane& operator =(Plane && p) = default;
+                        constexpr Plane& operator =(Plane && p) = default;
                         /**
                          * Copy p into this
                          * @param p the object to copy into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Plane& operator =(Plane<K> const& p) ;
+                        constexpr Plane& operator =(Plane<K> const& p) ;
                         /**
                          * Move p into this
                          * @param p the object to move into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Plane& operator =(Plane<K> && p);
+                        constexpr Plane& operator =(Plane<K> && p);
 
                     //## Comparison Operator ##//
                         /**
@@ -215,14 +215,14 @@
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator ==(Plane<K> const& p) const;
+                        constexpr bool operator ==(Plane<K> const& p) const;
                         /**
                          * Difference test between this and p
                          * @param p the plane to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator !=(Plane<K> const& p) const;
+                        constexpr bool operator !=(Plane<K> const& p) const;
 
                     //## Stream Operator ##//
                         /**
@@ -239,7 +239,7 @@
                      * @param p3 the third point
                      */
                     template <class K, class L, class N>
-                    void computeNormalFrom3Point(Point3D<K> const& p1, Point3D<L> const& p2, Point3D<N> const& p3);
+                    inline void computeNormalFrom3Points(Point3D<K> const& p1, Point3D<L> const& p2, Point3D<N> const& p3);
             };
         }
     }
