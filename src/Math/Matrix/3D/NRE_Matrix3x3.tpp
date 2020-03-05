@@ -14,88 +14,86 @@
             template <class A, class B, class C,
                       class D, class E, class F,
                       class G, class H, class I>
-            inline Matrix3x3<T>::Matrix3x3(A a, B b, C c,
-                                           D d, E e, F f,
-                                           G g, H h, I i) : data{Vector3D<std::common_type_t<A, B, C>>(a, b, c), Vector3D<std::common_type_t<D, E, F>>(d, e, f), Vector3D<std::common_type_t<G, H, I>>(g, h, i)} {
+            constexpr Matrix3x3<T>::Matrix3x3(A a, B b, C c, D d, E e, F f, G g, H h, I i) : data{Vector3D<std::common_type_t<A, B, C>>(a, b, c), Vector3D<std::common_type_t<D, E, F>>(d, e, f), Vector3D<std::common_type_t<G, H, I>>(g, h, i)} {
             }
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>::Matrix3x3(K value) : Matrix3x3(value, value, value, value, value, value, value, value, value) {
+            constexpr Matrix3x3<T>::Matrix3x3(K value) : Matrix3x3(value, value, value, value, value, value, value, value, value) {
             }
 
             template <class T>
             template <class K, class L, class N>
-            inline Matrix3x3<T>::Matrix3x3(Vector3D<K> const& l1, Vector3D<L> const& l2, Vector3D<N> const& l3) : data{l1, l2, l3} {
+            constexpr Matrix3x3<T>::Matrix3x3(Vector3D<K> const& l1, Vector3D<L> const& l2, Vector3D<N> const& l3) : data{l1, l2, l3} {
             }
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>::Matrix3x3(Matrix3x3<K> const& m) : data{m.getL1(), m.getL2(), m.getL3()} {
+            constexpr Matrix3x3<T>::Matrix3x3(Matrix3x3<K> const& m) : data{m.getL1(), m.getL2(), m.getL3()} {
             }
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>::Matrix3x3(Matrix4x4<K> const& m) : data{Vector3D<T>(m.getL1()), Vector3D<T>(m.getL2()), Vector3D<T>(m.getL3())} {
+            constexpr Matrix3x3<T>::Matrix3x3(Matrix4x4<K> const& m) : data{Vector3D<T>(m.getL1()), Vector3D<T>(m.getL2()), Vector3D<T>(m.getL3())} {
             }
 
             template <class T>
-            inline Vector3D<T> const& Matrix3x3<T>::getL1() const {
+            constexpr Vector3D<T> const& Matrix3x3<T>::getL1() const {
                 return data[0];
             }
 
             template <class T>
-            inline Vector3D<T> const& Matrix3x3<T>::getL2() const {
+            constexpr Vector3D<T> const& Matrix3x3<T>::getL2() const {
                 return data[1];
             }
 
             template <class T>
-            inline Vector3D<T> const& Matrix3x3<T>::getL3() const {
+            constexpr Vector3D<T> const& Matrix3x3<T>::getL3() const {
                 return data[2];
             }
 
             template <class T>
-            inline Vector3D<T> Matrix3x3<T>::getC1() const {
+            constexpr Vector3D<T> Matrix3x3<T>::getC1() const {
                 return Vector3D<T>(data[0][0], data[1][0], data[2][0]);
             }
 
             template <class T>
-            inline Vector3D<T> Matrix3x3<T>::getC2() const {
+            constexpr Vector3D<T> Matrix3x3<T>::getC2() const {
                 return Vector3D<T>(data[0][1], data[1][1], data[2][1]);
             }
 
             template <class T>
-            inline Vector3D<T> Matrix3x3<T>::getC3() const {
+            constexpr Vector3D<T> Matrix3x3<T>::getC3() const {
                 return Vector3D<T>(data[0][2], data[1][2], data[2][2]);
             }
 
             template <class T>
-            inline long double Matrix3x3<T>::getDeterminant() const {
+            constexpr long double Matrix3x3<T>::getDeterminant() const {
                 return ((data[0][0] * data[1][1] * data[2][2]) + (data[1][0] * data[2][1] * data[0][2]) + (data[2][0] * data[0][1] * data[1][2])) -
                        ((data[2][0] * data[1][1] * data[0][2]) + (data[0][0] * data[2][1] * data[1][2]) + (data[1][0] * data[0][1] * data[2][2]));
             }
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::setL1(Vector3D<K> const& l1) {
+            constexpr void Matrix3x3<T>::setL1(Vector3D<K> const& l1) {
                 data[0] = l1;
             }
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::setL2(Vector3D<K> const& l2) {
+            constexpr void Matrix3x3<T>::setL2(Vector3D<K> const& l2) {
                 data[1] = l2;
             }
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::setL3(Vector3D<K> const& l3) {
+            constexpr void Matrix3x3<T>::setL3(Vector3D<K> const& l3) {
                 data[2] = l3;
             }
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::setC1(Vector3D<K> const& c1) {
+            constexpr void Matrix3x3<T>::setC1(Vector3D<K> const& c1) {
                 data[0][0] = static_cast <T> (c1.getX());
                 data[1][0] = static_cast <T> (c1.getY());
                 data[2][0] = static_cast <T> (c1.getZ());
@@ -103,7 +101,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::setC2(Vector3D<K> const& c2) {
+            constexpr void Matrix3x3<T>::setC2(Vector3D<K> const& c2) {
                 data[0][1] = static_cast <T> (c2.getX());
                 data[1][1] = static_cast <T> (c2.getY());
                 data[2][1] = static_cast <T> (c2.getZ());
@@ -111,21 +109,21 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::setC3(Vector3D<K> const& c3) {
+            constexpr void Matrix3x3<T>::setC3(Vector3D<K> const& c3) {
                 data[0][2] = static_cast <T> (c3.getX());
                 data[1][2] = static_cast <T> (c3.getY());
                 data[2][2] = static_cast <T> (c3.getZ());
             }
 
             template <class T>
-            inline void Matrix3x3<T>::setIdentity() {
+            constexpr void Matrix3x3<T>::setIdentity() {
                 setL1(Vector3D<T>(1, 0, 0));
                 setL2(Vector3D<T>(0, 1, 0));
                 setL3(Vector3D<T>(0, 0, 1));
             }
 
             template <class T>
-            void Matrix3x3<T>::transpose() {
+            constexpr void Matrix3x3<T>::transpose() {
                 Matrix3x3<T> tmp;
                 tmp[0][0] = data[0][0];
                 tmp[1][0] = data[0][1];
@@ -140,7 +138,7 @@
             }
 
             template <class T>
-            void Matrix3x3<T>::inverse() {
+            constexpr void Matrix3x3<T>::inverse() {
                 Matrix3x3<T> tmp;
                 if (auto det = getDeterminant(); std::abs(det) > EPSILON) {
                     long double invDet = 1.0 / det;
@@ -160,7 +158,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::translate(Vector2D<K> const& u) {
+            constexpr inline void Matrix3x3<T>::translate(Vector2D<K> const& u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[0][2] = static_cast <T> (u.getX());
@@ -170,7 +168,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::scale(Vector2D<K> const& u) {
+            constexpr void Matrix3x3<T>::scale(Vector2D<K> const& u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[0][0] = static_cast <T> (u.getX());
@@ -180,7 +178,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::stretchX(K u) {
+            constexpr void Matrix3x3<T>::stretchX(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[0][0] = static_cast <T> (u);
@@ -189,7 +187,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::stretchY(K u) {
+            constexpr void Matrix3x3<T>::stretchY(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[1][1] = static_cast <T> (u);
@@ -198,7 +196,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::squeezeX(K u) {
+            constexpr void Matrix3x3<T>::squeezeX(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[0][0] = static_cast <T> (1.0 / static_cast <long double> (u));
@@ -208,7 +206,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::squeezeY(K u) {
+            constexpr void Matrix3x3<T>::squeezeY(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[0][0] = static_cast <T> (u);
@@ -218,7 +216,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::shearX(K u) {
+            constexpr void Matrix3x3<T>::shearX(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[0][1] = static_cast <T> (u);
@@ -227,7 +225,7 @@
 
             template <class T>
             template <class K>
-            inline void Matrix3x3<T>::shearY(K u) {
+            constexpr void Matrix3x3<T>::shearY(K u) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 tmp[1][0] = static_cast <T> (u);
@@ -235,7 +233,7 @@
             }
 
             template <class T>
-            inline void Matrix3x3<T>::rotate(Angle angle) {
+            constexpr void Matrix3x3<T>::rotate(Angle angle) {
                 Matrix3x3<T> tmp;
                 tmp.setIdentity();
                 T c = static_cast <T> (cos(angle));
@@ -248,23 +246,23 @@
             }
 
             template <class T>
-            inline const T* Matrix3x3<T>::value() const {
+            constexpr const T* Matrix3x3<T>::value() const {
                 return data[0].value();
             }
 
             template <class T>
-            inline Vector3D<T>& Matrix3x3<T>::operator [](std::size_t index) {
+            constexpr Vector3D<T>& Matrix3x3<T>::operator [](std::size_t index) {
                 return data[index];
             }
 
             template <class T>
-            inline Vector3D<T> const& Matrix3x3<T>::operator [](std::size_t index) const {
+            constexpr Vector3D<T> const& Matrix3x3<T>::operator [](std::size_t index) const {
                 return data[index];
             }
             
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator=(Matrix3x3<K> const& m) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator=(Matrix3x3<K> const& m) {
                 setL1(m.getL1());
                 setL2(m.getL2());
                 setL3(m.getL3());
@@ -273,7 +271,7 @@
     
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator=(Matrix3x3<K> && m) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator=(Matrix3x3<K> && m) {
                 setL1(m.getL1());
                 setL2(m.getL2());
                 setL3(m.getL3());
@@ -282,7 +280,7 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator +=(Matrix3x3<K> const& m) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator +=(Matrix3x3<K> const& m) {
                 data[0] += m[0];
                 data[1] += m[1];
                 data[2] += m[2];
@@ -291,7 +289,7 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator -=(Matrix3x3<K> const& m) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator -=(Matrix3x3<K> const& m) {
                 data[0] -= m[0];
                 data[1] -= m[1];
                 data[2] -= m[2];
@@ -300,7 +298,7 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator *=(K k) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator *=(K k) {
                 data[0] *= k;
                 data[1] *= k;
                 data[2] *= k;
@@ -309,7 +307,7 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator *=(Matrix3x3<K> const& m) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator *=(Matrix3x3<K> const& m) {
                 Matrix3x3<T> tmp(*this);
                 auto c1 = m.getC1();
                 auto c2 = m.getC2();
@@ -333,7 +331,7 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator /=(K k) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator /=(K k) {
                 data[0] /= k;
                 data[1] /= k;
                 data[2] /= k;
@@ -342,7 +340,7 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<T>& Matrix3x3<T>::operator /=(Matrix3x3<K> const& m) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::operator /=(Matrix3x3<K> const& m) {
                 Matrix3x3<K> tmp(m);
                 tmp.inverse();
                 return *this *= tmp;
@@ -350,42 +348,42 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator +(Matrix3x3<K> const& m) const {
+            constexpr Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator +(Matrix3x3<K> const& m) const {
                 return Matrix3x3<std::common_type_t<T, K>>(*this) += m;
             }
 
             template <class T>
             template <class K>
-            inline Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator -(Matrix3x3<K> const& m) const {
+            constexpr Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator -(Matrix3x3<K> const& m) const {
                 return Matrix3x3<std::common_type_t<T, K>>(*this) -= m;
             }
 
             template <class T>
             template <class K>
-            inline Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator *(K k)  const {
+            constexpr Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator *(K k)  const {
                 return Matrix3x3<std::common_type_t<T, K>>(*this) *= k;
             }
 
             template <class T>
             template <class K>
-            inline Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator *(Matrix3x3<K> const& m) const {
+            constexpr Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator *(Matrix3x3<K> const& m) const {
                 return Matrix3x3<std::common_type_t<T, K>>(*this) *= m;
             }
 
             template <class T>
             template <class K>
-            inline Vector3D<K> Matrix3x3<T>::operator *(Vector3D<K> const& u) const {
+            constexpr Vector3D<K> Matrix3x3<T>::operator *(Vector3D<K> const& u) const {
                 return Vector3D<K>(u | getL1(), u | getL2(), u | getL3());
             }
 
             template <class T>
             template <class K>
-            inline Segment3D<K> Matrix3x3<T>::operator *(Segment3D<K> const& s) const {
+            constexpr Segment3D<K> Matrix3x3<T>::operator *(Segment3D<K> const& s) const {
                 return Segment3D<K>(*this * s.getStart(), *this * s.getEnd());
             }
 
             template <class T>
-            BezierCurve3D Matrix3x3<T>::operator *(BezierCurve3D const& s) const {
+            constexpr BezierCurve3D Matrix3x3<T>::operator *(BezierCurve3D const& s) const {
                 BezierCurve3D tmp(s);
                 for (std::size_t i = 0; i < tmp.getSize(); i++) {
                     tmp[i] = *this * tmp[i];
@@ -395,25 +393,25 @@
 
             template <class T>
             template <class K>
-            inline Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator /(K k) const {
+            constexpr Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator /(K k) const {
                 return Matrix3x3<std::common_type_t<T, K>>(*this) /= k;
             }
 
             template <class T>
             template <class K>
-            inline Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator /(Matrix3x3<K> const& m) const {
+            constexpr Matrix3x3<std::common_type_t<T, K>> Matrix3x3<T>::operator /(Matrix3x3<K> const& m) const {
                 return Matrix3x3<std::common_type_t<T, K>>(*this) /= m;
             }
 
             template <class T>
             template <class K>
-            inline bool Matrix3x3<T>::operator ==(Matrix3x3<K> const& m) const {
+            constexpr bool Matrix3x3<T>::operator ==(Matrix3x3<K> const& m) const {
                 return getL1() == m.getL1() && getL2() == m.getL2() && getL3() == m.getL3();
             }
 
             template <class T>
             template <class K>
-            inline bool Matrix3x3<T>::operator !=(Matrix3x3<K> const& m) const {
+            constexpr bool Matrix3x3<T>::operator !=(Matrix3x3<K> const& m) const {
                 return !(*this == m);
             }
     
