@@ -35,9 +35,9 @@
             template <class T>
             class Vector3D : public Utility::Stringable<Vector3D<T>> {
                 private :   //Fields
-                    T x;    /**< x coordinate */
-                    T y;    /**< y coordinate */
-                    T z;    /**< z coordinate */
+                    T x = 0;    /**< x coordinate */
+                    T y = 0;    /**< y coordinate */
+                    T z = 0;    /**< z coordinate */
 
                 public :    // Methods
                     //## Constructor ##//

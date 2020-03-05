@@ -38,10 +38,10 @@
             template <class T>
             class Vector4D : public Utility::Stringable<Vector4D<T>> {
                 private :   //Fields
-                    T x;    /**< x coordinate */
-                    T y;    /**< y coordinate */
-                    T z;    /**< z coordinate */
-                    T w;    /**< w coordinate */
+                    T x = 0;    /**< x coordinate */
+                    T y = 0;    /**< y coordinate */
+                    T z = 0;    /**< z coordinate */
+                    T w = 0;    /**< w coordinate */
 
                 public:    // Methods
                     //## Constructor ##//

@@ -427,6 +427,9 @@
                          * @return the converted matrix
                          */
                         Utility::String toString() const;
+                        
+                public :
+                    static constexpr Matrix3x3 IDENTITY = Matrix3x3(1, 0, 0, 0, 1, 0, 0, 0, 1);     /**< Identity matrix */
             };
         }
     }

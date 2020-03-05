@@ -33,7 +33,7 @@
              * @return if both objets are equals
              */
             template <class T, class K, typename std::enable_if_t< std::is_floating_point<std::common_type_t<T, K>>::value, int> = 0>
-            inline bool equal(T a, K b) {
+            constexpr bool equal(T a, K b) {
                 return std::abs(static_cast <std::common_type_t<T, K>> (a) - static_cast <std::common_type_t<T, K>> (b)) < EPSILON;
             }
     
@@ -44,7 +44,7 @@
              * @return if both objets are equals
              */
             template <class T, class K, typename std::enable_if_t<!std::is_floating_point<std::common_type_t<T, K>>::value, int> = 0>
-            inline bool equal(T a, K b) {
+            constexpr bool equal(T a, K b) {
                 return static_cast <std::common_type_t<T, K>> (a) == static_cast <std::common_type_t<T, K>> (b);
             }
             /**
@@ -54,7 +54,7 @@
              * @return if both objets are almost equals
              */
             template <class T, class K>
-            inline bool almostEqual(T a, K b) {
+            constexpr bool almostEqual(T a, K b) {
                 return equal(a, b);
             }
             /**
@@ -65,7 +65,7 @@
              * @return   the interpolated value
              */
             template <class T>
-            inline T lerp(T const& a, T const& b, float const& f) {
+            constexpr T lerp(T const& a, T const& b, float const& f) {
                 return a * (1.0f - f) + b * f;
             }
         }

@@ -36,8 +36,8 @@
             template <class T>
             class Vector2D : public Utility::Stringable<Vector2D<T>> {
                 private :   // Fields
-                    T x;    /**< x coordinate */
-                    T y;    /**< y coordinate */
+                    T x = 0;    /**< x coordinate */
+                    T y = 0;    /**< y coordinate */
 
                 public :    // Methods
                     //## Constructor ##//
