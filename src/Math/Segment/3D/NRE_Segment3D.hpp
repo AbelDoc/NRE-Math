@@ -38,21 +38,21 @@
                         /**
                          * Default constructor
                          */
-                        Segment3D() = default;
+                        constexpr Segment3D() = default;
                         /**
                          * Construct a segment from his two points
                          * @param s the segment's start
                          * @param e the segment's end
                          */
                         template <class K, class L>
-                        Segment3D(Point3D<K> const& s, Point3D<L> const& e);
+                        constexpr Segment3D(Point3D<K> const& s, Point3D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param s the segment's start
                          * @param e the segment's end
                          */
                         template <class K, class L>
-                        Segment3D(Point2D<K> const& s, Point2D<L> const& e);
+                        constexpr Segment3D(Point2D<K> const& s, Point2D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param sX the segment's start x
@@ -61,21 +61,21 @@
                          * @param eY the segment's end y
                          */
                         template <class K, class L, class N, class M>
-                        Segment3D(K sX, L sY, N eX, M eY);
+                        constexpr Segment3D(K sX, L sY, N eX, M eY);
 
                     //## Copy-Constructor ##//
                         /**
                          * Copy s into this
                          * @param s the 3D segment to copy the content
                          */
-                        Segment3D(Segment3D const& s) = default;
+                        constexpr Segment3D(Segment3D const& s) = default;
 
                     //## Move-Constructor ##//
                         /**
-                         * Move s into this, leaving s empty
+                         * Move s into this
                          * @param s the 3D segment to move
                          */
-                        Segment3D(Segment3D && s) = default;
+                        constexpr Segment3D(Segment3D && s) = default;
 
                     //## Deconstructor ##//
                         /**
@@ -87,15 +87,15 @@
                         /**
                          * @return the start point
                          */
-                        Point3D<T> const& getStart() const;
+                        constexpr Point3D<T> const& getStart() const;
                         /**
                          * @return the end point
                          */
-                        Point3D<T> const& getEnd() const;
+                        constexpr Point3D<T> const& getEnd() const;
                         /**
                          * @return the segment's vector
                          */
-                        Vector3D<T> getVector() const;
+                        constexpr Vector3D<T> getVector() const;
 
                     //## Assignment Operator ##//
                         /**
@@ -103,13 +103,13 @@
                          * @param s the 3D segment to copy into this
                          * @return      the reference of himself
                          */
-                        Segment3D& operator =(Segment3D const& s) = default;
+                        constexpr Segment3D& operator =(Segment3D const& s) = default;
                         /**
                          * Move assignment of s into this, leaving s empty
                          * @param s the 3D segment to move into this
                          * @return      the reference of himself
                          */
-                        Segment3D& operator =(Segment3D && s) = default;
+                        constexpr Segment3D& operator =(Segment3D && s) = default;
 
                     //## Comparison Operator ##//
                         /**
@@ -118,14 +118,14 @@
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator ==(Segment3D<K> const& s) const;
+                        constexpr bool operator ==(Segment3D<K> const& s) const;
                         /**
                          * Difference test between this and s
                          * @param s the segment to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator !=(Segment3D<K> const& s) const;
+                        constexpr bool operator !=(Segment3D<K> const& s) const;
 
                     //## Stream Operator ##//
                         /**
