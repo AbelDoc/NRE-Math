@@ -480,6 +480,9 @@
                          * @return the converted 4x4 matrix
                          */
                         Utility::String toString() const;
+
+                public :
+                    static constexpr Matrix4x4 IDENTITY = Matrix4x4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);     /**< Identity matrix */
             };
         }
     }

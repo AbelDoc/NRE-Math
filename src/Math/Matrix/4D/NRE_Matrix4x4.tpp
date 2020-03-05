@@ -190,10 +190,7 @@
 
             template <class T>
             constexpr void Matrix4x4<T>::setIdentity() {
-                setL1(Vector4D<T>(1, 0, 0, 0));
-                setL2(Vector4D<T>(0, 1, 0, 0));
-                setL3(Vector4D<T>(0, 0, 1, 0));
-                setL4(Vector4D<T>(0, 0, 0, 1));
+                *this = IDENTITY;
             }
 
             template <class T>
@@ -220,8 +217,7 @@
 
             template <class T>
             constexpr void Matrix4x4<T>::inverse() {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
+                Matrix4x4<T> tmp = IDENTITY;
                 if (auto det = getDeterminant(); std::abs(det) > EPSILON) {
                     long double invDet = 1.0 / det;
                     tmp[0][0] = static_cast <T> (invDet * static_cast <long double> (
@@ -280,8 +276,7 @@
             template <class T>
             template <class K>
             constexpr void Matrix4x4<T>::translate(Vector3D<K> const& u) {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
+                Matrix4x4<T> tmp = IDENTITY;
                 tmp[0][3] = static_cast <T> (u.getX());
                 tmp[1][3] = static_cast <T> (u.getY());
                 tmp[2][3] = static_cast <T> (u.getZ());
@@ -291,8 +286,7 @@
             template <class T>
             template <class K>
             constexpr void Matrix4x4<T>::scale(Vector3D<K> const& u) {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
+                Matrix4x4<T> tmp = IDENTITY;
                 tmp[0][0] = static_cast <T> (u.getX());
                 tmp[1][1] = static_cast <T> (u.getY());
                 tmp[2][2] = static_cast <T> (u.getZ());
@@ -302,8 +296,7 @@
             template <class T>
             template <class K>
             constexpr void Matrix4x4<T>::stretchX(K u) {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
+                Matrix4x4<T> tmp = IDENTITY;
                 tmp[0][0] = static_cast <T> (u);
                 *this *= tmp;
             }
@@ -311,8 +304,7 @@
             template <class T>
             template <class K>
             constexpr void Matrix4x4<T>::stretchY(K u) {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
+                Matrix4x4<T> tmp = IDENTITY;
                 tmp[1][1] = static_cast <T> (u);
                 *this *= tmp;
             }
@@ -320,8 +312,7 @@
             template <class T>
             template <class K>
             constexpr void Matrix4x4<T>::stretchZ(K u) {
-                Matrix4x4<T> tmp;
-                tmp.setIdentity();
+                Matrix4x4<T> tmp = IDENTITY;
                 tmp[2][2] = static_cast <T> (u);
                 *this *= tmp;
             }
