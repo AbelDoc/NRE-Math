@@ -38,21 +38,21 @@
                         /**
                          * Default constructor
                          */
-                        Segment4D() = default;
+                        constexpr Segment4D() = default;
                         /**
                          * Construct a segment from his two points
                          * @param s the segment's start
                          * @param e the segment's end
                          */
                         template <class K, class L>
-                        Segment4D(Point4D<K> const& s, Point4D<L> const& e);
+                        constexpr Segment4D(Point4D<K> const& s, Point4D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param s the segment's start
                          * @param e the segment's end
                          */
                         template <class K, class L>
-                        Segment4D(Point3D<K> const& s, Point3D<L> const& e);
+                        constexpr Segment4D(Point3D<K> const& s, Point3D<L> const& e);
                         /**
                          * Construct a segment from his two points
                          * @param sX the segment's start x
@@ -63,21 +63,21 @@
                          * @param eZ the segment's end z
                          */
                         template <class K, class L, class N, class M, class O, class P>
-                        Segment4D(K sX, L sY, N sZ, M eX, O eY, P eZ);
+                        constexpr Segment4D(K sX, L sY, N sZ, M eX, O eY, P eZ);
 
                     //## Copy-Constructor ##//
                         /**
                          * Copy s into this
                          * @param s the 4D segment to copy the content
                          */
-                        Segment4D(Segment4D const& s) = default;
+                        constexpr Segment4D(Segment4D const& s) = default;
 
                     //## Move-Constructor ##//
                         /**
                          * Move s into this, leaving s empty
                          * @param s the 4D segment to move
                          */
-                        Segment4D(Segment4D && s) = default;
+                        constexpr Segment4D(Segment4D && s) = default;
 
                     //## Deconstructor ##//
                         /**
@@ -89,15 +89,15 @@
                         /**
                          * @return the start point
                          */
-                        Point4D<T> const& getStart() const;
+                        constexpr Point4D<T> const& getStart() const;
                         /**
                          * @return the end point
                          */
-                        Point4D<T> const& getEnd() const;
+                        constexpr Point4D<T> const& getEnd() const;
                         /**
                          * @return the segment's vector
                          */
-                        Vector4D<T> getVector() const;
+                        constexpr Vector4D<T> getVector() const;
 
                     //## Assignment Operator ##//
                         /**
@@ -105,13 +105,13 @@
                          * @param s the 4D segment to copy into this
                          * @return      the reference of himself
                          */
-                        Segment4D& operator =(Segment4D const& s) = default;
+                        constexpr Segment4D& operator =(Segment4D const& s) = default;
                         /**
                          * Move assignment of s into this, leaving s empty
                          * @param s the 4D segment to move into this
                          * @return      the reference of himself
                          */
-                        Segment4D& operator =(Segment4D && s) = default;
+                        constexpr Segment4D& operator =(Segment4D && s) = default;
 
                     //## Comparison Operator ##//
                         /**
@@ -120,14 +120,14 @@
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator ==(Segment4D<K> const& s) const;
+                        constexpr bool operator ==(Segment4D<K> const& s) const;
                         /**
                          * Difference test between this and s
                          * @param s the segment to test with this
                          * @return  the test's result
                          */
                         template <class K>
-                        bool operator !=(Segment4D<K> const& s) const;
+                        constexpr bool operator !=(Segment4D<K> const& s) const;
 
                     //## Stream Operator ##//
                         /**
