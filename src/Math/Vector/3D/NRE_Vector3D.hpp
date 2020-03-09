@@ -30,7 +30,6 @@
             /**
              * @class Vector3D
              * @brief A cartesian 3D vector, 2D homogeneous
-             * @warning Use this vector with POD type only
              */
             template <class T>
             class Vector3D : public Utility::Stringable<Vector3D<T>> {
