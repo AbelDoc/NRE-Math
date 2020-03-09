@@ -22,6 +22,19 @@
          * @brief Math's API
          */
         namespace Math {
+    
+            template <class ...>
+            struct ArithmeticChecker : std::true_type {
+            };
+            template <class T1, class ... Tn>
+            struct ArithmeticChecker<T1, Tn...> : std::conjunction<std::conjunction<ArithmeticChecker<Tn...>>, std::is_arithmetic<T1>> {
+            };
+            template <class T1>
+            struct ArithmeticChecker<T1> : std::is_arithmetic<T1> {
+            };
+            
+            template <class ... Tn>
+            constexpr bool ArithmeticCheckerV = ArithmeticChecker<Tn...>::value;
 
             static constexpr long double EPSILON = 0.000001;    /**< Double precision epsilon for equality test */
             static constexpr long double PI = 3.141592653589793238462643383279502884L;
