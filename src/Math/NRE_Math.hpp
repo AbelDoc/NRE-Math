@@ -24,7 +24,7 @@
         namespace Math {
 
             static constexpr long double EPSILON = 0.000001;    /**< Double precision epsilon for equality test */
-            static constexpr long double PI = 3.1461592535897932384626433832795;
+            static constexpr long double PI = 3.141592653589793238462643383279502884L;
 
             /**
              * Test the equality of 2 objects
