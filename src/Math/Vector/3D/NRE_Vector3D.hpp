@@ -95,14 +95,14 @@
                          * @param u the 2D vector to convert
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D(Vector2D<K> const& u) : Vector3D(u.getX(), u.getY(), u.getZ()) {
+                        constexpr Vector3D(Vector2D<K> const& u) : Vector3D(u.getX(), u.getY(), 0) {
                         }
                         /**
                          * Convert a K-type 4D vector into a T-type 3D vector
                          * @param u the K-type 4D vector to convert
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D(Vector4D<K> const& u) : Vector3D(u.getX(), u.getY(), 0) {
+                        constexpr Vector3D(Vector4D<K> const& u) : Vector3D(u.getX(), u.getY(), u.getZ()) {
                         }
                         /**
                          * Convert a 2D vector into a 3D point with a passed z value
