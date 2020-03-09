@@ -44,7 +44,7 @@
                         /**
                          * Construct the identity quaternion
                          */
-                        Quaternion() = default;
+                        constexpr Quaternion() = default;
                         /**
                          * Construct a quaternion with direct assignment
                          * @param x  the x coordinate
@@ -53,7 +53,7 @@
                          * @param w  the w coordinate
                          */
                         template <class K, class L, class N, class M>
-                        Quaternion(K x, L y, N z, M w);
+                        constexpr Quaternion(K x, L y, N z, M w);
                         /**
                          * Construct a quaternion from angle-axis construction
                          * @param x  the x coordinate
@@ -69,7 +69,7 @@
                          * @param an  the rotation's angle
                          */
                         template <class K, class L>
-                        Quaternion(Vector3D<K> const& ax, L an);
+                        constexpr Quaternion(Vector3D<K> const& ax, L an);
                         /**
                          * Construct a quaternion from angle-axis construction
                          * @param ax  the rotation's axis
@@ -83,14 +83,14 @@
                          * Copy q into this
                          * @param q the object to copy
                          */
-                        Quaternion(Quaternion const& q) = default;
+                        constexpr Quaternion(Quaternion const& q) = default;
 
                     //## Move-Constructor ##//
                         /**
                          * Move q into this
                          * @param q the object to move
                          */
-                        Quaternion(Quaternion && q) = default;
+                        constexpr Quaternion(Quaternion && q) = default;
 
                     //## Convertor ##//
                         /**
@@ -98,7 +98,7 @@
                          * @param q the K-type quaternion to convert
                          */
                         template <class K>
-                        Quaternion(Quaternion<K> const& q);
+                        constexpr Quaternion(Quaternion<K> const& q);
 
                     //## Deconstructor ##//
                         /**
@@ -110,27 +110,27 @@
                         /**
                          * @return the x value
                          */
-                        T getX() const;
+                        constexpr T getX() const;
                         /**
                          * @return the y value
                          */
-                        T getY() const;
+                        constexpr T getY() const;
                         /**
                          * @return the z value
                          */
-                        T getZ() const;
+                        constexpr T getZ() const;
                         /**
                          * @return the w value
                          */
-                        T getW() const;
+                        constexpr T getW() const;
                         /**
                          * @return the rotation's axis
                          */
-                        Vector3D<T> getAxis() const;
+                        constexpr Vector3D<T> getAxis() const;
                         /**
                          * @return the internal quaternion
                          */
-                        Vector4D<T> const& getQuaternion() const;
+                        constexpr Vector4D<T> const& getQuaternion() const;
 
                     //## Setter ##//
                         /**
@@ -138,36 +138,36 @@
                          * @param x the new value for x
                          */
                         template <class K>
-                        void setX(K x);
+                        constexpr void setX(K x);
                         /**
                          * Y setter
                          * @param y the new value for y
                          */
                         template <class K>
-                        void setY(K y);
+                        constexpr void setY(K y);
                         /**
                          * Z setter
                          * @param z the new value for z
                          */
                         template <class K>
-                        void setZ(K z);
+                        constexpr void setZ(K z);
                         /**
                          * W setter
                          * @param w the new value for w
                          */
                         template <class K>
-                        void setW(K w);
+                        constexpr void setW(K w);
                         /**
                          * Angle axis setter
                          * @param axis the new rotation's axis
                          * @param w    the new rotation's angle
                          */
                         template <class K>
-                        void setAngleAxis(Vector3D<K> const& axis, Angle w);
+                        inline void setAngleAxis(Vector3D<K> const& axis, Angle w);
                         /**
                          * Set the quaternion to the identity quaternion
                          */
-                        void setIdentity();
+                        constexpr void setIdentity();
 
                     //## Members ##//
                         /**
@@ -177,15 +177,15 @@
                         /**
                          * @return the squared quaternion's norm
                          */
-                        T normSquared() const;
+                        constexpr T normSquared() const;
                         /**
                          * Normalize the quaternion
                          */
-                        void normalize();
+                        Quaternion normalize();
                         /**
                          * @return a pointer to the quaternion's data
                          */
-                        const T* value() const;
+                        constexpr const T* value() const;
 
                     //## Assignment Operator ##//
                         /**
@@ -193,27 +193,27 @@
                          * @param q the object to copy into this
                          * @return  the reference of himself
                          */
-                        Quaternion& operator =(Quaternion const& q) = default;
+                        constexpr Quaternion& operator =(Quaternion const& q) = default;
                         /**
                          * Move q into this
                          * @param q the object to move into this
                          * @return  the reference of himself
                          */
-                        Quaternion& operator =(Quaternion && q) = default;
+                        constexpr Quaternion& operator =(Quaternion && q) = default;
                         /**
                          * Copy q into this
                          * @param q the object to copy into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Quaternion& operator =(Quaternion<K> const& q);
+                        constexpr Quaternion& operator =(Quaternion<K> const& q);
                         /**
                          * Move q into this
                          * @param q the object to move into this
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Quaternion& operator =(Quaternion<K> && q);
+                        constexpr Quaternion& operator =(Quaternion<K> && q);
 
                     //## Shortcut Operator ##//
                         /**
@@ -222,7 +222,7 @@
                          * @return  the reference of himself
                          */
                         template <class K>
-                        Quaternion& operator*=(Quaternion<K> const& q);
+                        constexpr Quaternion& operator*=(Quaternion<K> const& q);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -231,7 +231,7 @@
                          * @return  the computed quaternion
                          */
                         template <class K>
-                        Quaternion<std::common_type_t<T, K>> operator*(Quaternion<K> const& q) const;
+                        constexpr Quaternion<std::common_type_t<T, K>> operator*(Quaternion<K> const& q) const;
 
                     //## Stream Operator ##//
                         /**
