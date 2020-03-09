@@ -35,6 +35,9 @@
             
             template <class ... Tn>
             constexpr bool ArithmeticCheckerV = ArithmeticChecker<Tn...>::value;
+            
+            template <class ... Tn>
+            using UseIfArithmetic = std::enable_if_t<ArithmeticCheckerV<Tn...>>;
 
             static constexpr long double EPSILON = 0.000001;    /**< Double precision epsilon for equality test */
             static constexpr long double PI = 3.141592653589793238462643383279502884L;

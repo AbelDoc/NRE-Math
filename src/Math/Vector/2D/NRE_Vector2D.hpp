@@ -52,14 +52,14 @@
                          * @param nX new x value
                          * @param nY new y value
                          */
-                        template <class K, class L, typename = std::enable_if_t<ArithmeticCheckerV<K, L>>>
+                        template <class K, class L, typename = UseIfArithmetic<K, L>>
                         constexpr Vector2D(K nX, L nY) : x(static_cast <T> (nX)), y(static_cast <T> (nY)) {
                         }
                         /**
                          * Construct a vector with unique values
                          * @param value the new x and y values
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D(K value) : Vector2D(value, value) {
                         }
                         /**
@@ -87,21 +87,21 @@
                          * Convert a K-type vector into a T-type vector
                          * @param u the K-type vector to convert
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D(Vector2D<K> const& u) : Vector2D(u.getX(), u.getY()) {
                         }
                         /**
                          * Convert a K-type 3D vector into a T-type 2D vector
                          * @param u the K-type 3D vector to convert
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D(Vector3D<K> const& u) : Vector2D(u.getX(), u.getY()) {
                         }
                         /**
                          * Convert a K-type 4D vector into a T-type 2D vector
                          * @param u the K-type 4D vector to convert
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D(Vector4D<K> const& u) : Vector2D(u.getX(), u.getY()) {
                         }
 
@@ -134,7 +134,7 @@
                          * X setter
                          * @param nX the new value for x
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr void setX(K nX) {
                             x = static_cast <T> (nX);
                         }
@@ -142,7 +142,7 @@
                          * Y setter
                          * @param nY the new value for y
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr void setY(K nY) {
                             y = static_cast <T> (nY);
                         }
@@ -150,7 +150,7 @@
                          * X setter
                          * @param w the new value for x
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr void setW(K w) {
                             setX(w);
                         }
@@ -158,7 +158,7 @@
                          * Y setter
                          * @param h the new value for y
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr void setH(K h) {
                             setY(h);
                         }
@@ -167,7 +167,7 @@
                          * @param nX the new value for x
                          * @param nY the new value for y
                          */
-                        template <class K, class L, typename = std::enable_if_t<ArithmeticCheckerV<K, L>>>
+                        template <class K, class L, typename = UseIfArithmetic<K, L>>
                         constexpr void setCoord(K nX, L nY) {
                             setX(nX);
                             setY(nY);
@@ -177,7 +177,7 @@
                          * @param w the new value for x
                          * @param h the new value for y
                          */
-                        template <class K, class L, typename = std::enable_if_t<ArithmeticCheckerV<K, L>>>
+                        template <class K, class L, typename = UseIfArithmetic<K, L>>
                         constexpr void setSize(K w, L h) {
                             setX(w);
                             setY(h);
@@ -195,14 +195,14 @@
                         /**
                          * @return the distance to another vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         long double distance(Vector2D<K> const& v) const {
                             return std::sqrt(static_cast <long double> (distanceSquared(v)));
                         }
                         /**
                          * @return the squared distance to another vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr std::common_type_t<T, K> distanceSquared(Vector2D<K> const& v) const {
                             auto w(*this - v);
                             return w.normSquared();
@@ -216,7 +216,7 @@
                          * Limit the vector value to the given max, if to high then normalize it
                          * @param max the maximum value
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         void limit(K max) {
                             auto n = norm();
                             if (n > max) {
@@ -228,7 +228,7 @@
                          * @param p the power to which to raise this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         Vector2D& pow(K p) {
                             setX(std::pow(static_cast <std::common_type_t<T, K>> (x), static_cast <std::common_type_t<T, K>> (p)));
                             setY(std::pow(static_cast <std::common_type_t<T, K>> (y), static_cast <std::common_type_t<T, K>> (p)));
@@ -239,7 +239,7 @@
                          * @param p the set of power to which to raise this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         Vector2D& pow(Vector2D<K> const& p) {
                             setX(std::pow(static_cast <std::common_type_t<T, K>> (x), static_cast <std::common_type_t<T, K>> (p.getX())));
                             setY(std::pow(static_cast <std::common_type_t<T, K>> (y), static_cast <std::common_type_t<T, K>> (p.getY())));
@@ -284,7 +284,7 @@
                          * @param u the object to copy into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator =(Vector2D<K> const& u) {
                             setX(u.getX());
                             setY(u.getY());
@@ -295,7 +295,7 @@
                          * @param u the object to move into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator =(Vector2D<K> && u) {
                             setX(u.getX());
                             setY(u.getY());
@@ -308,7 +308,7 @@
                          * @param k the scalar to add
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator +=(K k) {
                             setX(static_cast <std::common_type_t<T, K>> (x) + static_cast <std::common_type_t<T, K>> (k));
                             setY(static_cast <std::common_type_t<T, K>> (y) + static_cast <std::common_type_t<T, K>> (k));
@@ -319,7 +319,7 @@
                          * @param u the vector to add into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator +=(Vector2D<K> const& u) {
                             setX(static_cast <std::common_type_t<T, K>> (x) + static_cast <std::common_type_t<T, K>> (u.getX()));
                             setY(static_cast <std::common_type_t<T, K>> (y) + static_cast <std::common_type_t<T, K>> (u.getY()));
@@ -330,7 +330,7 @@
                          * @param k the scalar to add
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator -=(K k) {
                             setX(static_cast <std::common_type_t<T, K>> (x) - static_cast <std::common_type_t<T, K>> (k));
                             setY(static_cast <std::common_type_t<T, K>> (y) - static_cast <std::common_type_t<T, K>> (k));
@@ -341,7 +341,7 @@
                          * @param u the vector to subtract into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator -=(Vector2D<K> const& u) {
                             setX(static_cast <std::common_type_t<T, K>> (x) - static_cast <std::common_type_t<T, K>> (u.getX()));
                             setY(static_cast <std::common_type_t<T, K>> (y) - static_cast <std::common_type_t<T, K>> (u.getY()));
@@ -352,7 +352,7 @@
                          * @param k the multiplication factor
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator *=(K k) {
                             setX(static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (k));
                             setY(static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (k));
@@ -363,7 +363,7 @@
                          * @param u the multiplication vector
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator *=(Vector2D<K> const& u) {
                             setX(static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX()));
                             setY(static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY()));
@@ -374,7 +374,7 @@
                          * @param k the division factor
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator /=(K k) {
                             setX(static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (k));
                             setY(static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (k));
@@ -385,7 +385,7 @@
                          * @param u the division vector
                          * @return  the reference of himself
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D& operator /=(Vector2D<K> const& u) {
                             setX(static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (u.getX()));
                             setY(static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (u.getY()));
@@ -396,7 +396,7 @@
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr std::common_type_t<T, K> operator |=(Vector2D<K> const& u) const {
                             return static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX())
                                  + static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY());
@@ -408,7 +408,7 @@
                          * @param k the scalar to add
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator +(K k) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) += k;
                         }
@@ -417,7 +417,7 @@
                          * @param u the vector to add
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator +(Vector2D<K> const& u) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) += u;
                         }
@@ -426,7 +426,7 @@
                          * @param k the scalar to add
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator -(K k) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) -= k;
                         }
@@ -435,7 +435,7 @@
                          * @param u the vector to subtract
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator -(Vector2D<K> const& u) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) -= u;
                         }
@@ -451,7 +451,7 @@
                          * @param k the multiplication factor
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator *(K k) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) *= k;
                         }
@@ -460,7 +460,7 @@
                          * @param u the multiplication vector
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator *(Vector2D<K> const& u) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) *= u;
                         }
@@ -469,7 +469,7 @@
                          * @param k the division factor
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator /(K k) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) /= k;
                         }
@@ -478,7 +478,7 @@
                          * @param u the division vector
                          * @return  the computed vector
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr Vector2D<std::common_type_t<T, K>> operator /(Vector2D<K> const& u) const {
                             return Vector2D<std::common_type_t<T, K>>(*this) /= u;
                         }
@@ -487,7 +487,7 @@
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr std::common_type_t<T, K> operator |(Vector2D<K> const& u) const {
                             return *this |= u;
                         }
@@ -498,7 +498,7 @@
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr bool operator ==(Vector2D<K> const& u) const {
                             return equal(x, u.getX()) && equal(y, u.getY());
                         }
@@ -507,7 +507,7 @@
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr bool operator !=(Vector2D<K> const& u) const {
                             return !(*this == u);
                         }
@@ -516,7 +516,7 @@
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr bool operator <(Vector2D<K> const& u) const {
                             return static_cast <std::common_type_t<T, K>> (normSquared()) < static_cast <std::common_type_t<T, K>> (u.normSquared());
                         }
@@ -525,7 +525,7 @@
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr bool operator >(Vector2D<K> const& u) const {
                             return static_cast <std::common_type_t<T, K>> (normSquared()) > static_cast <std::common_type_t<T, K>> (u.normSquared());
                         }
@@ -534,7 +534,7 @@
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr bool operator <=(Vector2D<K> const& u) const {
                             return static_cast <std::common_type_t<T, K>> (normSquared()) <= static_cast <std::common_type_t<T, K>> (u.normSquared());
                         }
@@ -543,7 +543,7 @@
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+                        template <class K, typename = UseIfArithmetic<K>>
                         constexpr bool operator >=(Vector2D<K> const& u) const {
                             return static_cast <std::common_type_t<T, K>> (normSquared()) >= static_cast <std::common_type_t<T, K>> (u.normSquared());
                         }
@@ -562,7 +562,7 @@
              * @param k the multiplication factor
              * @return  the computed vector
              */
-            template <class T, class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+            template <class T, class K, typename = UseIfArithmetic<K>>
             constexpr Vector2D<std::common_type_t<T, K>> operator *(K k, Vector2D<T> const& u) {
                 return u * k;
             }
@@ -579,7 +579,7 @@
              * @param k the power to which to raise the vector
              * @return  the raised vector
              */
-            template <class T, class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+            template <class T, class K, typename = UseIfArithmetic<K>>
             Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, K k) {
                 return Vector2D<std::common_type_t<T, K>>(u).pow(k);
             }
@@ -589,7 +589,7 @@
              * @param p the power to which to raise the vector
              * @return  the raised vector
              */
-            template <class T, class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+            template <class T, class K, typename = UseIfArithmetic<K>>
             Vector2D<std::common_type_t<T, K>> pow(Vector2D<T> const& u, Vector2D<K> const& p) {
                 return Vector2D<std::common_type_t<T, K>>(u).pow(p);
             }
@@ -599,7 +599,7 @@
              * @param n the normal
              * @return  the reflected vector
              */
-            template <class T, class K, typename = std::enable_if_t<ArithmeticCheckerV<K>>>
+            template <class T, class K, typename = UseIfArithmetic<K>>
             constexpr Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n) {
                 return Vector2D<std::common_type_t<T, K>>(u) - static_cast <std::common_type_t<T, K>> (2.0) * (n | u) * n;
             }

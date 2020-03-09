@@ -12,9 +12,9 @@
     using namespace NRE::Math;
 
     int main(int, char**) {
-        constexpr Vector2D<int> NULL_2(0, 0);
-        constexpr Vector3D<int> NULL_3(0, 0, 0);
-        constexpr Vector4D<int> NULL_4(0, 0, 0, 0);
+        constexpr Vector2D<int> NULL_2;
+        constexpr Vector3D<int> NULL_3;
+        constexpr Vector4D<int> NULL_4;
         Vector4D<float> u({0, 1, 0, 0});
         Vector4D<float> v({1, 0, 0, 0});
         
