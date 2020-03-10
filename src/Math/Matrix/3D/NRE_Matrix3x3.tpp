@@ -116,12 +116,12 @@
             }
 
             template <class T>
-            constexpr void Matrix3x3<T>::setIdentity() {
-                *this = IDENTITY;
+            constexpr Matrix3x3<T>& Matrix3x3<T>::setIdentity() {
+                return *this = IDENTITY;
             }
 
             template <class T>
-            constexpr void Matrix3x3<T>::transpose() {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::transpose() {
                 Matrix3x3<T> tmp;
                 tmp[0][0] = data[0][0];
                 tmp[1][0] = data[0][1];
@@ -132,11 +132,11 @@
                 tmp[0][2] = data[2][0];
                 tmp[1][2] = data[2][1];
                 tmp[2][2] = data[2][2];
-                *this = std::move(tmp);
+                return *this = std::move(tmp);
             }
 
             template <class T>
-            constexpr void Matrix3x3<T>::inverse() {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::inverse() {
                 Matrix3x3<T> tmp;
                 if (auto det = getDeterminant(); std::abs(det) > EPSILON) {
                     long double invDet = 1.0 / det;
@@ -151,29 +151,29 @@
                     tmp[2][2] = static_cast <T> (invDet * static_cast <long double> (data[0][0] * data[1][1] - data[0][1] * data[1][0]));
                 }
 
-                *this = std::move(tmp);
+                return *this = std::move(tmp);
             }
 
             template <class T>
             template <class K>
-            constexpr inline void Matrix3x3<T>::translate(Vector2D<K> const& u) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::translate(Vector2D<K> const& u) {
                 Matrix3x3<T> tmp = IDENTITY;
                 tmp[0][2] = static_cast <T> (u.getX());
                 tmp[1][2] = static_cast <T> (u.getY());
-                *this *= tmp;
+                return *this *= tmp;
             }
 
             template <class T>
             template <class K>
-            constexpr void Matrix3x3<T>::scale(Vector2D<K> const& u) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::scale(Vector2D<K> const& u) {
                 Matrix3x3<T> tmp = IDENTITY;
                 tmp[0][0] = static_cast <T> (u.getX());
                 tmp[1][1] = static_cast <T> (u.getY());
-                *this *= tmp;
+                return *this *= tmp;
             }
 
             template <class T>
-            constexpr void Matrix3x3<T>::rotate(Angle angle) {
+            constexpr Matrix3x3<T>& Matrix3x3<T>::rotate(Angle angle) {
                 Matrix3x3<T> tmp = IDENTITY;
                 T c = static_cast <T> (cos(angle));
                 T s = static_cast <T> (sin(angle));
@@ -181,7 +181,7 @@
                 tmp[0][1] = s;
                 tmp[1][0] = -s;
                 tmp[1][1] = c;
-                *this *= tmp;
+                return *this *= tmp;
             }
 
             template <class T>

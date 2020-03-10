@@ -183,97 +183,109 @@
                         constexpr void setC3(Vector3D<K> const& c3);
                         /**
                          * Set the matrix to the identity matrix
+                         * @return the reference of himself
                          */
-                        constexpr void setIdentity();
+                        constexpr Matrix3x3& setIdentity();
 
                     //## Methods ##//
                         /**
                          * Transpose the matrix
+                         * @return the reference of himself
                          */
-                        constexpr void transpose();
+                        constexpr Matrix3x3& transpose();
                         /**
                          * Inverse the matrix, if not possible the matrix become the identity one
+                         * @return the reference of himself
                          */
-                        constexpr void inverse();
+                        constexpr Matrix3x3& inverse();
                         /**
                          * Add a translation
                          * @param u the translation vector
+                         * @return  the reference of himself
                          */
                         template <class K>
-                        constexpr void translate(Vector2D<K> const& u);
+                        constexpr Matrix3x3& translate(Vector2D<K> const& u);
                         /**
                          * Add a scale
                          * @param u the scaling vector
+                         * @return  the reference of himself
                          */
                         template <class K>
-                        constexpr void scale(Vector2D<K> const& u);
+                        constexpr Matrix3x3& scale(Vector2D<K> const& u);
                         /**
                          * Add a stretch on the X axis
                          * @param u the stretch factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void stretchX(K u) {
+                        constexpr Matrix3x3& stretchX(K u) {
                             Matrix3x3<T> tmp = IDENTITY;
                             tmp[0][0] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a stretch on the Y axis
                          * @param u the stretch factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void stretchY(K u) {
+                        constexpr Matrix3x3& stretchY(K u) {
                             Matrix3x3<T> tmp = IDENTITY;
                             tmp[1][1] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a squeeze on the X axis
                          * @param u the squeeze factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void squeezeX(K u) {
+                        constexpr Matrix3x3& squeezeX(K u) {
                             Matrix3x3<T> tmp = IDENTITY;
                             tmp[0][0] = static_cast <T> (1.0 / static_cast <long double> (u));
                             tmp[1][1] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a squeeze on the Y axis
                          * @param u the squeeze factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void squeezeY(K u) {
+                        constexpr Matrix3x3& squeezeY(K u) {
                             Matrix3x3<T> tmp = IDENTITY;
                             tmp[0][0] = static_cast <T> (u);
                             tmp[1][1] = static_cast <T> (1.0 / static_cast <long double> (u));
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a shear on the X axis
                          * @param u the shear factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void shearX(K u) {
+                        constexpr Matrix3x3& shearX(K u) {
                             Matrix3x3<T> tmp = IDENTITY;
                             tmp[0][1] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a shear on the Y axis
                          * @param u the shear factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void shearY(K u) {
+                        constexpr Matrix3x3& shearY(K u) {
                             Matrix3x3<T> tmp = IDENTITY;
                             tmp[1][0] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a rotation
                          * @param angle the rotation's angle
+                         * @return      the reference of himself
                          */
-                        constexpr void rotate(Angle angle);
+                        constexpr Matrix3x3& rotate(Angle angle);
                         /**
                          * @return a pointer to the vector's data
                          */
