@@ -249,20 +249,32 @@
                          * Add a stretch on the X axis
                          * @param u the stretch factor
                          */
-                        template <class K>
-                        constexpr void stretchX(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void stretchX(K u) {
+                            Matrix4x4<T> tmp = IDENTITY;
+                            tmp[0][0] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a stretch on the Y axis
                          * @param u the stretch factor
                          */
-                        template <class K>
-                        constexpr void stretchY(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void stretchY(K u) {
+                            Matrix4x4<T> tmp = IDENTITY;
+                            tmp[1][1] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a stretch on the Z axis
                          * @param u the stretch factor
                          */
-                        template <class K>
-                        constexpr void stretchZ(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void stretchZ(K u) {
+                            Matrix4x4<T> tmp = IDENTITY;
+                            tmp[2][2] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a rotation
                          * @param angle the rotation's angle
@@ -276,8 +288,18 @@
                          * @param ratio the projection's ratio
                          * @param z     the projection's plane distance
                          */
-                        template <class K, class L>
-                        constexpr void perspective(Angle fov, K ratio, Vector2D<L> const& z);
+                        template <class K, class L, typename = UseIfArithmetic<K>>
+                        constexpr void perspective(Angle fov, K ratio, Vector2D<L> const& z) {
+                            setIdentity();
+    
+                            T f = static_cast <T> (tan(fov / 2.0));
+                            data[0][0] = static_cast <T> (1.0) / (static_cast <T> (ratio) * f);
+                            data[1][1] = static_cast <T> (1.0) / f;
+                            data[2][2] = static_cast <T> (-(z.getY() + z.getX()) / (z.getY() - z.getX()));
+                            data[2][3] = static_cast <T> (-(static_cast <L> (2.0) * z.getY() * z.getX()) / (z.getY() - z.getX()));
+                            data[3][2] = -1;
+                            data[3][3] = 0;
+                        }
                         /**
                          * Perform an orthogonal projection on this
                          * @param h  the horizontal clipping plane

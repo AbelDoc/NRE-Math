@@ -295,30 +295,6 @@
 
             template <class T>
             template <class K>
-            constexpr void Matrix4x4<T>::stretchX(K u) {
-                Matrix4x4<T> tmp = IDENTITY;
-                tmp[0][0] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
-            constexpr void Matrix4x4<T>::stretchY(K u) {
-                Matrix4x4<T> tmp = IDENTITY;
-                tmp[1][1] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
-            constexpr void Matrix4x4<T>::stretchZ(K u) {
-                Matrix4x4<T> tmp = IDENTITY;
-                tmp[2][2] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
             constexpr void Matrix4x4<T>::rotate(Angle angle, Vector3D<K> const& axis) {
                 double c = cos(angle);
                 double s = sin(angle);
@@ -345,21 +321,6 @@
                 tmp[3][3] = 1;
 
                 *this *= tmp;
-            }
-
-            template <class T>
-            template <class K, class L>
-            constexpr void Matrix4x4<T>::perspective(Angle fov, K ratio, Vector2D<L> const& z) {
-                setIdentity();
-                T fovDeg = static_cast <T> (fov.getValue() * 180.0 / PI);
-                
-                T f = static_cast <T> (std::tan(fovDeg / static_cast <T> (2.0)));
-                data[0][0] = static_cast <T> (1.0) / (static_cast <T> (ratio) * f);
-                data[1][1] = static_cast <T> (1.0) / f;
-                data[2][2] = static_cast <T> (-(z.getY() + z.getX()) / (z.getY() - z.getX()));
-                data[2][3] = static_cast <T> (-(static_cast <L> (2.0) * z.getY() * z.getX()) / (z.getY() - z.getX()));
-                data[3][2] = -1;
-                data[3][3] = 0;
             }
 
             template <class T>
