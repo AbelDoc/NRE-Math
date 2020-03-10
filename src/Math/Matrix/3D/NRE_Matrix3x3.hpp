@@ -211,38 +211,64 @@
                          * Add a stretch on the X axis
                          * @param u the stretch factor
                          */
-                        template <class K>
-                        constexpr void stretchX(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void stretchX(K u) {
+                            Matrix3x3<T> tmp = IDENTITY;
+                            tmp[0][0] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a stretch on the Y axis
                          * @param u the stretch factor
                          */
-                        template <class K>
-                        constexpr void stretchY(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void stretchY(K u) {
+                            Matrix3x3<T> tmp = IDENTITY;
+                            tmp[1][1] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a squeeze on the X axis
                          * @param u the squeeze factor
                          */
-                        template <class K>
-                        constexpr void squeezeX(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void squeezeX(K u) {
+                            Matrix3x3<T> tmp = IDENTITY;
+                            tmp[0][0] = static_cast <T> (1.0 / static_cast <long double> (u));
+                            tmp[1][1] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a squeeze on the Y axis
                          * @param u the squeeze factor
                          */
-                        template <class K>
-                        constexpr void squeezeY(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void squeezeY(K u) {
+                            Matrix3x3<T> tmp = IDENTITY;
+                            tmp[0][0] = static_cast <T> (u);
+                            tmp[1][1] = static_cast <T> (1.0 / static_cast <long double> (u));
+                            *this *= tmp;
+                        }
                         /**
                          * Add a shear on the X axis
                          * @param u the shear factor
                          */
-                        template <class K>
-                        constexpr void shearX(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void shearX(K u) {
+                            Matrix3x3<T> tmp = IDENTITY;
+                            tmp[0][1] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a shear on the Y axis
                          * @param u the shear factor
                          */
-                        template <class K>
-                        constexpr void shearY(K u);
+                        template <class K, typename = UseIfArithmetic<K>>
+                        constexpr void shearY(K u) {
+                            Matrix3x3<T> tmp = IDENTITY;
+                            tmp[1][0] = static_cast <T> (u);
+                            *this *= tmp;
+                        }
                         /**
                          * Add a rotation
                          * @param angle the rotation's angle

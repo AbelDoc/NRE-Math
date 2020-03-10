@@ -173,56 +173,6 @@
             }
 
             template <class T>
-            template <class K>
-            constexpr void Matrix3x3<T>::stretchX(K u) {
-                Matrix3x3<T> tmp = IDENTITY;
-                tmp[0][0] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
-            constexpr void Matrix3x3<T>::stretchY(K u) {
-                Matrix3x3<T> tmp = IDENTITY;
-                tmp[1][1] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
-            constexpr void Matrix3x3<T>::squeezeX(K u) {
-                Matrix3x3<T> tmp = IDENTITY;
-                tmp[0][0] = static_cast <T> (1.0 / static_cast <long double> (u));
-                tmp[1][1] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
-            constexpr void Matrix3x3<T>::squeezeY(K u) {
-                Matrix3x3<T> tmp = IDENTITY;
-                tmp[0][0] = static_cast <T> (u);
-                tmp[1][1] = static_cast <T> (1.0 / static_cast <long double> (u));
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
-            constexpr void Matrix3x3<T>::shearX(K u) {
-                Matrix3x3<T> tmp = IDENTITY;
-                tmp[0][1] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
-            template <class K>
-            constexpr void Matrix3x3<T>::shearY(K u) {
-                Matrix3x3<T> tmp = IDENTITY;
-                tmp[1][0] = static_cast <T> (u);
-                *this *= tmp;
-            }
-
-            template <class T>
             constexpr void Matrix3x3<T>::rotate(Angle angle) {
                 Matrix3x3<T> tmp = IDENTITY;
                 T c = static_cast <T> (cos(angle));
