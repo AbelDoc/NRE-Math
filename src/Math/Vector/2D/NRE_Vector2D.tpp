@@ -169,6 +169,11 @@
             }
     
             template <class T>
+            constexpr Vector2D<T> Vector2D<T>::operator -() const {
+                return Vector2D<T>(-x, -y);
+            }
+    
+            template <class T>
             template <class K>
             constexpr Vector2D<std::common_type_t<T, K>> Vector2D<T>::operator *(Vector2D<K> const& u) const {
                 return Vector2D<std::common_type_t<T, K>>(*this) *= u;

@@ -87,29 +87,26 @@
                          * Convert a K-type vector into a T-type vector
                          * @param u the K-type vector to convert
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D(Vector3D<K> const& u) : Vector3D(u.getX(), u.getY(), u.getZ()) {
-                        }
+                        template <class K>
+                        constexpr Vector3D(Vector3D<K> const& u);
                         /**
                          * Convert a 2D vector into a 3D vector with a default z value
                          * @param u the 2D vector to convert
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D(Vector2D<K> const& u) : Vector3D(u.getX(), u.getY(), 0) {
-                        }
+                        template <class K>
+                        constexpr Vector3D(Vector2D<K> const& u);
                         /**
                          * Convert a K-type 4D vector into a T-type 3D vector
                          * @param u the K-type 4D vector to convert
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D(Vector4D<K> const& u) : Vector3D(u.getX(), u.getY(), u.getZ()) {
-                        }
+                        template <class K>
+                        constexpr Vector3D(Vector4D<K> const& u);
                         /**
                          * Convert a 2D vector into a 3D point with a passed z value
                          * @param u  the 2D vector to convert
                          * @param nZ the new z value
                          */
-                        template <class K, class L, typename = UseIfArithmetic<K, L>>
+                        template <class K, class L, typename = UseIfArithmetic<L>>
                         constexpr Vector3D(Vector2D<K> const& u, L nZ) : Vector3D(u.getX(), u.getY(), nZ) {
                         }
 
@@ -211,7 +208,7 @@
                          * @param u the base 2D vector for x and y values
                          * @param nZ the new value for z
                          */
-                        template <class K, class L, typename = UseIfArithmetic<K, L>>
+                        template <class K, class L, typename = UseIfArithmetic<L>>
                         constexpr void setCoord(Vector2D<K> const& u, L nZ) {
                             setX(u.getX());
                             setY(u.getY());
@@ -242,18 +239,13 @@
                         /**
                          * @return the distance to another vector
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        long double distance(Vector3D<K> const& v) const {
-                            return std::sqrt(static_cast <long double> (distanceSquared(v)));
-                        }
+                        template <class K>
+                        long double distance(Vector3D<K> const& v) const;
                         /**
                          * @return the squared distance to another vector
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr std::common_type_t<T, K> distanceSquared(Vector3D<K> const& v) const {
-                            auto w(*this - v);
-                            return w.normSquared();
-                        }
+                        template <class K>
+                        constexpr std::common_type_t<T, K> distanceSquared(Vector3D<K> const& v) const;
                         /**
                          * Normalize the vector
                          * @return the reference of himself
@@ -287,13 +279,8 @@
                          * @param p the set of power to which to raise this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        Vector3D& pow(Vector3D<K> const& p) {
-                            setX(std::pow(static_cast <std::common_type_t<T, K>> (x), static_cast <std::common_type_t<T, K>> (p.getX())));
-                            setY(std::pow(static_cast <std::common_type_t<T, K>> (y), static_cast <std::common_type_t<T, K>> (p.getY())));
-                            setZ(std::pow(static_cast <std::common_type_t<T, K>> (z), static_cast <std::common_type_t<T, K>> (p.getZ())));
-                            return *this;
-                        }
+                        template <class K>
+                        Vector3D& pow(Vector3D<K> const& p);
                         /**
                          * @return a pointer to the vector's data
                          */
@@ -333,25 +320,15 @@
                          * @param u the object to copy into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D& operator =(Vector3D<K> const& u) {
-                            setX(u.getX());
-                            setY(u.getY());
-                            setZ(u.getZ());
-                            return *this;
-                        }
+                        template <class K>
+                        constexpr Vector3D& operator =(Vector3D<K> const& u);
                         /**
                          * Move u into this
                          * @param u the object to move into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D& operator =(Vector3D<K> && u) {
-                            setX(u.getX());
-                            setY(u.getY());
-                            setZ(u.getZ());
-                            return *this;
-                        }
+                        template <class K>
+                        constexpr Vector3D& operator =(Vector3D<K> && u);
 
                     //## Shortcut Operator ##//
                         /**
@@ -371,13 +348,8 @@
                          * @param u the vector to add into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D& operator +=(Vector3D<K> const& u) {
-                            setX(static_cast <std::common_type_t<T, K>> (x) + static_cast <std::common_type_t<T, K>> (u.getX()));
-                            setY(static_cast <std::common_type_t<T, K>> (y) + static_cast <std::common_type_t<T, K>> (u.getY()));
-                            setZ(static_cast <std::common_type_t<T, K>> (z) + static_cast <std::common_type_t<T, K>> (u.getZ()));
-                            return *this;
-                        }
+                        template <class K>
+                        constexpr Vector3D& operator +=(Vector3D<K> const& u);
                         /**
                          * Subtract a scalar to all components
                          * @param k the scalar to add
@@ -395,13 +367,8 @@
                          * @param u the vector to subtract into this
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D& operator -=(Vector3D<K> const& u) {
-                            setX(static_cast <std::common_type_t<T, K>> (x) - static_cast <std::common_type_t<T, K>> (u.getX()));
-                            setY(static_cast <std::common_type_t<T, K>> (y) - static_cast <std::common_type_t<T, K>> (u.getY()));
-                            setZ(static_cast <std::common_type_t<T, K>> (z) - static_cast <std::common_type_t<T, K>> (u.getZ()));
-                            return *this;
-                        }
+                        template <class K>
+                        constexpr Vector3D& operator -=(Vector3D<K> const& u);
                         /**
                          * Multiply this by a factor k
                          * @param k the multiplication factor
@@ -419,13 +386,8 @@
                          * @param u the multiplication vector
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D& operator *=(Vector3D<K> const& u) {
-                            setX(static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX()));
-                            setY(static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY()));
-                            setZ(static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getZ()));
-                            return *this;
-                        }
+                        template <class K>
+                        constexpr Vector3D& operator *=(Vector3D<K> const& u);
                         /**
                          * Divide this by a factor k
                          * @param k the division factor
@@ -443,36 +405,22 @@
                          * @param u the division vector
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D& operator /=(Vector3D<K> const& u) {
-                            setX(static_cast <std::common_type_t<T, K>> (x) / static_cast <std::common_type_t<T, K>> (u.getX()));
-                            setY(static_cast <std::common_type_t<T, K>> (y) / static_cast <std::common_type_t<T, K>> (u.getY()));
-                            setZ(static_cast <std::common_type_t<T, K>> (z) / static_cast <std::common_type_t<T, K>> (u.getZ()));
-                            return *this;
-                        }
+                        template <class K>
+                        constexpr Vector3D& operator /=(Vector3D<K> const& u);
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr std::common_type_t<T, K> operator |=(Vector3D<K> const& u) const {
-                            return static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getX())
-                                 + static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getY())
-                                 + static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getZ());
-                        }
+                        template <class K>
+                        constexpr std::common_type_t<T, K> operator |=(Vector3D<K> const& u) const;
                         /**
                          * Replace this by the cross product between this and u
                          * @param u the vector
                          * @return  the reference of himself
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D& operator ^=(Vector3D<K> const& u) {
-                            setCoord(static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getZ()) - static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getY()),
-                                     static_cast <std::common_type_t<T, K>> (z) * static_cast <std::common_type_t<T, K>> (u.getX()) - static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getZ()),
-                                     static_cast <std::common_type_t<T, K>> (x) * static_cast <std::common_type_t<T, K>> (u.getY()) - static_cast <std::common_type_t<T, K>> (y) * static_cast <std::common_type_t<T, K>> (u.getX()));
-                            return *this;
-                        }
+                        template <class K>
+                        constexpr Vector3D& operator ^=(Vector3D<K> const& u);
 
                     //## Arithmetic Operator ##//
                         /**
@@ -489,10 +437,8 @@
                          * @param u the vector to add
                          * @return  the computed vector
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D<std::common_type_t<T, K>> operator +(Vector3D<K> const& u) const {
-                            return Vector3D<std::common_type_t<T, K>>(*this) += u;
-                        }
+                        template <class K>
+                        constexpr Vector3D<std::common_type_t<T, K>> operator +(Vector3D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the subtraction of k into this
                          * @param k the scalar to add
@@ -507,17 +453,13 @@
                          * @param u the vector to subtract
                          * @return  the computed vector
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D<std::common_type_t<T, K>> operator -(Vector3D<K> const& u) const {
-                            return Vector3D<std::common_type_t<T, K>>(*this) -= u;
-                        }
+                        template <class K>
+                        constexpr Vector3D<std::common_type_t<T, K>> operator -(Vector3D<K> const& u) const;
                         /**
                          * Compute the opposite version of this
                          * @return the opposite vector
                          */
-                        constexpr Vector3D operator -() const {
-                            return Vector3D<T>(-x, -y, -z);
-                        }
+                        constexpr Vector3D operator -() const;
                         /**
                          * Compute the vector resulting in the multiplication of this by k
                          * @param k the multiplication factor
@@ -532,10 +474,8 @@
                          * @param u the multiplication vector
                          * @return  the computed vector
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D<std::common_type_t<T, K>> operator *(Vector3D<K> const& u) const {
-                            return Vector3D<std::common_type_t<T, K>>(*this) *= u;
-                        }
+                        template <class K>
+                        constexpr Vector3D<std::common_type_t<T, K>> operator *(Vector3D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the division of this by k
                          * @param k the division factor
@@ -550,28 +490,22 @@
                          * @param u the division vector
                          * @return  the computed vector
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D<std::common_type_t<T, K>> operator /(Vector3D<K> const& u) const {
-                            return Vector3D<std::common_type_t<T, K>>(*this) /= u;
-                        }
+                        template <class K>
+                        constexpr Vector3D<std::common_type_t<T, K>> operator /(Vector3D<K> const& u) const;
                         /**
                          * Compute the scalar product between this and u
                          * @param u the vector
                          * @return  the scalar product
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr std::common_type_t<T, K> operator |(Vector3D<K> const& u) const {
-                            return *this |= u;
-                        }
+                        template <class K>
+                        constexpr std::common_type_t<T, K> operator |(Vector3D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the cross product of this and u
                          * @param u the vector
                          * @return  the computed vector
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr Vector3D<std::common_type_t<T, K>> operator ^(Vector3D<K> const& u) const {
-                            return Vector3D<std::common_type_t<T, K>>(*this) ^= u;
-                        }
+                        template <class K>
+                        constexpr Vector3D<std::common_type_t<T, K>> operator ^(Vector3D<K> const& u) const;
 
                     //## Comparison Operator ##//
                         /**
@@ -579,55 +513,43 @@
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr bool operator ==(Vector3D<K> const& u) const {
-                            return equal(x, u.getX()) && equal(y, u.getY()) && equal(z, u.getZ());
-                        }
+                        template <class K>
+                        constexpr bool operator ==(Vector3D<K> const& u) const;
                         /**
                          * Difference test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr bool operator !=(Vector3D<K> const& u) const {
-                            return !(*this == u);
-                        }
+                        template <class K>
+                        constexpr bool operator !=(Vector3D<K> const& u) const;
                         /**
                          * Inferior test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr bool operator <(Vector3D<K> const& u) const {
-                            return static_cast <std::common_type_t<T, K>> (normSquared()) < static_cast <std::common_type_t<T, K>> (u.normSquared());
-                        }
+                        template <class K>
+                        constexpr bool operator <(Vector3D<K> const& u) const;
                         /**
                          * Superior test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr bool operator >(Vector3D<K> const& u) const {
-                            return static_cast <std::common_type_t<T, K>> (normSquared()) > static_cast <std::common_type_t<T, K>> (u.normSquared());
-                        }
+                        template <class K>
+                        constexpr bool operator >(Vector3D<K> const& u) const;
                         /**
                          * Inferior or Equal test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr bool operator <=(Vector3D<K> const& u) const {
-                            return static_cast <std::common_type_t<T, K>> (normSquared()) <= static_cast <std::common_type_t<T, K>> (u.normSquared());
-                        }
+                        template <class K>
+                        constexpr bool operator <=(Vector3D<K> const& u) const;
                         /**
                          * Superior or Equal test between this and u
                          * @param u the vector to test with this
                          * @return  the test's result
                          */
-                        template <class K, typename = UseIfArithmetic<K>>
-                        constexpr bool operator >=(Vector3D<K> const& u) const {
-                            return static_cast <std::common_type_t<T, K>> (normSquared()) >= static_cast <std::common_type_t<T, K>> (u.normSquared());
-                        }
+                        template <class K>
+                        constexpr bool operator >=(Vector3D<K> const& u) const;
 
                     //## Stream Operator ##//
                         /**
@@ -670,20 +592,16 @@
              * @param p the power to which to raise the vector
              * @return  the raised vector
              */
-            template <class T, class K, typename = UseIfArithmetic<K>>
-            Vector3D<std::common_type_t<T, K>> pow(Vector3D<T> const& u, Vector3D<K> const& p) {
-                return Vector3D<std::common_type_t<T, K>>(u).pow(p);
-            }
+            template <class T, class K>
+            Vector3D<std::common_type_t<T, K>> pow(Vector3D<T> const& u, Vector3D<K> const& p);
             /**
              * Reflect the given incidence vector with the given normal
              * @param u the vector to reflect
              * @param n the normal
              * @return  the reflected vector
              */
-            template <class T, class K, typename = UseIfArithmetic<K>>
-            constexpr Vector3D<std::common_type_t<T, K>> reflect(Vector3D<T> const& u, Vector3D<K> const& n) {
-                return Vector3D<std::common_type_t<T, K>>(u) - static_cast <std::common_type_t<T, K>> (2.0) * (n | u) * n;
-            }
+            template <class T, class K>
+            constexpr Vector3D<std::common_type_t<T, K>> reflect(Vector3D<T> const& u, Vector3D<K> const& n);
 
             template <class T>
             using Point3D = Vector3D<T>;

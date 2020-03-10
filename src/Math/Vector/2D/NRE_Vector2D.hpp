@@ -400,9 +400,7 @@
                          * Compute the opposite version of this
                          * @return the opposite vector
                          */
-                        constexpr Vector2D operator -() const {
-                            return Vector2D<T>(-x, -y);
-                        }
+                        constexpr Vector2D operator -() const;
                         /**
                          * Compute the vector resulting in the multiplication of this by k
                          * @param k the multiplication factor
