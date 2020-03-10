@@ -18,6 +18,11 @@
         Vector4D<float> u({0, 1, 0, 0});
         Vector4D<float> v({1, 0, 0, 0});
         
+        std::cout << toRad(90_deg) << std::endl;
+        std::cout << toDeg(90_deg) << std::endl;
+        std::cout << toRad(1_rad) << std::endl;
+        std::cout << toDeg(1_rad) << std::endl;
+        
         std::cout << u << std::endl;
         std::cout << v << std::endl;
     

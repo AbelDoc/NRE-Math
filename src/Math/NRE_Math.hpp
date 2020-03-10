@@ -80,7 +80,7 @@
              * @param  f the scale factor
              * @return   the interpolated value
              */
-            template <class T>
+            template <class T, typename = UseIfArithmetic<T>>
             constexpr T lerp(T const& a, T const& b, float const& f) {
                 return a * (1.0f - f) + b * f;
             }

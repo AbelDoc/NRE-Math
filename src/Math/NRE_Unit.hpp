@@ -573,7 +573,6 @@
             inline double sin(Angle const& u) {
                 return std::sin(u.getValue());
             }
-
             /**
              * Compute the cos of a unit in typed manners
              * @param  u the unit
@@ -582,7 +581,6 @@
             inline double cos(Angle const& u) {
                 return std::cos(u.getValue());
             }
-
             /**
              * Compute the tan of a unit in typed manners
              * @param  u the unit
@@ -591,7 +589,6 @@
             inline double tan(Angle const& u) {
                 return std::tan(u.getValue());
             }
-        
             /**
              * Compute the arc sin of a unit in typed manners
              * @param  u the unit
@@ -599,6 +596,40 @@
              */
             inline double asin(Angle const& u) {
                 return std::asin(u.getValue());
+            }
+            /**
+             * Compute the arc cos of a unit in typed manners
+             * @param  u the unit
+             * @return   the resulting tan
+             */
+            inline double acos(Angle const& u) {
+                return std::acos(u.getValue());
+            }
+            /**
+             * Compute the arc tan of a unit in typed manners
+             * @param  u the unit
+             * @return   the resulting tan
+             */
+            inline double atan(Angle const& u) {
+                return std::atan(u.getValue());
+            }
+            
+            /**
+             * Return the angle value in radian
+             * @param  u the unit
+             * @return   the resulting angle
+             */
+            inline double toRad(Angle const& u) {
+                return u.getValue();
+            }
+        
+            /**
+             * Return the angle value in degree
+             * @param  u the unit
+             * @return   the resulting angle
+             */
+            inline double toDeg(Angle const& u) {
+                return (u / degree).getValue();
             }
         }
     }
