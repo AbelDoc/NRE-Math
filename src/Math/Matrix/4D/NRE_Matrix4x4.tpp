@@ -189,12 +189,12 @@
             }
 
             template <class T>
-            constexpr void Matrix4x4<T>::setIdentity() {
-                *this = IDENTITY;
+            constexpr Matrix4x4<T>& Matrix4x4<T>::setIdentity() {
+                return *this = IDENTITY;
             }
 
             template <class T>
-            constexpr void Matrix4x4<T>::transpose() {
+            constexpr Matrix4x4<T>& Matrix4x4<T>::transpose() {
                 Matrix4x4<T> tmp;
                 tmp[0][0] = data[0][0];
                 tmp[1][0] = data[0][1];
@@ -212,11 +212,11 @@
                 tmp[1][3] = data[3][1];
                 tmp[2][3] = data[3][2];
                 tmp[3][3] = data[3][3];
-                *this = std::move(tmp);
+                return *this = std::move(tmp);
             }
 
             template <class T>
-            constexpr void Matrix4x4<T>::inverse() {
+            constexpr Matrix4x4<T>& Matrix4x4<T>::inverse() {
                 Matrix4x4<T> tmp = IDENTITY;
                 if (auto det = getDeterminant(); std::abs(det) > EPSILON) {
                     long double invDet = 1.0 / det;
@@ -270,32 +270,32 @@
                           - (data[0][0] * data[1][2] * data[2][1]) - (data[0][1] * data[1][0] * data[2][2]) - (data[0][2] * data[1][1] * data[2][0])));
                 }
 
-                *this = std::move(tmp);
+                return *this = std::move(tmp);
             }
 
             template <class T>
             template <class K>
-            constexpr void Matrix4x4<T>::translate(Vector3D<K> const& u) {
+            constexpr Matrix4x4<T>& Matrix4x4<T>::translate(Vector3D<K> const& u) {
                 Matrix4x4<T> tmp = IDENTITY;
                 tmp[0][3] = static_cast <T> (u.getX());
                 tmp[1][3] = static_cast <T> (u.getY());
                 tmp[2][3] = static_cast <T> (u.getZ());
-                *this *= tmp;
+                return *this *= tmp;
             }
 
             template <class T>
             template <class K>
-            constexpr void Matrix4x4<T>::scale(Vector3D<K> const& u) {
+            constexpr Matrix4x4<T>& Matrix4x4<T>::scale(Vector3D<K> const& u) {
                 Matrix4x4<T> tmp = IDENTITY;
                 tmp[0][0] = static_cast <T> (u.getX());
                 tmp[1][1] = static_cast <T> (u.getY());
                 tmp[2][2] = static_cast <T> (u.getZ());
-                *this *= tmp;
+                return *this *= tmp;
             }
 
             template <class T>
             template <class K>
-            constexpr void Matrix4x4<T>::rotate(Angle angle, Vector3D<K> const& axis) {
+            constexpr Matrix4x4<T>& Matrix4x4<T>::rotate(Angle angle, Vector3D<K> const& axis) {
                 double c = cos(angle);
                 double s = sin(angle);
                 
@@ -319,13 +319,13 @@
                 tmp[3][1] = 0;
                 tmp[3][2] = 0;
                 tmp[3][3] = 1;
-
-                *this *= tmp;
+    
+                return *this *= tmp;
             }
 
             template <class T>
             template <class K, class L, class N>
-            constexpr void Matrix4x4<T>::ortho(Vector2D<K> const& h, Vector2D<L> const& v, Vector2D<N> const& z) {
+            constexpr Matrix4x4<T>& Matrix4x4<T>::ortho(Vector2D<K> const& h, Vector2D<L> const& v, Vector2D<N> const& z) {
                 setIdentity();
                 data[0][0] = static_cast <T> (static_cast <K>  (2.0) / (h.getY() - h.getX()));
                 data[1][1] = static_cast <T> (static_cast <L>  (2.0) / (v.getY() - v.getX()));
@@ -333,17 +333,18 @@
                 data[0][3] = static_cast <T> (-((h.getY() + h.getX()) / (h.getY() - h.getX())));
                 data[1][3] = static_cast <T> (-((v.getY() + v.getX()) / (v.getY() - v.getX())));
                 data[2][3] = static_cast <T> (-((z.getY() + z.getX()) / (z.getY() - z.getX())));
+                return *this;
             }
 
             template <class T>
             template <class K, class L>
-            constexpr void Matrix4x4<T>::ortho2D(Vector2D<K> const& h, Vector2D<L> const& v) {
-                ortho(h, v, Vector2D<T>(-1, 1));
+            constexpr Matrix4x4<T>& Matrix4x4<T>::ortho2D(Vector2D<K> const& h, Vector2D<L> const& v) {
+                return ortho(h, v, Vector2D<T>(-1, 1));
             }
 
             template <class T>
             template <class K, class L, class N>
-            constexpr void Matrix4x4<T>::lookAt(Vector3D<K> const& eye, Vector3D<L> const& center, Vector3D<N> const& up) {
+            constexpr Matrix4x4<T>& Matrix4x4<T>::lookAt(Vector3D<K> const& eye, Vector3D<L> const& center, Vector3D<N> const& up) {
                 Vector3D<T> z(static_cast <T> (center.getX()) - static_cast <T> (eye.getX()),
                               static_cast <T> (center.getY()) - static_cast <T> (eye.getY()),
                               static_cast <T> (center.getZ()) - static_cast <T> (eye.getZ()));
@@ -356,6 +357,7 @@
                 setL2(Vector4D<T>( y, -(y | static_cast <Vector3D<T>> (eye))));
                 setL3(Vector4D<T>(-z,  (z | static_cast <Vector3D<T>> (eye))));
                 setL4(Vector4D<T>(0, 0, 0, 1));
+                return *this;
             }
 
             template <class T>

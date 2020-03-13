@@ -221,75 +221,85 @@
                         constexpr void setC4(Vector4D<K> const& c4);
                         /**
                          * Set the matrix to the identity matrix
+                         * @return the reference of himself
                          */
-                        constexpr void setIdentity();
+                        constexpr Matrix4x4& setIdentity();
 
                     //## Methods ##//
                         /**
                          * Transpose the matrix
+                         * @return the reference of himself
                          */
-                        constexpr void transpose();
+                        constexpr Matrix4x4& transpose();
                         /**
                          * Inverse the matrix, if not possible the matrix become the identity one
+                         * @return the reference of himself
                          */
-                        constexpr void inverse();
+                        constexpr Matrix4x4& inverse();
                         /**
                          * Add a translation
                          * @param u the translation vector
+                         * @return  the reference of himself
                          */
                         template <class K>
-                        constexpr void translate(Vector3D<K> const& u);
+                        constexpr Matrix4x4& translate(Vector3D<K> const& u);
                         /**
                          * Add a scale
                          * @param u the scaling vector
+                         * @return  the reference of himself
                          */
                         template <class K>
-                        constexpr void scale(Vector3D<K> const& u);
+                        constexpr Matrix4x4& scale(Vector3D<K> const& u);
                         /**
                          * Add a stretch on the X axis
                          * @param u the stretch factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void stretchX(K u) {
+                        constexpr Matrix4x4& stretchX(K u) {
                             Matrix4x4<T> tmp = IDENTITY;
                             tmp[0][0] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a stretch on the Y axis
                          * @param u the stretch factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void stretchY(K u) {
+                        constexpr Matrix4x4& stretchY(K u) {
                             Matrix4x4<T> tmp = IDENTITY;
                             tmp[1][1] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a stretch on the Z axis
                          * @param u the stretch factor
+                         * @return  the reference of himself
                          */
                         template <class K, typename = UseIfArithmetic<K>>
-                        constexpr void stretchZ(K u) {
+                        constexpr Matrix4x4& stretchZ(K u) {
                             Matrix4x4<T> tmp = IDENTITY;
                             tmp[2][2] = static_cast <T> (u);
-                            *this *= tmp;
+                            return *this *= tmp;
                         }
                         /**
                          * Add a rotation
                          * @param angle the rotation's angle
                          * @param axis  the rotation's axis
+                         * @return      the reference of himself
                          */
                         template <class K>
-                        constexpr void rotate(Angle angle, Vector3D<K> const& axis);
+                        constexpr Matrix4x4& rotate(Angle angle, Vector3D<K> const& axis);
                         /**
                          * Perform a perspective projection on this
                          * @param fov   the projection's fov
                          * @param ratio the projection's ratio
                          * @param z     the projection's plane distance
+                         * @return      the reference of himself
                          */
                         template <class K, class L, typename = UseIfArithmetic<K>>
-                        constexpr void perspective(Angle fov, K ratio, Vector2D<L> const& z) {
+                        constexpr Matrix4x4& perspective(Angle fov, K ratio, Vector2D<L> const& z) {
                             setIdentity();
     
                             T f = static_cast <T> (tan(fov / 2.0));
@@ -299,30 +309,35 @@
                             data[2][3] = static_cast <T> (-(static_cast <L> (2.0) * z.getY() * z.getX()) / (z.getY() - z.getX()));
                             data[3][2] = -1;
                             data[3][3] = 0;
+                            
+                            return *this;
                         }
                         /**
                          * Perform an orthogonal projection on this
                          * @param h  the horizontal clipping plane
                          * @param v  the vertical clipping plane
                          * @param z  the projection's plane distance
+                         * @return   the reference of himself
                          */
                         template <class K, class L, class N>
-                        constexpr void ortho(Vector2D<K> const& h, Vector2D<L> const& v, Vector2D<N> const& z);
+                        constexpr Matrix4x4& ortho(Vector2D<K> const& h, Vector2D<L> const& v, Vector2D<N> const& z);
                         /**
                          * Perform a 2D orthogonal projection on this
                          * @param h  the horizontal clipping plane
                          * @param v  the vertical clipping plane
+                         * @return   the reference of himself
                          */
                         template <class K, class L>
-                        constexpr void ortho2D(Vector2D<K> const& h, Vector2D<L> const& v);
+                        constexpr Matrix4x4& ortho2D(Vector2D<K> const& h, Vector2D<L> const& v);
                         /**
                          * Perform a viewing transformation on this
                          * @param eye    the camera's eye
                          * @param center the point fixed by the camera
                          * @param up     the camera's up vector
+                         * @return       the reference of himself
                          */
                         template <class K, class L, class N>
-                        constexpr void lookAt(Vector3D<K> const& eye, Vector3D<L> const& center, Vector3D<N> const& up);
+                        constexpr Matrix4x4& lookAt(Vector3D<K> const& eye, Vector3D<L> const& center, Vector3D<N> const& up);
                         /**
                          * @return a pointer to the vector's data
                          */
