@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.php"><span>All</span></a></li>
       <li class="current"><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -128,8 +129,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>inverse()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a3feeded178229bf06c7ae17db9e458fc">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a487ebe6f69de08baf0de74f13519f02f">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a8d5e176b6456088a02ef602f53dc9839">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ae98c1b57b48fee63f21344bdac12236c">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.php"><span>All</span></a></li>
       <li class="current"><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -128,162 +129,162 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>operator!=()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a5f56eb419645842780baddc01723c270">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a55928e15e22dc7978221c73892cd70c9">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a58a5d713ef0706697e553d02e762b5d9">NRE::Math::Plane&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#a3ad55959306d5f542bf85711e38f8fb6">NRE::Math::Segment3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#ac975058a41f3444a1ce1c208bf92678f">NRE::Math::Segment4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7d607f951299edf03c70b48efdbcd9d4">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#adc3426f78436370aaaac0f4cedcb4639">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#aaf833cb53bd5e8136cf31cc16a0bb9de">NRE::Math::Plane&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#a020a1e9e53678472aa030cd886f240c1">NRE::Math::Segment3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a01ca7d3cd20802c2e20050d10cec3c8c">NRE::Math::Segment4D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#aa7c1f86cd9a1c6a6d02c6ed251f56d08">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a929995805e833908e181621827b75c20">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#ad6c75e15563e5cd992b3a9406d4fa6b5">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ae9b98b68b70196b9cd4a960b189e467d">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a98fdc3fb492e71db29d223061bb72974">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a99ac58cea6e9a107577c8e488e2a6924">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ac1baf0caf0482389c63389c4dd9e6095">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator()()
 : <a class="el" href="classstd_1_1hash_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01float_01_4_01_4.php#a215f5b8549164ea981879fd1b0c0e2e3">std::hash&lt; NRE::Math::Vector3D&lt; float &gt; &gt;</a>
 </li>
 <li>operator*()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaf7770fd56437128af8df13d3c1e3955">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a8aead912a6b96f4e0b94f2a11139dd28">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aafb0e578c868b4753d61cd9d4b42a82e">NRE::Math::Quaternion&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a1ea09e2f2a910e6c3baf05e034453ab5">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a657d8413104e25ec03b06ac69327a746">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a178b3a9a389b3a629690588cedf64d39">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#afebbaf8d55cda9a64b4b556a6991a43f">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a413047372f94cee1e5bb92fb77b28709">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac60993416cedbf373a7dfaa9bcc582fc">NRE::Math::Quaternion&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a51413595a6a7d31dd5c65e894040a0c6">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a2f6687ed49bd761fdbf890918e61884a">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a18e63883cfb1f108eb03934517919639">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator*=()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a06909b7cd730520f3dfa3c463ae3c576">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#adb66289bd774e328601f9f8adbc3a2bc">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a18a9d7d452320bb75d52dfa6adbe5028">NRE::Math::Quaternion&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ab0b5cfb329a6a47997815d4ffd1e4f1d">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#ab288d7b45aa1c85099efb3c992524e09">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#aab18e7fcd8ad447d79f63c998b41c875">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a79555d25c6f901e6e58d4629d86a777b">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a9c8a248f508eb7c7d0428c186e0b197d">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a05b939c554b2df822af9cccc17dd53ad">NRE::Math::Quaternion&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ac94a500ffe2d3fc700a5d7c7b09d52a2">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#af5a18d96daff9c1c954e0d2cb21257d2">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#af13a90662b7c8c4370c0cf294c8153e5">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator+()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af8888e0b3eb3b33376f24a37b34d6a6d">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#abdf11cb5bec49db675342e96a4085ccc">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aa07d801f28a3b708488330af2107b93a">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#aa227cde337fe508bfaef2301baebf22a">NRE::Math::Matrix4x4&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a571c89a1d60706d1a5d7923feecf5a39">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ab4da2dc98e0b4c1541b907973f61455a">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a872468cf6ffe79549bd533eb3cddedc4">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a0c955c321a01b551bd233afd9da601ca">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#af3d182b98e3057905baec9cd214fe59a">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a2e7434c59ba36ba1557db4a8acb511fa">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#aa20df401529319ee2ba562baebc7983e">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator+=()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a163e1da1b3c1c6355732354aaa2c2557">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a8516b2aed9f7d6dae67c43e7d24ac5d1">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9b99e900688c8950a15ae02e8b444b99">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a7d8afa1b52432e94b6e18f12f47f1d51">NRE::Math::Matrix4x4&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#af70cf71def75fa1c8c6daa7a083ec8e3">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#acac64d98f1d95bd16e5ed5ae02754283">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a0afa8627aec15b8e5b033844cdd1f8f7">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#aa40fc443bf77598f83faac93ba11929f">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a45e82496cbbb4b3fe17371e5ca2fb741">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a0c588c999b3c31894ae504d3de036d58">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a0f6bf949e031fc140aa378573b80b43c">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator-()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a480f6dabbe66d020571f0d0bc2bd5425">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a0a42a88a24bccf779cdd0e54899992af">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a6552f1f2e566385f0722657dc0c921fe">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a289112678825b775b6a98e68c4bd471c">NRE::Math::Matrix4x4&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#ad395b12f20018095c4ddba74531a4f22">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#aa19e3d46912c7772c87daa501b7d9853">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a68c501455cf134a7d0f669adcfdfd242">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a8feee6f0df08065d4b61e229e1b0a468">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#abc3c0fa6b2c48e043dc3957538130fe7">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#ab3a65b1599730fb0a6d8ffd69fe84fde">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ad44bacd243bfe93deb1e558249d9e410">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator-=()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a38b3224f1050440caf72b64fd3a2e6be">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a9bda7860465364ab12112634e1e747e0">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a764bffd27417ed481013f96a54234ecc">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ac14ad0255910de41ec938ed2bb03a5c7">NRE::Math::Matrix4x4&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#af36c98e1e59edd06148aced23fd0b347">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a83cbf9c8abc06c77cc1d94166132e00d">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a86bc29132c39b1d7e04af2c6ba8be680">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a7b42deae84a48049e6bb0738cd19dd74">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ac4b63d2951633833f5d64ca0aff504b8">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a137334a06c6072edacb7eeebe620313a">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#acf56542d31864002de9b80a04c876696">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator/()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a58f062175100a56541849b3ea28b50af">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a9df010eb6812f1b4cdb8ac36b5fe83bc">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a48524a0688cc847363cee587299c3de5">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a159df2e3acf4f150df5195fa113332df">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a441b65ccbbee8d5ce327c1d78acc9602">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a60d576d870fa5eaf533d81482d3659d7">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a85ae947500defeeaed75fb148dcbea27">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#abbb2b702f3350747afc8cf6d6d22ece3">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a1b14d863cd2a9bf67610c00a70e4e06d">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a18a65029d6819f46fe0e0d32445a031d">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator/=()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ad54ae5ee1225741d549a2d53194fae19">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a034e86255879fe628ea5bdad06f3e1f6">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#abdfbe163dee1d5fe2dffc25d7b6ed40d">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#ad61078296a8d9c9fd6030dd8f33c3a70">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a52865a646111eaf68e9771a9b84149ce">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae10711abb9a55f4504b4c3488fab4802">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a13583412af93291c0d1b1b3a60984ae8">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a1d649c08e564985fe3b384b091c2939a">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a02ec733167058ab72a7806a5af743086">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ac9239605c0fdb6aef3f672f7555856ba">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator&lt;()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a57861b23767a77366a10f56c28afb081">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a582f3ca0edbf4c4dfc849a195bbc9f4c">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#acacbb2d3525cb056a165caf8fd8557bc">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#af18ea3f5c0f6b3c381df0a0fe6a53d44">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#af8341b231e33641c3dc46b86b3c867e6">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a3c0f377ada2fe66a4740e4e65c5677bf">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#aa9d2d80e390f675e97abc423b74f86ed">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator&lt;=()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#ad7d0a14ab68567e3b917d783df57d4bc">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a9d2b221576594341ee28a92e0b95075e">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#aef24dc94f6df4b408a486a95cb49df28">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a1309184351736a61fdaf03cb1eb3f0c6">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a903ec0e2b2d155374bd0b1b4628d9fe4">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a3318205fe58fda846373c1ab3c329b43">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a933082eacbd5646bb69afb2c930d183d">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator=()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a4dac44314e1e432b221b1b3b11b2d825">NRE::Math::BezierCurve3D</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a5d40d8cd0a22a3dec6153b16fcff37b2">NRE::Math::BezierCurve4D</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#af7d9047612f776bbc49811f944cfddc7">NRE::Math::Frustum</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae1c763215f22622bd6a86aea3e572639">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a4e7321f6cba1e035e0f135bfe534b4e5">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a40f5e1a704c7e782f6ee4657a78f910f">NRE::Math::Plane&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#afde645a57daee9b9849b085c5fa3f3d4">NRE::Math::Quaternion&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#a267b1ac46799e64fe7ec326ff994457c">NRE::Math::Segment3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a26de8146a60040499dca07e4057d64f5">NRE::Math::Segment4D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a59bf5d70ea419a833ef9b015839c6a12">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a0780e79c4ab9f2ad2f3e24871d8b64f6">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#aff34345bd99500fb89a0a77e3f12b609">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aec2cb3bd4e3b38e81fd0b785c0c67100">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a97451a508751014cf3e985984a6fbb42">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a637c45472eba9f3716358336c2dc3910">NRE::Math::Plane&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9ac5b0d660ddb2ef7b90937a4a8d9839">NRE::Math::Quaternion&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#ab60acb47bcb844db886b43d2b2135a2f">NRE::Math::Segment3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a3911f3c9c95050e9e11e60a5e662a7d9">NRE::Math::Segment4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#aabed27a6c2be057c26fd467612431215">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#ac9265d484b47c06ca443c74e8c16fc3f">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a19f79e39fc6965a81770be9657902387">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator==()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaff2b1fef6121b6010ae78cd7fb076ab">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a21b1746fadd138139448bd901aa773a9">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a8d53debe9351959bc35c52a1e91702be">NRE::Math::Plane&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#abbdb718a0712a5380802098fc5dd5adf">NRE::Math::Segment3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a57d43b2e38e9d8226e7ed12bf22922ab">NRE::Math::Segment4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#acfd9697ee63899565ffd348915df10bd">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a9a4587db8dfa2f767bc2c54e9f7c8f7e">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#aafd5fc88fc91e021e57970c62f041e3c">NRE::Math::Plane&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php#a98ba843d89295490e8f1d86e5031d1a4">NRE::Math::Segment3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_segment4_d.php#a0d7cb6f5e669083f922cf9773a0a14a1">NRE::Math::Segment4D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a3e285181e6cbf15a0c03235062bfb3a0">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#aeda0d7e21899843c330e2afcd5aa33cf">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#aa018c02726a546b8c22c0a1846343dfc">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a7ae1f0b844fdb53022eefb130f19792a">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#acd4672ebad8a9c5cc3cad77896ec0c37">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#ae5bbc25888de859dd937a9ae6ac41f2c">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#aaece7843e13022cdc619f660787bb780">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator&gt;()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a57b0e40e80ebccbe92dec4ddcc688b30">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a6074b2610a91e5d2f3f2aa04a81e3ec1">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a74aab1ffb524b25fd50d4453a980fd01">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a713cd8de52e04b8f693524dad8fb9423">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#adcc4e15c47bc73e4563f8a5f500a672c">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#aa7a795b5f077419528494432e0e6f2ed">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a0d53a574f54111711c8b854a7d1e533f">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator&gt;=()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#a5cc535353c6a7c0f7b741eddb1eb1328">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#aad6cde4e03ee595d5a7ed6598f2e0455">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a436716968f11ef7b01ae1c0bd366288d">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#adf2fa9eb4602891047820e6778b0da62">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#af5fd1cc3d03861b731cab5f40e9d2265">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a45e413f62b799ee6aefed553e7f59802">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ac872d97149c6cab8b90dff1f7c97603d">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator[]()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#af63579edd5673e1bc4510466bddb78f4">NRE::Math::BezierCurve3D</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#aa1c7c91ef3273975336944d8647a808f">NRE::Math::BezierCurve4D</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af8e87a95bcb468bf1ac8cf03b8f0441f">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a1a755f15a20d44ae38f0908a4a4e76f5">NRE::Math::Matrix4x4&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#aa3ed3e5e6064c09b64dd1a6553144add">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#aa1e58490aff75f2928a7d7fde46f53f5">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a1f0089aa9cc5a1ddd796e27afaac363a">NRE::Math::Vector4D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a71fe8267be68e39c69b874afc430ed74">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#acad9523b5fc490eec219f6238fb375a2">NRE::Math::Matrix4x4&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a91b3cdd355ebc5dda8e1107cb8eeae53">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#acc85847d8fac0ae4e854e2c9af5aaf9a">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#aee8da21f7a5959da0724b2079b817f3c">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator^()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a7ec577d1d399f3246dbc158f090b72d8">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a35ae676674cf087e846735d9e6b13390">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a7fc5f7838bc0a950fa32fcc3c8a2370f">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ad2ffda4c85fc211222485391e23032f9">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator^=()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a7d129508f8b415ff205cea8bdef52747">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a70cbcf664e76d46de0d1ab9062333d1f">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a01aed130e1ad18e18dacba460ad08c4e">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a300e8ccce59459b1932ad4ee9db1e887">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator|()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ae1f4f071bb2f57108806fdfdb28c1cb3">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a4fc05463ee9a7be03f76d6fc8e3fee86">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a1651c1d7cd9662d111a2d31e30d74e2a">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#ae8967384f96c5caa83f7a23417bbb515">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a8e5b7118ce32aee7c861c12dd89d1b2a">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a6ef39837a99282f34b7b725270488c1d">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>operator|=()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#abcb807753f7cb84b4eb4084f3b21b0ee">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a5ca367ef3264101ea4db45fe054edbcf">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ab4a126db269a437bf0c7e3064b5b7c10">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a41153538045f45a46a9eb09e5131ec27">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a43574553388ccd5d39bb216dfcb704fb">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a80f7a66bf918e4e1599e8682cb8760d1">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>ortho()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a60aa5a22281a42e16244875e6fca437e">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a37ea14eff04f9b79efc2e218fb9e9557">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 <li>ortho2D()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a3713210c7ba1298fefc476385c84137b">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ac9c311e86ddfd8853681456f4bc46b7a">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

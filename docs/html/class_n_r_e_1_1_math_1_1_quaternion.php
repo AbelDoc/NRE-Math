@@ -123,82 +123,82 @@ Inheritance diagram for NRE::Math::Quaternion&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f449cc3a127a054397bf884c2c02612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a3f449cc3a127a054397bf884c2c02612">Quaternion</a> ()=default</td></tr>
-<tr class="separator:a3f449cc3a127a054397bf884c2c02612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a7f78b4e1a771ccf206d2bb88fe55d"><td class="memTemplParams" colspan="2">template&lt;class K , class L , class N , class M &gt; </td></tr>
-<tr class="memitem:ae8a7f78b4e1a771ccf206d2bb88fe55d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ae8a7f78b4e1a771ccf206d2bb88fe55d">Quaternion</a> (K x, L y, N z, M w)</td></tr>
-<tr class="separator:ae8a7f78b4e1a771ccf206d2bb88fe55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6013b9ed2f5e3476fb47a1f02a9b7ece"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a6013b9ed2f5e3476fb47a1f02a9b7ece">Quaternion</a> ()=default</td></tr>
+<tr class="separator:a6013b9ed2f5e3476fb47a1f02a9b7ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaabf45cfbe6cc642ee2830c5cb0506c"><td class="memTemplParams" colspan="2">template&lt;class K , class L , class N , class M &gt; </td></tr>
+<tr class="memitem:aaaabf45cfbe6cc642ee2830c5cb0506c"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aaaabf45cfbe6cc642ee2830c5cb0506c">Quaternion</a> (K x, L y, N z, M w)</td></tr>
+<tr class="separator:aaaabf45cfbe6cc642ee2830c5cb0506c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afccc9904e9be6c25f66bc5d5130da968"><td class="memTemplParams" colspan="2">template&lt;class K , class L , class N &gt; </td></tr>
 <tr class="memitem:afccc9904e9be6c25f66bc5d5130da968"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#afccc9904e9be6c25f66bc5d5130da968">Quaternion</a> (K x, L y, N z, Angle w)</td></tr>
 <tr class="separator:afccc9904e9be6c25f66bc5d5130da968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdefc312e78b38dabedb3fc06820b1c2"><td class="memTemplParams" colspan="2">template&lt;class K , class L &gt; </td></tr>
-<tr class="memitem:afdefc312e78b38dabedb3fc06820b1c2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#afdefc312e78b38dabedb3fc06820b1c2">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;ax, L an)</td></tr>
-<tr class="separator:afdefc312e78b38dabedb3fc06820b1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b09f8fc6d828b705e8cec75399992fb"><td class="memTemplParams" colspan="2">template&lt;class K , class L &gt; </td></tr>
+<tr class="memitem:a9b09f8fc6d828b705e8cec75399992fb"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9b09f8fc6d828b705e8cec75399992fb">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;ax, L an)</td></tr>
+<tr class="separator:a9b09f8fc6d828b705e8cec75399992fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2950c98333f8d8e7e7afd2fa9464189c"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:a2950c98333f8d8e7e7afd2fa9464189c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a2950c98333f8d8e7e7afd2fa9464189c">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;ax, Angle an)</td></tr>
 <tr class="separator:a2950c98333f8d8e7e7afd2fa9464189c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af61e50f88ea8d2a46711f9ce3bd7973e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#af61e50f88ea8d2a46711f9ce3bd7973e">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> const &amp;q)=default</td></tr>
-<tr class="separator:af61e50f88ea8d2a46711f9ce3bd7973e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46c68b3cdaa31978909ce33f9594892d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a46c68b3cdaa31978909ce33f9594892d">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&amp;q)=default</td></tr>
-<tr class="separator:a46c68b3cdaa31978909ce33f9594892d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b3f43d80e22c9c52b1af98a80be7b4"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a18b3f43d80e22c9c52b1af98a80be7b4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a18b3f43d80e22c9c52b1af98a80be7b4">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q)</td></tr>
-<tr class="separator:a18b3f43d80e22c9c52b1af98a80be7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7009cc0ec7e86b7c9c65129e030d2ed3"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a7009cc0ec7e86b7c9c65129e030d2ed3">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> const &amp;q)=default</td></tr>
+<tr class="separator:a7009cc0ec7e86b7c9c65129e030d2ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba9e744e26455a032e87a9f155c202f"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a3ba9e744e26455a032e87a9f155c202f">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&amp;q)=default</td></tr>
+<tr class="separator:a3ba9e744e26455a032e87a9f155c202f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497a8bd5821b2bca2a3ed6cd34ff0bfd"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a497a8bd5821b2bca2a3ed6cd34ff0bfd"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a497a8bd5821b2bca2a3ed6cd34ff0bfd">Quaternion</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q)</td></tr>
+<tr class="separator:a497a8bd5821b2bca2a3ed6cd34ff0bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26b086d5b95d53024ad36e8e9141ea29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a26b086d5b95d53024ad36e8e9141ea29">~Quaternion</a> ()=default</td></tr>
 <tr class="separator:a26b086d5b95d53024ad36e8e9141ea29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0717eaee838e8a29dc6171a7adf2b73"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aa0717eaee838e8a29dc6171a7adf2b73">getX</a> () const </td></tr>
-<tr class="separator:aa0717eaee838e8a29dc6171a7adf2b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e025252dbd1aae5b9e610e856c745c2"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a2e025252dbd1aae5b9e610e856c745c2">getY</a> () const </td></tr>
-<tr class="separator:a2e025252dbd1aae5b9e610e856c745c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad19616cc2549941bac2569549d379131"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ad19616cc2549941bac2569549d379131">getZ</a> () const </td></tr>
-<tr class="separator:ad19616cc2549941bac2569549d379131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e7605f337578de78e84c7087480f4a"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac1e7605f337578de78e84c7087480f4a">getW</a> () const </td></tr>
-<tr class="separator:ac1e7605f337578de78e84c7087480f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cdacf9fabe116ef083ab918ac2865a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a69cdacf9fabe116ef083ab918ac2865a">getAxis</a> () const </td></tr>
-<tr class="separator:a69cdacf9fabe116ef083ab918ac2865a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51183223d4b9c7955bbe03d0147b48ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a51183223d4b9c7955bbe03d0147b48ff">getQuaternion</a> () const </td></tr>
-<tr class="separator:a51183223d4b9c7955bbe03d0147b48ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affd206d7637a82777bd2d5317f432068"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:affd206d7637a82777bd2d5317f432068"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#affd206d7637a82777bd2d5317f432068">setX</a> (K x)</td></tr>
-<tr class="separator:affd206d7637a82777bd2d5317f432068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c3b2a87afe4f292a3516520a205422f"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a9c3b2a87afe4f292a3516520a205422f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9c3b2a87afe4f292a3516520a205422f">setY</a> (K y)</td></tr>
-<tr class="separator:a9c3b2a87afe4f292a3516520a205422f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d28d525f52e96129de19ca171a327e"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a05d28d525f52e96129de19ca171a327e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a05d28d525f52e96129de19ca171a327e">setZ</a> (K z)</td></tr>
-<tr class="separator:a05d28d525f52e96129de19ca171a327e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac0f84c92e58d56505375a990ba916d0"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:aac0f84c92e58d56505375a990ba916d0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aac0f84c92e58d56505375a990ba916d0">setW</a> (K w)</td></tr>
-<tr class="separator:aac0f84c92e58d56505375a990ba916d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d0e9795e471774a806dbb4db5030c4"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#af3d0e9795e471774a806dbb4db5030c4">getX</a> () const </td></tr>
+<tr class="separator:af3d0e9795e471774a806dbb4db5030c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b74222b0ad9f00b28177ac51d2931d6"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a8b74222b0ad9f00b28177ac51d2931d6">getY</a> () const </td></tr>
+<tr class="separator:a8b74222b0ad9f00b28177ac51d2931d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93767c013073a0ee821c0690b3c08edf"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a93767c013073a0ee821c0690b3c08edf">getZ</a> () const </td></tr>
+<tr class="separator:a93767c013073a0ee821c0690b3c08edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a2232db745e265d1de7b1f45ae94c3"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a87a2232db745e265d1de7b1f45ae94c3">getW</a> () const </td></tr>
+<tr class="separator:a87a2232db745e265d1de7b1f45ae94c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783b070c5b47509f79d6b035a7b09c64"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a783b070c5b47509f79d6b035a7b09c64">getAxis</a> () const </td></tr>
+<tr class="separator:a783b070c5b47509f79d6b035a7b09c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd50e6dd1ef2d925315f3afcee49a522"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#abd50e6dd1ef2d925315f3afcee49a522">getQuaternion</a> () const </td></tr>
+<tr class="separator:abd50e6dd1ef2d925315f3afcee49a522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b69e61734bcb338d4f30e9332927c7f"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a9b69e61734bcb338d4f30e9332927c7f"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9b69e61734bcb338d4f30e9332927c7f">setX</a> (K x)</td></tr>
+<tr class="separator:a9b69e61734bcb338d4f30e9332927c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea09f7397244457d1ac93b544752af74"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:aea09f7397244457d1ac93b544752af74"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aea09f7397244457d1ac93b544752af74">setY</a> (K y)</td></tr>
+<tr class="separator:aea09f7397244457d1ac93b544752af74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb08d334a509dee9f157604fc8cc552"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a2cb08d334a509dee9f157604fc8cc552"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a2cb08d334a509dee9f157604fc8cc552">setZ</a> (K z)</td></tr>
+<tr class="separator:a2cb08d334a509dee9f157604fc8cc552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa558dd0fc08159836151b498ea670812"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:aa558dd0fc08159836151b498ea670812"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aa558dd0fc08159836151b498ea670812">setW</a> (K w)</td></tr>
+<tr class="separator:aa558dd0fc08159836151b498ea670812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1c53a59d250b7fb7d62437fa2625073"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
 <tr class="memitem:ae1c53a59d250b7fb7d62437fa2625073"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ae1c53a59d250b7fb7d62437fa2625073">setAngleAxis</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;axis, Angle w)</td></tr>
 <tr class="separator:ae1c53a59d250b7fb7d62437fa2625073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ead9af6d624c1572b219a5a1825ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a06ead9af6d624c1572b219a5a1825ce7">setIdentity</a> ()</td></tr>
-<tr class="separator:a06ead9af6d624c1572b219a5a1825ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fe3982d5a5f0c86513c8bd6cf0158c"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aa2fe3982d5a5f0c86513c8bd6cf0158c">setIdentity</a> ()</td></tr>
+<tr class="separator:aa2fe3982d5a5f0c86513c8bd6cf0158c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b4dc46655e5101cf571c2a9709592a"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac2b4dc46655e5101cf571c2a9709592a">norm</a> () const </td></tr>
 <tr class="separator:ac2b4dc46655e5101cf571c2a9709592a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358ee2506666b99db64fdb522792cfe0"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a358ee2506666b99db64fdb522792cfe0">normSquared</a> () const </td></tr>
-<tr class="separator:a358ee2506666b99db64fdb522792cfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9361a0a54041ad7cf5d0bb706819b909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9361a0a54041ad7cf5d0bb706819b909">normalize</a> ()</td></tr>
-<tr class="separator:a9361a0a54041ad7cf5d0bb706819b909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7e730e858812649b38fc1d3d68155a1"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#af7e730e858812649b38fc1d3d68155a1">value</a> () const </td></tr>
-<tr class="separator:af7e730e858812649b38fc1d3d68155a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a302245476a19a35d788e0959ce700028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a302245476a19a35d788e0959ce700028">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> const &amp;q)=default</td></tr>
-<tr class="separator:a302245476a19a35d788e0959ce700028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d3fafa8fb5345c20e6540bfa4835b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a78d3fafa8fb5345c20e6540bfa4835b7">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&amp;q)=default</td></tr>
-<tr class="separator:a78d3fafa8fb5345c20e6540bfa4835b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac567afb3fb86f4233db1078d8f955dc8"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ac567afb3fb86f4233db1078d8f955dc8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac567afb3fb86f4233db1078d8f955dc8">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q)</td></tr>
-<tr class="separator:ac567afb3fb86f4233db1078d8f955dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afde645a57daee9b9849b085c5fa3f3d4"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:afde645a57daee9b9849b085c5fa3f3d4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#afde645a57daee9b9849b085c5fa3f3d4">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; &amp;&amp;q)</td></tr>
-<tr class="separator:afde645a57daee9b9849b085c5fa3f3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18a9d7d452320bb75d52dfa6adbe5028"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a18a9d7d452320bb75d52dfa6adbe5028"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a18a9d7d452320bb75d52dfa6adbe5028">operator*=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q)</td></tr>
-<tr class="separator:a18a9d7d452320bb75d52dfa6adbe5028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb0e578c868b4753d61cd9d4b42a82e"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:aafb0e578c868b4753d61cd9d4b42a82e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#aafb0e578c868b4753d61cd9d4b42a82e">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q) const </td></tr>
-<tr class="separator:aafb0e578c868b4753d61cd9d4b42a82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ff4992c42b3498a70a79099c58d9ce"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a91ff4992c42b3498a70a79099c58d9ce">normSquared</a> () const </td></tr>
+<tr class="separator:a91ff4992c42b3498a70a79099c58d9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60e647be1fb50481cd5813f1f0489d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac60e647be1fb50481cd5813f1f0489d0">normalize</a> ()</td></tr>
+<tr class="separator:ac60e647be1fb50481cd5813f1f0489d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d720a0a4012f26413831d874124793"><td class="memItemLeft" align="right" valign="top">constexpr const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a75d720a0a4012f26413831d874124793">value</a> () const </td></tr>
+<tr class="separator:a75d720a0a4012f26413831d874124793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35aa40cb7c94b4f6be4bb8929e197873"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a35aa40cb7c94b4f6be4bb8929e197873">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> const &amp;q)=default</td></tr>
+<tr class="separator:a35aa40cb7c94b4f6be4bb8929e197873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e071531517e1d0ef20b0e2150a0e4df"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a7e071531517e1d0ef20b0e2150a0e4df">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&amp;q)=default</td></tr>
+<tr class="separator:a7e071531517e1d0ef20b0e2150a0e4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79002ab3c3e55c8f06f82a73127d710d"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a79002ab3c3e55c8f06f82a73127d710d"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a79002ab3c3e55c8f06f82a73127d710d">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q)</td></tr>
+<tr class="separator:a79002ab3c3e55c8f06f82a73127d710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac5b0d660ddb2ef7b90937a4a8d9839"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a9ac5b0d660ddb2ef7b90937a4a8d9839"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9ac5b0d660ddb2ef7b90937a4a8d9839">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; &amp;&amp;q)</td></tr>
+<tr class="separator:a9ac5b0d660ddb2ef7b90937a4a8d9839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b939c554b2df822af9cccc17dd53ad"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a05b939c554b2df822af9cccc17dd53ad"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a05b939c554b2df822af9cccc17dd53ad">operator*=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q)</td></tr>
+<tr class="separator:a05b939c554b2df822af9cccc17dd53ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60993416cedbf373a7dfaa9bcc582fc"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ac60993416cedbf373a7dfaa9bcc582fc"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac60993416cedbf373a7dfaa9bcc582fc">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;q) const </td></tr>
+<tr class="separator:ac60993416cedbf373a7dfaa9bcc582fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b212d1f08fc9a5935bd323b22b9c531"><td class="memItemLeft" align="right" valign="top">Utility::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a6b212d1f08fc9a5935bd323b22b9c531">toString</a> () const </td></tr>
 <tr class="separator:a6b212d1f08fc9a5935bd323b22b9c531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -208,7 +208,7 @@ class NRE::Math::Quaternion&lt; T &gt;</h3>
 
 <p>A quaternion represented by a 3D rotation axis and an angle. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3f449cc3a127a054397bf884c2c02612"></a>
+<a class="anchor" id="a6013b9ed2f5e3476fb47a1f02a9b7ece"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -218,7 +218,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -234,7 +234,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae8a7f78b4e1a771ccf206d2bb88fe55d"></a>
+<a class="anchor" id="aaaabf45cfbe6cc642ee2830c5cb0506c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -243,7 +243,7 @@ template&lt;class T&gt; </div>
 template&lt;class K , class L , class N , class M &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -336,7 +336,7 @@ template&lt;class K , class L , class N &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afdefc312e78b38dabedb3fc06820b1c2"></a>
+<a class="anchor" id="a9b09f8fc6d828b705e8cec75399992fb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -345,7 +345,7 @@ template&lt;class T&gt; </div>
 template&lt;class K , class L &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>ax</em>, </td>
@@ -410,7 +410,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af61e50f88ea8d2a46711f9ce3bd7973e"></a>
+<a class="anchor" id="a7009cc0ec7e86b7c9c65129e030d2ed3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -420,7 +420,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -442,7 +442,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a46c68b3cdaa31978909ce33f9594892d"></a>
+<a class="anchor" id="a3ba9e744e26455a032e87a9f155c202f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -452,7 +452,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -474,7 +474,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a18b3f43d80e22c9c52b1af98a80be7b4"></a>
+<a class="anchor" id="a497a8bd5821b2bca2a3ed6cd34ff0bfd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -483,7 +483,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -527,14 +527,14 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a69cdacf9fabe116ef083ab918ac2865a"></a>
+<a class="anchor" id="a783b070c5b47509f79d6b035a7b09c64"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getAxis </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getAxis </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -545,14 +545,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a51183223d4b9c7955bbe03d0147b48ff"></a>
+<a class="anchor" id="abd50e6dd1ef2d925315f3afcee49a522"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getQuaternion </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Vector4D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getQuaternion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -563,14 +563,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac1e7605f337578de78e84c7087480f4a"></a>
+<a class="anchor" id="a87a2232db745e265d1de7b1f45ae94c3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getW </td>
+          <td class="memname">constexpr T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getW </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -581,14 +581,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa0717eaee838e8a29dc6171a7adf2b73"></a>
+<a class="anchor" id="af3d0e9795e471774a806dbb4db5030c4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getX </td>
+          <td class="memname">constexpr T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getX </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -599,14 +599,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2e025252dbd1aae5b9e610e856c745c2"></a>
+<a class="anchor" id="a8b74222b0ad9f00b28177ac51d2931d6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getY </td>
+          <td class="memname">constexpr T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getY </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -617,14 +617,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad19616cc2549941bac2569549d379131"></a>
+<a class="anchor" id="a93767c013073a0ee821c0690b3c08edf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getZ </td>
+          <td class="memname">constexpr T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::getZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -653,14 +653,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9361a0a54041ad7cf5d0bb706819b909"></a>
+<a class="anchor" id="ac60e647be1fb50481cd5813f1f0489d0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::normalize </td>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a> <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::normalize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -671,14 +671,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a358ee2506666b99db64fdb522792cfe0"></a>
+<a class="anchor" id="a91ff4992c42b3498a70a79099c58d9ce"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::normSquared </td>
+          <td class="memname">constexpr T <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::normSquared </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -689,7 +689,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aafb0e578c868b4753d61cd9d4b42a82e"></a>
+<a class="anchor" id="ac60993416cedbf373a7dfaa9bcc582fc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -698,7 +698,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator* </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator* </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -716,7 +716,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a18a9d7d452320bb75d52dfa6adbe5028"></a>
+<a class="anchor" id="a05b939c554b2df822af9cccc17dd53ad"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -725,7 +725,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator*= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator*= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -743,7 +743,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a302245476a19a35d788e0959ce700028"></a>
+<a class="anchor" id="a35aa40cb7c94b4f6be4bb8929e197873"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -753,7 +753,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -776,7 +776,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a78d3fafa8fb5345c20e6540bfa4835b7"></a>
+<a class="anchor" id="a7e071531517e1d0ef20b0e2150a0e4df"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -786,7 +786,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -809,7 +809,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac567afb3fb86f4233db1078d8f955dc8"></a>
+<a class="anchor" id="a79002ab3c3e55c8f06f82a73127d710d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -818,7 +818,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -836,7 +836,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afde645a57daee9b9849b085c5fa3f3d4"></a>
+<a class="anchor" id="a9ac5b0d660ddb2ef7b90937a4a8d9839"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -845,7 +845,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">Quaternion</a>&lt; K &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
@@ -870,6 +870,9 @@ template&lt;class K &gt; </div>
 template&lt;class T&gt; </div>
 <div class="memtemplate">
 template&lt;class K &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setAngleAxis </td>
@@ -889,6 +892,11 @@ template&lt;class K &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Angle axis setter </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -900,14 +908,14 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a06ead9af6d624c1572b219a5a1825ce7"></a>
+<a class="anchor" id="aa2fe3982d5a5f0c86513c8bd6cf0158c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setIdentity </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setIdentity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -918,7 +926,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aac0f84c92e58d56505375a990ba916d0"></a>
+<a class="anchor" id="aa558dd0fc08159836151b498ea670812"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -927,7 +935,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setW </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setW </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
@@ -944,7 +952,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="affd206d7637a82777bd2d5317f432068"></a>
+<a class="anchor" id="a9b69e61734bcb338d4f30e9332927c7f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -953,7 +961,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setX </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setX </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -970,7 +978,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9c3b2a87afe4f292a3516520a205422f"></a>
+<a class="anchor" id="aea09f7397244457d1ac93b544752af74"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -979,7 +987,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setY </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setY </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>y</em></td><td>)</td>
@@ -996,7 +1004,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a05d28d525f52e96129de19ca171a327e"></a>
+<a class="anchor" id="a2cb08d334a509dee9f157604fc8cc552"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1005,7 +1013,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setZ </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::setZ </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>z</em></td><td>)</td>
@@ -1040,14 +1048,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af7e730e858812649b38fc1d3d68155a1"></a>
+<a class="anchor" id="a75d720a0a4012f26413831d874124793"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const T* <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::value </td>
+          <td class="memname">constexpr const T* <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php">NRE::Math::Quaternion</a>&lt; T &gt;::value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

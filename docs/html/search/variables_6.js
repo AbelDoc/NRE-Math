@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['metre2',['metre2',['../_n_r_e___unit_8hpp.php#ad05b973d3186aadab5c2b0665025d977',1,'NRE::Math']]],
-  ['metre3',['metre3',['../_n_r_e___unit_8hpp.php#acad02e536df2092a42a8d8328dfe07ab',1,'NRE::Math']]],
-  ['millimetre',['millimetre',['../_n_r_e___unit_8hpp.php#accfd7f608ff7f358492bed2936f07672',1,'NRE::Math']]],
-  ['millimetre2',['millimetre2',['../_n_r_e___unit_8hpp.php#a0eec62ac5887757cef063fcbb0dcae08',1,'NRE::Math']]],
-  ['millimetre3',['millimetre3',['../_n_r_e___unit_8hpp.php#af6826769863e54d9b32d6e1110159799',1,'NRE::Math']]],
-  ['minute',['minute',['../_n_r_e___unit_8hpp.php#adee1d5ae4bf7e308a71813755b4f6b58',1,'NRE::Math']]]
+  ['kilometre',['kilometre',['../_n_r_e___unit_8hpp.php#a42e33c28232bf195a630470c7172eb8e',1,'NRE::Math']]],
+  ['kilometre2',['kilometre2',['../_n_r_e___unit_8hpp.php#ac699a97b36fc1b59f7b75c8cd2d88c01',1,'NRE::Math']]],
+  ['kilometre3',['kilometre3',['../_n_r_e___unit_8hpp.php#aad4ff9c023d12f00e5f7eb3fbff21c19',1,'NRE::Math']]]
 ];

@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -131,8 +132,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#ab85a19a9bb6c7818e1708f3db30bf7ef">NRE::Math::Frustum</a>
 </li>
 <li>rotate()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaa8bb28aa20327c854e390d2aad23847">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ae907e351e5e2e8399f62fc112a55a5ec">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#adf1911bb89dcbef6af658d4fa2231231">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#afaad6e8101614e09a677d6d329bc73ac">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

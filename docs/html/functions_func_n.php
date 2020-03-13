@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.php"><span>All</span></a></li>
       <li class="current"><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -134,16 +135,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#ad8e468265fac70de4534f0aa861f7788">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>normalize()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a9361a0a54041ad7cf5d0bb706819b909">NRE::Math::Quaternion&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#ac60e647be1fb50481cd5813f1f0489d0">NRE::Math::Quaternion&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a21b03c6f25466279eaed82addf1b9e76">NRE::Math::Vector2D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#ac9fe609c2abdac54ac5f0e31d6fd6f92">NRE::Math::Vector3D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#adbe956f15f3b7ed2bbb873ef01c23c96">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>normSquared()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a358ee2506666b99db64fdb522792cfe0">NRE::Math::Quaternion&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a0838bbfc6ffbb691ad45eee173febf15">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#af142e5e7b4fa1eb5f130b17e4168e44d">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a6de36661417271efc88816bec996790f">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a91ff4992c42b3498a70a79099c58d9ce">NRE::Math::Quaternion&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a2a2081d8cdac089c8f069c66d11bb212">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a619848cfd51e30ff1a48aa77dbe5866f">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a1a2d2b014d7f9aedc14bb777847bd973">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

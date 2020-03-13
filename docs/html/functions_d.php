@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -128,15 +129,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>distance()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a137f04ed1ac264233c1497c2e1720361">NRE::Math::Plane&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a33aacb5cafdabacc3cd770bcf9cd59ba">NRE::Math::Plane&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a9a56b45efe2942ad1dc694007e9d2946">NRE::Math::Vector2D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a52ce9e19c29c901cdeb1979fad1782c3">NRE::Math::Vector3D&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a764c246bdc43173498afa08679a19b54">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>distanceSquared()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a0d3f8c1bb114ef29f2c5f574c370fa4b">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a2de10c6e87df71b28d6b3e4d12094f47">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a7fe8cc00c1b5b6f055d48820c72ea4f4">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a7ac6e10b0f77196c11a339b035e01eb0">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a963aff18cce45fd0a62513c1c7075a99">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a55660d650c7a16d7a00bd9e84494ffe5">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

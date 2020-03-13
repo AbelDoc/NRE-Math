@@ -96,9 +96,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Features</h2>
 <ul>
 <li>Header-only</li>
-<li>Vector 2D, 3D, 4D : Vector regroup all methods to describe a cartesian 2D, 3D, 4D vector. 3D &amp; 4D Vector represent 2D &amp; 3D homogeneous Vector. All bases operations are supported : +, -, *, /, dot product (|), cross product (^), ==, !=, &gt;, &lt;, &gt;=, &lt;= Normalisation, distance computation, individual elements access (getter or [ ]).</li>
-<li>Point 2D, 3D, 4D : Simple aliases on Vector</li>
-<li>Matrix 3x3, 4x4 : Allow simple use to create transformation matrix. All bases operations are supported : +, -, *, /, ==, != Possible transformations :<ul>
+<li><b>Vector 2D, 3D, 4D</b> : Vector regroup all methods to describe a cartesian 2D, 3D, 4D vector. 3D &amp; 4D Vector represent 2D &amp; 3D homogeneous Vector. All bases operations are supported : +, -, *, /, dot product (|), cross product (^), ==, !=, &gt;, &lt;, &gt;=, &lt;= Normalisation, distance computation, individual elements access (getter or [ ]).</li>
+<li><b>Point 2D, 3D, 4D</b> : Simple aliases on Vector</li>
+<li><b>Matrix 3x3, 4x4</b> : Allow simple use to create transformation matrix. All bases operations are supported : +, -, *, /, ==, != Possible transformations :<ul>
 <li>Translation</li>
 <li>Rotation</li>
 <li>Sheer</li>
@@ -113,11 +113,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>BezierCurve</li>
 </ul>
 </li>
-<li>Segment 3D, 4D : Represent 2D &amp; 3D homogeneous Segments</li>
-<li>BezierCurve 3D, 4D : Represent 2D &amp; 3D homogeneous Bezier Curves</li>
-<li>Frustum : Represent a view frustum, used in collaboration with camera to set up a perspective camera</li>
-<li>Plane : Represent a 3D plane, it's use 3D homogeneous coordinates to allow simple transformations with a matrix</li>
-<li>Quaternion : Represent a simple quaternion, can be converted to a 4x4 matrix in order to represent a rotation matrix.</li>
+<li><b>Segment 3D, 4D</b> : Represent 2D &amp; 3D homogeneous Segments</li>
+<li><b>BezierCurve 3D, 4D</b> : Represent 2D &amp; 3D homogeneous Bezier Curves</li>
+<li><b>Frustum</b> : Represent a view frustum, used in collaboration with camera to set up a perspective camera</li>
+<li><b>Plane</b> : Represent a 3D plane, it's use 3D homogeneous coordinates to allow simple transformations with a matrix</li>
+<li><b>Quaternion</b> : Represent a simple quaternion, can be converted to a 4x4 matrix in order to represent a rotation matrix.</li>
 </ul>
 <h2>Architecture</h2>
 <div class="image">

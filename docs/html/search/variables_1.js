@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['day',['day',['../_n_r_e___unit_8hpp.php#a55c93552a177e8b1b27920daf369d5b9',1,'NRE::Math']]],
-  ['decimetre',['decimetre',['../_n_r_e___unit_8hpp.php#af40c2aa07be1468a01c7c0b4a29124a6',1,'NRE::Math']]],
-  ['decimetre2',['decimetre2',['../_n_r_e___unit_8hpp.php#acd542e35f3c11cdf1462fa99879f5a34',1,'NRE::Math']]],
-  ['decimetre3',['decimetre3',['../_n_r_e___unit_8hpp.php#a1c9da294870a255ba1d988ccbecc61e3',1,'NRE::Math']]],
-  ['degree',['degree',['../_n_r_e___unit_8hpp.php#ae085bcfd9859bc503e20ba6686871c2c',1,'NRE::Math']]]
+  ['centimetre',['centimetre',['../_n_r_e___unit_8hpp.php#acdb2ca06bd2ab6778babdd3d518821c8',1,'NRE::Math']]],
+  ['centimetre2',['centimetre2',['../_n_r_e___unit_8hpp.php#a5ba3c74436a9b9698fe0ea75cd2dcdac',1,'NRE::Math']]],
+  ['centimetre3',['centimetre3',['../_n_r_e___unit_8hpp.php#ad5699fd096585d91c8f9ab96373c5ef5',1,'NRE::Math']]]
 ];

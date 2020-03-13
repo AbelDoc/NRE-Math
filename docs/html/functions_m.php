@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -128,10 +129,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>Matrix3x3()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a3415222b5d55e3e5e3ba3f1f99557c7b">NRE::Math::Matrix3x3&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7498846f5077778ec96b72734a883e48">NRE::Math::Matrix3x3&lt; T &gt;</a>
 </li>
 <li>Matrix4x4()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ad4d195774afefa1a19bfe95166855f1a">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#acdbcb5a6acef324ad6701c85a113f309">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

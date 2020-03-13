@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.php"><span>All</span></a></li>
       <li class="current"><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -128,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
 <li>Quaternion()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a3f449cc3a127a054397bf884c2c02612">NRE::Math::Quaternion&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_quaternion.php#a6013b9ed2f5e3476fb47a1f02a9b7ece">NRE::Math::Quaternion&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.php"><span>All</span></a></li>
       <li class="current"><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -128,12 +129,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>limit()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a9cc9306e2ebef16c9752f4495444cc87">NRE::Math::Vector2D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a9d8d7c69786525425e0897a4027b1f3d">NRE::Math::Vector3D&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#a68e4c5d8db9ad6e1058b21baf3b8ab87">NRE::Math::Vector4D&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a916ef2c335329680e35d9012a29b1af5">NRE::Math::Vector2D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php#a7d3138dd0c8a4c6f478f0f49c793a463">NRE::Math::Vector3D&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php#acd1ddc911ce3fc2f1a1b5795899d176e">NRE::Math::Vector4D&lt; T &gt;</a>
 </li>
 <li>lookAt()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a886205a69accb68c441e5fa6c571b9d2">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a66fb02d3b019fea5803185179cc12d55">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -285,6 +285,16 @@ Functions</h2></td></tr>
 <tr class="separator:aa00b565e2f9d85446eddeeeffc8bd170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee84be9933a6d9f8c1154955e0b4262"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___unit_8hpp.php#a4ee84be9933a6d9f8c1154955e0b4262">NRE::Math::tan</a> (Angle const &amp;u)</td></tr>
 <tr class="separator:a4ee84be9933a6d9f8c1154955e0b4262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa88230c403273151c96f03101db730"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___unit_8hpp.php#abaa88230c403273151c96f03101db730">NRE::Math::asin</a> (Angle const &amp;u)</td></tr>
+<tr class="separator:abaa88230c403273151c96f03101db730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d73833ce5035946b2749623361b2306"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___unit_8hpp.php#a4d73833ce5035946b2749623361b2306">NRE::Math::acos</a> (Angle const &amp;u)</td></tr>
+<tr class="separator:a4d73833ce5035946b2749623361b2306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05fc67ce1a2ff515a20a80eabea3722d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___unit_8hpp.php#a05fc67ce1a2ff515a20a80eabea3722d">NRE::Math::atan</a> (Angle const &amp;u)</td></tr>
+<tr class="separator:a05fc67ce1a2ff515a20a80eabea3722d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7015741b1d22cf36b140a80cc53d25d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___unit_8hpp.php#ad7015741b1d22cf36b140a80cc53d25d">NRE::Math::toRad</a> (Angle const &amp;u)</td></tr>
+<tr class="separator:ad7015741b1d22cf36b140a80cc53d25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b78d4f8ba76090ac7514e48e1d2f13f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___unit_8hpp.php#a3b78d4f8ba76090ac7514e48e1d2f13f">NRE::Math::toDeg</a> (Angle const &amp;u)</td></tr>
+<tr class="separator:a3b78d4f8ba76090ac7514e48e1d2f13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -385,6 +395,99 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="file_a4d73833ce5035946b2749623361b2306"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NRE::Math::acos </td>
+          <td>(</td>
+          <td class="paramtype">Angle const &amp;&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the arc cos of a unit in typed manners </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>the unit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting tan </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="file_abaa88230c403273151c96f03101db730"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NRE::Math::asin </td>
+          <td>(</td>
+          <td class="paramtype">Angle const &amp;&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the arc sin of a unit in typed manners </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>the unit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting tan </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="file_a05fc67ce1a2ff515a20a80eabea3722d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NRE::Math::atan </td>
+          <td>(</td>
+          <td class="paramtype">Angle const &amp;&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compute the arc tan of a unit in typed manners </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>the unit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting tan </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="file_aa00b565e2f9d85446eddeeeffc8bd170"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1766,6 +1869,68 @@ template&lt;class M , class L , class T , class A &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the resulting tan </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="file_a3b78d4f8ba76090ac7514e48e1d2f13f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NRE::Math::toDeg </td>
+          <td>(</td>
+          <td class="paramtype">Angle const &amp;&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the angle value in degree </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>the unit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting angle </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="file_ad7015741b1d22cf36b140a80cc53d25d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NRE::Math::toRad </td>
+          <td>(</td>
+          <td class="paramtype">Angle const &amp;&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the angle value in radian </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>the unit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the resulting angle </dd></dl>
 
 </div>
 </div>

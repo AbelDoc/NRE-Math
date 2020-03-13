@@ -102,6 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_n_r_e_1_1_math_1_1_matrix3x3-members.php">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">NRE::Math::Matrix3x3&lt; T &gt; Class Template Reference</div>  </div>
@@ -123,161 +124,166 @@ Inheritance diagram for NRE::Math::Matrix3x3&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3415222b5d55e3e5e3ba3f1f99557c7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a3415222b5d55e3e5e3ba3f1f99557c7b">Matrix3x3</a> ()=default</td></tr>
-<tr class="separator:a3415222b5d55e3e5e3ba3f1f99557c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add53c1fcf0e54a4fd91284f31fb815a6"><td class="memTemplParams" colspan="2">template&lt;class A , class B , class C , class D , class E , class F , class G , class H , class I &gt; </td></tr>
-<tr class="memitem:add53c1fcf0e54a4fd91284f31fb815a6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#add53c1fcf0e54a4fd91284f31fb815a6">Matrix3x3</a> (A a, B b, C c, D d, E e, F f, G g, H h, I i)</td></tr>
-<tr class="separator:add53c1fcf0e54a4fd91284f31fb815a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e71e2e53d5fbf716023b3d70a9f104"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ab2e71e2e53d5fbf716023b3d70a9f104"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab2e71e2e53d5fbf716023b3d70a9f104">Matrix3x3</a> (K <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aa76e531f9adb89ec86aecc816b46cd95">value</a>)</td></tr>
-<tr class="separator:ab2e71e2e53d5fbf716023b3d70a9f104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85e33aec84eb6e13326451468b7b863"><td class="memTemplParams" colspan="2">template&lt;class K , class L , class N &gt; </td></tr>
-<tr class="memitem:ab85e33aec84eb6e13326451468b7b863"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab85e33aec84eb6e13326451468b7b863">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l1, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; L &gt; const &amp;l2, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; N &gt; const &amp;l3)</td></tr>
-<tr class="separator:ab85e33aec84eb6e13326451468b7b863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaad961cc00cdbb291844a063e70c3802"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaad961cc00cdbb291844a063e70c3802">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> const &amp;m)=default</td></tr>
-<tr class="separator:aaad961cc00cdbb291844a063e70c3802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa47572b5d1ae9e835e8a10f75cc70201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aa47572b5d1ae9e835e8a10f75cc70201">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&amp;m)=default</td></tr>
-<tr class="separator:aa47572b5d1ae9e835e8a10f75cc70201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded7bc14541a74bcedbf777c5e0b2e7e"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:aded7bc14541a74bcedbf777c5e0b2e7e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aded7bc14541a74bcedbf777c5e0b2e7e">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
-<tr class="separator:aded7bc14541a74bcedbf777c5e0b2e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba520e8633744e2c0f1ced4bfecdad7"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a9ba520e8633744e2c0f1ced4bfecdad7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9ba520e8633744e2c0f1ced4bfecdad7">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">Matrix4x4</a>&lt; K &gt; const &amp;m)</td></tr>
-<tr class="separator:a9ba520e8633744e2c0f1ced4bfecdad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7498846f5077778ec96b72734a883e48"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7498846f5077778ec96b72734a883e48">Matrix3x3</a> ()=default</td></tr>
+<tr class="separator:a7498846f5077778ec96b72734a883e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b4e24a25bc5d6788872322fdac94de"><td class="memTemplParams" colspan="2">template&lt;class A , class B , class C , class D , class E , class F , class G , class H , class I &gt; </td></tr>
+<tr class="memitem:a48b4e24a25bc5d6788872322fdac94de"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a48b4e24a25bc5d6788872322fdac94de">Matrix3x3</a> (A a, B b, C c, D d, E e, F f, G g, H h, I i)</td></tr>
+<tr class="separator:a48b4e24a25bc5d6788872322fdac94de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cce41b16bc838cbfee1610fe5647fb"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ac8cce41b16bc838cbfee1610fe5647fb"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ac8cce41b16bc838cbfee1610fe5647fb">Matrix3x3</a> (K <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a87a1da2a6d646eb9fa1ff62d145f44ff">value</a>)</td></tr>
+<tr class="separator:ac8cce41b16bc838cbfee1610fe5647fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaacd0a9c7ed0004fa9143e6414e27f70"><td class="memTemplParams" colspan="2">template&lt;class K , class L , class N &gt; </td></tr>
+<tr class="memitem:aaacd0a9c7ed0004fa9143e6414e27f70"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaacd0a9c7ed0004fa9143e6414e27f70">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l1, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; L &gt; const &amp;l2, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; N &gt; const &amp;l3)</td></tr>
+<tr class="separator:aaacd0a9c7ed0004fa9143e6414e27f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202356fd50ede622b1e8899e5b20b772"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a202356fd50ede622b1e8899e5b20b772">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> const &amp;m)=default</td></tr>
+<tr class="separator:a202356fd50ede622b1e8899e5b20b772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae759d4279cbc8b3cdf3b66f6db75c868"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae759d4279cbc8b3cdf3b66f6db75c868">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&amp;m)=default</td></tr>
+<tr class="separator:ae759d4279cbc8b3cdf3b66f6db75c868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69c168406b62f48f7d1bb36b3a267dc"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:af69c168406b62f48f7d1bb36b3a267dc"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af69c168406b62f48f7d1bb36b3a267dc">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
+<tr class="separator:af69c168406b62f48f7d1bb36b3a267dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3add1fceef6fc5b95fa1be83781f72a5"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a3add1fceef6fc5b95fa1be83781f72a5"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a3add1fceef6fc5b95fa1be83781f72a5">Matrix3x3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">Matrix4x4</a>&lt; K &gt; const &amp;m)</td></tr>
+<tr class="separator:a3add1fceef6fc5b95fa1be83781f72a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b3a282bf93dca9900b95d387875133"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ad1b3a282bf93dca9900b95d387875133">~Matrix3x3</a> ()=default</td></tr>
 <tr class="separator:ad1b3a282bf93dca9900b95d387875133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e0e0edd9969a970464e4098baca29ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a4e0e0edd9969a970464e4098baca29ae">getL1</a> () const </td></tr>
-<tr class="separator:a4e0e0edd9969a970464e4098baca29ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a389a7425497eca58b3e94ba8f88d6e3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a389a7425497eca58b3e94ba8f88d6e3a">getL2</a> () const </td></tr>
-<tr class="separator:a389a7425497eca58b3e94ba8f88d6e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66fda6eb7da6ec88fd5eea1a850db1bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a66fda6eb7da6ec88fd5eea1a850db1bf">getL3</a> () const </td></tr>
-<tr class="separator:a66fda6eb7da6ec88fd5eea1a850db1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac14b2b94fb67f4977664cb399a1f468"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aac14b2b94fb67f4977664cb399a1f468">getC1</a> () const </td></tr>
-<tr class="separator:aac14b2b94fb67f4977664cb399a1f468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac36f48d23575a8b85c028168876cee0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ac36f48d23575a8b85c028168876cee0c">getC2</a> () const </td></tr>
-<tr class="separator:ac36f48d23575a8b85c028168876cee0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0722ab55923c11e84bf55c91242c4274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a0722ab55923c11e84bf55c91242c4274">getC3</a> () const </td></tr>
-<tr class="separator:a0722ab55923c11e84bf55c91242c4274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b3520c5fde6e77f6025447cfcc50d4"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ad6b3520c5fde6e77f6025447cfcc50d4">getDeterminant</a> () const </td></tr>
-<tr class="separator:ad6b3520c5fde6e77f6025447cfcc50d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f39ab8bc99accbb704ff5515c59624e"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a8f39ab8bc99accbb704ff5515c59624e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a8f39ab8bc99accbb704ff5515c59624e">setL1</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l1)</td></tr>
-<tr class="separator:a8f39ab8bc99accbb704ff5515c59624e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b48fd548fabee8887258603ba22867"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a22b48fd548fabee8887258603ba22867"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a22b48fd548fabee8887258603ba22867">setL2</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l2)</td></tr>
-<tr class="separator:a22b48fd548fabee8887258603ba22867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f2864c4b7c623b637161158ae7f7516"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a9f2864c4b7c623b637161158ae7f7516"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9f2864c4b7c623b637161158ae7f7516">setL3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l3)</td></tr>
-<tr class="separator:a9f2864c4b7c623b637161158ae7f7516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5042af0b72fd867e36d077a5741890e"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:aa5042af0b72fd867e36d077a5741890e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aa5042af0b72fd867e36d077a5741890e">setC1</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;c1)</td></tr>
-<tr class="separator:aa5042af0b72fd867e36d077a5741890e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82765763658001fa7228c3e0b808c9ba"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a82765763658001fa7228c3e0b808c9ba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a82765763658001fa7228c3e0b808c9ba">setC2</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;c2)</td></tr>
-<tr class="separator:a82765763658001fa7228c3e0b808c9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4776b53a54a077f3342ea4e0e2011b3"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ad4776b53a54a077f3342ea4e0e2011b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ad4776b53a54a077f3342ea4e0e2011b3">setC3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;c3)</td></tr>
-<tr class="separator:ad4776b53a54a077f3342ea4e0e2011b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a538aee7efd1c51a801f8f27dfc1efaa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a538aee7efd1c51a801f8f27dfc1efaa7">setIdentity</a> ()</td></tr>
-<tr class="separator:a538aee7efd1c51a801f8f27dfc1efaa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81bcd3c4f3bd75ce1fc34ef658ece0a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a81bcd3c4f3bd75ce1fc34ef658ece0a4">transpose</a> ()</td></tr>
-<tr class="separator:a81bcd3c4f3bd75ce1fc34ef658ece0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3feeded178229bf06c7ae17db9e458fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a3feeded178229bf06c7ae17db9e458fc">inverse</a> ()</td></tr>
-<tr class="separator:a3feeded178229bf06c7ae17db9e458fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1cd2fa45f97f8906598dff75d156aab"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ae1cd2fa45f97f8906598dff75d156aab"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae1cd2fa45f97f8906598dff75d156aab">translate</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;u)</td></tr>
-<tr class="separator:ae1cd2fa45f97f8906598dff75d156aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a507ae912f675d3c6a8b88d987ed468fe"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a507ae912f675d3c6a8b88d987ed468fe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a507ae912f675d3c6a8b88d987ed468fe">scale</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;u)</td></tr>
-<tr class="separator:a507ae912f675d3c6a8b88d987ed468fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e2fda083093b94f9fb0d16e50d36d3"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ab0e2fda083093b94f9fb0d16e50d36d3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab0e2fda083093b94f9fb0d16e50d36d3">stretchX</a> (K u)</td></tr>
-<tr class="separator:ab0e2fda083093b94f9fb0d16e50d36d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e27e13e85006301b16f754da5372ad"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ab9e27e13e85006301b16f754da5372ad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab9e27e13e85006301b16f754da5372ad">stretchY</a> (K u)</td></tr>
-<tr class="separator:ab9e27e13e85006301b16f754da5372ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a681ca632b3f17880831347c64275411f"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a681ca632b3f17880831347c64275411f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a681ca632b3f17880831347c64275411f">squeezeX</a> (K u)</td></tr>
-<tr class="separator:a681ca632b3f17880831347c64275411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c76326ce4edfd2b3b51a4ece20857df"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a9c76326ce4edfd2b3b51a4ece20857df"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9c76326ce4edfd2b3b51a4ece20857df">squeezeY</a> (K u)</td></tr>
-<tr class="separator:a9c76326ce4edfd2b3b51a4ece20857df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fa4a6dfb58015ac492fc03e3da2c3ea"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a5fa4a6dfb58015ac492fc03e3da2c3ea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a5fa4a6dfb58015ac492fc03e3da2c3ea">shearX</a> (K u)</td></tr>
-<tr class="separator:a5fa4a6dfb58015ac492fc03e3da2c3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48134c56e97e83e1c80e9e4fbe71eec3"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a48134c56e97e83e1c80e9e4fbe71eec3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a48134c56e97e83e1c80e9e4fbe71eec3">shearY</a> (K u)</td></tr>
-<tr class="separator:a48134c56e97e83e1c80e9e4fbe71eec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa8bb28aa20327c854e390d2aad23847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaa8bb28aa20327c854e390d2aad23847">rotate</a> (Angle angle)</td></tr>
-<tr class="separator:aaa8bb28aa20327c854e390d2aad23847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa76e531f9adb89ec86aecc816b46cd95"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aa76e531f9adb89ec86aecc816b46cd95">value</a> () const </td></tr>
-<tr class="separator:aa76e531f9adb89ec86aecc816b46cd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e87a95bcb468bf1ac8cf03b8f0441f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af8e87a95bcb468bf1ac8cf03b8f0441f">operator[]</a> (std::size_t index)</td></tr>
-<tr class="separator:af8e87a95bcb468bf1ac8cf03b8f0441f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a085c310d9b21fc8dbb9018c9630f84c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a085c310d9b21fc8dbb9018c9630f84c1">operator[]</a> (std::size_t index) const </td></tr>
-<tr class="separator:a085c310d9b21fc8dbb9018c9630f84c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1c763215f22622bd6a86aea3e572639"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae1c763215f22622bd6a86aea3e572639">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> const &amp;m)=default</td></tr>
-<tr class="separator:ae1c763215f22622bd6a86aea3e572639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a005a48d111211d78692a252d5b08a9fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a005a48d111211d78692a252d5b08a9fe">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&amp;m)=default</td></tr>
-<tr class="separator:a005a48d111211d78692a252d5b08a9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1c643351093965f875ab7d5785bdc7"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a8d1c643351093965f875ab7d5785bdc7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a8d1c643351093965f875ab7d5785bdc7">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
-<tr class="separator:a8d1c643351093965f875ab7d5785bdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d2a4b7a34d00716739d77f81bb7fe5"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a48d2a4b7a34d00716739d77f81bb7fe5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a48d2a4b7a34d00716739d77f81bb7fe5">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; &amp;&amp;m)</td></tr>
-<tr class="separator:a48d2a4b7a34d00716739d77f81bb7fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163e1da1b3c1c6355732354aaa2c2557"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a163e1da1b3c1c6355732354aaa2c2557"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a163e1da1b3c1c6355732354aaa2c2557">operator+=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
-<tr class="separator:a163e1da1b3c1c6355732354aaa2c2557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b3224f1050440caf72b64fd3a2e6be"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a38b3224f1050440caf72b64fd3a2e6be"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a38b3224f1050440caf72b64fd3a2e6be">operator-=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
-<tr class="separator:a38b3224f1050440caf72b64fd3a2e6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06909b7cd730520f3dfa3c463ae3c576"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a06909b7cd730520f3dfa3c463ae3c576"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a06909b7cd730520f3dfa3c463ae3c576">operator*=</a> (K k)</td></tr>
-<tr class="separator:a06909b7cd730520f3dfa3c463ae3c576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f20cc3613e7c8b1527a86eed8841274"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a2f20cc3613e7c8b1527a86eed8841274"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a2f20cc3613e7c8b1527a86eed8841274">operator*=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
-<tr class="separator:a2f20cc3613e7c8b1527a86eed8841274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad54ae5ee1225741d549a2d53194fae19"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ad54ae5ee1225741d549a2d53194fae19"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ad54ae5ee1225741d549a2d53194fae19">operator/=</a> (K k)</td></tr>
-<tr class="separator:ad54ae5ee1225741d549a2d53194fae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76b05a22bb1599c43a2f5164ddf14da"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ae76b05a22bb1599c43a2f5164ddf14da"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae76b05a22bb1599c43a2f5164ddf14da">operator/=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
-<tr class="separator:ae76b05a22bb1599c43a2f5164ddf14da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8888e0b3eb3b33376f24a37b34d6a6d"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:af8888e0b3eb3b33376f24a37b34d6a6d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af8888e0b3eb3b33376f24a37b34d6a6d">operator+</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
-<tr class="separator:af8888e0b3eb3b33376f24a37b34d6a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a480f6dabbe66d020571f0d0bc2bd5425"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a480f6dabbe66d020571f0d0bc2bd5425"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a480f6dabbe66d020571f0d0bc2bd5425">operator-</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
-<tr class="separator:a480f6dabbe66d020571f0d0bc2bd5425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf7770fd56437128af8df13d3c1e3955"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:aaf7770fd56437128af8df13d3c1e3955"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaf7770fd56437128af8df13d3c1e3955">operator*</a> (K k) const </td></tr>
-<tr class="separator:aaf7770fd56437128af8df13d3c1e3955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d1cc095341c7a600194c2064f64a8a"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:ac4d1cc095341c7a600194c2064f64a8a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ac4d1cc095341c7a600194c2064f64a8a">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
-<tr class="separator:ac4d1cc095341c7a600194c2064f64a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01fff44467c86c5e052609ccd9f05538"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a01fff44467c86c5e052609ccd9f05538"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a01fff44467c86c5e052609ccd9f05538">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;u) const </td></tr>
-<tr class="separator:a01fff44467c86c5e052609ccd9f05538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f6f22822d99b5e0509a8dfd3963729"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a16f6f22822d99b5e0509a8dfd3963729"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a16f6f22822d99b5e0509a8dfd3963729">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a>&lt; K &gt; const &amp;s) const </td></tr>
-<tr class="separator:a16f6f22822d99b5e0509a8dfd3963729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af218a6b113e416410e421384325f2136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af218a6b113e416410e421384325f2136">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> const &amp;c) const </td></tr>
-<tr class="separator:af218a6b113e416410e421384325f2136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f062175100a56541849b3ea28b50af"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a58f062175100a56541849b3ea28b50af"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a58f062175100a56541849b3ea28b50af">operator/</a> (K k) const </td></tr>
-<tr class="separator:a58f062175100a56541849b3ea28b50af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7274a132011900b1a622ac375995b888"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a7274a132011900b1a622ac375995b888"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7274a132011900b1a622ac375995b888">operator/</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
-<tr class="separator:a7274a132011900b1a622ac375995b888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaff2b1fef6121b6010ae78cd7fb076ab"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:aaff2b1fef6121b6010ae78cd7fb076ab"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aaff2b1fef6121b6010ae78cd7fb076ab">operator==</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
-<tr class="separator:aaff2b1fef6121b6010ae78cd7fb076ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f56eb419645842780baddc01723c270"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a5f56eb419645842780baddc01723c270"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a5f56eb419645842780baddc01723c270">operator!=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
-<tr class="separator:a5f56eb419645842780baddc01723c270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ba6113104d98b9c2867f5e86d38466"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a59ba6113104d98b9c2867f5e86d38466">getL1</a> () const </td></tr>
+<tr class="separator:a59ba6113104d98b9c2867f5e86d38466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec135bee62f5595be949fe36f7c2bb8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#abec135bee62f5595be949fe36f7c2bb8">getL2</a> () const </td></tr>
+<tr class="separator:abec135bee62f5595be949fe36f7c2bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659b949b86cfa857961a8e0a20e04571"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a659b949b86cfa857961a8e0a20e04571">getL3</a> () const </td></tr>
+<tr class="separator:a659b949b86cfa857961a8e0a20e04571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a9086e29d23a64dc30542b7d487bfe"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aa2a9086e29d23a64dc30542b7d487bfe">getC1</a> () const </td></tr>
+<tr class="separator:aa2a9086e29d23a64dc30542b7d487bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9319e13b7b2406aaa25edefb289b76d2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9319e13b7b2406aaa25edefb289b76d2">getC2</a> () const </td></tr>
+<tr class="separator:a9319e13b7b2406aaa25edefb289b76d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24202580d3ce17d5a93236e36a41cdfc"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a24202580d3ce17d5a93236e36a41cdfc">getC3</a> () const </td></tr>
+<tr class="separator:a24202580d3ce17d5a93236e36a41cdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260fe35c48abfd0fe3fa6ac21055a525"><td class="memItemLeft" align="right" valign="top">constexpr long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a260fe35c48abfd0fe3fa6ac21055a525">getDeterminant</a> () const </td></tr>
+<tr class="separator:a260fe35c48abfd0fe3fa6ac21055a525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd19f2e0c68964df59cbe9922420d80"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a2bd19f2e0c68964df59cbe9922420d80"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a2bd19f2e0c68964df59cbe9922420d80">setL1</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l1)</td></tr>
+<tr class="separator:a2bd19f2e0c68964df59cbe9922420d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e32090e84ebf5675cba3ef7601bb3bf"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a2e32090e84ebf5675cba3ef7601bb3bf"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a2e32090e84ebf5675cba3ef7601bb3bf">setL2</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l2)</td></tr>
+<tr class="separator:a2e32090e84ebf5675cba3ef7601bb3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9d9167bfe1b1cba830bf74b9c14d0b"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:acb9d9167bfe1b1cba830bf74b9c14d0b"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#acb9d9167bfe1b1cba830bf74b9c14d0b">setL3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;l3)</td></tr>
+<tr class="separator:acb9d9167bfe1b1cba830bf74b9c14d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c656891d269558a279c0839e43d1fe"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a43c656891d269558a279c0839e43d1fe"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a43c656891d269558a279c0839e43d1fe">setC1</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;c1)</td></tr>
+<tr class="separator:a43c656891d269558a279c0839e43d1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd7c49ecc9d5b5def3f3af5c8cffa13"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:afdd7c49ecc9d5b5def3f3af5c8cffa13"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#afdd7c49ecc9d5b5def3f3af5c8cffa13">setC2</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;c2)</td></tr>
+<tr class="separator:afdd7c49ecc9d5b5def3f3af5c8cffa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2287876bca531e8c65bb4544fb82149"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ae2287876bca531e8c65bb4544fb82149"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae2287876bca531e8c65bb4544fb82149">setC3</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;c3)</td></tr>
+<tr class="separator:ae2287876bca531e8c65bb4544fb82149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bac4af98c7f240f94cc343995615c86"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7bac4af98c7f240f94cc343995615c86">setIdentity</a> ()</td></tr>
+<tr class="separator:a7bac4af98c7f240f94cc343995615c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1f062a88dbdd316b09cce256cb3dbb"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7e1f062a88dbdd316b09cce256cb3dbb">transpose</a> ()</td></tr>
+<tr class="separator:a7e1f062a88dbdd316b09cce256cb3dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5e176b6456088a02ef602f53dc9839"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a8d5e176b6456088a02ef602f53dc9839">inverse</a> ()</td></tr>
+<tr class="separator:a8d5e176b6456088a02ef602f53dc9839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f6f8a86eb84937659a1aad41d25294"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ab0f6f8a86eb84937659a1aad41d25294"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab0f6f8a86eb84937659a1aad41d25294">translate</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;u)</td></tr>
+<tr class="separator:ab0f6f8a86eb84937659a1aad41d25294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7363f7794956d19ee69cce2c2e537a80"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a7363f7794956d19ee69cce2c2e537a80"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7363f7794956d19ee69cce2c2e537a80">scale</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;u)</td></tr>
+<tr class="separator:a7363f7794956d19ee69cce2c2e537a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c5e854386f76aa08008e5feb79bd69"><td class="memTemplParams" colspan="2">template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:a75c5e854386f76aa08008e5feb79bd69"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a75c5e854386f76aa08008e5feb79bd69">stretchX</a> (K u)</td></tr>
+<tr class="separator:a75c5e854386f76aa08008e5feb79bd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac412fcf74d01e03e6fc763bb7daf6bb6"><td class="memTemplParams" colspan="2">template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:ac412fcf74d01e03e6fc763bb7daf6bb6"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ac412fcf74d01e03e6fc763bb7daf6bb6">stretchY</a> (K u)</td></tr>
+<tr class="separator:ac412fcf74d01e03e6fc763bb7daf6bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637e7e0087b2ad5fba29d9930e65424c"><td class="memTemplParams" colspan="2">template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:a637e7e0087b2ad5fba29d9930e65424c"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a637e7e0087b2ad5fba29d9930e65424c">squeezeX</a> (K u)</td></tr>
+<tr class="separator:a637e7e0087b2ad5fba29d9930e65424c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9916e2e922d75bb30b1fce99b55afa"><td class="memTemplParams" colspan="2">template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:aff9916e2e922d75bb30b1fce99b55afa"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aff9916e2e922d75bb30b1fce99b55afa">squeezeY</a> (K u)</td></tr>
+<tr class="separator:aff9916e2e922d75bb30b1fce99b55afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5e3461c806fe7f9cd05408d2997477"><td class="memTemplParams" colspan="2">template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:a0e5e3461c806fe7f9cd05408d2997477"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a0e5e3461c806fe7f9cd05408d2997477">shearX</a> (K u)</td></tr>
+<tr class="separator:a0e5e3461c806fe7f9cd05408d2997477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52d12ba3414cb354fdda81e3a63973a"><td class="memTemplParams" colspan="2">template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:af52d12ba3414cb354fdda81e3a63973a"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#af52d12ba3414cb354fdda81e3a63973a">shearY</a> (K u)</td></tr>
+<tr class="separator:af52d12ba3414cb354fdda81e3a63973a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1911bb89dcbef6af658d4fa2231231"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#adf1911bb89dcbef6af658d4fa2231231">rotate</a> (Angle angle)</td></tr>
+<tr class="separator:adf1911bb89dcbef6af658d4fa2231231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a1da2a6d646eb9fa1ff62d145f44ff"><td class="memItemLeft" align="right" valign="top">constexpr const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a87a1da2a6d646eb9fa1ff62d145f44ff">value</a> () const </td></tr>
+<tr class="separator:a87a1da2a6d646eb9fa1ff62d145f44ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fe8267be68e39c69b874afc430ed74"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a71fe8267be68e39c69b874afc430ed74">operator[]</a> (std::size_t index)</td></tr>
+<tr class="separator:a71fe8267be68e39c69b874afc430ed74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3344093fd956e4ebf950ed02a7ca1d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; T &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9b3344093fd956e4ebf950ed02a7ca1d">operator[]</a> (std::size_t index) const </td></tr>
+<tr class="separator:a9b3344093fd956e4ebf950ed02a7ca1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2cb3bd4e3b38e81fd0b785c0c67100"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aec2cb3bd4e3b38e81fd0b785c0c67100">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> const &amp;m)=default</td></tr>
+<tr class="separator:aec2cb3bd4e3b38e81fd0b785c0c67100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccb5baefd4e34b8477a5e25edbe3543"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a0ccb5baefd4e34b8477a5e25edbe3543">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&amp;m)=default</td></tr>
+<tr class="separator:a0ccb5baefd4e34b8477a5e25edbe3543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d5ed5c6e6abb9d0cfcf61bdda3d461"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a59d5ed5c6e6abb9d0cfcf61bdda3d461"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a59d5ed5c6e6abb9d0cfcf61bdda3d461">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
+<tr class="separator:a59d5ed5c6e6abb9d0cfcf61bdda3d461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0742797d111deda6745dfcef36fb30"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a4a0742797d111deda6745dfcef36fb30"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a4a0742797d111deda6745dfcef36fb30">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; &amp;&amp;m)</td></tr>
+<tr class="separator:a4a0742797d111deda6745dfcef36fb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b99e900688c8950a15ae02e8b444b99"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a9b99e900688c8950a15ae02e8b444b99"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a9b99e900688c8950a15ae02e8b444b99">operator+=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
+<tr class="separator:a9b99e900688c8950a15ae02e8b444b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764bffd27417ed481013f96a54234ecc"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a764bffd27417ed481013f96a54234ecc"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a764bffd27417ed481013f96a54234ecc">operator-=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
+<tr class="separator:a764bffd27417ed481013f96a54234ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79555d25c6f901e6e58d4629d86a777b"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a79555d25c6f901e6e58d4629d86a777b"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a79555d25c6f901e6e58d4629d86a777b">operator*=</a> (K k)</td></tr>
+<tr class="separator:a79555d25c6f901e6e58d4629d86a777b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83560ab92f3728c80e5897a9347116a"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ae83560ab92f3728c80e5897a9347116a"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae83560ab92f3728c80e5897a9347116a">operator*=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
+<tr class="separator:ae83560ab92f3728c80e5897a9347116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10711abb9a55f4504b4c3488fab4802"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ae10711abb9a55f4504b4c3488fab4802"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae10711abb9a55f4504b4c3488fab4802">operator/=</a> (K k)</td></tr>
+<tr class="separator:ae10711abb9a55f4504b4c3488fab4802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8caf49192e5b36e3ccae030f82dddf6a"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a8caf49192e5b36e3ccae030f82dddf6a"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a8caf49192e5b36e3ccae030f82dddf6a">operator/=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m)</td></tr>
+<tr class="separator:a8caf49192e5b36e3ccae030f82dddf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07d801f28a3b708488330af2107b93a"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:aa07d801f28a3b708488330af2107b93a"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#aa07d801f28a3b708488330af2107b93a">operator+</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:aa07d801f28a3b708488330af2107b93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6552f1f2e566385f0722657dc0c921fe"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a6552f1f2e566385f0722657dc0c921fe"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a6552f1f2e566385f0722657dc0c921fe">operator-</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:a6552f1f2e566385f0722657dc0c921fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afebbaf8d55cda9a64b4b556a6991a43f"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:afebbaf8d55cda9a64b4b556a6991a43f"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#afebbaf8d55cda9a64b4b556a6991a43f">operator*</a> (K k) const </td></tr>
+<tr class="separator:afebbaf8d55cda9a64b4b556a6991a43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8962cb249a8d8c2a32d8e1a752808f"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a7f8962cb249a8d8c2a32d8e1a752808f"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7f8962cb249a8d8c2a32d8e1a752808f">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:a7f8962cb249a8d8c2a32d8e1a752808f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c980080d65c4406f3cb0b183467600c"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a2c980080d65c4406f3cb0b183467600c"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a2c980080d65c4406f3cb0b183467600c">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;u) const </td></tr>
+<tr class="separator:a2c980080d65c4406f3cb0b183467600c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab776df5408d12f50daa264c973a4e2da"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ab776df5408d12f50daa264c973a4e2da"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a>&lt; K &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ab776df5408d12f50daa264c973a4e2da">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a>&lt; K &gt; const &amp;s) const </td></tr>
+<tr class="separator:ab776df5408d12f50daa264c973a4e2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23e56e2de22cc3b5c58db8d06cfc1e4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ac23e56e2de22cc3b5c58db8d06cfc1e4">operator*</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> const &amp;c) const </td></tr>
+<tr class="separator:ac23e56e2de22cc3b5c58db8d06cfc1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d576d870fa5eaf533d81482d3659d7"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a60d576d870fa5eaf533d81482d3659d7"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a60d576d870fa5eaf533d81482d3659d7">operator/</a> (K k) const </td></tr>
+<tr class="separator:a60d576d870fa5eaf533d81482d3659d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7437d710856782422333b6f221d5ad"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:ace7437d710856782422333b6f221d5ad"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ace7437d710856782422333b6f221d5ad">operator/</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:ace7437d710856782422333b6f221d5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd9697ee63899565ffd348915df10bd"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:acfd9697ee63899565ffd348915df10bd"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#acfd9697ee63899565ffd348915df10bd">operator==</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:acfd9697ee63899565ffd348915df10bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d607f951299edf03c70b48efdbcd9d4"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a7d607f951299edf03c70b48efdbcd9d4"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7d607f951299edf03c70b48efdbcd9d4">operator!=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;m) const </td></tr>
+<tr class="separator:a7d607f951299edf03c70b48efdbcd9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25e670abcdf2bc1ce3a0c44e35f7019"><td class="memItemLeft" align="right" valign="top">Utility::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#ae25e670abcdf2bc1ce3a0c44e35f7019">toString</a> () const </td></tr>
 <tr class="separator:ae25e670abcdf2bc1ce3a0c44e35f7019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a90a7beca2fdc2b28be66a6efb490ce4d"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a90a7beca2fdc2b28be66a6efb490ce4d">IDENTITY</a> = <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>(1, 0, 0, 0, 1, 0, 0, 0, 1)</td></tr>
+<tr class="separator:a90a7beca2fdc2b28be66a6efb490ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
@@ -285,7 +291,7 @@ class NRE::Math::Matrix3x3&lt; T &gt;</h3>
 
 <p>3x3 generic matrix </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3415222b5d55e3e5e3ba3f1f99557c7b"></a>
+<a class="anchor" id="a7498846f5077778ec96b72734a883e48"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -295,7 +301,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -311,7 +317,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="add53c1fcf0e54a4fd91284f31fb815a6"></a>
+<a class="anchor" id="a48b4e24a25bc5d6788872322fdac94de"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -320,7 +326,7 @@ template&lt;class T&gt; </div>
 template&lt;class A , class B , class C , class D , class E , class F , class G , class H , class I &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramtype">A&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -397,7 +403,7 @@ template&lt;class A , class B , class C , class D , class E , class F , class G 
 
 </div>
 </div>
-<a class="anchor" id="ab2e71e2e53d5fbf716023b3d70a9f104"></a>
+<a class="anchor" id="ac8cce41b16bc838cbfee1610fe5647fb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -406,7 +412,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -423,7 +429,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab85e33aec84eb6e13326451468b7b863"></a>
+<a class="anchor" id="aaacd0a9c7ed0004fa9143e6414e27f70"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -432,7 +438,7 @@ template&lt;class T&gt; </div>
 template&lt;class K , class L , class N &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>l1</em>, </td>
@@ -467,7 +473,7 @@ template&lt;class K , class L , class N &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aaad961cc00cdbb291844a063e70c3802"></a>
+<a class="anchor" id="a202356fd50ede622b1e8899e5b20b772"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -477,7 +483,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -499,7 +505,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa47572b5d1ae9e835e8a10f75cc70201"></a>
+<a class="anchor" id="ae759d4279cbc8b3cdf3b66f6db75c868"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -509,7 +515,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -531,7 +537,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aded7bc14541a74bcedbf777c5e0b2e7e"></a>
+<a class="anchor" id="af69c168406b62f48f7d1bb36b3a267dc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -540,7 +546,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -557,7 +563,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9ba520e8633744e2c0f1ced4bfecdad7"></a>
+<a class="anchor" id="a3add1fceef6fc5b95fa1be83781f72a5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -566,7 +572,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">Matrix4x4</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -610,14 +616,14 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aac14b2b94fb67f4977664cb399a1f468"></a>
+<a class="anchor" id="aa2a9086e29d23a64dc30542b7d487bfe"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getC1 </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getC1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -628,14 +634,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac36f48d23575a8b85c028168876cee0c"></a>
+<a class="anchor" id="a9319e13b7b2406aaa25edefb289b76d2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getC2 </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getC2 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -646,14 +652,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0722ab55923c11e84bf55c91242c4274"></a>
+<a class="anchor" id="a24202580d3ce17d5a93236e36a41cdfc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getC3 </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getC3 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -664,14 +670,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad6b3520c5fde6e77f6025447cfcc50d4"></a>
+<a class="anchor" id="a260fe35c48abfd0fe3fa6ac21055a525"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">long double <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getDeterminant </td>
+          <td class="memname">constexpr long double <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getDeterminant </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -682,14 +688,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4e0e0edd9969a970464e4098baca29ae"></a>
+<a class="anchor" id="a59ba6113104d98b9c2867f5e86d38466"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getL1 </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getL1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -700,14 +706,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a389a7425497eca58b3e94ba8f88d6e3a"></a>
+<a class="anchor" id="abec135bee62f5595be949fe36f7c2bb8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getL2 </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getL2 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -718,14 +724,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a66fda6eb7da6ec88fd5eea1a850db1bf"></a>
+<a class="anchor" id="a659b949b86cfa857961a8e0a20e04571"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getL3 </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::getL3 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -736,25 +742,25 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3feeded178229bf06c7ae17db9e458fc"></a>
+<a class="anchor" id="a8d5e176b6456088a02ef602f53dc9839"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::inverse </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::inverse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Inverse the matrix, if not possible the matrix become the identity one </p>
+<p>Inverse the matrix, if not possible the matrix become the identity one </p><dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a5f56eb419645842780baddc01723c270"></a>
+<a class="anchor" id="a7d607f951299edf03c70b48efdbcd9d4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -763,7 +769,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator!= </td>
+          <td class="memname">constexpr bool <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator!= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -781,7 +787,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aaf7770fd56437128af8df13d3c1e3955"></a>
+<a class="anchor" id="afebbaf8d55cda9a64b4b556a6991a43f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -790,7 +796,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -808,7 +814,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac4d1cc095341c7a600194c2064f64a8a"></a>
+<a class="anchor" id="a7f8962cb249a8d8c2a32d8e1a752808f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -817,7 +823,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -835,7 +841,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a01fff44467c86c5e052609ccd9f05538"></a>
+<a class="anchor" id="a2c980080d65c4406f3cb0b183467600c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -844,7 +850,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;K&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;K&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
@@ -862,7 +868,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a16f6f22822d99b5e0509a8dfd3963729"></a>
+<a class="anchor" id="ab776df5408d12f50daa264c973a4e2da"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -871,7 +877,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a>&lt;K&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a>&lt;K&gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_segment3_d.php">Segment3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -889,14 +895,14 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af218a6b113e416410e421384325f2136"></a>
+<a class="anchor" id="ac23e56e2de22cc3b5c58db8d06cfc1e4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator* </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> const &amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -914,7 +920,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a06909b7cd730520f3dfa3c463ae3c576"></a>
+<a class="anchor" id="a79555d25c6f901e6e58d4629d86a777b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -923,7 +929,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator*= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator*= </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -941,7 +947,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2f20cc3613e7c8b1527a86eed8841274"></a>
+<a class="anchor" id="ae83560ab92f3728c80e5897a9347116a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -950,7 +956,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator*= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator*= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -968,7 +974,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af8888e0b3eb3b33376f24a37b34d6a6d"></a>
+<a class="anchor" id="aa07d801f28a3b708488330af2107b93a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -977,7 +983,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator+ </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator+ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -995,7 +1001,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a163e1da1b3c1c6355732354aaa2c2557"></a>
+<a class="anchor" id="a9b99e900688c8950a15ae02e8b444b99"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1004,7 +1010,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator+= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator+= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1022,7 +1028,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a480f6dabbe66d020571f0d0bc2bd5425"></a>
+<a class="anchor" id="a6552f1f2e566385f0722657dc0c921fe"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1031,7 +1037,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator- </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator- </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1049,7 +1055,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a38b3224f1050440caf72b64fd3a2e6be"></a>
+<a class="anchor" id="a764bffd27417ed481013f96a54234ecc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1058,7 +1064,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator-= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator-= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1076,7 +1082,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a58f062175100a56541849b3ea28b50af"></a>
+<a class="anchor" id="a60d576d870fa5eaf533d81482d3659d7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1085,7 +1091,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/ </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/ </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -1103,7 +1109,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7274a132011900b1a622ac375995b888"></a>
+<a class="anchor" id="ace7437d710856782422333b6f221d5ad"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1112,7 +1118,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/ </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt;std::common_type_t&lt;T, K&gt; &gt; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1130,7 +1136,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad54ae5ee1225741d549a2d53194fae19"></a>
+<a class="anchor" id="ae10711abb9a55f4504b4c3488fab4802"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1139,7 +1145,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/= </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -1157,7 +1163,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae76b05a22bb1599c43a2f5164ddf14da"></a>
+<a class="anchor" id="a8caf49192e5b36e3ccae030f82dddf6a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1166,7 +1172,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator/= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1184,7 +1190,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae1c763215f22622bd6a86aea3e572639"></a>
+<a class="anchor" id="aec2cb3bd4e3b38e81fd0b785c0c67100"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1194,7 +1200,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1217,7 +1223,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a005a48d111211d78692a252d5b08a9fe"></a>
+<a class="anchor" id="a0ccb5baefd4e34b8477a5e25edbe3543"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1227,7 +1233,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1250,7 +1256,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8d1c643351093965f875ab7d5785bdc7"></a>
+<a class="anchor" id="a59d5ed5c6e6abb9d0cfcf61bdda3d461"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1259,7 +1265,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1277,7 +1283,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a48d2a4b7a34d00716739d77f81bb7fe5"></a>
+<a class="anchor" id="a4a0742797d111deda6745dfcef36fb30"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1286,7 +1292,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1304,7 +1310,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aaff2b1fef6121b6010ae78cd7fb076ab"></a>
+<a class="anchor" id="acfd9697ee63899565ffd348915df10bd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1313,7 +1319,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator== </td>
+          <td class="memname">constexpr bool <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator== </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -1331,14 +1337,14 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af8e87a95bcb468bf1ac8cf03b8f0441f"></a>
+<a class="anchor" id="a71fe8267be68e39c69b874afc430ed74"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt;&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator[] </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt;&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator[] </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -1357,14 +1363,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a085c310d9b21fc8dbb9018c9630f84c1"></a>
+<a class="anchor" id="a9b3344093fd956e4ebf950ed02a7ca1d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator[] </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt;T&gt; const&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::operator[] </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -1383,14 +1389,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aaa8bb28aa20327c854e390d2aad23847"></a>
+<a class="anchor" id="adf1911bb89dcbef6af658d4fa2231231"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::rotate </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::rotate </td>
           <td>(</td>
           <td class="paramtype">Angle&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -1404,10 +1410,11 @@ template&lt;class T&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a507ae912f675d3c6a8b88d987ed468fe"></a>
+<a class="anchor" id="a7363f7794956d19ee69cce2c2e537a80"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1416,7 +1423,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::scale </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::scale </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
@@ -1430,10 +1437,11 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa5042af0b72fd867e36d077a5741890e"></a>
+<a class="anchor" id="a43c656891d269558a279c0839e43d1fe"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1442,7 +1450,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setC1 </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setC1 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>c1</em></td><td>)</td>
@@ -1459,7 +1467,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a82765763658001fa7228c3e0b808c9ba"></a>
+<a class="anchor" id="afdd7c49ecc9d5b5def3f3af5c8cffa13"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1468,7 +1476,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setC2 </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setC2 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>c2</em></td><td>)</td>
@@ -1485,7 +1493,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad4776b53a54a077f3342ea4e0e2011b3"></a>
+<a class="anchor" id="ae2287876bca531e8c65bb4544fb82149"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1494,7 +1502,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setC3 </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setC3 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>c3</em></td><td>)</td>
@@ -1511,25 +1519,25 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a538aee7efd1c51a801f8f27dfc1efaa7"></a>
+<a class="anchor" id="a7bac4af98c7f240f94cc343995615c86"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setIdentity </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setIdentity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the matrix to the identity matrix </p>
+<p>Set the matrix to the identity matrix </p><dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8f39ab8bc99accbb704ff5515c59624e"></a>
+<a class="anchor" id="a2bd19f2e0c68964df59cbe9922420d80"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1538,7 +1546,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setL1 </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setL1 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>l1</em></td><td>)</td>
@@ -1555,7 +1563,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a22b48fd548fabee8887258603ba22867"></a>
+<a class="anchor" id="a2e32090e84ebf5675cba3ef7601bb3bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1564,7 +1572,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setL2 </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setL2 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>l2</em></td><td>)</td>
@@ -1581,7 +1589,7 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9f2864c4b7c623b637161158ae7f7516"></a>
+<a class="anchor" id="acb9d9167bfe1b1cba830bf74b9c14d0b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1590,7 +1598,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setL3 </td>
+          <td class="memname">constexpr void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::setL3 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>l3</em></td><td>)</td>
@@ -1607,22 +1615,30 @@ template&lt;class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5fa4a6dfb58015ac492fc03e3da2c3ea"></a>
+<a class="anchor" id="a0e5e3461c806fe7f9cd05408d2997477"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
 <div class="memtemplate">
-template&lt;class K &gt; </div>
+template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::shearX </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::shearX </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Add a shear on the X axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1630,25 +1646,34 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a48134c56e97e83e1c80e9e4fbe71eec3"></a>
+<a class="anchor" id="af52d12ba3414cb354fdda81e3a63973a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
 <div class="memtemplate">
-template&lt;class K &gt; </div>
+template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::shearY </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::shearY </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Add a shear on the Y axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1656,25 +1681,34 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a681ca632b3f17880831347c64275411f"></a>
+<a class="anchor" id="a637e7e0087b2ad5fba29d9930e65424c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
 <div class="memtemplate">
-template&lt;class K &gt; </div>
+template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::squeezeX </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::squeezeX </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Add a squeeze on the X axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1682,25 +1716,34 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a9c76326ce4edfd2b3b51a4ece20857df"></a>
+<a class="anchor" id="aff9916e2e922d75bb30b1fce99b55afa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
 <div class="memtemplate">
-template&lt;class K &gt; </div>
+template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::squeezeY </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::squeezeY </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Add a squeeze on the Y axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1708,25 +1751,34 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ab0e2fda083093b94f9fb0d16e50d36d3"></a>
+<a class="anchor" id="a75c5e854386f76aa08008e5feb79bd69"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
 <div class="memtemplate">
-template&lt;class K &gt; </div>
+template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::stretchX </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::stretchX </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Add a stretch on the X axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1734,25 +1786,34 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ab9e27e13e85006301b16f754da5372ad"></a>
+<a class="anchor" id="ac412fcf74d01e03e6fc763bb7daf6bb6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
 <div class="memtemplate">
-template&lt;class K &gt; </div>
+template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::stretchY </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::stretchY </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Add a stretch on the Y axis </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1760,6 +1821,7 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
@@ -1781,7 +1843,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae1cd2fa45f97f8906598dff75d156aab"></a>
+<a class="anchor" id="ab0f6f8a86eb84937659a1aad41d25294"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1790,7 +1852,7 @@ template&lt;class T&gt; </div>
 template&lt;class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::translate </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::translate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; K &gt; const &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
@@ -1804,35 +1866,36 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a81bcd3c4f3bd75ce1fc34ef658ece0a4"></a>
+<a class="anchor" id="a7e1f062a88dbdd316b09cce256cb3dbb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::transpose </td>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>&amp; <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::transpose </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Transpose the matrix </p>
+<p>Transpose the matrix </p><dl class="section return"><dt>Returns</dt><dd>the reference of himself </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa76e531f9adb89ec86aecc816b46cd95"></a>
+<a class="anchor" id="a87a1da2a6d646eb9fa1ff62d145f44ff"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const T* <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::value </td>
+          <td class="memname">constexpr const T* <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1840,6 +1903,30 @@ template&lt;class T&gt; </div>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the vector's data </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a90a7beca2fdc2b28be66a6efb490ce4d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a> <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">NRE::Math::Matrix3x3</a>&lt; T &gt;::IDENTITY = <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php">Matrix3x3</a>(1, 0, 0, 0, 1, 0, 0, 0, 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Identity matrix </p>
 
 </div>
 </div>

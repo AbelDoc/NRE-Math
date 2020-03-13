@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -127,9 +128,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>IDENTITY
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a90a7beca2fdc2b28be66a6efb490ce4d">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#aa71e8d1336c71055bfffd646f5529e9c">NRE::Math::Matrix4x4&lt; T &gt;</a>
+</li>
 <li>inverse()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a3feeded178229bf06c7ae17db9e458fc">NRE::Math::Matrix3x3&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a487ebe6f69de08baf0de74f13519f02f">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a8d5e176b6456088a02ef602f53dc9839">NRE::Math::Matrix3x3&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#ae98c1b57b48fee63f21344bdac12236c">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

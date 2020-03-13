@@ -153,21 +153,21 @@ template&lt;class T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1ea3f8aa7d29d46df9e9694be21cf685"><td class="memTemplParams" colspan="2">template&lt;class T , class K , typename  = std::enable_if_t&lt;std::is_arithmetic&lt;K&gt;::value&gt;&gt; </td></tr>
-<tr class="memitem:a1ea3f8aa7d29d46df9e9694be21cf685"><td class="memTemplItemLeft" align="right" valign="top">Vector2D&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#a1ea3f8aa7d29d46df9e9694be21cf685">NRE::Math::operator*</a> (K k, Vector2D&lt; T &gt; const &amp;u)</td></tr>
-<tr class="separator:a1ea3f8aa7d29d46df9e9694be21cf685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006bc15dc253207108534af8c72f902d"><td class="memTemplParams" colspan="2">template&lt;class T , class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:a006bc15dc253207108534af8c72f902d"><td class="memTemplItemLeft" align="right" valign="top">constexpr Vector2D&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#a006bc15dc253207108534af8c72f902d">NRE::Math::operator*</a> (K k, Vector2D&lt; T &gt; const &amp;u)</td></tr>
+<tr class="separator:a006bc15dc253207108534af8c72f902d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f3bb1ff3ff303dbaf5c87c8352674a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a87f3bb1ff3ff303dbaf5c87c8352674a"><td class="memTemplItemLeft" align="right" valign="top">Vector2D&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#a87f3bb1ff3ff303dbaf5c87c8352674a">NRE::Math::normalize</a> (Vector2D&lt; T &gt; const &amp;u)</td></tr>
 <tr class="separator:a87f3bb1ff3ff303dbaf5c87c8352674a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1cf863d3a3317f023ed7f17871abd39"><td class="memTemplParams" colspan="2">template&lt;class T , class K &gt; </td></tr>
-<tr class="memitem:ab1cf863d3a3317f023ed7f17871abd39"><td class="memTemplItemLeft" align="right" valign="top">Vector2D&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#ab1cf863d3a3317f023ed7f17871abd39">NRE::Math::pow</a> (Vector2D&lt; T &gt; const &amp;u, K k)</td></tr>
-<tr class="separator:ab1cf863d3a3317f023ed7f17871abd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ee7ad7832d6312f287d1e862adcfd4"><td class="memTemplParams" colspan="2">template&lt;class T , class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </td></tr>
+<tr class="memitem:ad0ee7ad7832d6312f287d1e862adcfd4"><td class="memTemplItemLeft" align="right" valign="top">Vector2D&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#ad0ee7ad7832d6312f287d1e862adcfd4">NRE::Math::pow</a> (Vector2D&lt; T &gt; const &amp;u, K k)</td></tr>
+<tr class="separator:ad0ee7ad7832d6312f287d1e862adcfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b4a63b7399a395953d5f20df0e2c5b2"><td class="memTemplParams" colspan="2">template&lt;class T , class K &gt; </td></tr>
 <tr class="memitem:a2b4a63b7399a395953d5f20df0e2c5b2"><td class="memTemplItemLeft" align="right" valign="top">Vector2D&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#a2b4a63b7399a395953d5f20df0e2c5b2">NRE::Math::pow</a> (Vector2D&lt; T &gt; const &amp;u, Vector2D&lt; K &gt; const &amp;p)</td></tr>
 <tr class="separator:a2b4a63b7399a395953d5f20df0e2c5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6eed141d206af676ec4fd3b20b6ac50"><td class="memTemplParams" colspan="2">template&lt;class T , class K , typename  = std::enable_if_t&lt;std::is_arithmetic&lt;K&gt;::value&gt;&gt; </td></tr>
-<tr class="memitem:aa6eed141d206af676ec4fd3b20b6ac50"><td class="memTemplItemLeft" align="right" valign="top">Vector2D&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#aa6eed141d206af676ec4fd3b20b6ac50">NRE::Math::reflect</a> (Vector2D&lt; T &gt; const &amp;u, Vector2D&lt; K &gt; const &amp;n)</td></tr>
-<tr class="separator:aa6eed141d206af676ec4fd3b20b6ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f06e0023c567d982fc8e4238366987"><td class="memTemplParams" colspan="2">template&lt;class T , class K &gt; </td></tr>
+<tr class="memitem:a94f06e0023c567d982fc8e4238366987"><td class="memTemplItemLeft" align="right" valign="top">constexpr Vector2D&lt; std::common_type_t&lt; T, K &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector2_d_8hpp.php#a94f06e0023c567d982fc8e4238366987">NRE::Math::reflect</a> (Vector2D&lt; T &gt; const &amp;u, Vector2D&lt; K &gt; const &amp;n)</td></tr>
+<tr class="separator:a94f06e0023c567d982fc8e4238366987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's Object : Vector2D. </p>
@@ -200,14 +200,14 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="file_a1ea3f8aa7d29d46df9e9694be21cf685"></a>
+<a class="anchor" id="file_a006bc15dc253207108534af8c72f902d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class K , typename  = std::enable_if_t&lt;std::is_arithmetic&lt;K&gt;::value&gt;&gt; </div>
+template&lt;class T , class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Vector2D&lt;std::common_type_t&lt;T, K&gt; &gt; NRE::Math::operator* </td>
+          <td class="memname">constexpr Vector2D&lt;std::common_type_t&lt;T, K&gt; &gt; NRE::Math::operator* </td>
           <td>(</td>
           <td class="paramtype">K&#160;</td>
           <td class="paramname"><em>k</em>, </td>
@@ -236,11 +236,11 @@ template&lt;class T , class K , typename  = std::enable_if_t&lt;std::is_arithmet
 
 </div>
 </div>
-<a class="anchor" id="file_ab1cf863d3a3317f023ed7f17871abd39"></a>
+<a class="anchor" id="file_ad0ee7ad7832d6312f287d1e862adcfd4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class K &gt; </div>
+template&lt;class T , class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">Vector2D&lt;std::common_type_t&lt;T, K&gt; &gt; NRE::Math::pow </td>
@@ -308,14 +308,14 @@ template&lt;class T , class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="file_aa6eed141d206af676ec4fd3b20b6ac50"></a>
+<a class="anchor" id="file_a94f06e0023c567d982fc8e4238366987"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T , class K , typename  = std::enable_if_t&lt;std::is_arithmetic&lt;K&gt;::value&gt;&gt; </div>
+template&lt;class T , class K &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Vector2D&lt;std::common_type_t&lt;T, K&gt; &gt; NRE::Math::reflect </td>
+          <td class="memname">constexpr Vector2D&lt;std::common_type_t&lt;T, K&gt; &gt; NRE::Math::reflect </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>u</em>, </td>

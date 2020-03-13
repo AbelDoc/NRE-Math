@@ -99,8 +99,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">NRE_Math.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -113,6 +116,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <p><a href="_math_2_n_r_e___math_8hpp_source.php">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_r_e_1_1_math_1_1_arithmetic_checker.php">NRE::Math::ArithmeticChecker&lt;... &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template structure allowing compile-time check on template parameters if they are arithmetic or not.  <a href="struct_n_r_e_1_1_math_1_1_arithmetic_checker.php#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_r_e_1_1_math_1_1_arithmetic_checker_3_01_t1_00_01_tn_8_8_8_01_4.php">NRE::Math::ArithmeticChecker&lt; T1, Tn... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_r_e_1_1_math_1_1_arithmetic_checker_3_01_t1_01_4.php">NRE::Math::ArithmeticChecker&lt; T1 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_n_r_e"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_n_r_e.php">NRE</a></td></tr>
@@ -122,35 +135,60 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespace_math"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a1202e62391de93b7179399a05563c746"><td class="memTemplParams" colspan="2">template&lt;class... Tn&gt; </td></tr>
+<tr class="memitem:a1202e62391de93b7179399a05563c746"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#a1202e62391de93b7179399a05563c746">NRE::Math::UseIfArithmetic</a> = std::enable_if_t&lt; ArithmeticCheckerV&lt; Tn... &gt;&gt;</td></tr>
+<tr class="separator:a1202e62391de93b7179399a05563c746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac193d527da8444b790ea96914062e79b"><td class="memTemplParams" colspan="2">template&lt;class T , class K , typename std::enable_if_t&lt; std::is_floating_point&lt; std::common_type_t&lt; T, K &gt;&gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:ac193d527da8444b790ea96914062e79b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#ac193d527da8444b790ea96914062e79b">NRE::Math::equal</a> (T a, K b)</td></tr>
-<tr class="separator:ac193d527da8444b790ea96914062e79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c76e5aa3d62a8c1327722d0850e6dda"><td class="memTemplParams" colspan="2">template&lt;class T , class K &gt; </td></tr>
-<tr class="memitem:a2c76e5aa3d62a8c1327722d0850e6dda"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#a2c76e5aa3d62a8c1327722d0850e6dda">NRE::Math::almostEqual</a> (T a, K b)</td></tr>
-<tr class="separator:a2c76e5aa3d62a8c1327722d0850e6dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb9587bb4a842ef908fee0435d630b5a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afb9587bb4a842ef908fee0435d630b5a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#afb9587bb4a842ef908fee0435d630b5a">NRE::Math::lerp</a> (T const &amp;a, T const &amp;b, float const &amp;f)</td></tr>
-<tr class="separator:afb9587bb4a842ef908fee0435d630b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296fb149791d6f1512ecb640697f7a9d"><td class="memTemplParams" colspan="2">template&lt;class T , class K , typename std::enable_if_t&lt; std::is_floating_point&lt; std::common_type_t&lt; T, K &gt;&gt;::value, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a296fb149791d6f1512ecb640697f7a9d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#a296fb149791d6f1512ecb640697f7a9d">NRE::Math::equal</a> (T a, K b)</td></tr>
+<tr class="separator:a296fb149791d6f1512ecb640697f7a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c9467bb40a8410763c5783a056839e"><td class="memTemplParams" colspan="2">template&lt;class T , class K &gt; </td></tr>
+<tr class="memitem:a14c9467bb40a8410763c5783a056839e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#a14c9467bb40a8410763c5783a056839e">NRE::Math::almostEqual</a> (T a, K b)</td></tr>
+<tr class="separator:a14c9467bb40a8410763c5783a056839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f1ae1feff8a4d64bba70efedfffd53"><td class="memTemplParams" colspan="2">template&lt;class T , typename  = UseIfArithmetic&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a59f1ae1feff8a4d64bba70efedfffd53"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#a59f1ae1feff8a4d64bba70efedfffd53">NRE::Math::lerp</a> (T const &amp;a, T const &amp;b, float const &amp;f)</td></tr>
+<tr class="separator:a59f1ae1feff8a4d64bba70efedfffd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afe8b0dbf09256f60552e15fd31a3e650"><td class="memTemplParams" colspan="2">template&lt;class... Tn&gt; </td></tr>
+<tr class="memitem:afe8b0dbf09256f60552e15fd31a3e650"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_math_2_n_r_e___math_8hpp.php#afe8b0dbf09256f60552e15fd31a3e650">NRE::Math::ArithmeticCheckerV</a> = ArithmeticChecker&lt;Tn...&gt;::value</td></tr>
+<tr class="separator:afe8b0dbf09256f60552e15fd31a3e650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a class="el" href="namespace_math.php" title="Math&#39;s API. ">Math</a>'s API's function. </p>
 <dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>03/04/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="file_a2c76e5aa3d62a8c1327722d0850e6dda"></a>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="file_a1202e62391de93b7179399a05563c746"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... Tn&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_math_2_n_r_e___math_8hpp.php#a1202e62391de93b7179399a05563c746">NRE::Math::UseIfArithmetic</a> = typedef std::enable_if_t&lt;ArithmeticCheckerV&lt;Tn...&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable a function if all given template parameters are arithmetics types </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="file_a14c9467bb40a8410763c5783a056839e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T , class K &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool NRE::Math::almostEqual </td>
+          <td class="memname">constexpr bool NRE::Math::almostEqual </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -167,11 +205,6 @@ template&lt;class T , class K &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Test if 2 objects are almost equals (usefull for floating point objects) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -184,17 +217,14 @@ template&lt;class T , class K &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="file_ac193d527da8444b790ea96914062e79b"></a>
+<a class="anchor" id="file_a296fb149791d6f1512ecb640697f7a9d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T , class K , typename std::enable_if_t&lt; std::is_floating_point&lt; std::common_type_t&lt; T, K &gt;&gt;::value, int &gt;  = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool NRE::Math::equal </td>
+          <td class="memname">constexpr bool NRE::Math::equal </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -211,11 +241,6 @@ template&lt;class T , class K , typename std::enable_if_t&lt; std::is_floating_p
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Test the equality of 2 objects </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -228,17 +253,14 @@ template&lt;class T , class K , typename std::enable_if_t&lt; std::is_floating_p
 
 </div>
 </div>
-<a class="anchor" id="file_afb9587bb4a842ef908fee0435d630b5a"></a>
+<a class="anchor" id="file_a59f1ae1feff8a4d64bba70efedfffd53"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class T , typename  = UseIfArithmetic&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T NRE::Math::lerp </td>
+          <td class="memname">constexpr T NRE::Math::lerp </td>
           <td>(</td>
           <td class="paramtype">T const &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -261,11 +283,6 @@ template&lt;class T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Perform a linear interpolation </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -276,6 +293,22 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the interpolated value </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="file_afe8b0dbf09256f60552e15fd31a3e650"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... Tn&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool NRE::Math::ArithmeticCheckerV = ArithmeticChecker&lt;Tn...&gt;::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shortcut to use <a class="el" href="struct_n_r_e_1_1_math_1_1_arithmetic_checker.php" title="Template structure allowing compile-time check on template parameters if they are arithmetic or not...">ArithmeticChecker</a> internal value </p>
 
 </div>
 </div>

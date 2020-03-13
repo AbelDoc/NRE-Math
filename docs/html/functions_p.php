@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_vars.php"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -128,10 +129,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>perspective()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a125cbac6209587973bf93388f3221345">NRE::Math::Matrix4x4&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#a1edb7e306457b3f1ffade48b815a2cfb">NRE::Math::Matrix4x4&lt; T &gt;</a>
 </li>
 <li>Plane()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#a7bc698f25c916183bcbb605e4b60377d">NRE::Math::Plane&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_math_1_1_plane.php#af2054e2cb1b34e40c774630369fe00cd">NRE::Math::Plane&lt; T &gt;</a>
 </li>
 <li>pow()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php#a1ca861dd2ea247f94885776b71321a5a">NRE::Math::Vector2D&lt; T &gt;</a>

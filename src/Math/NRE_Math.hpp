@@ -23,19 +23,34 @@
          */
         namespace Math {
     
+            /**
+             * @class ArithmeticChecker
+             * @brief Template structure allowing compile-time check on template parameters if they are arithmetic or not
+             */
             template <class ...>
             struct ArithmeticChecker : std::true_type {
             };
+            /**
+             * @class ArithmeticChecker
+             * @brief Template structure allowing compile-time check on template parameters if they are arithmetics or not
+             */
             template <class T1, class ... Tn>
             struct ArithmeticChecker<T1, Tn...> : std::conjunction<std::conjunction<ArithmeticChecker<Tn...>>, std::is_arithmetic<T1>> {
             };
+            /**
+             * @class ArithmeticChecker
+             * @brief Template structure allowing compile-time check on template parameters if they are arithmetic or not
+             */
             template <class T1>
             struct ArithmeticChecker<T1> : std::is_arithmetic<T1> {
             };
             
             template <class ... Tn>
-            constexpr bool ArithmeticCheckerV = ArithmeticChecker<Tn...>::value;
+            constexpr bool ArithmeticCheckerV = ArithmeticChecker<Tn...>::value; /**< Shortcut to use ArithmeticChecker internal value */
             
+            /**
+             * Enable a function if all given template parameters are arithmetics types
+             */
             template <class ... Tn>
             using UseIfArithmetic = std::enable_if_t<ArithmeticCheckerV<Tn...>>;
 
