@@ -1096,7 +1096,7 @@ template&lt;class K , typename  = UseIfArithmetic&lt;K&gt;&gt; </div>
 </div><div class="memdoc">
 <p>Compute the vector resulting in the subtraction of k into this </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">k</td><td>the scalar to add </td></tr>
+    <tr><td class="paramname">k</td><td>the scalar to subtract </td></tr>
   </table>
   </dd>
 </dl>

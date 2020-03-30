@@ -176,7 +176,7 @@ template&lt;class... Tn&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Enable a function if all given template parameters are arithmetics types </p>
+<p>&lt; Allow to enable a function if all given template parameters are arithmetics type </p>
 
 </div>
 </div>
