@@ -125,9 +125,9 @@ Inheritance diagram for NRE::Math::BezierCurve3D:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9834d919c43211705a9ab9fd10dea1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ae9834d919c43211705a9ab9fd10dea1d">BezierCurve3D</a> ()=default</td></tr>
 <tr class="separator:ae9834d919c43211705a9ab9fd10dea1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e23312e33c11a5dd96fa23ef5faeeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a86e23312e33c11a5dd96fa23ef5faeeb">BezierCurve3D</a> (std::initializer_list&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt;&gt; points)</td></tr>
+<tr class="memitem:a86e23312e33c11a5dd96fa23ef5faeeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a86e23312e33c11a5dd96fa23ef5faeeb">BezierCurve3D</a> (std::initializer_list&lt; <a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt;&gt; points)</td></tr>
 <tr class="separator:a86e23312e33c11a5dd96fa23ef5faeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a862ab044f5cac6e196a5e8b492727e23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a862ab044f5cac6e196a5e8b492727e23">BezierCurve3D</a> (Utility::Vector&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt;&gt; &amp;&amp;c)</td></tr>
+<tr class="memitem:a862ab044f5cac6e196a5e8b492727e23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a862ab044f5cac6e196a5e8b492727e23">BezierCurve3D</a> (Utility::Vector&lt; <a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt;&gt; &amp;&amp;c)</td></tr>
 <tr class="separator:a862ab044f5cac6e196a5e8b492727e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad139d982bb6c0f79dfeca7dcf06393f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ad139d982bb6c0f79dfeca7dcf06393f7">BezierCurve3D</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> const &amp;c)=default</td></tr>
 <tr class="separator:ad139d982bb6c0f79dfeca7dcf06393f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,13 +135,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8383e094e83d4a3d8c75f415fc3de876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad296197dfdc4bfc860d3a2c332def39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#aad296197dfdc4bfc860d3a2c332def39">~BezierCurve3D</a> ()=default</td></tr>
 <tr class="separator:aad296197dfdc4bfc860d3a2c332def39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76aba00eb1f424e1776737edaab4f69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ad76aba00eb1f424e1776737edaab4f69">getPoint</a> (std::size_t index) const </td></tr>
+<tr class="memitem:ad76aba00eb1f424e1776737edaab4f69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#ad76aba00eb1f424e1776737edaab4f69">getPoint</a> (std::size_t index) const </td></tr>
 <tr class="separator:ad76aba00eb1f424e1776737edaab4f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a979821dcf6d858a1e4d751f7a42896"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a6a979821dcf6d858a1e4d751f7a42896">getSize</a> () const </td></tr>
 <tr class="separator:a6a979821dcf6d858a1e4d751f7a42896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74a49c78163f2125ea4aa6cd73a87f30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a74a49c78163f2125ea4aa6cd73a87f30">operator[]</a> (std::size_t index)</td></tr>
+<tr class="memitem:a74a49c78163f2125ea4aa6cd73a87f30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a74a49c78163f2125ea4aa6cd73a87f30">operator[]</a> (std::size_t index)</td></tr>
 <tr class="separator:a74a49c78163f2125ea4aa6cd73a87f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af63579edd5673e1bc4510466bddb78f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#af63579edd5673e1bc4510466bddb78f4">operator[]</a> (std::size_t index) const </td></tr>
+<tr class="memitem:af63579edd5673e1bc4510466bddb78f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#af63579edd5673e1bc4510466bddb78f4">operator[]</a> (std::size_t index) const </td></tr>
 <tr class="separator:af63579edd5673e1bc4510466bddb78f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dac44314e1e432b221b1b3b11b2d825"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php#a4dac44314e1e432b221b1b3b11b2d825">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve3_d.php">BezierCurve3D</a> const &amp;c)=default</td></tr>
 <tr class="separator:a4dac44314e1e432b221b1b3b11b2d825"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">NRE::Math::BezierCurve3D::BezierCurve3D </td>
           <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt;&gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt;&gt;&#160;</td>
           <td class="paramname"><em>points</em></td><td>)</td>
           <td></td>
         </tr>
@@ -217,7 +217,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">NRE::Math::BezierCurve3D::BezierCurve3D </td>
           <td>(</td>
-          <td class="paramtype">Utility::Vector&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramtype">Utility::Vector&lt; <a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt;&gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -330,7 +330,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve3D::getPoint </td>
+          <td class="memname"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve3D::getPoint </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -447,7 +447,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt;float&gt;&amp; NRE::Math::BezierCurve3D::operator[] </td>
+          <td class="memname"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt;float&gt;&amp; NRE::Math::BezierCurve3D::operator[] </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -479,7 +479,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve3D::operator[] </td>
+          <td class="memname"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve3D::operator[] </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>

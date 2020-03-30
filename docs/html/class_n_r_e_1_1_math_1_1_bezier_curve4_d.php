@@ -125,9 +125,9 @@ Inheritance diagram for NRE::Math::BezierCurve4D:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2c5db9079a354e315a9791e605a4c0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#ac2c5db9079a354e315a9791e605a4c0f">BezierCurve4D</a> ()=default</td></tr>
 <tr class="separator:ac2c5db9079a354e315a9791e605a4c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d7167d43835fa7e59aa1686fc60491d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a2d7167d43835fa7e59aa1686fc60491d">BezierCurve4D</a> (std::initializer_list&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; float &gt;&gt; points)</td></tr>
+<tr class="memitem:a2d7167d43835fa7e59aa1686fc60491d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a2d7167d43835fa7e59aa1686fc60491d">BezierCurve4D</a> (std::initializer_list&lt; <a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt; float &gt;&gt; points)</td></tr>
 <tr class="separator:a2d7167d43835fa7e59aa1686fc60491d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07cfaa85fe7f01978df90cc5d8da7745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a07cfaa85fe7f01978df90cc5d8da7745">BezierCurve4D</a> (Utility::Vector&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; float &gt;&gt; &amp;&amp;c)</td></tr>
+<tr class="memitem:a07cfaa85fe7f01978df90cc5d8da7745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a07cfaa85fe7f01978df90cc5d8da7745">BezierCurve4D</a> (Utility::Vector&lt; <a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt; float &gt;&gt; &amp;&amp;c)</td></tr>
 <tr class="separator:a07cfaa85fe7f01978df90cc5d8da7745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bbc56639ece56d58142fda5f4c88a7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a3bbc56639ece56d58142fda5f4c88a7e">BezierCurve4D</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php">BezierCurve4D</a> const &amp;c)=default</td></tr>
 <tr class="separator:a3bbc56639ece56d58142fda5f4c88a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,13 +135,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9419cba1c0b449ec3e007cd781850aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55cf4d9eff91a6895acb187e2414bfa8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a55cf4d9eff91a6895acb187e2414bfa8">~BezierCurve4D</a> ()=default</td></tr>
 <tr class="separator:a55cf4d9eff91a6895acb187e2414bfa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ace4b3107b7a451b393f7cd096d64a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#af8ace4b3107b7a451b393f7cd096d64a">getPoint</a> (std::size_t index) const </td></tr>
+<tr class="memitem:af8ace4b3107b7a451b393f7cd096d64a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#af8ace4b3107b7a451b393f7cd096d64a">getPoint</a> (std::size_t index) const </td></tr>
 <tr class="separator:af8ace4b3107b7a451b393f7cd096d64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5fcb54b717ecb456024df099a36f6f6"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#ae5fcb54b717ecb456024df099a36f6f6">getSize</a> () const </td></tr>
 <tr class="separator:ae5fcb54b717ecb456024df099a36f6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7a66dd96aa0615bc4d6c04dde61d83a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#ae7a66dd96aa0615bc4d6c04dde61d83a">operator[]</a> (std::size_t index)</td></tr>
+<tr class="memitem:ae7a66dd96aa0615bc4d6c04dde61d83a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#ae7a66dd96aa0615bc4d6c04dde61d83a">operator[]</a> (std::size_t index)</td></tr>
 <tr class="separator:ae7a66dd96aa0615bc4d6c04dde61d83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1c7c91ef3273975336944d8647a808f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#aa1c7c91ef3273975336944d8647a808f">operator[]</a> (std::size_t index) const </td></tr>
+<tr class="memitem:aa1c7c91ef3273975336944d8647a808f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt; float &gt; const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#aa1c7c91ef3273975336944d8647a808f">operator[]</a> (std::size_t index) const </td></tr>
 <tr class="separator:aa1c7c91ef3273975336944d8647a808f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d40d8cd0a22a3dec6153b16fcff37b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php">BezierCurve4D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php#a5d40d8cd0a22a3dec6153b16fcff37b2">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_bezier_curve4_d.php">BezierCurve4D</a> const &amp;c)=default</td></tr>
 <tr class="separator:a5d40d8cd0a22a3dec6153b16fcff37b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">NRE::Math::BezierCurve4D::BezierCurve4D </td>
           <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; float &gt;&gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt; float &gt;&gt;&#160;</td>
           <td class="paramname"><em>points</em></td><td>)</td>
           <td></td>
         </tr>
@@ -217,7 +217,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">NRE::Math::BezierCurve4D::BezierCurve4D </td>
           <td>(</td>
-          <td class="paramtype">Utility::Vector&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt; float &gt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramtype">Utility::Vector&lt; <a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt; float &gt;&gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -330,7 +330,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve4D::getPoint </td>
+          <td class="memname"><a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve4D::getPoint </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -447,7 +447,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt;float&gt;&amp; NRE::Math::BezierCurve4D::operator[] </td>
+          <td class="memname"><a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt;float&gt;&amp; NRE::Math::BezierCurve4D::operator[] </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -479,7 +479,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_n_r_e_1_1_math_1_1_vector4_d.php">Point4D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve4D::operator[] </td>
+          <td class="memname"><a class="el" href="_n_r_e___vector4_d_8hpp.php#ad90a9ba05e7500fa1a6103992d63d300">Point4D</a>&lt;float&gt; const&amp; NRE::Math::BezierCurve4D::operator[] </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>

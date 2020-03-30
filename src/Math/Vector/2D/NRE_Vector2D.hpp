@@ -537,6 +537,7 @@
             template <class T, class K>
             constexpr Vector2D<std::common_type_t<T, K>> reflect(Vector2D<T> const& u, Vector2D<K> const& n);
 
+            /** Simple alias for point declaration */
             template <class T>
             using Point2D = Vector2D<T>;
         }
@@ -547,8 +548,13 @@
     * @brief The stl standard namespace
     */
     namespace std {
+        /**
+         * @class common_type
+         * @brief Manage common_type test
+         */
         template <class T, class K>
         struct common_type<NRE::Math::Vector2D<T>, NRE::Math::Vector2D<K>> {
+            /** Define underlying common_type */
             using type = NRE::Math::Vector2D<common_type_t<T, K>>;
         };
     }

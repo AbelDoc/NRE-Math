@@ -602,7 +602,8 @@
              */
             template <class T, class K>
             constexpr Vector3D<std::common_type_t<T, K>> reflect(Vector3D<T> const& u, Vector3D<K> const& n);
-
+    
+            /** Simple alias for point declaration */
             template <class T>
             using Point3D = Vector3D<T>;
         }
@@ -613,8 +614,13 @@
     * @brief The stl standard namespace
     */
     namespace std {
+        /**
+         * @class common_type
+         * @brief Manage common_type test
+         */
         template <class T, class K>
         struct common_type<NRE::Math::Vector3D<T>, NRE::Math::Vector3D<K>> {
+            /** Define underlying common_type */
             using type = NRE::Math::Vector3D<common_type_t<T, K>>;
         };
         /**

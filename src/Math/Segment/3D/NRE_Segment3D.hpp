@@ -142,8 +142,13 @@
     * @brief The stl standard namespace
     */
     namespace std {
+        /**
+         * @class common_type
+         * @brief Manage common_type test
+         */
         template <class T, class K>
         struct common_type<NRE::Math::Segment3D<T>, NRE::Math::Segment3D<K>> {
+            /** Define underlying common_type */
             using type = NRE::Math::Segment3D<common_type_t < T, K>>;
         };
     }

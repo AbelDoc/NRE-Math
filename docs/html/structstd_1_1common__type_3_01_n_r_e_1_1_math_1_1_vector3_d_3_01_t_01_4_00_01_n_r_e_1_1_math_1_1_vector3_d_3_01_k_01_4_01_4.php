@@ -110,10 +110,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae2ba37ef510f18f89d9d8629ced90fc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2ba37ef510f18f89d9d8629ced90fc5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">NRE::Math::Vector3D</a>&lt; common_type_t&lt; T, K &gt;&gt;</td></tr>
+<tr class="memitem:ae2ba37ef510f18f89d9d8629ced90fc5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector3_d_3_01_k_01_4_01_4.php#ae2ba37ef510f18f89d9d8629ced90fc5">type</a> = <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">NRE::Math::Vector3D</a>&lt; common_type_t&lt; T, K &gt;&gt;</td></tr>
 <tr class="separator:ae2ba37ef510f18f89d9d8629ced90fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ae2ba37ef510f18f89d9d8629ced90fc5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class K &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using std::common_type&lt; <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">NRE::Math::Vector3D</a>&lt; T &gt;, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">NRE::Math::Vector3D</a>&lt; K &gt; &gt;::<a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector3_d_3_01_k_01_4_01_4.php#ae2ba37ef510f18f89d9d8629ced90fc5">type</a> =  <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">NRE::Math::Vector3D</a>&lt;common_type_t&lt;T, K&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Define underlying <a class="el" href="classcommon__type.php" title="Manage common_type test. ">common_type</a> </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/mnt/c/Users/abell/Documents/GitHub/NRE-Math/src/Math/Vector/3D/<a class="el" href="_n_r_e___vector3_d_8hpp_source.php">NRE_Vector3D.hpp</a></li>
 </ul>

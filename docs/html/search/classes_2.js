@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['common_5ftype',['common_type',['../classcommon__type.php',1,'common_type'],['../classcommon__type.php',1,'common_type'],['../classcommon__type.php',1,'common_type'],['../classcommon__type.php',1,'common_type'],['../classcommon__type.php',1,'common_type']]],
   ['common_5ftype_3c_20nre_3a_3amath_3a_3asegment3d_3c_20t_20_3e_2c_20nre_3a_3amath_3a_3asegment3d_3c_20k_20_3e_20_3e',['common_type&lt; NRE::Math::Segment3D&lt; T &gt;, NRE::Math::Segment3D&lt; K &gt; &gt;',['../structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment3_d_3_01_k_01_4_01_4.php',1,'std']]],
   ['common_5ftype_3c_20nre_3a_3amath_3a_3asegment4d_3c_20t_20_3e_2c_20nre_3a_3amath_3a_3asegment4d_3c_20k_20_3e_20_3e',['common_type&lt; NRE::Math::Segment4D&lt; T &gt;, NRE::Math::Segment4D&lt; K &gt; &gt;',['../structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment4_d_3_01_k_01_4_01_4.php',1,'std']]],
   ['common_5ftype_3c_20nre_3a_3amath_3a_3avector2d_3c_20t_20_3e_2c_20nre_3a_3amath_3a_3avector2d_3c_20k_20_3e_20_3e',['common_type&lt; NRE::Math::Vector2D&lt; T &gt;, NRE::Math::Vector2D&lt; K &gt; &gt;',['../structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector2_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector2_d_3_01_k_01_4_01_4.php',1,'std']]],

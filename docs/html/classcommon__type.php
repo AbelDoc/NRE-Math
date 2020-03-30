@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.11"/>
         <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
-        <title>NRE-Math: Class Members - Functions</title>
+        <title>NRE-Math: common_type Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -77,40 +77,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.php"><span>Class&#160;List</span></a></li>
       <li><a href="classes.php"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.php"><span>Class&#160;Hierarchy</span></a></li>
-      <li class="current"><a href="functions.php"><span>Class&#160;Members</span></a></li>
+      <li><a href="functions.php"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="functions.php"><span>All</span></a></li>
-      <li class="current"><a href="functions_func.php"><span>Functions</span></a></li>
-      <li><a href="functions_vars.php"><span>Variables</span></a></li>
-      <li><a href="functions_type.php"><span>Typedefs</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow4" class="tabs3">
-    <ul class="tablist">
-      <li><a href="functions_func.php#index_b"><span>b</span></a></li>
-      <li><a href="functions_func_c.php#index_c"><span>c</span></a></li>
-      <li><a href="functions_func_d.php#index_d"><span>d</span></a></li>
-      <li><a href="functions_func_f.php#index_f"><span>f</span></a></li>
-      <li><a href="functions_func_g.php#index_g"><span>g</span></a></li>
-      <li><a href="functions_func_i.php#index_i"><span>i</span></a></li>
-      <li><a href="functions_func_l.php#index_l"><span>l</span></a></li>
-      <li><a href="functions_func_m.php#index_m"><span>m</span></a></li>
-      <li><a href="functions_func_n.php#index_n"><span>n</span></a></li>
-      <li><a href="functions_func_o.php#index_o"><span>o</span></a></li>
-      <li><a href="functions_func_p.php#index_p"><span>p</span></a></li>
-      <li><a href="functions_func_q.php#index_q"><span>q</span></a></li>
-      <li><a href="functions_func_r.php#index_r"><span>r</span></a></li>
-      <li><a href="functions_func_s.php#index_s"><span>s</span></a></li>
-      <li><a href="functions_func_t.php#index_t"><span>t</span></a></li>
-      <li class="current"><a href="functions_func_u.php#index_u"><span>u</span></a></li>
-      <li><a href="functions_func_v.php#index_v"><span>v</span></a></li>
-      <li><a href="functions_func_0x7e.php#index_0x7e"><span>~</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -125,13 +94,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">common_type Class Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;
 
-<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
-<li>Unit()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#acde0194bb69bc8d6bebf8ceb0b142426">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
-</li>
+<p>Manage <a class="el" href="classcommon__type.php" title="Manage common_type test. ">common_type</a> test.  
+ <a href="classcommon__type.php#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_r_e___vector4_d_8hpp_source.php">NRE_Vector4D.hpp</a>&gt;</code></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manage <a class="el" href="classcommon__type.php" title="Manage common_type test. ">common_type</a> test. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>/mnt/c/Users/abell/Documents/GitHub/NRE-Math/src/Math/Vector/4D/<a class="el" href="_n_r_e___vector4_d_8hpp_source.php">NRE_Vector4D.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

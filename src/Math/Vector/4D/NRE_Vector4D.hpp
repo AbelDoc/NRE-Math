@@ -675,7 +675,8 @@
              */
             template <class T, class K>
             constexpr Vector4D<std::common_type_t<T, K>> reflect(Vector4D<T> const& u, Vector4D<K> const& n);
-
+    
+            /** Simple alias for point declaration */
             template <class T>
             using Point4D = Vector4D<T>;
         }
@@ -686,8 +687,13 @@
     * @brief The stl standard namespace
     */
     namespace std {
+        /**
+         * @class common_type
+         * @brief Manage common_type test
+         */
         template <class T, class K>
         struct common_type<NRE::Math::Vector4D<T>, NRE::Math::Vector4D<K>> {
+            /** Define underlying common_type */
             using type = NRE::Math::Vector4D<common_type_t < T, K>>;
         };
     }

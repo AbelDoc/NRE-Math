@@ -47,13 +47,13 @@
             
             template <class ... Tn>
             constexpr bool ArithmeticCheckerV = ArithmeticChecker<Tn...>::value; /**< Shortcut to use ArithmeticChecker internal value */
-            
+    
+            /** Allow to enable a function if all given template parameters are arithmetics type */
             template <class ... Tn>
-            /**< Allow to enable a function if all given template parameters are arithmetics type */
             using UseIfArithmetic = std::enable_if_t<ArithmeticCheckerV<Tn...>>;
 
-            static constexpr long double EPSILON = 0.000001;    /**< Double precision epsilon for equality test */
-            static constexpr long double PI = 3.141592653589793238462643383279502884L;
+            static constexpr long double EPSILON = 0.000001;                            /**< Double precision epsilon for equality test */
+            static constexpr long double PI = 3.141592653589793238462643383279502884L;  /**< Double precision pi value */
 
             /**
              * Test the equality of 2 objects

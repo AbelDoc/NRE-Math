@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
       <li><a href="functions_vars.php"><span>Variables</span></a></li>
+      <li><a href="functions_type.php"><span>Typedefs</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -150,6 +151,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>transpose()
 : <a class="el" href="class_n_r_e_1_1_math_1_1_matrix3x3.php#a7e1f062a88dbdd316b09cce256cb3dbb">NRE::Math::Matrix3x3&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php#aa90c64c2a18806b5bb574fce3d0af751">NRE::Math::Matrix4x4&lt; T &gt;</a>
+</li>
+<li>type
+: <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment3_d_3_01_k_01_4_01_4.php#ad10827d38573bfc95c7eb5450682f322">std::common_type&lt; NRE::Math::Segment3D&lt; T &gt;, NRE::Math::Segment3D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment4_d_3_01_k_01_4_01_4.php#a5af1fda7dbe33ddd941cc04f02b4b5cb">std::common_type&lt; NRE::Math::Segment4D&lt; T &gt;, NRE::Math::Segment4D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector2_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector2_d_3_01_k_01_4_01_4.php#afc21de677515f8bc7aad2bfd1f9d9940">std::common_type&lt; NRE::Math::Vector2D&lt; T &gt;, NRE::Math::Vector2D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector3_d_3_01_k_01_4_01_4.php#ae2ba37ef510f18f89d9d8629ced90fc5">std::common_type&lt; NRE::Math::Vector3D&lt; T &gt;, NRE::Math::Vector3D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector4_d_3_01_k_01_4_01_4.php#a38bc20ac6708eea13d3c6a1e0b0830e5">std::common_type&lt; NRE::Math::Vector4D&lt; T &gt;, NRE::Math::Vector4D&lt; K &gt; &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

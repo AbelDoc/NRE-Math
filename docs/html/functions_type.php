@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.11"/>
         <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
-        <title>NRE-Math: Class Members - Functions</title>
+        <title>NRE-Math: Class Members - Typedefs</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -83,31 +83,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li><a href="functions.php"><span>All</span></a></li>
-      <li class="current"><a href="functions_func.php"><span>Functions</span></a></li>
+      <li><a href="functions_func.php"><span>Functions</span></a></li>
       <li><a href="functions_vars.php"><span>Variables</span></a></li>
-      <li><a href="functions_type.php"><span>Typedefs</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow4" class="tabs3">
-    <ul class="tablist">
-      <li><a href="functions_func.php#index_b"><span>b</span></a></li>
-      <li><a href="functions_func_c.php#index_c"><span>c</span></a></li>
-      <li><a href="functions_func_d.php#index_d"><span>d</span></a></li>
-      <li><a href="functions_func_f.php#index_f"><span>f</span></a></li>
-      <li><a href="functions_func_g.php#index_g"><span>g</span></a></li>
-      <li><a href="functions_func_i.php#index_i"><span>i</span></a></li>
-      <li><a href="functions_func_l.php#index_l"><span>l</span></a></li>
-      <li><a href="functions_func_m.php#index_m"><span>m</span></a></li>
-      <li><a href="functions_func_n.php#index_n"><span>n</span></a></li>
-      <li><a href="functions_func_o.php#index_o"><span>o</span></a></li>
-      <li><a href="functions_func_p.php#index_p"><span>p</span></a></li>
-      <li><a href="functions_func_q.php#index_q"><span>q</span></a></li>
-      <li><a href="functions_func_r.php#index_r"><span>r</span></a></li>
-      <li><a href="functions_func_s.php#index_s"><span>s</span></a></li>
-      <li><a href="functions_func_t.php#index_t"><span>t</span></a></li>
-      <li class="current"><a href="functions_func_u.php#index_u"><span>u</span></a></li>
-      <li><a href="functions_func_v.php#index_v"><span>v</span></a></li>
-      <li><a href="functions_func_0x7e.php#index_0x7e"><span>~</span></a></li>
+      <li class="current"><a href="functions_type.php"><span>Typedefs</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -126,11 +104,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="contents">
-&#160;
-
-<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
-<li>Unit()
-: <a class="el" href="class_n_r_e_1_1_math_1_1_unit.php#acde0194bb69bc8d6bebf8ceb0b142426">NRE::Math::Unit&lt; M, L, T, A &gt;</a>
+&#160;<ul>
+<li>type
+: <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment3_d_3_01_k_01_4_01_4.php#ad10827d38573bfc95c7eb5450682f322">std::common_type&lt; NRE::Math::Segment3D&lt; T &gt;, NRE::Math::Segment3D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_segment4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_segment4_d_3_01_k_01_4_01_4.php#a5af1fda7dbe33ddd941cc04f02b4b5cb">std::common_type&lt; NRE::Math::Segment4D&lt; T &gt;, NRE::Math::Segment4D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector2_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector2_d_3_01_k_01_4_01_4.php#afc21de677515f8bc7aad2bfd1f9d9940">std::common_type&lt; NRE::Math::Vector2D&lt; T &gt;, NRE::Math::Vector2D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector3_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector3_d_3_01_k_01_4_01_4.php#ae2ba37ef510f18f89d9d8629ced90fc5">std::common_type&lt; NRE::Math::Vector3D&lt; T &gt;, NRE::Math::Vector3D&lt; K &gt; &gt;</a>
+, <a class="el" href="structstd_1_1common__type_3_01_n_r_e_1_1_math_1_1_vector4_d_3_01_t_01_4_00_01_n_r_e_1_1_math_1_1_vector4_d_3_01_k_01_4_01_4.php#a38bc20ac6708eea13d3c6a1e0b0830e5">std::common_type&lt; NRE::Math::Vector4D&lt; T &gt;, NRE::Math::Vector4D&lt; K &gt; &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

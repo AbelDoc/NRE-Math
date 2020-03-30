@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.php"><span>Variables</span></a></li>
+      <li><a href="functions_type.php"><span>Typedefs</span></a></li>
     </ul>
   </div>
 </div><!-- top -->

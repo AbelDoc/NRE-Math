@@ -147,9 +147,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a448aee64e4baef60491b182208657c3d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a448aee64e4baef60491b182208657c3d"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a448aee64e4baef60491b182208657c3d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>NRE::Math::Point3D</b> = Vector3D&lt; T &gt;</td></tr>
+<tr class="memitem:a448aee64e4baef60491b182208657c3d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a448aee64e4baef60491b182208657c3d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">NRE::Math::Point3D</a> = Vector3D&lt; T &gt;</td></tr>
 <tr class="separator:a448aee64e4baef60491b182208657c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -175,7 +174,23 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>27/03/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="file_a448aee64e4baef60491b182208657c3d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">NRE::Math::Point3D</a> = typedef Vector3D&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Simple alias for point declaration </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="file_a973d9efb763e9437eab463605868bd88"></a>
 <div class="memitem">
 <div class="memproto">

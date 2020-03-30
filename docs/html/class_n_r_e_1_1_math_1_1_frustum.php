@@ -137,11 +137,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af64005dd435f7874b287c2bb10e966e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f895c6408c8ffce5408d827dc98db81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a2f895c6408c8ffce5408d827dc98db81">setFov</a> (Angle fieldOfView)</td></tr>
 <tr class="separator:a2f895c6408c8ffce5408d827dc98db81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d5e50e09cd83a78e23be42de12c4ba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a4d5e50e09cd83a78e23be42de12c4ba5">computePlane</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; const &amp;eye, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;forward, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;left, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;up)</td></tr>
+<tr class="memitem:a4d5e50e09cd83a78e23be42de12c4ba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a4d5e50e09cd83a78e23be42de12c4ba5">computePlane</a> (<a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt; const &amp;eye, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;forward, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;left, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;up)</td></tr>
 <tr class="separator:a4d5e50e09cd83a78e23be42de12c4ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f1ee8b02acd171054e284c0f6e5812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#a74f1ee8b02acd171054e284c0f6e5812">computeProjectionMatrix</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_matrix4x4.php">Matrix4x4</a>&lt; float &gt; &amp;m)</td></tr>
 <tr class="separator:a74f1ee8b02acd171054e284c0f6e5812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85a19a9bb6c7818e1708f3db30bf7ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#ab85a19a9bb6c7818e1708f3db30bf7ef">resize</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; std::size_t &gt; const &amp;size, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; const &amp;eye, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;forward, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;left, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;up)</td></tr>
+<tr class="memitem:ab85a19a9bb6c7818e1708f3db30bf7ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#ab85a19a9bb6c7818e1708f3db30bf7ef">resize</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_vector2_d.php">Vector2D</a>&lt; std::size_t &gt; const &amp;size, <a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt; const &amp;eye, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;forward, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;left, <a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Vector3D</a>&lt; float &gt; const &amp;up)</td></tr>
 <tr class="separator:ab85a19a9bb6c7818e1708f3db30bf7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d9047612f776bbc49811f944cfddc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php">Frustum</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php#af7d9047612f776bbc49811f944cfddc7">operator=</a> (<a class="el" href="class_n_r_e_1_1_math_1_1_frustum.php">Frustum</a> const &amp;f)=default</td></tr>
 <tr class="separator:af7d9047612f776bbc49811f944cfddc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,7 +309,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void NRE::Math::Frustum::computePlane </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt; const &amp;&#160;</td>
           <td class="paramname"><em>eye</em>, </td>
         </tr>
         <tr>
@@ -469,7 +469,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_math_1_1_vector3_d.php">Point3D</a>&lt; float &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="_n_r_e___vector3_d_8hpp.php#a448aee64e4baef60491b182208657c3d">Point3D</a>&lt; float &gt; const &amp;&#160;</td>
           <td class="paramname"><em>eye</em>, </td>
         </tr>
         <tr>
