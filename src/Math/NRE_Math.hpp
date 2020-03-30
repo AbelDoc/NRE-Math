@@ -48,9 +48,7 @@
             template <class ... Tn>
             constexpr bool ArithmeticCheckerV = ArithmeticChecker<Tn...>::value; /**< Shortcut to use ArithmeticChecker internal value */
             
-            /**
-             * Enable a function if all given template parameters are arithmetics types
-             */
+            /**< Allow to enable a function if all given template parameters are arithmetics type */
             template <class ... Tn>
             using UseIfArithmetic = std::enable_if_t<ArithmeticCheckerV<Tn...>>;
 

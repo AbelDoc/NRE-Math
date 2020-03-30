@@ -382,7 +382,7 @@
                         constexpr Vector2D<std::common_type_t<T, K>> operator +(Vector2D<K> const& u) const;
                         /**
                          * Compute the vector resulting in the subtraction of k into this
-                         * @param k the scalar to add
+                         * @param k the scalar to subtract
                          * @return  the computed vector
                          */
                         template <class K, typename = UseIfArithmetic<K>>
