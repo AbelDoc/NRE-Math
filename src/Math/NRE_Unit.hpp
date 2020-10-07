@@ -12,8 +12,8 @@
      #include <iostream>
      #include <ratio>
 
-     #include <Utility/String/NRE_String.hpp>
-     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+     #include <Core/String/NRE_String.hpp>
+     #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
 
      #include "NRE_Math.hpp"
 
@@ -33,7 +33,7 @@
              * @brief Used to define clear physical unit
              */
             template <class M, class L, class T, class A>
-            class Unit : public Utility::Stringable<Unit<M, L, T, A>> {
+            class Unit : public Core::Stringable<Unit<M, L, T, A>> {
                 private:    //Fields
                     double value;    /**< Internal unit value */
 
@@ -174,8 +174,8 @@
                          * Convert the unit into a string
                          * @return the converted unit
                          */
-                        Utility::String toString() const {
-                            Utility::String res;
+                        Core::String toString() const {
+                            Core::String res;
                             res << value;
                             return res;
                         }

@@ -57,8 +57,8 @@
             }
 
             template <class T>
-            inline Utility::String Segment4D<T>::toString() const {
-                Utility::String res;
+            inline Core::String Segment4D<T>::toString() const {
+                Core::String res;
                 res.reserve(20);
                 res << start;
                 res << " - ";

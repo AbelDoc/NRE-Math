@@ -355,8 +355,8 @@
             }
     
             template <class T>
-            inline Utility::String Matrix3x3<T>::toString() const {
-                Utility::String res("[");
+            inline Core::String Matrix3x3<T>::toString() const {
+                Core::String res("[");
                 res.reserve(100);
                 res << getL1()[0];
                 res << ' ';

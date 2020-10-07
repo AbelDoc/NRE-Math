@@ -544,8 +544,8 @@
             }
     
             template <class T>
-            inline Utility::String Matrix4x4<T>::toString() const {
-                Utility::String res("[");
+            inline Core::String Matrix4x4<T>::toString() const {
+                Core::String res("[");
                 res.reserve(180);
                 res << getL1()[0];
                 res << ' ';

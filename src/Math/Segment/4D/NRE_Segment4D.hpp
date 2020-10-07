@@ -10,7 +10,7 @@
      #pragma once
 
      #include "../../Vector/4D/NRE_Vector4D.hpp"
-     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+     #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
 
      /**
       * @namespace NRE
@@ -28,7 +28,7 @@
              * @brief A 4D homogeneous segment
              */
             template <class T>
-            class Segment4D : public Utility::Stringable<Segment4D<T>> {
+            class Segment4D : public Core::Stringable<Segment4D<T>> {
                 private:    //Fields
                     Point4D<T> start;   /**< The segment's start */
                     Point4D<T> end;     /**< The segment's end */
@@ -134,7 +134,7 @@
                          * Convert the segment into a string
                          * @return the converted segment
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
             };
         }
     }

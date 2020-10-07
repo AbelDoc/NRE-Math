@@ -10,8 +10,8 @@
     namespace NRE {
         namespace Math {
     
-            inline Utility::String BezierCurve3D::toString() const {
-                Utility::String res("Curve : \n");
+            inline Core::String BezierCurve3D::toString() const {
+                Core::String res("Curve : \n");
                 res.reserve(15 * getSize());
                 for (unsigned int i = 0; i < getSize(); i++) {
                     res << i;

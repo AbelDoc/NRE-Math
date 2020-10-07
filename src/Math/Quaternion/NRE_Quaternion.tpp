@@ -161,7 +161,7 @@
             }
 
             template <class T>
-            inline Utility::String Quaternion<T>::toString() const {
+            inline Core::String Quaternion<T>::toString() const {
                 return quat.toString();
             }
 

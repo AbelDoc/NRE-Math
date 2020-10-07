@@ -9,8 +9,8 @@
 
     #pragma once
 
-    #include <Utility/String/NRE_String.hpp>
-    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+    #include <Core/String/NRE_String.hpp>
+    #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
     #include <type_traits>
 
     #include "../../NRE_Math.hpp"
@@ -42,7 +42,7 @@
              * @brief 4x4 generic matrix
              */
             template <class T>
-            class Matrix4x4 : public Utility::Stringable<Matrix4x4<T>> {
+            class Matrix4x4 : public Core::Stringable<Matrix4x4<T>> {
                 private:    //Fields
                     Vector4D<T> data[4];   /**< Matrix's lines, row major order */
 
@@ -516,7 +516,7 @@
                          * Convert the 4x4 matrix into a string
                          * @return the converted 4x4 matrix
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
 
                 public :
                     static constexpr Matrix4x4 IDENTITY = Matrix4x4(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);     /**< Identity matrix */

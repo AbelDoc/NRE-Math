@@ -9,12 +9,12 @@
 
      #pragma once
 
-     #include <Utility/String/NRE_String.hpp>
+     #include <Core/String/NRE_String.hpp>
      #include <iostream>
 
      #include "../NRE_Math.hpp"
      #include "../NRE_Unit.hpp"
-     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+     #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
 
      /**
      * @namespace NRE
@@ -35,7 +35,7 @@
              * @brief A quaternion represented by a 3D rotation axis and an angle
              */
             template <class T>
-            class Quaternion : public Utility::Stringable<Quaternion<T>> {
+            class Quaternion : public Core::Stringable<Quaternion<T>> {
                 private :   //Fields
                     Vector4D<T> quat;   /** The internal quaternion */
 
@@ -238,7 +238,7 @@
                          * Convert the quaternion into a string
                          * @return the converted quaternion
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
             };
         }
     }

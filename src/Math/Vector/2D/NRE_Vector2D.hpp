@@ -9,8 +9,8 @@
 
     #pragma once
 
-    #include <Utility/String/NRE_String.hpp>
-    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+    #include <Core/String/NRE_String.hpp>
+    #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
     #include "../../NRE_Math.hpp"
 
     #include <cassert>
@@ -34,7 +34,7 @@
              * @brief A cartesian 2D vector
              */
             template <class T>
-            class Vector2D : public Utility::Stringable<Vector2D<T>> {
+            class Vector2D : public Core::Stringable<Vector2D<T>> {
                 static_assert(ArithmeticCheckerV<T>); /**< Limit Vector2D to arithmetic types only aka float, int, ... */
                 
                 private :   // Fields
@@ -490,7 +490,7 @@
                          * Convert the vector into a string
                          * @return the converted vector
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
             };
     
             /**

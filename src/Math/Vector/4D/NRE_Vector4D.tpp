@@ -280,8 +280,8 @@
             }
 
             template <class T>
-            inline Utility::String Vector4D<T>::toString() const {
-                Utility::String res;
+            inline Core::String Vector4D<T>::toString() const {
+                Core::String res;
                 res.reserve(15);
                 res << '(';
                 res << x;

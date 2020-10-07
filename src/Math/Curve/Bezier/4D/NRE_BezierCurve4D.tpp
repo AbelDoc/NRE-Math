@@ -11,8 +11,8 @@
     namespace NRE {
         namespace Math {
 
-            inline Utility::String BezierCurve4D::toString() const {
-                Utility::String res("Curve : \n");
+            inline Core::String BezierCurve4D::toString() const {
+                Core::String res("Curve : \n");
                 res.reserve(20 * getSize());
                 for (unsigned int i = 0; i < getSize(); i++) {
                     res << i;

@@ -125,8 +125,8 @@
             }
 
             template <class T>
-            inline Utility::String Plane<T>::toString() const {
-                Utility::String res;
+            inline Core::String Plane<T>::toString() const {
+                Core::String res;
                 res.reserve(30);
                 res << '[';
                 res << point;

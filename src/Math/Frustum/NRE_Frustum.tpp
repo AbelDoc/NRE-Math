@@ -73,8 +73,8 @@
                 far.setW(far.getY() * ratio);
             }
     
-            inline Utility::String Frustum::toString() const {
-                Utility::String res( "Top = ");
+            inline Core::String Frustum::toString() const {
+                Core::String res( "Top = ");
                 res.reserve(150);
                 res << planes[TOP];
                 res << "]\nBottom = ";

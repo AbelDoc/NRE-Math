@@ -9,8 +9,8 @@
 
     #pragma once
 
-    #include <Utility/String/NRE_String.hpp>
-    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+    #include <Core/String/NRE_String.hpp>
+    #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
     #include <iostream>
 
     #include "../../NRE_Math.hpp"
@@ -39,7 +39,7 @@
              * @brief 3x3 generic matrix
              */
             template <class T>
-            class Matrix3x3 : public Utility::Stringable<Matrix3x3<T>> {
+            class Matrix3x3 : public Core::Stringable<Matrix3x3<T>> {
                 private:    //Fields
                     Vector3D<T> data[3];   /**< Matrix's lines, row major order */
 
@@ -464,7 +464,7 @@
                          * Convert the matrix into a string
                          * @return the converted matrix
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
                         
                 public :
                     static constexpr Matrix3x3 IDENTITY = Matrix3x3(1, 0, 0, 0, 1, 0, 0, 0, 1);     /**< Identity matrix */

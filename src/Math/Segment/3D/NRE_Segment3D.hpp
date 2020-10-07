@@ -10,7 +10,7 @@
      #pragma once
 
      #include "../../Vector/3D/NRE_Vector3D.hpp"
-     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+     #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
 
      /**
       * @namespace NRE
@@ -28,7 +28,7 @@
              * @brief A 3D homogeneous segment
              */
             template <class T>
-            class Segment3D : public Utility::Stringable<Segment3D<T>> {
+            class Segment3D : public Core::Stringable<Segment3D<T>> {
                 private:    //Fields
                     Point3D<T> start;   /**< The segment's start */
                     Point3D<T> end;     /**< The segment's end */
@@ -132,7 +132,7 @@
                          * Convert the segment into a string
                          * @return the converted segment
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
             };
         }
     }

@@ -11,7 +11,7 @@
 
     #include "../Vector/3D/NRE_Vector3D.hpp"
      #include "../Vector/4D/NRE_Vector4D.hpp"
-    #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+    #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
 
     /**
      * @namespace NRE
@@ -44,7 +44,7 @@
              * @brief A cartesian plane with a point and a vector
              */
             template <class T>
-            class Plane : public Utility::Stringable<Plane<T>> {
+            class Plane : public Core::Stringable<Plane<T>> {
                 private :   //Fields
                     Vector3D<T> normal; /**< The plane's normal */
                     Point3D<T> point;   /**< The plane's point */
@@ -229,7 +229,7 @@
                          * Convert the plane into a string
                          * @return the converted plane
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
 
                 private:   // Methods
                     /**

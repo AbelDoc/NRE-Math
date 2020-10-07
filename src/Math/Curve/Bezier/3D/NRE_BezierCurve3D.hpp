@@ -9,8 +9,8 @@
 
      #pragma once
 
-     #include <Utility/Vector/NRE_Vector.hpp>
-     #include <Utility/Interfaces/Stringable/NRE_Stringable.hpp>
+     #include <Core/Vector/NRE_Vector.hpp>
+     #include <Core/Interfaces/Stringable/NRE_Stringable.hpp>
      #include "../../../Vector/3D/NRE_Vector3D.hpp"
 
 
@@ -29,9 +29,9 @@
              * @class BezierCurve3D
              * @brief Represent a 2D homogeneous Bezier curves with a set of control points
              */
-            class BezierCurve3D : public Utility::Stringable<BezierCurve3D> {
+            class BezierCurve3D : public Core::Stringable<BezierCurve3D> {
                 private:    //Fields
-                    Utility::Vector<Point3D<float>> controls;   /**< The curve's control points */
+                    Core::Vector<Point3D<float>> controls;   /**< The curve's control points */
 
                 public:    // Methods
                     //## Constructor ##//
@@ -49,7 +49,7 @@
                          * Construct the curve from a set of control points
                          * @param c the set of control points
                          */
-                        BezierCurve3D(Utility::Vector<Point3D<float>> && c) : controls(std::move(c)) {
+                        BezierCurve3D(Core::Vector<Point3D<float>> && c) : controls(std::move(c)) {
                         }
 
                     //## Copy-Constructor ##//
@@ -128,7 +128,7 @@
                          * Convert the curve into a string
                          * @return the converted curve
                          */
-                        Utility::String toString() const;
+                        Core::String toString() const;
             };
         }
     }

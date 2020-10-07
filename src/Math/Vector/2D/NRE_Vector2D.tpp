@@ -228,8 +228,8 @@
             }
 
             template <class T>
-            inline Utility::String Vector2D<T>::toString() const {
-                Utility::String res;
+            inline Core::String Vector2D<T>::toString() const {
+                Core::String res;
                 res.reserve(10);
                 res << '(' << x << ", " << y << ')';
                 return res;

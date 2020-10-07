@@ -56,8 +56,8 @@
             }
 
             template <class T>
-            inline Utility::String Segment3D<T>::toString() const {
-                Utility::String res;
+            inline Core::String Segment3D<T>::toString() const {
+                Core::String res;
                 res.reserve(30);
                 res << start;
                 res << " - ";
